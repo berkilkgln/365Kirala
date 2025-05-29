@@ -75,7 +75,7 @@ const handleEndDateSelect = (date: Date) => {
             Giriş Tarihi
           </label>
           <div
-            className="w-full p-4 rounded-xl bg-white bg-opacity-80 text-gray-800 cursor-pointer hover:bg-opacity-100 transition-all duration-200 font-semibold"
+            className="w-full p-4 rounded-xl bg-white bg-opacity-80 text-gray-800 cursor-default hover:bg-opacity-100 transition-all duration-200 font-semibold"
             onClick={() => setIsStartDatePickerOpen(!isStartDatePickerOpen)}
           >
             {startDate ? startDate.toLocaleDateString() : "Tarih Seçiniz"}
@@ -112,7 +112,7 @@ const handleEndDateSelect = (date: Date) => {
             Çıkış Tarihi
           </label>
           <div
-            className="w-full p-4 rounded-xl bg-white bg-opacity-80 text-gray-800 cursor-pointer hover:bg-opacity-100 transition-all duration-200 font-semibold"
+            className="w-full p-4 rounded-xl bg-white bg-opacity-80 text-gray-800 cursor-default hover:bg-opacity-100 transition-all duration-200 font-semibold"
             onClick={handleEndDateOpen}
           >
             {endDate ? endDate.toLocaleDateString() : "Tarih Seçiniz"}

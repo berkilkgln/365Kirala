@@ -13,7 +13,7 @@ export default function BungalovPage() {
         <SinglePageHeader
           image="/images/bungalov/bungalovbackground.jpg"
           title="Bungalov Kiralama"
-          description="Şehirden uzak, doğa ile iç içe bungalov kiralama fırsatları! Sapanca, Bolu, Abant ve daha birçok lokasyonda jakuzili, şömineli ve havuzlu bungalovlarla huzurlu tatilin keyfini çıkarın. Günlük ve haftalık uygun fiyat seçenekleriyle hemen rezervasyon yapın."
+          descriptionDesktop="Şehirden uzak, doğa ile iç içe bungalov kiralama fırsatları! Sapanca, Bolu, Abant ve daha birçok lokasyonda jakuzili, şömineli ve havuzlu bungalovlarla huzurlu tatilin keyfini çıkarın. Günlük ve haftalık uygun fiyat seçenekleriyle hemen rezervasyon yapın."
         />
 
         <h1 className="text-3xl font-bold mb-6">Bungalov Kiralama</h1>

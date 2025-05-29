@@ -1,0 +1,21 @@
+# Next.js build ve node_modules
+node_modules/
+.next/
+dist/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env dosyaları
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Diğer yaygın dosyalar
+.DS_Store

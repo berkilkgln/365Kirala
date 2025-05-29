@@ -1,0 +1,111 @@
+{
+  "title": "Yat Kiralama Hizmeti | Lüks Yatlarla Mavi Yolculuk Deneyimi",
+  "description": "Lüks yat kiralama hizmetlerimizle unutulmaz bir deniz tatili yaşayın. Türkiye'nin en popüler yat kiralama destinasyonlarında eşsiz bir deneyim sunuyoruz.",
+  "items": [
+    {
+      "id": 1,
+      "image": "/images/yat/yat1.jpg",
+      "location": "İstanbul",
+      "title": "Lüks Yat Kiralama - İstanbul Boğazı'nda Muhteşem Bir Deneyim",
+      "price": 2499,
+      "booked": 156,
+      "discount": 15,
+      "description": "İstanbul Boğazı’nda unutulmaz bir lüks yat kiralama deneyimi yaşayın. Boğaz’ın büyüleyici manzarasında profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın. İster romantik bir kaçamak, ister arkadaşlarınızla unutulmaz bir gün geçirmek için mükemmel bir seçenek. Yatlarımızda Wi-Fi, klima, su sporları ekipmanları ve konforlu bir ortam sunulmaktadır. Boğaz’ın eşsiz güzellikleriyle dolu bu deneyimle, denizdeki en prestijli anları yaşayın.",
+      "features": ["Profesyonel mürettebat", "Özel şef hizmeti", "Su sporları ekipmanları", "Wi-Fi", "Klima"]
+    },
+    {
+      "id": 2,
+      "image": "/images/yat/yat2.jpg",
+      "location": "Bodrum",
+      "title": "Günlük Yat Turu - Bodrum'un Efsane Koylarını Keşfedin",
+      "price": 1499,
+      "booked": 89,
+      "description": "Bodrum’un gizli koylarını keşfetmek için mükemmel bir fırsat! Günlük yat turlarımızla, bölgenin en güzel mavi bayraklı plajlarını, sakin koylarını ve berrak denizlerini keşfedin. Şnorkel ekipmanları, öğle yemeği ve duş imkanlarıyla rahatlayın, güneşlenme alanında keyifli bir gün geçirin. Bodrum’un eşsiz doğasında unutulmaz anılar biriktirirken, profesyonel ekibimiz size eşlik edecek. Bodrum yat kiralama hizmeti ile mavi sulara adım atın ve denizin tadını çıkarın.",
+      "features": ["Günlük tur", "Öğle yemeği dahil", "Şnorkel ekipmanları", "Duş imkanı", "Güneşlenme alanı"]
+    },
+    {
+      "id": 3,
+      "image": "/images/yat/yat3.jpg",
+      "location": "Antalya",
+      "title": "Özel Yat Deneyimi - Antalya'da Lüks Yat Turu",
+      "price": 1999,
+      "booked": 112,
+      "discount": 10,
+      "description": "Antalya’nın turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir. Açık büfe, bar hizmeti, müzik sistemi ve jakuzi gibi olanaklarla, yatlarımızda konforu ve eğlenceyi bir arada yaşayın. Antalya'nın en güzel sahillerinde, profesyonel mürettebatımız ve özel şefimizle sizi bekliyoruz. Antalya yat kiralama ile hem lüks hem de huzurlu bir tatil deneyimi yaşayın.",
+      "features": ["Özel etkinlik organizasyonu", "Açık büfe", "Bar hizmeti", "Müzik sistemi", "Jakuzi"]
+    },
+    {
+      "id": 4,
+      "image": "/images/yat/yat4.jpg",
+      "location": "Fethiye",
+      "title": "Mavi Tur Yatı - Fethiye'nin Muhteşem Koylarında Yat Kiralama",
+      "price": 1299,
+      "booked": 245,
+      "description": "Fethiye'nin mavi bayraklı koylarında eşsiz bir mavi tur deneyimi için yat kiralama hizmeti sunuyoruz. Su sporları, öğle yemeği ve duş imkanlarıyla dolu bu turda, güneşin ve denizin tadını çıkarın. Fethiye'nin doğal güzellikleri ile çevrili bu yat turu, mavi yolculuk yapmak isteyen herkes için ideal bir seçenek. Fethiye yat kiralama ile denizle iç içe bir tatil hayal edin.",
+      "features": ["Mavi tur rotası", "Öğle yemeği", "Su sporları", "Duş imkanı", "Güneşlenme alanı"]
+    },
+    {
+      "id": 5,
+      "image": "/images/yat/yat5.jpg",
+      "location": "Marmaris",
+      "title": "Lüks Motor Yat - Marmaris'te Hız ve Konfor",
+      "price": 1899,
+      "booked": 178,
+      "discount": 20,
+      "description": "Marmaris'te hızlı, konforlu ve lüks bir motor yat kiralama deneyimi sunuyoruz. Profesyonel kaptan ve mürettebatımız eşliğinde, Marmaris’in muazzam sahillerinde dolaşın. Yatımızda bulunan Wi-Fi, klima ve bar hizmeti ile rahatça keyifli bir seyahat deneyimi yaşayacaksınız. Marmaris'te bir lüks yat kiralama hizmeti ile denizdeki hız ve lüksü keşfedin.",
+      "features": ["Hızlı motor yat", "Profesyonel kaptan", "Wi-Fi", "Klima"]
+    },
+    {
+      "id": 6,
+      "image": "/images/yat/yat6.jpg",
+      "location": "Çeşme",
+      "title": "Gün Batımı Turu - Romantik Bir Çeşme Turu",
+      "price": 999,
+      "booked": 312,
+      "description": "Çeşme'de romantik bir gün batımı turu için lüks yat kiralama fırsatı! Akşam saatlerinde başlayan turumuzda, şampanya, canlı müzik ve akşam yemeği ile unutulmaz bir deneyim yaşayın. Çeşme'nin büyüleyici kıyılarında gün batımı manzarasında özel anlar geçirin. Çeşme yat kiralama ile eşsiz manzaralar eşliğinde denizin keyfini çıkarın.",
+      "features": ["Gün batımı turu", "Wi-Fi", "Canlı müzik", "Akşam yemeği", "Fotoğraf çekimi"]
+    },
+    {
+      "id": 7,
+      "image": "/images/yat/yat7.jpg",
+      "location": "Kaş",
+      "title": "Dalış Turu Yatı - Kaş'ta Efsanevi Dalış Deneyimi",
+      "price": 1699,
+      "booked": 134,
+      "discount": 15,
+      "description": "Kaş'ın berrak sularında profesyonel dalış turu ile unutulmaz bir deneyim yaşayın. Dalış ekipmanları ve profesyonel eğitmenler eşliğinde denizin altındaki zengin dünyayı keşfedin. Ayrıca, öğle yemeği ve duş imkanları da sağlanmaktadır. Kaş yat kiralama hizmetimizle, mavi suların derinliklerine inmeye hazır olun.",
+      "features": ["Dalış ekipmanları", "Profesyonel eğitmen", "Öğle yemeği", "Duş", "Wi-Fi"]
+    },
+    {
+      "id": 8,
+      "image": "/images/yat/yat8.jpg",
+      "location": "Göcek",
+      "title": "Haftalık Yat Kiralama - Göcek'te 7 Günlük Mavi Yolculuk",
+      "price": 12999,
+      "booked": 45,
+      "description": "Göcek'te haftalık yat kiralama ile 7 gün boyunca lüks bir deniz tatili yapın. 12 kişiye kadar konaklama imkanı sunan yatlarımızda, tam mürettebat ve özel şef ile her anınız kusursuz olacak. Su sporları, Wi-Fi ve konforlu yaşam alanlarıyla denizin tadını çıkarın. Göcek'in en güzel koylarını keşfederken, Göcek yat kiralama ile lüks bir tatilin kapılarını aralayın.",
+      "features": ["Özel şef hizmeti", "Tam mürettebat", "Akşam yemeği", "Su sporları", "Wi-Fi"]
+    },
+    {
+      "id": 9,
+      "image": "/images/yat/yat9.jpg",
+      "location": "Datça",
+      "title": "Tekne Turu - Datça'da Doğayla İç İçe Bir Tatil",
+      "price": 799,
+      "booked": 289,
+      "description": "Datça'nın doğal koylarında mükemmel bir tekne turu yapın. Öğle yemeği, şnorkel ve duş imkanlarıyla doğayla iç içe bir deneyim sunuyoruz. Sadece Datça yat kiralama ile değil, aynı zamanda tekne turu deneyimiyle de doğanın kalbinde huzurlu bir gün geçirebilirsiniz. Datça'nın bakir koylarını keşfedin, mavi suların keyfini çıkarın.",
+      "features": ["Tekne turu", "Öğle yemeği", "Şnorkel", "Duş", "Güneşlenme alanı"]
+    },
+    {
+      "id": 10,
+      "image": "/images/yat/yat10.jpg",
+      "location": "Kalkan",
+      "title": "Özel Etkinlik Yatı - Kalkan'da Lüks Etkinlikler İçin Kiralama",
+      "price": 2999,
+      "booked": 67,
+      "discount": 25,
+      "description": "Kalkan'da özel etkinlikler için yat kiralama ile düğün, nişan, doğum günü gibi özel anlarınızı denizde kutlayın. Açık büfe, bar, müzik sistemi ve jakuzi gibi olanaklarla eşsiz bir etkinlik deneyimi yaşayın. Kalkan’ın büyüleyici denizinde özel anlarınızı daha da özel kılın. Kalkan yat kiralama ile unutulmaz etkinlikler düzenleyin.",
+      "features": ["Özel etkinlik organizasyonu", "Açık büfe", "Wi-Fi", "Müzik sistemi", "Jakuzi"]
+    }
+  ]
+}

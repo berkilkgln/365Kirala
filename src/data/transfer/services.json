@@ -1,0 +1,110 @@
+{
+  "title": "Transfer Hizmetleri",
+  "description": "Güvenli ve konforlu transfer hizmetlerimizle seyahatlerinizi keyifli hale getirin",
+  "items": [
+    {
+      "id": 1,
+      "image": "/images/transfer/transfer1.jpg",
+      "location": "İstanbul",
+      "title": "Havalimanı Transfer",
+      "price": 49,
+      "booked": 567,
+      "description": "İstanbul havalimanlarından şehir merkezine güvenli ve konforlu transfer hizmeti.",
+      "features": ["7/24 hizmet", "Profesyonel şoför", "Wi-Fi", "Su ikramı", "Bebek koltuğu"]
+    },
+    {
+      "id": 2,
+      "image": "/images/transfer/transfer2.jpg",
+      "location": "Antalya",
+      "title": "VIP Transfer",
+      "price": 69,
+      "booked": 432,
+      "discount": 10,
+      "description": "Antalya'da lüks araçlarla VIP transfer hizmeti. Özel şoför ve konforlu seyahat.",
+      "features": ["Lüks araç", "Özel şoför", "Soğuk içecek", "Wi-Fi", "Şarj ünitesi"]
+    },
+    {
+      "id": 3,
+      "image": "/images/transfer/transfer3.jpg",
+      "location": "İzmir",
+      "title": "Özel Transfer",
+      "price": 59,
+      "booked": 389,
+      "description": "İzmir'de özel transfer hizmeti. Otel, havalimanı ve şehirlerarası transfer imkanı.",
+      "features": ["Esnek saat", "Çoklu durak", "Bagaj yardımı", "Klima", "Konforlu koltuklar"]
+    },
+    {
+      "id": 4,
+      "image": "/images/transfer/transfer4.jpg",
+      "location": "Bodrum",
+      "title": "Lüks Van Transfer",
+      "price": 89,
+      "booked": 245,
+      "description": "Bodrum'da 7 kişiye kadar kapasiteli lüks van transfer hizmeti. Grup transferleri için ideal.",
+      "features": ["7 kişilik", "Bagaj bölmesi", "Wi-Fi", "Klima", "Su ikramı"]
+    },
+    {
+      "id": 5,
+      "image": "/images/transfer/transfer5.jpg",
+      "location": "Çeşme",
+      "title": "Şehirlerarası Transfer",
+      "price": 199,
+      "booked": 178,
+      "discount": 20,
+      "description": "İzmir-Çeşme arası konforlu transfer hizmeti. Havalimanı ve otel transferi dahil.",
+      "features": ["Şehirlerarası", "Havalimanı transferi", "Otel transferi", "Wi-Fi", "Su ikramı"]
+    },
+    {
+      "id": 6,
+      "image": "/images/transfer/transfer6.jpg",
+      "location": "Marmaris",
+      "title": "Günlük Transfer",
+      "price": 149,
+      "booked": 312,
+      "description": "Marmaris'te günlük transfer hizmeti. Turistik noktalar arası ulaşım imkanı.",
+      "features": ["Günlük hizmet", "Turistik noktalar", "Esnek saat", "Wi-Fi", "Klima"]
+    },
+    {
+      "id": 7,
+      "image": "/images/transfer/transfer7.jpg",
+      "location": "Fethiye",
+      "title": "Özel Etkinlik Transferi",
+      "price": 299,
+      "booked": 134,
+      "discount": 15,
+      "description": "Fethiye'de özel etkinlikler için transfer hizmeti. Düğün, nişan ve toplantı transferleri.",
+      "features": ["Özel etkinlik", "Lüks araç", "Şoför", "Wi-Fi", "Su ikramı"]
+    },
+    {
+      "id": 8,
+      "image": "/images/transfer/transfer8.jpg",
+      "location": "Kaş",
+      "title": "Havalimanı Özel Transfer",
+      "price": 159,
+      "booked": 167,
+      "description": "Kaş-Dalaman Havalimanı arası özel transfer hizmeti. Konforlu ve hızlı ulaşım.",
+      "features": ["Havalimanı transferi", "Özel araç", "Wi-Fi", "Su ikramı", "Bagaj yardımı"]
+    },
+    {
+      "id": 9,
+      "image": "/images/transfer/transfer9.jpg",
+      "location": "Kalkan",
+      "title": "Grup Transferi",
+      "price": 399,
+      "booked": 89,
+      "description": "Kalkan'da 15 kişiye kadar grup transfer hizmeti. Tur ve etkinlik transferleri için ideal.",
+      "features": ["15 kişilik", "Grup transferi", "Wi-Fi", "Klima", "Bagaj bölmesi"]
+    },
+    {
+      "id": 10,
+      "image": "/images/transfer/transfer10.jpg",
+      "location": "Göcek",
+      "title": "VIP Liman Transferi",
+      "price": 79,
+      "booked": 145,
+      "discount": 25,
+      "description": "Göcek Marina'ya özel VIP transfer hizmeti. Yat sahipleri için ideal ulaşım çözümü.",
+      "features": ["Marina transferi", "VIP araç", "Wi-Fi", "Su ikramı", "Bagaj yardımı"]
+    }
+  ]
+}

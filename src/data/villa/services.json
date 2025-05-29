@@ -1,0 +1,111 @@
+{
+  "title": "Villa Kiralama",
+  "description": "Özel havuzlu ve deniz manzaralı lüks villalarımızla unutulmaz bir tatil deneyimi yaşayın",
+  "items": [
+    {
+      "id": 1,
+      "image": "/images/villa/villa1.jpg",
+      "location": "Alanya",
+      "title": "Deniz Manzaralı Villa",
+      "price": 499,
+      "booked": 234,
+      "discount": 20,
+      "description": "Alanya'nın en güzel manzarasına sahip lüks villa. Özel havuz ve geniş teras ile konforlu bir tatil.",
+      "features": ["Özel havuz", "Deniz manzarası", "4 yatak odası", "Tam donanımlı mutfak", "Bahçe"]
+    },
+    {
+      "id": 2,
+      "image": "/images/villa/villa2.png",
+      "location": "Fethiye",
+      "title": "Özel Havuzlu Villa",
+      "price": 399,
+      "booked": 167,
+      "description": "Fethiye'nin sakin bir bölgesinde, doğayla iç içe lüks villa. Özel havuz ve jakuzi ile konforlu bir tatil.",
+      "features": ["Özel havuz", "Jakuzi", "1 yatak odası", "Barbekü alanı", "Otopark"]
+    },
+    {
+      "id": 3,
+      "image": "/images/villa/villa3.png",
+      "location": "Marmaris",
+      "title": "Lüks Villa Kompleksi",
+      "price": 599,
+      "booked": 145,
+      "discount": 15,
+      "description": "Marmaris'in en prestijli bölgesinde, lüks villa kompleksi. Özel plaj ve spa hizmetleri.",
+      "features": ["Özel plaj", "Spa merkezi", "3 yatak odası", "Fitness merkezi", "24 saat güvenlik"]
+    },
+    {
+      "id": 4,
+      "image": "/images/villa/villa4.png",
+      "location": "Bodrum",
+      "title": "Tarihi Bodrum Villası",
+      "price": 799,
+      "booked": 189,
+      "description": "Bodrum'un tarihi dokusunu yansıtan, modern konforla buluşan lüks villa. Marina manzarası.",
+      "features": ["Marina manzarası", "Özel havuz", "2 yatak odası", "Tarihi dokunuşlar", "Bahçe"]
+    },
+    {
+      "id": 5,
+      "image": "/images/villa/villa5.png",
+      "location": "Çeşme",
+      "title": "Modern Tasarım Villa",
+      "price": 699,
+      "booked": 156,
+      "discount": 25,
+      "description": "Çeşme'nin en modern villalarından biri. Minimal tasarım ve lüks detaylar.",
+      "features": ["Modern tasarım", "Akıllı ev sistemi", "3 yatak odası", "Fitness salonu", "Otopark"]
+    },
+    {
+      "id": 6,
+      "image": "/images/villa/villa6.jpg",
+      "location": "Kaş",
+      "title": "Doğa Manzaralı Villa",
+      "price": 449,
+      "booked": 278,
+      "description": "Kaş'ın eşsiz doğasında, deniz ve dağ manzaralı villa. Huzurlu bir tatil için ideal.",
+      "features": ["Doğa manzarası", "Özel havuz", "2 yatak odası", "Bahçe", "Barbekü"]
+    },
+    {
+      "id": 7,
+      "image": "/images/villa/villa7.jpg",
+      "location": "Kalkan",
+      "title": "Lüks Rezidans Villa",
+      "price": 899,
+      "booked": 134,
+      "discount": 20,
+      "description": "Kalkan'da lüks rezidans villası. Özel plaj ve spa hizmetleriyle tam bir tatil deneyimi.",
+      "features": ["Özel plaj", "Spa merkezi", "1 yatak odası", "Havuz", "24 saat güvenlik"]
+    },
+    {
+      "id": 8,
+      "image": "/images/villa/villa8.jpg",
+      "location": "Datça",
+      "title": "Ekolojik Villa",
+      "price": 549,
+      "booked": 167,
+      "description": "Datça'nın bakir doğasında, çevre dostu ekolojik villa. Sürdürülebilir yaşam deneyimi.",
+      "features": ["Güneş enerjisi", "Organik bahçe", "3 yatak odası", "Doğal havuz", "Yürüyüş parkuru"]
+    },
+    {
+      "id": 9,
+      "image": "/images/villa/villa9.jpg",
+      "location": "Göcek",
+      "title": "Marina Manzaralı Villa",
+      "price": 749,
+      "booked": 198,
+      "description": "Göcek Marina manzaralı lüks villa. Yat sahipleri için ideal konum.",
+      "features": ["Marina manzarası", "Özel iskele", "3 yatak odası", "Havuz", "Bahçe"]
+    },
+    {
+      "id": 10,
+      "image": "/images/villa/villa10.jpg",
+      "location": "Antalya",
+      "title": "Golf Rezidans Villa",
+      "price": 649,
+      "booked": 145,
+      "discount": 15,
+      "description": "Antalya'nın en prestijli golf sahasına komşu lüks villa. Spor ve lüksün buluşması.",
+      "features": ["Golf sahası", "Spor salonu", "5 yatak odası", "Havuz", "Tenis kortu"]
+    }
+  ]
+}

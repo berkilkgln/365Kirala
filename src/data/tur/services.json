@@ -1,0 +1,78 @@
+{
+  "title": "Günlük Turlar",
+  "description": "Profesyonel rehberler eşliğinde unutulmaz tur deneyimleri yaşayın",
+  "items": [
+    {
+      "id": 1,
+      "image": "/images/tur/kapadokya.jpg",
+      "location": "Kapadokya",
+      "title": "Balon Turu",
+      "price": 199,
+      "booked": 789,
+      "discount": 25,
+      "description": "Kapadokya'nın eşsiz manzarasını balon turu ile keşfedin. Gün doğumunda unutulmaz bir deneyim.",
+      "features": ["Gün doğumu turu", "Profesyonel pilot", "Rehber", "Kahvaltı", "Sertifika"]
+    },
+    {
+      "id": 2,
+      "image": "/images/tur/pamuktermal.png",
+      "location": "Pamukkale",
+      "title": "Termal Tur",
+      "price": 89,
+      "booked": 456,
+      "description": "Pamukkale'nin beyaz travertenlerinde termal su deneyimi. Antik Hierapolis kentini keşfedin.",
+      "features": ["Termal havuz", "Rehberlik", "Öğle yemeği", "Ulaşım", "Giriş ücreti"]
+    },
+    {
+      "id": 3,
+      "image": "/images/tur/efesantik.jpg",
+      "location": "Efes",
+      "title": "Antik Kent Turu",
+      "price": 79,
+      "booked": 678,
+      "discount": 15,
+      "description": "Efes antik kentini profesyonel rehberler eşliğinde keşfedin. Roma dönemine yolculuk yapın.",
+      "features": ["Profesyonel rehber", "Müze girişi", "Ulaşım", "Öğle yemeği", "Sigorta"]
+    },
+    {
+      "id": 4,
+      "image": "/images/tur/istanbulbogaz.jpg",
+      "location": "İstanbul",
+      "title": "Boğaz Turu",
+      "price": 59,
+      "booked": 1024,
+      "description": "İstanbul Boğazı'nda tekneyle unutulmaz bir şehir manzarası gezisi.",
+      "features": ["1 saatlik tur", "Rehberlik hizmeti", "Çay servisi", "Sigorta"]
+    },
+    {
+      "id": 5,
+      "image": "/images/tur/bursadoga.jpg",
+      "location": "Bursa",
+      "title": "Uludağ Doğa Yürüyüşü",
+      "price": 49,
+      "booked": 276,
+      "description": "Uludağ’da rehber eşliğinde doğa yürüyüşü ve fotoğraf molaları.",
+      "features": ["Rehber", "Araçla ulaşım", "Kahvaltı", "Sigorta"]
+    },
+    {
+      "id": 6,
+      "image": "/images/tur/izmirkordon.jpg",
+      "location": "İzmir",
+      "title": "Kordon Boyu Bisiklet Turu",
+      "price": 35,
+      "booked": 198,
+      "description": "İzmir Kordon'da sahil boyunca bisiklet turu ve dinlenme molaları.",
+      "features": ["Bisiklet kiralama", "Rehber", "Yelek ve kask", "Fotoğraf çekimi"]
+    },
+    {
+      "id": 7,
+      "image": "/images/tur/antalyadüden.jpg",
+      "location": "Antalya",
+      "title": "Düden Şelalesi Gezisi",
+      "price": 45,
+      "booked": 389,
+      "description": "Antalya’nın doğal güzelliklerinden Düden Şelalesi’ni keşfedin. Doğayla iç içe bir gün.",
+      "features": ["Şelale ziyareti", "Rehber", "Giriş bileti", "Ulaşım", "Öğle yemeği"]
+    }
+  ]
+}

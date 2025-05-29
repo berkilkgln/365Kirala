@@ -14,69 +14,64 @@ export default function BungalovPage() {
           image="/images/bungalov/bungalovbackground.jpg"
           title="Bungalov Kiralama"
           descriptionDesktop="Şehirden uzak, doğa ile iç içe bungalov kiralama fırsatları! Sapanca, Bolu, Abant ve daha birçok lokasyonda jakuzili, şömineli ve havuzlu bungalovlarla huzurlu tatilin keyfini çıkarın. Günlük ve haftalık uygun fiyat seçenekleriyle hemen rezervasyon yapın."
+          descriptionMobile="Sapanca, Bolu, Abant ve daha birçok lokasyonda doğa ile iç içe bungalovlar."
         />
 
-        <h1 className="text-3xl font-bold mb-6">Bungalov Kiralama</h1>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <h1 className="text-3xl font-bold mb-6 mt-5 text-center md:text-left">Bungalov Kiralama</h1>
+
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
           {bungalovData.items.map((item) => (
-            <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
-              {/* Görsel */}
-              <div className="relative h-56">
+            <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+              <div className="relative h-52 md:h-56">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
                   className="object-cover rounded-t-xl"
                 />
+
                 {item.discount && (
                   <div className="absolute top-2 right-2">
-                    <span className="bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded shadow">
+                    <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold px-2 py-1 rounded shadow">
                       %{item.discount} İndirim
                     </span>
                   </div>
                 )}
               </div>
 
-              {/* İçerik */}
-              <div className="p-4 space-y-3">
-                <div className="bg-white rounded-3xl shadow-xl p-6 transition-transform hover:scale-[1.02] duration-300 space-y-5 border border-gray-100">
-                  {/* Başlık */}
-                  <h3 className="text-xl font-semibold text-gray-900 tracking-tight">{item.title}</h3>
+              <div className="p-4 flex-1 flex flex-col justify-between">
+                <div className="space-y-3">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900">{item.title}</h3>
+                  <p className="text-sm text-gray-500">{item.location}</p>
 
-                  {/* Lokasyon */}
-                  <p className="text-sm text-gray-400">{item.location}</p>
-
-                  {/* Fiyat + Rezervasyon */}
                   <div className="flex justify-between items-center border-t pt-4">
-                  <div className="text-indigo-600 font-bold text-2xl">{item.price}€</div>
-                  <div className="flex items-center text-sm text-gray-500">
-                  <FaStar className="text-yellow-400 mr-1" />
-                  <span>{item.booked}+ rezervasyon</span>
-                   </div>
-                   </div>
+                    <div>
+                      <div className="text-indigo-600 font-bold text-lg md:text-2xl">{item.price}€</div>
+                      <p className="text-[10px] md:text-xs text-gray-500 mt-1 italic">’dan başlayan fiyatlarla</p>
+                    </div>
 
-                  {/* Özellikler */}
-                  <div className="mt-3">
-                    <ul className="grid grid-cols-1 gap-2 text-sm text-gray-600 list-none">
-                      {item.features.slice(0, 3).map((f, i) => (
-                        <li key={i} className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-indigo-500 rounded-full" />
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="flex flex-col items-center text-gray-600 text-xs md:text-sm">
+                      <FaStar className="text-yellow-400 text-lg md:text-xl" />
+                      <span className="mt-1">{item.booked}+ rezervasyon</span>
+                    </div>
                   </div>
 
-                  {/* Buton */}
-                  <button className="w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-3 rounded-xl transition">
-                    <Link
-                      href={`/bungalov/${item.id}`}
-                      className="block hover:bg-indigo-700 text-white text-sm font-semibold rounded-xl text-center transition"
-                    >
-                      İncele
-                    </Link>
-                  </button>
+                  <ul className="grid grid-cols-1 gap-2 text-sm text-gray-600 list-none mt-3">
+                    {item.features.slice(0, 3).map((f, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-indigo-500 rounded-full" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
+                <Link
+                  href={`/bungalov/${item.id}`}
+                  className="block w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition"
+                >
+                  İncele
+                </Link>
               </div>
             </div>
           ))}

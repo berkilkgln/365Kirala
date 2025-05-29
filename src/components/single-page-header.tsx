@@ -3,8 +3,8 @@ import Image from 'next/image';
 interface SinglePageHeaderProps {
   image: string;
   title: string;
-  descriptionDesktop?: string;
-  descriptionMobile?: string;
+  descriptionDesktop: string;
+  descriptionMobile: string;
   className?: string;
 }
 

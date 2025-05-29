@@ -21,7 +21,11 @@ export default function TransferPage() {
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
           {transferData.items.map((item) => (
-            <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            <Link
+              key={item.id}
+              href={`/transfer/${item.id}`}
+              className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
+            >
               <div className="relative h-52 md:h-56">
                 <Image
                   src={item.image}
@@ -66,14 +70,11 @@ export default function TransferPage() {
                   </ul>
                 </div>
 
-                <Link
-                  href={`/transfer/${item.id}`}
-                  className="block w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition"
-                >
+                <div className="mt-4 bg-indigo-600 group-hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition">
                   İncele
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

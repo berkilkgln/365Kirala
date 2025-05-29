@@ -20,17 +20,22 @@ export default function YachtPage() {
         />
 
         <h1 className="text-3xl font-bold mb-6 mt-5 text-center md:text-left">Yat Kiralama</h1>
+
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
           {yachtData.items.map((item) => (
-            <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            <Link
+              key={item.id}
+              href={`/yat/${item.id}`}
+              className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
+            >
               <div className="relative h-52 md:h-56">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
                   className="object-cover rounded-t-xl"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
-
                 {item.discount && (
                   <div className="absolute top-2 right-2">
                     <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold px-2 py-1 rounded shadow">
@@ -67,14 +72,11 @@ export default function YachtPage() {
                   </ul>
                 </div>
 
-                <Link
-                  href={`/yat/${item.id}`}
-                  className="block w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition"
-                >
+                <div className="mt-4 bg-indigo-600 group-hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition">
                   İncele
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

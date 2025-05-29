@@ -1,5 +1,3 @@
-// pages/tur/index.tsx
-
 import { SinglePageHeader } from '../../components/single-page-header';
 import toursData from '../../data/tur/services.json';
 import Image from 'next/image';
@@ -22,7 +20,11 @@ export default function ToursPage() {
         <h1 className="text-3xl font-bold mb-6 mt-5 text-center md:text-left">Günlük Turlar</h1>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
           {toursData.items.map((item) => (
-            <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            <Link
+              key={item.id}
+              href={`/tur/${item.id}`}
+              className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
+            >
               <div className="relative h-52 md:h-56">
                 <Image
                   src={item.image}
@@ -67,14 +69,11 @@ export default function ToursPage() {
                   </ul>
                 </div>
 
-                <Link
-                  href={`/tur/${item.id}`}
-                  className="block w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition"
-                >
+                <div className="mt-4 bg-indigo-600 group-hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition">
                   İncele
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

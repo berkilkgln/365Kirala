@@ -31,7 +31,7 @@ export const Navbar = () => {
           </button>
 
           <div className="relative w-70 h-35 mx-auto">
-            <Link href="/" aria-label="Anasayfa" className="block w-full h-full relative">
+            <Link href="/" aria-label="Anasayfa" className="block w-full h-full relative cursor-default">
               <Image
                 src={Logo}
                 alt="Rental Logo"
@@ -78,7 +78,7 @@ export const Navbar = () => {
             <Link
               key={item.href + item.label}
               href={item.href}
-              className="block text-white text-base py-2 border-b border-white/20"
+              className="block text-white text-base py-2 border-b border-white/20 cursor-default"
               onClick={() => setMenuOpen(false)}
             >
               {item.label}

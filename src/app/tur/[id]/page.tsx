@@ -41,7 +41,7 @@ export default function TourDetailPage() {
           <div className="absolute inset-0 bg-black/60 z-10" />
           <Image src={tour.image} alt={tour.title} fill className="object-cover z-0" priority />
           <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-xl animate-fade-in-up">
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 mt-8 drop-shadow-xl animate-fade-in-up">
               Günlük Tur Hizmeti
             </h1>
             <p className="text-2xl md:text-3xl drop-shadow-lg">{tour.location}</p>

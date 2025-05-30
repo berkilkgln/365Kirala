@@ -12,6 +12,7 @@ import { Navbar } from './home/navbar';
 import { HomePage } from './home/page';
 import tekneBg from '../app/images/teknem.jpg';
 import { useRouter } from 'next/navigation';
+import Footer from './home/footer';
 
 type ServiceItem = {
   id: number | string;
@@ -157,6 +158,7 @@ export const Index = () => {
       </section>
 
       <HomePage />
+      <Footer />
     </>
   );
 };

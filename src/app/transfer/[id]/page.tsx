@@ -30,10 +30,10 @@ export default function TransferDetailPage() {
 
   useEffect(() => {
     if (isNaN(id)) return;
-    const foundTransfer = transferData.items.find((item) => item.id === id);
+    const foundTransfer = transferData.items.find((item) => Number(item.id) === id);
     if (foundTransfer) {
       const slug = createUrlSlug(foundTransfer.title);
-      setTransfer({ ...foundTransfer, slug });
+      setTransfer({ ...foundTransfer, id: Number(foundTransfer.id), slug });
     } else {
       setTransfer(null);
     }

@@ -1,14 +1,15 @@
-// app/layout.tsx
 import './globals.css';
 import { Montserrat } from 'next/font/google';
 import Logo from '../../public/images/logo.png';
 import Script from 'next/script';
+import { Analytics } from './components/Analytics';
+import { Suspense } from 'react';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-montserrat',
-  display: 'swap', // Font optimizasyonu için
+  display: 'swap',
 });
 
 export const viewport = {
@@ -75,7 +76,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Google Search Console doğrulama kodu
+    google: 'your-google-verification-code',
   },
 };
 
@@ -83,9 +84,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr" className={montserrat.variable}>
       <head>
+        {/* Schema.org JSON-LD */}
         <Script
           id="schema-org"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
@@ -117,6 +120,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="font-sans overflow-y-auto bg-background text-foreground">
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
         {children}
       </body>
     </html>

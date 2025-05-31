@@ -30,10 +30,10 @@ export default function BungalovDetailPage() {
 
   useEffect(() => {
     if (isNaN(id)) return;
-    const foundBungalov = bungalovData.items.find((item) => item.id === id);
+    const foundBungalov = bungalovData.items.find((item) => Number(item.id) === id);
     if (foundBungalov) {
       const slug = createUrlSlug(foundBungalov.title);
-      setBungalov({ ...foundBungalov, slug });
+      setBungalov({ ...foundBungalov, id: Number(foundBungalov.id), slug });
     } else {
       setBungalov(null);
     }

@@ -7,6 +7,8 @@ import Link from 'next/link';
 import yachtData from '../../../data/yat/services.json'; // Yat JSON'u
 import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
+import Script from 'next/script';
+import { createUrlSlug } from '../../../lib/utils';
 
 type Yacht = {
   id: number;
@@ -14,27 +16,82 @@ type Yacht = {
   location: string;
   title: string;
   price: number;
+  booked: number;
   discount?: number;
   description: string;
   features: string[];
+  length?: string;
+  capacity?: string;
+  slug?: string;
 };
 
 export default function YachtDetailPage() {
-   const params = useParams();
-   const id = Number(params?.id);
+  const params = useParams();
+  const idWithSlug = params?.id as string;
+  const id = parseInt(idWithSlug?.split('-')[0], 10);
   const [yacht, setYacht] = useState<Yacht | null>(null);
 
   useEffect(() => {
-    if (!id) return;
-    const yachtId = Number(id);
-    const foundYacht = yachtData.items.find((item) => item.id === yachtId);
-    setYacht(foundYacht || null);
+    if (isNaN(id)) return;
+    const foundYacht = yachtData.items.find((item) => item.id === id);
+    if (foundYacht) {
+      const slug = createUrlSlug(foundYacht.title);
+      setYacht({ ...foundYacht, slug });
+    } else {
+      setYacht(null);
+    }
   }, [id]);
 
   if (!yacht) return <p className="p-6 text-center text-gray-600">Yat bulunamadı.</p>;
 
   return (
     <>
+      <Script
+        id="yacht-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: yacht.title,
+            description: yacht.description,
+            image: yacht.image,
+            offers: {
+              '@type': 'Offer',
+              price: yacht.price,
+              priceCurrency: 'TRY',
+              availability: 'https://schema.org/InStock',
+              priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              reviewCount: '150',
+            },
+            brand: {
+              '@type': 'Brand',
+              name: '365Kirala',
+            },
+            additionalProperty: [
+              {
+                '@type': 'PropertyValue',
+                name: 'Uzunluk',
+                value: yacht.length,
+              },
+              {
+                '@type': 'PropertyValue',
+                name: 'Kapasite',
+                value: yacht.capacity,
+              },
+              {
+                '@type': 'PropertyValue',
+                name: 'Lokasyon',
+                value: yacht.location,
+              },
+            ],
+          }),
+        }}
+      />
       <Navbar />
       <div className="bg-white min-h-screen">
         {/* Banner */}

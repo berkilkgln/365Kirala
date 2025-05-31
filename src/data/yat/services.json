@@ -10,7 +10,7 @@
       "price": 2499,
       "booked": 156,
       "discount": 15,
-      "description": "İstanbul Boğazı’nda unutulmaz bir lüks yat kiralama deneyimi yaşayın. Boğaz’ın büyüleyici manzarasında profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın. İster romantik bir kaçamak, ister arkadaşlarınızla unutulmaz bir gün geçirmek için mükemmel bir seçenek. Yatlarımızda Wi-Fi, klima, su sporları ekipmanları ve konforlu bir ortam sunulmaktadır. Boğaz’ın eşsiz güzellikleriyle dolu bu deneyimle, denizdeki en prestijli anları yaşayın.",
+      "description": "İstanbul Boğazı'nda unutulmaz bir lüks yat kiralama deneyimi yaşayın. Boğaz'ın büyüleyici manzarasında profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın. İster romantik bir kaçamak, ister arkadaşlarınızla unutulmaz bir gün geçirmek için mükemmel bir seçenek. Yatlarımızda Wi-Fi, klima, su sporları ekipmanları ve konforlu bir ortam sunulmaktadır. Boğaz'ın eşsiz güzellikleriyle dolu bu deneyimle, denizdeki en prestijli anları yaşayın.",
       "features": ["Profesyonel mürettebat", "Özel şef hizmeti", "Su sporları ekipmanları", "Wi-Fi", "Klima"]
     },
     {
@@ -20,7 +20,7 @@
       "title": "Günlük Yat Turu - Bodrum'un Efsane Koylarını Keşfedin",
       "price": 1499,
       "booked": 89,
-      "description": "Bodrum’un gizli koylarını keşfetmek için mükemmel bir fırsat! Günlük yat turlarımızla, bölgenin en güzel mavi bayraklı plajlarını, sakin koylarını ve berrak denizlerini keşfedin. Şnorkel ekipmanları, öğle yemeği ve duş imkanlarıyla rahatlayın, güneşlenme alanında keyifli bir gün geçirin. Bodrum’un eşsiz doğasında unutulmaz anılar biriktirirken, profesyonel ekibimiz size eşlik edecek. Bodrum yat kiralama hizmeti ile mavi sulara adım atın ve denizin tadını çıkarın.",
+      "description": "Bodrum'un gizli koylarını keşfetmek için mükemmel bir fırsat! Günlük yat turlarımızla, bölgenin en güzel mavi bayraklı plajlarını, sakin koylarını ve berrak denizlerini keşfedin. Şnorkel ekipmanları, öğle yemeği ve duş imkanlarıyla rahatlayın, güneşlenme alanında keyifli bir gün geçirin. Bodrum'un eşsiz doğasında unutulmaz anılar biriktirirken, profesyonel ekibimiz size eşlik edecek. Bodrum yat kiralama hizmeti ile mavi sulara adım atın ve denizin tadını çıkarın.",
       "features": ["Günlük tur", "Öğle yemeği dahil", "Şnorkel ekipmanları", "Duş imkanı", "Güneşlenme alanı"]
     },
     {
@@ -31,7 +31,7 @@
       "price": 1999,
       "booked": 112,
       "discount": 10,
-      "description": "Antalya’nın turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir. Açık büfe, bar hizmeti, müzik sistemi ve jakuzi gibi olanaklarla, yatlarımızda konforu ve eğlenceyi bir arada yaşayın. Antalya'nın en güzel sahillerinde, profesyonel mürettebatımız ve özel şefimizle sizi bekliyoruz. Antalya yat kiralama ile hem lüks hem de huzurlu bir tatil deneyimi yaşayın.",
+      "description": "Antalya'nın turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir. Açık büfe, bar hizmeti, müzik sistemi ve jakuzi gibi olanaklarla, yatlarımızda konforu ve eğlenceyi bir arada yaşayın. Antalya'nın en güzel sahillerinde, profesyonel mürettebatımız ve özel şefimizle sizi bekliyoruz. Antalya yat kiralama ile hem lüks hem de huzurlu bir tatil deneyimi yaşayın.",
       "features": ["Özel etkinlik organizasyonu", "Açık büfe", "Bar hizmeti", "Müzik sistemi", "Jakuzi"]
     },
     {
@@ -52,7 +52,7 @@
       "price": 1899,
       "booked": 178,
       "discount": 20,
-      "description": "Marmaris'te hızlı, konforlu ve lüks bir motor yat kiralama deneyimi sunuyoruz. Profesyonel kaptan ve mürettebatımız eşliğinde, Marmaris’in muazzam sahillerinde dolaşın. Yatımızda bulunan Wi-Fi, klima ve bar hizmeti ile rahatça keyifli bir seyahat deneyimi yaşayacaksınız. Marmaris'te bir lüks yat kiralama hizmeti ile denizdeki hız ve lüksü keşfedin.",
+      "description": "Marmaris'te hızlı, konforlu ve lüks bir motor yat kiralama deneyimi sunuyoruz. Profesyonel kaptan ve mürettebatımız eşliğinde, Marmaris'in muazzam sahillerinde dolaşın. Yatımızda bulunan Wi-Fi, klima ve bar hizmeti ile rahatça keyifli bir seyahat deneyimi yaşayacaksınız. Marmaris'te bir lüks yat kiralama hizmeti ile denizdeki hız ve lüksü keşfedin.",
       "features": ["Hızlı motor yat", "Profesyonel kaptan", "Wi-Fi", "Klima"]
     },
     {
@@ -104,8 +104,45 @@
       "price": 2999,
       "booked": 67,
       "discount": 25,
-      "description": "Kalkan'da özel etkinlikler için yat kiralama ile düğün, nişan, doğum günü gibi özel anlarınızı denizde kutlayın. Açık büfe, bar, müzik sistemi ve jakuzi gibi olanaklarla eşsiz bir etkinlik deneyimi yaşayın. Kalkan’ın büyüleyici denizinde özel anlarınızı daha da özel kılın. Kalkan yat kiralama ile unutulmaz etkinlikler düzenleyin.",
+      "description": "Kalkan'da özel etkinlikler için yat kiralama ile düğün, nişan, doğum günü gibi özel anlarınızı denizde kutlayın. Açık büfe, bar, müzik sistemi ve jakuzi gibi olanaklarla eşsiz bir etkinlik deneyimi yaşayın. Kalkan'ın büyüleyici denizinde özel anlarınızı daha da özel kılın. Kalkan yat kiralama ile unutulmaz etkinlikler düzenleyin.",
       "features": ["Özel etkinlik organizasyonu", "Açık büfe", "Wi-Fi", "Müzik sistemi", "Jakuzi"]
+    },
+    {
+      "id": 11,
+      "image": "/images/yachts/yacht1.jpg",
+      "location": "Bodrum",
+      "title": "Lüks Motoryat Kiralama",
+      "price": 5000,
+      "booked": 12,
+      "discount": 10,
+      "description": "Bodrum'un muhteşem koylarında unutulmaz bir deneyim için özel tasarlanmış lüks motoryat.",
+      "features": [
+        "Profesyonel Mürettebat",
+        "Tam Donanımlı Mutfak",
+        "Klima",
+        "WiFi",
+        "Su Sporları Ekipmanları"
+      ],
+      "length": "24 metre",
+      "capacity": "12 kişi"
+    },
+    {
+      "id": 12,
+      "image": "/images/yachts/yacht2.jpg",
+      "location": "Göcek",
+      "title": "Premium Yelkenli Yat",
+      "price": 3500,
+      "booked": 8,
+      "description": "Göcek koylarında rüzgarla dans eden premium yelkenli yat deneyimi.",
+      "features": [
+        "Deneyimli Kaptan",
+        "Güneşlenme Alanı",
+        "Duş",
+        "Snorkel Ekipmanı",
+        "Balık Tutma Ekipmanı"
+      ],
+      "length": "18 metre",
+      "capacity": "8 kişi"
     }
   ]
 }

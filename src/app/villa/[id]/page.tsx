@@ -7,6 +7,7 @@ import Link from 'next/link';
 import villaData from '../../../data/villa/services.json';  // Villa verisi burada
 import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
+import { createUrlSlug } from '../../../lib/utils';
 
 type Villa = {
   id: number;
@@ -14,20 +15,28 @@ type Villa = {
   location: string;
   title: string;
   price: number;
+  booked: number;
   discount?: number;
   description: string;
   features: string[];
+  slug?: string;
 };
 
 export default function VillaDetailPage() {
   const params = useParams();
-  const id = Number(params?.id);
+  const idWithSlug = params?.id as string;
+  const id = Number(idWithSlug.split('-')[0]);
   const [villa, setVilla] = useState<Villa | null>(null);
 
   useEffect(() => {
     if (!id) return;
     const foundVilla = villaData.items.find((item) => item.id === id);
-    setVilla(foundVilla || null);
+    if (foundVilla) {
+      const slug = createUrlSlug(foundVilla.title);
+      setVilla({ ...foundVilla, slug });
+    } else {
+      setVilla(null);
+    }
   }, [id]);
 
   if (!villa) return <p className="p-6 text-center text-gray-600">Villa bulunamadı.</p>;

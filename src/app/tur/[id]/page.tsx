@@ -7,27 +7,36 @@ import Link from 'next/link';
 import tourData from '../../../data/tur/services.json';  // Tur verisi
 import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
+import { createUrlSlug } from '../../../lib/utils';
 
-interface Tour {
+type Tour = {
   id: number;
   image: string;
   location: string;
   title: string;
   price: number;
+  booked: number;
   discount?: number;
   description: string;
   features: string[];
-}
+  slug?: string;
+};
 
 export default function TourDetailPage() {
   const params = useParams();
-  const id = Number(params?.id);
+  const idWithSlug = params?.id as string;
+  const id = parseInt(idWithSlug?.split('-')[0], 10);
   const [tour, setTour] = useState<Tour | null>(null);
 
   useEffect(() => {
-    if (!id) return;
+    if (isNaN(id)) return;
     const foundTour = tourData.items.find((item) => item.id === id);
-    setTour(foundTour || null);
+    if (foundTour) {
+      const slug = createUrlSlug(foundTour.title);
+      setTour({ ...foundTour, slug });
+    } else {
+      setTour(null);
+    }
   }, [id]);
 
   if (!tour) return <p className="p-6 text-center text-gray-600">Tur bulunamadı.</p>;

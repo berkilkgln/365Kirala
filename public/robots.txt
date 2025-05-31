@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+
+# Disallow admin and private paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*?*
+
+Sitemap: https://365kirala.com/sitemap.xml 

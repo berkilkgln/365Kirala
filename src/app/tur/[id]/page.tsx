@@ -25,11 +25,11 @@ type Tour = {
 export default function TourDetailPage() {
   const params = useParams();
   const idWithSlug = params?.id as string;
-  const id = parseInt(idWithSlug?.split('-')[0], 10);
+  const id = Number(idWithSlug.split('-')[0]);
   const [tour, setTour] = useState<Tour | null>(null);
 
   useEffect(() => {
-    if (isNaN(id)) return;
+    if (!id) return;
     const foundTour = tourData.items.find((item) => item.id === id);
     if (foundTour) {
       const slug = createUrlSlug(foundTour.title);

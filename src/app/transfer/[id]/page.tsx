@@ -25,11 +25,11 @@ type Transfer = {
 export default function TransferDetailPage() {
   const params = useParams();
   const idWithSlug = params?.id as string;
-  const id = parseInt(idWithSlug?.split('-')[0], 10);
+  const id = Number(idWithSlug.split('-')[0]);
   const [transfer, setTransfer] = useState<Transfer | null>(null);
 
   useEffect(() => {
-    if (isNaN(id)) return;
+    if (!id) return;
     const foundTransfer = transferData.items.find((item) => Number(item.id) === id);
     if (foundTransfer) {
       const slug = createUrlSlug(foundTransfer.title);

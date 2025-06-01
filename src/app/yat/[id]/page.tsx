@@ -28,11 +28,11 @@ type Yacht = {
 export default function YachtDetailPage() {
   const params = useParams();
   const idWithSlug = params?.id as string;
-  const id = parseInt(idWithSlug?.split('-')[0], 10);
+  const id = Number(idWithSlug.split('-')[0]);
   const [yacht, setYacht] = useState<Yacht | null>(null);
 
   useEffect(() => {
-    if (isNaN(id)) return;
+    if (!id) return;
     const foundYacht = yachtData.items.find((item) => item.id === id);
     if (foundYacht) {
       const slug = createUrlSlug(foundYacht.title);

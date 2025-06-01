@@ -6,40 +6,40 @@
       "id": 1,
       "image": "/images/tur/kapadokya.jpg",
       "location": "Kapadokya",
-      "title": "Balon Turu",
-      "price": 199,
-      "booked": 789,
-      "discount": 25,
-      "description": "Kapadokya'nın eşsiz manzarasını balon turu ile keşfedin. Gün doğumunda unutulmaz bir deneyim.",
-      "features": ["Gün doğumu turu", "Profesyonel pilot", "Rehber", "Kahvaltı", "Sertifika"]
+      "title": "Kapadokya Balon Turu",
+      "price": 4.999,
+      "booked": 156,
+      "discount": 15,
+      "description": "Güneşin doğuşunu balondan izleme ve vadileri kuşbakışı görme deneyimi.",
+      "features": ["Balon uçuşu", "Kahvaltı", "Transfer", "Sertifika", "Sigorta"]
     },
     {
       "id": 2,
       "image": "/images/tur/pamuktermal.png",
       "location": "Pamukkale",
-      "title": "Termal Tur",
-      "price": 89,
-      "booked": 456,
-      "description": "Pamukkale'nin beyaz travertenlerinde termal su deneyimi. Antik Hierapolis kentini keşfedin.",
-      "features": ["Termal havuz", "Rehberlik", "Öğle yemeği", "Ulaşım", "Giriş ücreti"]
+      "title": "Pamukkale & Hierapolis Turu",
+      "price": 999,
+      "booked": 89,
+      "description": "Travertenleri ve antik kenti keşfedin, termal havuzda yüzün.",
+      "features": ["Rehberli tur", "Öğle yemeği", "Müze giriş", "Transfer", "Sigorta"]
     },
     {
       "id": 3,
       "image": "/images/tur/efesantik.jpg",
       "location": "Efes",
-      "title": "Antik Kent Turu",
-      "price": 79,
-      "booked": 678,
-      "discount": 15,
-      "description": "Efes antik kentini profesyonel rehberler eşliğinde keşfedin. Roma dönemine yolculuk yapın.",
-      "features": ["Profesyonel rehber", "Müze girişi", "Ulaşım", "Öğle yemeği", "Sigorta"]
+      "title": "Efes Antik Kent Turu",
+      "price": 949,
+      "booked": 112,
+      "discount": 10,
+      "description": "Dünya'nın en iyi korunmuş antik kentlerinden birini keşfedin.",
+      "features": ["Profesyonel rehber", "Öğle yemeği", "Giriş ücretleri", "Transfer", "Su"]
     },
     {
       "id": 4,
       "image": "/images/tur/istanbulbogaz.jpg",
       "location": "İstanbul",
       "title": "Boğaz Turu",
-      "price": 59,
+      "price": 789,
       "booked": 1024,
       "description": "İstanbul Boğazı'nda tekneyle unutulmaz bir şehir manzarası gezisi.",
       "features": ["1 saatlik tur", "Rehberlik hizmeti", "Çay servisi", "Sigorta"]
@@ -49,9 +49,9 @@
       "image": "/images/tur/bursadoga.jpg",
       "location": "Bursa",
       "title": "Uludağ Doğa Yürüyüşü",
-      "price": 49,
+      "price": 1.299,
       "booked": 276,
-      "description": "Uludağ’da rehber eşliğinde doğa yürüyüşü ve fotoğraf molaları.",
+      "description": "Uludağ'da rehber eşliğinde doğa yürüyüşü ve fotoğraf molaları.",
       "features": ["Rehber", "Araçla ulaşım", "Kahvaltı", "Sigorta"]
     },
     {
@@ -59,7 +59,7 @@
       "image": "/images/tur/izmirkordon.jpg",
       "location": "İzmir",
       "title": "Kordon Boyu Bisiklet Turu",
-      "price": 35,
+      "price": 1.495,
       "booked": 198,
       "description": "İzmir Kordon'da sahil boyunca bisiklet turu ve dinlenme molaları.",
       "features": ["Bisiklet kiralama", "Rehber", "Yelek ve kask", "Fotoğraf çekimi"]
@@ -69,9 +69,9 @@
       "image": "/images/tur/antalyadüden.jpg",
       "location": "Antalya",
       "title": "Düden Şelalesi Gezisi",
-      "price": 45,
+      "price": 949,
       "booked": 389,
-      "description": "Antalya’nın doğal güzelliklerinden Düden Şelalesi’ni keşfedin. Doğayla iç içe bir gün.",
+      "description": "Antalya'nın doğal güzelliklerinden Düden Şelalesi'ni keşfedin. Doğayla iç içe bir gün.",
       "features": ["Şelale ziyareti", "Rehber", "Giriş bileti", "Ulaşım", "Öğle yemeği"]
     }
   ]

@@ -1,10 +1,19 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
 
-# Disallow admin and private paths
+# Sitemaps
+Sitemap: https://365kirala.com/sitemap.xml
+
+# Disallow specific paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /404
+Disallow: /500
 Disallow: /admin/
-Disallow: /private/
-Disallow: /*?*
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard/
 
-Sitemap: https://365kirala.com/sitemap.xml 
+# Crawl delay
+Crawl-delay: 1 

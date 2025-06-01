@@ -1,13 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import jetData from '../../../data/ozel-jet/services.json';
 import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
-import { createUrlSlug } from '../../../lib/utils';
 
 type Jet = {
   id: number;
@@ -23,25 +19,7 @@ type Jet = {
   slug?: string;
 };
 
-export default function JetDetailPage() {
-  const params = useParams();
-  const idWithSlug = params?.id as string;
-  const id = parseInt(idWithSlug?.split('-')[0], 10);
-  const [jet, setJet] = useState<Jet | null>(null);
-
-  useEffect(() => {
-    if (isNaN(id)) return;
-    const foundJet = jetData.items.find((item) => Number(item.id) === id);
-    if (foundJet) {
-      const slug = createUrlSlug(foundJet.title);
-      setJet({ ...foundJet, id: Number(foundJet.id), slug });
-    } else {
-      setJet(null);
-    }
-  }, [id]);
-
-  if (!jet) return <p className="p-6 text-center text-gray-600">Özel jet bulunamadı.</p>;
-
+export default function JetDetailClient({ jet }: { jet: Jet }) {
   return (
     <>
       <Navbar />
@@ -49,7 +27,17 @@ export default function JetDetailPage() {
         {/* Banner */}
         <div className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
           <div className="absolute inset-0 bg-black/60 z-10" />
-          <Image src={jet.image} alt={jet.title} fill className="object-cover z-0" priority />
+          <Image
+            src={jet.image}
+            alt={jet.title}
+            fill
+            className="object-cover z-0"
+            priority
+            sizes="100vw"
+            quality={85}
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQrJyEwPDY2ODYyTEhMR0BGRkhGMExITUdHUEdQWFNYWEZYR0dHYEZHR0f/2wBDAR"
+          />
           <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
             <h1 className="text-5xl md:text-6xl font-extrabold mb-4 mt-8 drop-shadow-xl animate-fade-in-up">
               Özel Jet Hizmeti
@@ -118,17 +106,16 @@ export default function JetDetailPage() {
                 {/* Eski Fiyat */}
                 {jet.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
-                    €{(jet.price * (1 + jet.discount / 100)).toFixed(2)}
+                    ₺{(jet.price * (1 + jet.discount / 100)).toFixed(2)}
                   </div>
                 )}
 
                 {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
-                    €{jet.price}
+                    {jet.price}₺
                   </span>
                   <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
-                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>             
                 </div>
               </div>
 
@@ -146,4 +133,4 @@ export default function JetDetailPage() {
       </div>
     </>
   );
-}
+} 

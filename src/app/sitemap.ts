@@ -1,9 +1,8 @@
 import { MetadataRoute } from 'next';
-import yachtData from '../data/yat/services.json';
-import villaData from '../data/villa/services.json';
 import jetData from '../data/ozel-jet/services.json';
+import villaData from '../data/villa/services.json';
+import yachtData from '../data/yat/services.json';
 import transferData from '../data/transfer/services.json';
-import turData from '../data/tur/services.json';
 import bungalovData from '../data/bungalov/services.json';
 import { createUrlSlug } from '../lib/utils';
 
@@ -12,90 +11,98 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Ana sayfalar
   const staticPages = [
-    '',
-    '/hakkimizda',
-    '/iletisim',
-    '/yat',
-    '/villa',
-    '/ozel-jet',
-    '/transfer',
-    '/tur',
-    '/bungalov',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString(),
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1 : 0.8,
-  }));
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/ozel-jet`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/villa`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/yat`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/transfer`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/bungalov`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/hakkimizda`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/iletisim`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+  ];
 
   // Dinamik sayfalar
-  const yachtPages = yachtData.items.map((yacht) => {
-    const slug = createUrlSlug(yacht.title);
-    return {
-      url: `${baseUrl}/yat/${yacht.id}-${slug}`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    };
-  });
+  const jetPages = jetData.items.map((jet) => ({
+    url: `${baseUrl}/ozel-jet/${jet.id}-${createUrlSlug(jet.title)}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
 
-  const villaPages = villaData.items.map((villa) => {
-    const slug = createUrlSlug(villa.title);
-    return {
-      url: `${baseUrl}/villa/${villa.id}-${slug}`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    };
-  });
+  const villaPages = villaData.items.map((villa) => ({
+    url: `${baseUrl}/villa/${villa.id}-${createUrlSlug(villa.title)}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
 
-  const jetPages = jetData.items.map((jet) => {
-    const slug = createUrlSlug(jet.title);
-    return {
-      url: `${baseUrl}/ozel-jet/${jet.id}-${slug}`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    };
-  });
+  const yachtPages = yachtData.items.map((yacht) => ({
+    url: `${baseUrl}/yat/${yacht.id}-${createUrlSlug(yacht.title)}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
 
-  const transferPages = transferData.items.map((transfer) => {
-    const slug = createUrlSlug(transfer.title);
-    return {
-      url: `${baseUrl}/transfer/${transfer.id}-${slug}`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    };
-  });
+  const transferPages = transferData.items.map((transfer) => ({
+    url: `${baseUrl}/transfer/${transfer.id}-${createUrlSlug(transfer.title)}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
 
-  const turPages = turData.items.map((tur) => {
-    const slug = createUrlSlug(tur.title);
-    return {
-      url: `${baseUrl}/tur/${tur.id}-${slug}`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    };
-  });
-
-  const bungalovPages = bungalovData.items.map((bungalov) => {
-    const slug = createUrlSlug(bungalov.title);
-    return {
-      url: `${baseUrl}/bungalov/${bungalov.id}-${slug}`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    };
-  });
+  const bungalovPages = bungalovData.items.map((bungalov) => ({
+    url: `${baseUrl}/bungalov/${bungalov.id}-${createUrlSlug(bungalov.title)}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
 
   return [
     ...staticPages,
-    ...yachtPages,
-    ...villaPages,
     ...jetPages,
+    ...villaPages,
+    ...yachtPages,
     ...transferPages,
-    ...turPages,
     ...bungalovPages,
   ];
 } 

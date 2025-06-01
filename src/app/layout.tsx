@@ -1,23 +1,27 @@
 import './globals.css';
-import { Montserrat } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import Logo from '../../public/images/logo.png';
 import Script from 'next/script';
 import { Analytics } from './components/Analytics';
 import { Suspense } from 'react';
+import type { Metadata } from 'next';
 
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-montserrat',
   display: 'swap',
+  fallback: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif']
 });
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
+  themeColor: '#ffffff',
+  colorScheme: 'light',
+  minimumScale: 1,
+  maximumScale: 5,
 };
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL('https://365kirala.com'),
   title: {
     default: '365Kirala - Lüks Kiralama Platformu',
@@ -39,6 +43,10 @@ export const metadata = {
   },
   alternates: {
     canonical: 'https://365kirala.com',
+    languages: {
+      'tr-TR': 'https://365kirala.com',
+      'en-US': 'https://365kirala.com/en',
+    },
   },
   openGraph: {
     title: '365Kirala - Lüks Kiralama Platformu',
@@ -53,6 +61,7 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: '365Kirala Logo',
+        type: 'image/png',
       },
     ],
   },
@@ -67,23 +76,40 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
+      noimageindex: false,
     },
   },
   verification: {
     google: 'your-google-verification-code',
+    yandex: 'yandex-verification-code',
+    yahoo: 'yahoo-verification-code',
   },
+  category: 'travel',
+  classification: 'Business',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr" className={montserrat.variable}>
+    <html lang="tr" className={inter.className}>
       <head>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="365Kirala" />
+        <meta name="apple-mobile-web-app-title" content="365Kirala" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
         {/* Schema.org JSON-LD */}
         <Script
           id="schema-org"
@@ -115,6 +141,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 'https://facebook.com/365kirala',
                 'https://twitter.com/365kirala',
               ],
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '4.8',
+                reviewCount: '1250'
+              },
+              priceRange: '₺₺₺',
             }),
           }}
         />

@@ -127,6 +127,7 @@ export default function TransferDetailPage() {
                     {transfer.price}₺
                   </span>
                   <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>
                 </div>
               </div>
 

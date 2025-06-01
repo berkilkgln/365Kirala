@@ -77,8 +77,17 @@ export default function YachtPage() {
 
                     <div className="flex justify-between items-center border-t pt-4">
                       <div>
-                        <div className="text-indigo-600 font-bold text-lg md:text-2xl">{item.price}€</div>
-                        <p className="text-[10px] md:text-xs text-gray-500 mt-1 italic">&apos;dan başlayan fiyatlarla</p>
+                        <div className="mt-4">
+                          {item.discount && (
+                            <div className="text-sm text-gray-400 line-through">
+                              €{(item.price * (1 + item.discount / 100)).toFixed(2)}
+                            </div>
+                          )}
+                          <div className="flex items-baseline gap-1">
+                            <span className="text-2xl font-bold text-indigo-600">€{item.price}</span>
+                            <span className="text-sm text-gray-500">/ günlük</span>
+                          </div>
+                        </div>
                       </div>
 
                       <div className="flex flex-col items-center text-gray-600 text-xs md:text-sm">

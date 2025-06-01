@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -29,20 +29,23 @@ const ContactPage = () => {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">İletişim</h1>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        {/* Kartlar container: Email ve Adres yatayda ortalanmış, geniş */}
+        <div className="flex justify-center gap-8 mb-12">
+          {/* 
           <div className="bg-white shadow-lg p-6 rounded-xl text-center border border-gray-100 hover:border-indigo-600 transition-colors duration-300">
             <FaPhone className="text-3xl text-indigo-600 mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Telefon</h3>
             <p className="text-gray-600">+90 (555) 555-5555</p>
           </div>
-          
-          <div className="bg-white shadow-lg p-6 rounded-xl text-center border border-gray-100 hover:border-indigo-600 transition-colors duration-300">
+          */}
+
+          <div className="bg-white shadow-lg p-6 rounded-xl text-center border border-gray-100 hover:border-indigo-600 transition-colors duration-300 max-w-sm w-full">
             <FaEnvelope className="text-3xl text-indigo-600 mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-gray-900">E-posta</h3>
             <p className="text-gray-600">info@365kirala.com</p>
           </div>
-          
-          <div className="bg-white shadow-lg p-6 rounded-xl text-center border border-gray-100 hover:border-indigo-600 transition-colors duration-300">
+
+          <div className="bg-white shadow-lg p-6 rounded-xl text-center border border-gray-100 hover:border-indigo-600 transition-colors duration-300 max-w-sm w-full">
             <FaMapMarkerAlt className="text-3xl text-indigo-600 mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Adres</h3>
             <p className="text-gray-600">Ankara, Türkiye</p>

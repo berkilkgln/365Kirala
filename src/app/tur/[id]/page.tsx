@@ -126,7 +126,8 @@ export default function TourDetailPage() {
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
                     {tour.price}₺
                   </span>
-                  <span className="text-sm text-gray-500 mb-1">’den başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>
                 </div>
               </div>
 

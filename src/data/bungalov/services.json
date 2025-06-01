@@ -7,41 +7,41 @@
       "image": "/images/bungalov/sapanca1.png",
       "location": "Sapanca",
       "title": "Göl Manzaralı Bungalov",
-      "price": 120,
-      "booked": 147,
-      "discount": 20,
-      "description": "Sapanca Gölü kıyısında jakuzili, şömineli, doğayla iç içe lüks bir kaçamak.",
-      "features": ["Jakuzili", "Şömineli", "Kahvaltı Dahil", "Özel Bahçe", "Göl Manzarası"]
+      "price": 3.499,
+      "booked": 156,
+      "discount": 15,
+      "description": "Sapanca Gölü manzaralı, doğayla iç içe bungalov. Şömineli ve jakuzili.",
+      "features": ["Göl manzarası", "Şömine", "Jakuzi", "Mangal alanı", "Kahvaltı servisi"]
     },
     {
       "id": 2,
       "image": "/images/bungalov/abant1.png",
       "location": "Abant",
-      "title": "Orman İçinde Ahşap Bungalov",
-      "price": 95,
+      "title": "Orman Evi Bungalov",
+      "price": 2.499,
       "booked": 89,
-      "description": "Abant’ın doğasında sessizliğin ve huzurun tadını çıkarın.",
-      "features": ["Odun Sobası", "Teras", "Barbekü Alanı", "Orman Manzarası"]
+      "description": "Abant'ın eşsiz doğasında, ormanın içinde huzurlu bir kaçamak.",
+      "features": ["Orman manzarası", "Bahçe", "Barbekü", "Mini mutfak", "Otopark"]
     },
     {
       "id": 3,
       "image": "/images/bungalov/fethiye1.png",
       "location": "Fethiye",
-      "title": "Deniz Manzaralı Lüks Bungalov",
-      "price": 150,
-      "booked": 65,
-      "discount": 15,
-      "description": "Fethiye’nin eşsiz manzarasında denize sıfır tatil fırsatı.",
-      "features": ["Havuzlu", "Klimalı", "Wi-Fi", "Deniz Manzarası", "Özel Otopark"]
+      "title": "Nehir Kenarı Bungalov",
+      "price": 3.999,
+      "booked": 112,
+      "discount": 10,
+      "description": "Ağva'nın sakin atmosferinde, nehir kenarında konforlu bungalov.",
+      "features": ["Nehir manzarası", "Teras", "Kahvaltı", "Klima", "Wi-Fi"]
     },
     {
       "id": 4,
       "image": "/images/bungalov/ayder1.jpg",
       "location": "Ayder Yaylası",
       "title": "Dağ Evi Konseptli Bungalov",
-      "price": 110,
+      "price": 1.999,
       "booked": 104,
-      "description": "Ayder’in serin yayla havasında doğayla baş başa bir tatil.",
+      "description": "Ayder'in serin yayla havasında doğayla baş başa bir tatil.",
       "features": ["Yayla Manzarası", "Isıtmalı", "Kahvaltı", "Yürüyüş Rotalarına Yakın"]
     }
   ]

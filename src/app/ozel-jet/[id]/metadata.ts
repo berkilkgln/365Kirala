@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import jetData from '../../../data/ozel-jet/services.json';
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-  const id = params.id; // string olarak bırakıyoruz
-  const jet = jetData.items.find((item) => item.id === id); // string karşılaştırma
+  const id = parseInt(params.id.split('-')[0], 10);
+  const jet = jetData.items.find((item) => item.id === id);
 
   if (!jet) {
     return {

@@ -102,17 +102,20 @@ export default function VillaDetailPage() {
                   </div>
                 )}
 
+                {/* Eski Fiyat */}
                 {villa.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
                     ₺{(villa.price * (1 + villa.discount / 100)).toFixed(2)}
                   </div>
                 )}
 
+                {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
-                    {villa.price}₺
+                    ₺{villa.price}
                   </span>
-                  <span className="text-sm text-gray-500 mb-1">’den başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>   
                 </div>
               </div>
 

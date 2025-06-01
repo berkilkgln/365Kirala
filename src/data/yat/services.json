@@ -6,32 +6,32 @@
       "id": 1,
       "image": "/images/yat/yat1.jpg",
       "location": "İstanbul",
-      "title": "Lüks Yat Kiralama - İstanbul Boğazı'nda Muhteşem Bir Deneyim",
-      "price": 2499,
+      "title": "Lüks Yat Kiralama - İstanbul Boğazı",
+      "price": 2.499,
       "booked": 156,
       "discount": 15,
-      "description": "İstanbul Boğazı'nda unutulmaz bir lüks yat kiralama deneyimi yaşayın. Boğaz'ın büyüleyici manzarasında profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın. İster romantik bir kaçamak, ister arkadaşlarınızla unutulmaz bir gün geçirmek için mükemmel bir seçenek. Yatlarımızda Wi-Fi, klima, su sporları ekipmanları ve konforlu bir ortam sunulmaktadır. Boğaz'ın eşsiz güzellikleriyle dolu bu deneyimle, denizdeki en prestijli anları yaşayın.",
+      "description": "İstanbul Boğazı'nda unutulmaz bir lüks yat kiralama deneyimi yaşayın. Boğaz'ın büyüleyici manzarasında profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın.",
       "features": ["Profesyonel mürettebat", "Özel şef hizmeti", "Su sporları ekipmanları", "Wi-Fi", "Klima"]
     },
     {
       "id": 2,
       "image": "/images/yat/yat2.jpg",
       "location": "Bodrum",
-      "title": "Günlük Yat Turu - Bodrum'un Efsane Koylarını Keşfedin",
-      "price": 1499,
+      "title": "Günlük Yat Turu - Bodrum",
+      "price": 2.799,
       "booked": 89,
-      "description": "Bodrum'un gizli koylarını keşfetmek için mükemmel bir fırsat! Günlük yat turlarımızla, bölgenin en güzel mavi bayraklı plajlarını, sakin koylarını ve berrak denizlerini keşfedin. Şnorkel ekipmanları, öğle yemeği ve duş imkanlarıyla rahatlayın, güneşlenme alanında keyifli bir gün geçirin. Bodrum'un eşsiz doğasında unutulmaz anılar biriktirirken, profesyonel ekibimiz size eşlik edecek. Bodrum yat kiralama hizmeti ile mavi sulara adım atın ve denizin tadını çıkarın.",
+      "description": "Bodrum'un gizli koylarını keşfetmek için mükemmel bir fırsat! Günlük yat turlarımızla, bölgenin en güzel mavi bayraklı plajlarını ve sakin koylarını keşfedin.",
       "features": ["Günlük tur", "Öğle yemeği dahil", "Şnorkel ekipmanları", "Duş imkanı", "Güneşlenme alanı"]
     },
     {
       "id": 3,
       "image": "/images/yat/yat3.jpg",
       "location": "Antalya",
-      "title": "Özel Yat Deneyimi - Antalya'da Lüks Yat Turu",
-      "price": 1999,
+      "title": "Özel Yat Deneyimi - Antalya",
+      "price": 3.199,
       "booked": 112,
       "discount": 10,
-      "description": "Antalya'nın turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir. Açık büfe, bar hizmeti, müzik sistemi ve jakuzi gibi olanaklarla, yatlarımızda konforu ve eğlenceyi bir arada yaşayın. Antalya'nın en güzel sahillerinde, profesyonel mürettebatımız ve özel şefimizle sizi bekliyoruz. Antalya yat kiralama ile hem lüks hem de huzurlu bir tatil deneyimi yaşayın.",
+      "description": "Antalya'nın turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir.",
       "features": ["Özel etkinlik organizasyonu", "Açık büfe", "Bar hizmeti", "Müzik sistemi", "Jakuzi"]
     },
     {
@@ -39,7 +39,7 @@
       "image": "/images/yat/yat4.jpg",
       "location": "Fethiye",
       "title": "Mavi Tur Yatı - Fethiye'nin Muhteşem Koylarında Yat Kiralama",
-      "price": 1299,
+      "price": 1.299,
       "booked": 245,
       "description": "Fethiye'nin mavi bayraklı koylarında eşsiz bir mavi tur deneyimi için yat kiralama hizmeti sunuyoruz. Su sporları, öğle yemeği ve duş imkanlarıyla dolu bu turda, güneşin ve denizin tadını çıkarın. Fethiye'nin doğal güzellikleri ile çevrili bu yat turu, mavi yolculuk yapmak isteyen herkes için ideal bir seçenek. Fethiye yat kiralama ile denizle iç içe bir tatil hayal edin.",
       "features": ["Mavi tur rotası", "Öğle yemeği", "Su sporları", "Duş imkanı", "Güneşlenme alanı"]
@@ -49,7 +49,7 @@
       "image": "/images/yat/yat5.jpg",
       "location": "Marmaris",
       "title": "Lüks Motor Yat - Marmaris'te Hız ve Konfor",
-      "price": 1899,
+      "price": 1.899,
       "booked": 178,
       "discount": 20,
       "description": "Marmaris'te hızlı, konforlu ve lüks bir motor yat kiralama deneyimi sunuyoruz. Profesyonel kaptan ve mürettebatımız eşliğinde, Marmaris'in muazzam sahillerinde dolaşın. Yatımızda bulunan Wi-Fi, klima ve bar hizmeti ile rahatça keyifli bir seyahat deneyimi yaşayacaksınız. Marmaris'te bir lüks yat kiralama hizmeti ile denizdeki hız ve lüksü keşfedin.",
@@ -70,7 +70,7 @@
       "image": "/images/yat/yat7.jpg",
       "location": "Kaş",
       "title": "Dalış Turu Yatı - Kaş'ta Efsanevi Dalış Deneyimi",
-      "price": 1699,
+      "price": 1.699,
       "booked": 134,
       "discount": 15,
       "description": "Kaş'ın berrak sularında profesyonel dalış turu ile unutulmaz bir deneyim yaşayın. Dalış ekipmanları ve profesyonel eğitmenler eşliğinde denizin altındaki zengin dünyayı keşfedin. Ayrıca, öğle yemeği ve duş imkanları da sağlanmaktadır. Kaş yat kiralama hizmetimizle, mavi suların derinliklerine inmeye hazır olun.",
@@ -81,7 +81,7 @@
       "image": "/images/yat/yat8.jpg",
       "location": "Göcek",
       "title": "Haftalık Yat Kiralama - Göcek'te 7 Günlük Mavi Yolculuk",
-      "price": 12999,
+      "price": 1.999,
       "booked": 45,
       "description": "Göcek'te haftalık yat kiralama ile 7 gün boyunca lüks bir deniz tatili yapın. 12 kişiye kadar konaklama imkanı sunan yatlarımızda, tam mürettebat ve özel şef ile her anınız kusursuz olacak. Su sporları, Wi-Fi ve konforlu yaşam alanlarıyla denizin tadını çıkarın. Göcek'in en güzel koylarını keşfederken, Göcek yat kiralama ile lüks bir tatilin kapılarını aralayın.",
       "features": ["Özel şef hizmeti", "Tam mürettebat", "Akşam yemeği", "Su sporları", "Wi-Fi"]
@@ -101,7 +101,7 @@
       "image": "/images/yat/yat10.jpg",
       "location": "Kalkan",
       "title": "Özel Etkinlik Yatı - Kalkan'da Lüks Etkinlikler İçin Kiralama",
-      "price": 2999,
+      "price": 2.999,
       "booked": 67,
       "discount": 25,
       "description": "Kalkan'da özel etkinlikler için yat kiralama ile düğün, nişan, doğum günü gibi özel anlarınızı denizde kutlayın. Açık büfe, bar, müzik sistemi ve jakuzi gibi olanaklarla eşsiz bir etkinlik deneyimi yaşayın. Kalkan'ın büyüleyici denizinde özel anlarınızı daha da özel kılın. Kalkan yat kiralama ile unutulmaz etkinlikler düzenleyin.",
@@ -109,10 +109,10 @@
     },
     {
       "id": 11,
-      "image": "/images/yachts/yacht1.jpg",
+      "image": "/images/yat/yat11.jpg",
       "location": "Bodrum",
       "title": "Lüks Motoryat Kiralama",
-      "price": 5000,
+      "price": 4.999,
       "booked": 12,
       "discount": 10,
       "description": "Bodrum'un muhteşem koylarında unutulmaz bir deneyim için özel tasarlanmış lüks motoryat.",
@@ -128,10 +128,10 @@
     },
     {
       "id": 12,
-      "image": "/images/yachts/yacht2.jpg",
+      "image": "/images/yat/yat12.jpg",
       "location": "Göcek",
       "title": "Premium Yelkenli Yat",
-      "price": 3500,
+      "price": 3.499,
       "booked": 8,
       "description": "Göcek koylarında rüzgarla dans eden premium yelkenli yat deneyimi.",
       "features": [
@@ -143,6 +143,59 @@
       ],
       "length": "18 metre",
       "capacity": "8 kişi"
+    },
+    {
+      "id": 13,
+      "image": "/images/yat/yat13.jpg",
+      "title": "Azimut 55 Fly",
+      "location": "Bodrum",
+      "price": 2.499,
+      "booked": 18,
+      "discount": 10,
+      "description": "17 metre uzunluğunda, 3 kabin, 6 kişilik lüks yat. Flybridge'de jakuzi ve güneşlenme alanı.",
+      "features": [
+        "3 Lüks Kabin",
+        "Flybridge Jakuzi",
+        "Tam Donanımlı Mutfak",
+        "Deniz Oyuncakları",
+        "Profesyonel Mürettebat",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": 14,
+      "image": "/images/yat/yat14.jpg",
+      "title": "Sunseeker 75 Yacht",
+      "location": "Göcek",
+      "price": 3.799,
+      "booked": 12,
+      "description": "23 metre uzunluğunda, 4 kabin, 8 kişilik süper yat. Master süit ve VIP kabinler.",
+      "features": [
+        "4 Lüks Kabin",
+        "Master Süit",
+        "Beach Club",
+        "Su Sporları Ekipmanları",
+        "Profesyonel Şef",
+        "Stabilizatör"
+      ]
+    },
+    {
+      "id": 15,
+      "image": "/images/yat/yat15.jpg",
+      "title": "Princess 88 Motor Yacht",
+      "location": "Fethiye",
+      "price": 4.499,
+      "booked": 15,
+      "discount": 15,
+      "description": "27 metre uzunluğunda, 5 kabin, 10 kişilik mega yat. Geniş salon ve güverte alanları.",
+      "features": [
+        "5 Lüks Kabin",
+        "Panoramik Salon",
+        "Hidrolik Platform",
+        "Jet Ski",
+        "Tam Mürettebat",
+        "Ses Sistemi"
+      ]
     }
   ]
 }

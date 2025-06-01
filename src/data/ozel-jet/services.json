@@ -3,73 +3,77 @@
   "description": "Özel jet kiralama hizmetimizle dünyanın dört bir yanına hızlı, konforlu ve prestijli bir yolculuk yapın. Kapsamlı güzergah seçenekleri ve üst düzey hizmetlerimizle, ayrıcalıklı bir uçuş deneyimi sunuyoruz.",
   "items": [
     {
-      "id": "1",
+      "id": 1,
       "image": "/images/ozel-jet/jet1.jpg",
+      "title": "Cessna Citation CJ4",
+      "departure": "İstanbul",
+      "destination": "Antalya",
+      "price": 8.499,
+      "booked": 12,
+      "discount": 10,
+      "description": "8 yolcu kapasiteli, lüks donanımlı özel jet. Yüksek konfor ve güvenlik standartları ile VIP uçuş deneyimi.",
+      "features": [
+        "8 Yolcu Kapasitesi",
+        "Tam Boy Yatak",
+        "Özel Kabin Ekibi",
+        "Gourmet İkram Servisi",
+        "Wi-Fi & Eğlence Sistemi",
+        "Özel Terminal Kullanımı"
+      ]
+    },
+    {
+      "id": 2,
+      "image": "/images/ozel-jet/jet2.jpg",
+      "title": "Gulfstream G550",
+      "departure": "İstanbul",
+      "destination": "Londra",
+      "price": 14.999,  
+      "booked": 8,
+      "description": "14 yolcu kapasiteli, ultra uzun menzilli lüks jet. En üst düzey konfor ve teknoloji.",
+      "features": [
+        "14 Yolcu Kapasitesi",
+        "Master Yatak Odası",
+        "Duş",
+        "Tam Donanımlı Mutfak",
+        "Uydu İletişim Sistemi",
+        "Özel VIP Hizmetler"
+      ]
+    },
+    {
+      "id": 3,
+      "image": "/images/ozel-jet/jet3.jpg",
+      "title": "Embraer Phenom 300",
       "departure": "İstanbul",
       "destination": "Paris",
-      "title": "İstanbul - Paris Özel Jet Kiralama",
-      "price": 7500,
-      "booked": 24,
-      "discount": 10,
-      "description": "İstanbul'dan Paris'e lüks bir yolculuk deneyimi sunan özel jet hizmetimiz, VIP konforu ve hızla zamandan tasarruf etmenizi sağlar. Geniş iç hacim, özel ikramlar ve kişisel hizmet ayrıcalığıyla Avrupa’ya stil sahibi bir uçuş deneyimi yaşayın.",
+      "price": 9.499,
+      "booked": 15,
+      "discount": 15,
+      "description": "9 yolcu kapasiteli, modern ve ekonomik jet. Yüksek performans ve konfor dengesi.",
       "features": [
-        "12 yolcu kapasitesi",
-        "VIP iç tasarım",
-        "Uçuş esnası ikram",
-        "Yüksek hızlı Wi-Fi",
-        "Kişisel kabin görevlisi"
+        "9 Yolcu Kapasitesi",
+        "Geniş Bagaj Kapasitesi",
+        "LED Aydınlatma",
+        "Özel İkram Servisi",
+        "Kablosuz İnternet",
+        "Özel Karşılama"
       ]
     },
     {
-      "id": "2",
-      "image": "/images/ozel-jet/jet2.jpg",
-      "departure": "Ankara",
-      "destination": "Dubai",
-      "title": "Ankara - Dubai Lüks Jet Yolculuğu",
-      "price": 9800,
-      "booked": 12,
-      "description": "Ankara’dan Dubai’ye yapacağınız bu lüks jet yolculuğu, özel kabin tasarımı ve şampanya servisi ile üst düzey konfor sağlar. VIP check-in ve bagaj hizmetleriyle zaman kazanırken, yolculuğun her anının tadını çıkarın.",
-      "features": [
-        "Wi-Fi erişimi",
-        "Özel kabin",
-        "VIP check-in",
-        "Geniş bacak mesafesi",
-        "8 kişilik jet"
-      ]
-    },
-    {
-      "id": "3",
-      "image": "/images/ozel-jet/jet3.jpg",
-      "departure": "İzmir",
-      "destination": "Londra",
-      "title": "İzmir - Londra Özel Jet Uçuşu",
-      "price": 8900,
-      "booked": 18,
-      "discount": 5,
-      "description": "İzmir’den Londra’ya özel jetle rahat ve hızlı bir ulaşım deneyimi yaşayın. 8 kişilik kapasitesi, kişisel hizmetler ve sessiz kabin ortamıyla yolculuğunuz hem lüks hem de huzurlu geçecek.",
-      "features": [
-        "10 kişilik jet",
-        "Özel catering menü",
-        "İleri düzey kabin yalıtımı",
-        "Uçuş sırasında toplantı olanakları",
-        "Gümrüksüz geçiş hizmeti"
-      ]
-    },
-    {
-      "id": "4",
+      "id": 4,
       "image": "/images/ozel-jet/jet4.jpg",
       "departure": "Antalya",
       "destination": "Mikonos",
-      "title": "Antalya - Mikonos VIP Jet Deneyimi",
-      "price": 6700,
+      "title": "Antalya - Mikonos VIP Jet",
+      "price": 7.499,
       "booked": 21,
-      "description": "Antalya’dan Mikonos’a özel jet ile sadece birkaç saatlik uçuşta tatil cennetine ulaşın. Şık iç dizayn, özel karşılama ve hızlı kalkış imkanları ile yaz tatiline elit bir başlangıç yapın.",
+      "description": "6 yolcu kapasiteli, lüks donanımlı özel jet. Kısa mesafe uçuşlar için ideal.",
       "features": [
-        "Lüks deri koltuklar",
-        "Öncelikli kalkış izni",
-        "Yolculuk öncesi lounge kullanımı",
-        "Güne özel menüler",
-        "Canlı takip sistemi"
+        "6 Yolcu Kapasitesi",
+        "Lüks Deri Koltuklar",
+        "Öncelikli Kalkış İzni",
+        "VIP Lounge Kullanımı",
+        "Özel İkram Menüsü",
+        "Canlı Uçuş Takibi"
       ]
     }
   ]

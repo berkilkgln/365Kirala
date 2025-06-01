@@ -7,6 +7,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { createUrlSlug } from '../../lib/utils';
 import { FaArrowRight, FaStar } from 'react-icons/fa';
+import Script from 'next/script';
+import Head from 'next/head';
 
 export default function BungalovPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,8 +18,100 @@ export default function BungalovPage() {
     item.location.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Bungalov konaklama fiyatları neye göre değişir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bungalov konaklama fiyatları; bungalovun konumu, büyüklüğü, özellikleri, sezonu ve konaklama süresine göre değişiklik gösterir. Doğa manzarası, özel teras, jakuzi gibi ekstra özellikler de fiyatı etkileyebilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bungalov konaklaması için ne gerekiyor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bungalov konaklaması için kimlik belgesi ve rezervasyon ödemesi yeterlidir. Bazı tesislerde depozito talep edilebilir. Minimum konaklama süresi genellikle 1 gündür."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bungalovlarda hangi hizmetler sunuluyor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bungalovlarımızda temizlik hizmeti, 24 saat resepsiyon, ücretsiz otopark standart olarak sunulur. Kahvaltı, restoran, havuz, aktivite organizasyonu gibi ek hizmetler tesis özelinde değişiklik gösterebilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bungalov rezervasyonu nasıl iptal edilir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bungalov rezervasyonları giriş tarihinden 3 gün öncesine kadar ücretsiz iptal edilebilir. Daha kısa sürede yapılan iptallerde, sezona göre değişen iptal koşulları uygulanır."
+        }
+      }
+    ]
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "365Kirala Bungalov",
+    "url": "https://365kirala.com/bungalov",
+    "logo": "https://365kirala.com/images/logo.png",
+    "description": "Türkiye'nin en güzel doğa lokasyonlarında bungalov konaklama hizmetleri.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "TR"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+90-123-456-7890",
+        "contactType": "customer service",
+        "email": "info@365kirala.com",
+        "areaServed": "TR",
+        "availableLanguage": ["Turkish", "English"]
+      }
+    ]
+  };
+
   return (
     <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <Head>
+        <title>Bungalov Konaklama | Doğa İçinde Tatil | 365Kirala</title>
+        <meta
+          name="description"
+          content="Türkiye'nin en güzel doğa lokasyonlarında bungalov konaklama hizmetleri. Huzurlu ve konforlu bir tatil için bungalov kiralayın."
+        />
+        <meta
+          name="keywords"
+          content="bungalov, bungalov konaklama, doğa tatili, dağ evi, orman evi, tiny house, doğada konaklama, bungalov kiralama"
+        />
+        <meta property="og:title" content="Bungalov Konaklama | Doğa İçinde Tatil | 365Kirala" />
+        <meta
+          property="og:description"
+          content="Türkiye'nin en güzel doğa lokasyonlarında bungalov konaklama hizmetleri. Huzurlu ve konforlu bir tatil için bungalov kiralayın."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://365kirala.com/bungalov" />
+        <meta property="og:image" content="https://365kirala.com/images/bungalov/bungalovbackground.jpg" />
+        <link rel="canonical" href="https://365kirala.com/bungalov" />
+      </Head>
       <Navbar />
       <div className="bg-white min-h-screen">
         {/* Banner */}

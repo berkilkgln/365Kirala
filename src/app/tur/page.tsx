@@ -7,6 +7,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { createUrlSlug } from '../../lib/utils';
 import { FaArrowRight, FaStar } from 'react-icons/fa';
+import Script from 'next/script';
+import Head from 'next/head';
 
 export default function TourPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,9 +18,99 @@ export default function TourPage() {
     item.location.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Günlük turlar neleri kapsar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Günlük turlarımız; profesyonel rehber eşliğinde tarihi ve turistik yerlerin gezilmesi, öğle yemeği, ulaşım ve giriş ücretlerini kapsar. Bazı turlarda ekstra aktiviteler de dahil olabilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gezi tur rezervasyonları nasıl yapılır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tur rezervasyonları websitemiz üzerinden online olarak yapılabilir. İstediğiniz turu seçip, tarih ve kişi sayısını belirleyerek hemen rezervasyon yapabilirsiniz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gezi turlarında grup büyüklüğü ne kadardır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Turlarımızda grup büyüklüğü, tur tipine göre değişmektedir. Özel turlar minimum 2 kişi ile yapılırken, düzenli turlarımızda maksimum 15-20 kişilik gruplar oluşturulmaktadır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gezi turları iptali durumunda ne olur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "48 saat öncesine kadar yapılan tur iptalleri ücretsizdir. Daha kısa sürede yapılan iptallerde veya hava koşulları nedeniyle iptal edilen turlarda, başka bir tarihe ücretsiz değişim yapılabilir."
+        }
+      }
+    ]
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "365Kirala Tur Hizmetleri",
+    "url": "https://365kirala.com/tur",
+    "logo": "https://365kirala.com/images/logo.png",
+    "description": "Türkiye'nin en güzel şehirlerinde günlük turlar ve özel tur hizmetleri.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "TR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "",
+      "contactType": "customer service",
+      "email": "info@365kirala.com"
+    }
+  };
+
   return (
     <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <Head>
+        <title>Günlük Turlar | Şehir Turları ve Özel Turlar | 365Kirala</title>
+        <meta
+          name="description"
+          content="Türkiye'nin en güzel şehirlerinde profesyonel rehber eşliğinde günlük turlar ve özel tur seçenekleri. Unutulmaz bir gezi deneyimi için 365Kirala."
+        />
+        <meta
+          name="keywords"
+          content="günlük tur, şehir turu, özel tur, kültür turu, gezi turu, rehberli tur, turistik tur, grup turu, yurtiçi tur"
+        />
+        <meta property="og:title" content="Günlük Turlar | Şehir Turları ve Özel Turlar | 365Kirala" />
+        <meta
+          property="og:description"
+          content="Türkiye'nin en güzel şehirlerinde profesyonel rehber eşliğinde günlük turlar ve özel tur seçenekleri. Unutulmaz bir gezi deneyimi için 365Kirala."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://365kirala.com/tur" />
+        <meta property="og:image" content="https://365kirala.com/images/tur/turbackground.jpg" />
+        <link rel="canonical" href="https://365kirala.com/tur" />
+      </Head>
+
       <Navbar />
+
       <div className="bg-white min-h-screen">
         {/* Banner */}
         <div className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">

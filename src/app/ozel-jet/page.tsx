@@ -1,3 +1,5 @@
+'use client';
+
 import { SinglePageHeader } from '../../components/single-page-header';
 import jetData from '../../data/ozel-jet/services.json';
 import Image from 'next/image';
@@ -5,10 +7,104 @@ import Link from 'next/link';
 import { Navbar } from '../../features/home/navbar';
 import { FaStar } from 'react-icons/fa';
 import { createUrlSlug } from '../../lib/utils';
+import Script from 'next/script';
+import Head from 'next/head';
 
 export default function PrivateJetPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Özel jet kiralama fiyatları neye göre belirlenir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Özel jet kiralama fiyatları; uçuş mesafesi, jet modeli, yolcu kapasitesi ve sezona göre değişiklik gösterir. Ayrıca VIP hizmetler, catering ve özel transfer gibi ek hizmetler de fiyatı etkileyebilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Özel jet kiralamak için ne gerekiyor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Özel jet kiralamak için geçerli pasaport ve rezervasyon ödemesi yeterlidir. Uluslararası uçuşlar için vize gerekebilir. Tüm yolcuların pasaport bilgileri uçuştan önce paylaşılmalıdır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Özel jet ile hangi destinasyonlara uçulabilir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Özel jetlerimizle Türkiye içi tüm havalimanlarına ve Avrupa'nın başlıca şehirlerine uçuş gerçekleştirebilirsiniz. Talep üzerine özel destinasyonlar için de hizmet sağlanabilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Özel jet rezervasyonu nasıl iptal edilir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Özel jet rezervasyonları uçuş tarihinden 48 saat öncesine kadar ücretsiz iptal edilebilir. Daha kısa sürede yapılan iptallerde, sezona göre değişen iptal koşulları uygulanır."
+        }
+      }
+    ]
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "365Kirala Özel Jet",
+    "url": "https://365kirala.com/ozel-jet",
+    "logo": "https://365kirala.com/images/logo.png",
+    "description": "Türkiye ve Avrupa'da lüks özel jet kiralama hizmetleri.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "TR"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+90-123-456-7890",
+        "contactType": "customer service",
+        "email": "info@365kirala.com",
+        "areaServed": ["TR", "EU"],
+        "availableLanguage": ["Turkish", "English"]
+      }
+    ]
+  };
+
   return (
     <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <Head>
+        <title>Özel Jet Kiralama | VIP Uçuş ve Lüks Seyahat | 365Kirala</title>
+        <meta
+          name="description"
+          content="Türkiye ve Avrupa'da özel jet kiralama hizmetleri. VIP uçuş deneyimi, lüks seyahat ve konforlu yolculuk için özel jet kiralayın."
+        />
+        <meta
+          name="keywords"
+          content="özel jet kiralama, vip uçuş, lüks seyahat, özel uçak, jet charter, business jet, özel havacılık, executive jet"
+        />
+        <meta property="og:title" content="Özel Jet Kiralama | VIP Uçuş ve Lüks Seyahat | 365Kirala" />
+        <meta
+          property="og:description"
+          content="Türkiye ve Avrupa'da özel jet kiralama hizmetleri. VIP uçuş deneyimi, lüks seyahat ve konforlu yolculuk için özel jet kiralayın."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://365kirala.com/ozel-jet" />
+        <meta property="og:image" content="https://365kirala.com/images/ozel-jet/jetbackground.jpg" />
+        <link rel="canonical" href="https://365kirala.com/ozel-jet" />
+      </Head>
       <Navbar />
       <div className="container mx-auto px-4 py-8 font-semibold">
         <SinglePageHeader
@@ -82,7 +178,7 @@ export default function PrivateJetPage() {
                     </ul>
                   </div>
 
-                  <div className="mt-4 bg-indigo-600 group-hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition">
+                  <div className="text-center text-indigo-700 border border-indigo-700 rounded-lg py-2 mt-5 group-hover:bg-indigo-700 group-hover:text-white transition-colors">
                     İncele
                   </div>
                 </div>

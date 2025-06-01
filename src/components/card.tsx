@@ -31,7 +31,7 @@ export const ListCard = ({ item }: ListCardProps) => {
       className="group flex flex-col h-full min-h-[28rem] rounded-3xl border border-gray-300 
                  bg-white overflow-hidden 
                  shadow-md hover:shadow-xl transition-shadow duration-300
-                 cursor-pointer"
+                 cursor-default"
     >
       {/* Görsel Alanı */}
       <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-3xl">

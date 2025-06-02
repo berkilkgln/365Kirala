@@ -23,12 +23,15 @@ const Footer = () => {
           </div>
 
           {/* Menü */}
-          <nav className="flex justify-center items-center gap-6">
+          <nav className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
             <Link href="/" className="hover:text-white transition-colors duration-300 text-sm md:text-base cursor-pointer">
               Ana Sayfa
             </Link>
             <Link href="/hakkimizda" className="hover:text-white transition-colors duration-300 text-sm md:text-base cursor-pointer">
               Hakkımızda
+            </Link>
+            <Link href="/blog" className="hover:text-white transition-colors duration-300 text-sm md:text-base cursor-pointer">
+              Blog
             </Link>
             <Link href="/iletisim" className="hover:text-white transition-colors duration-300 text-sm md:text-base cursor-pointer">
               İletişim

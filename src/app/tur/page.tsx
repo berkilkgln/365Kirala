@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { Navbar } from '../../features/home/navbar';
 import tourData from '../../data/tur/services.json';
 import Image from 'next/image';
@@ -11,13 +10,6 @@ import Script from 'next/script';
 import Head from 'next/head';
 
 export default function TourPage() {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const filteredItems = tourData.items.filter((item) =>
-    item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.location.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -134,20 +126,9 @@ export default function TourPage() {
 
         {/* İçerik */}
         <div className="max-w-screen-xl mx-auto px-4 py-12">
-          {/* Arama */}
-          <div className="mb-8">
-            <input
-              type="text"
-              placeholder="Tur veya lokasyon ara..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full max-w-2xl mx-auto block px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
-          </div>
-
           {/* Tur Listesi */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredItems.map((item) => {
+            {tourData.items.map((item) => {
               const slug = createUrlSlug(item.title);
               return (
                 <Link
@@ -188,10 +169,15 @@ export default function TourPage() {
                       <div>
                         <span className="text-xs text-gray-500">Başlangıç</span>
                         <div className="flex items-baseline gap-1">
-                          <p className="font-extrabold text-2xl text-blue-600">
-                            ₺{item.price}
-                          </p>
-                          <span className="text-sm text-gray-500">/ günlük</span>
+                          {item.discount && (
+                            <div className="text-sm text-gray-400 line-through">
+                              {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
+                            </div>
+                          )}
+                          <div className="flex items-baseline gap-1">
+                            <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}₺</span>
+                            <span className="text-sm text-gray-500">/ kişi başı</span>
+                          </div>
                         </div>
                       </div>
                       <div className="bg-blue-600 text-white p-3 rounded-full group-hover:bg-blue-700 transition-colors duration-300">
@@ -205,7 +191,7 @@ export default function TourPage() {
           </div>
 
           {/* Sonuç Bulunamadı */}
-          {filteredItems.length === 0 && (
+          {tourData.items.length === 0 && (
             <div className="text-center py-12">
               <p className="text-gray-500 text-lg">Aradığınız kriterlere uygun tur bulunamadı.</p>
             </div>

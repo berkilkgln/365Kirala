@@ -150,16 +150,16 @@ export default function YachtDetailPage() {
                 {/* Eski Fiyat */}
                 {yacht.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
-                    €{(yacht.price * (1 + yacht.discount / 100)).toFixed(2)}
+                    {(yacht.price * (1 + yacht.discount / 100)).toLocaleString('en-US').replace(',', '.')}€
                   </div>
                 )}
 
                 {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
-                    €{yacht.price}
+                    {yacht.price.toLocaleString('en-US').replace(',', '.')}€
                   </span>
-                  <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">&apos;dan başlayan fiyatlarla</span>
                   <span className="text-sm text-gray-500 mb-1">/ günlük</span>
                 </div>
               </div>

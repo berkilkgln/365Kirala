@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useMemo } from 'react';
 import { Navbar } from '../../features/home/navbar';
 import transferData from '../../data/transfer/services.json';
 import Image from 'next/image';
@@ -11,16 +10,6 @@ import Script from 'next/script';
 import Head from 'next/head';
 
 export default function TransferPage() {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  // useMemo ile filtreleme optimizasyonu (gereksiz yeniden hesaplamayı engeller)
-  const filteredItems = useMemo(() => {
-    return transferData.items.filter((item) =>
-      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.location.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }, [searchTerm]);
-
   // SEO için detaylandırılmış FAQ ve Organization schema
   const faqSchema = {
     "@context": "https://schema.org",
@@ -142,26 +131,10 @@ export default function TransferPage() {
         </section>
 
         {/* İçerik */}
-        <section aria-label="Transfer hizmeti arama ve listeleme" className="max-w-screen-xl mx-auto px-4 py-12">
-          {/* Arama */}
-          <div className="mb-8">
-            <label htmlFor="search-transfer" className="sr-only">
-              Transfer hizmeti veya lokasyon ara
-            </label>
-            <input
-              id="search-transfer"
-              type="search"
-              placeholder="Transfer hizmeti veya lokasyon ara..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full max-w-2xl mx-auto block px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              aria-label="Transfer hizmeti veya lokasyon ara"
-            />
-          </div>
-
+        <section aria-label="Transfer hizmeti listeleme" className="max-w-screen-xl mx-auto px-4 py-12">
           {/* Transfer Listesi */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredItems.map((item) => {
+            {transferData.items.map((item) => {
               const slug = createUrlSlug(item.title);
               return (
                 <Link
@@ -204,11 +177,14 @@ export default function TransferPage() {
                     <div className="flex items-center justify-between mt-6">
                       <div>
                         <span className="text-xs text-gray-500">Başlangıç</span>
+                        {item.discount && (
+                          <div className="text-sm text-gray-400 line-through">
+                            {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
+                          </div>
+                        )}
                         <div className="flex items-baseline gap-1">
-                          <p className="font-extrabold text-2xl text-blue-600">
-                            ₺{item.price}
-                          </p>
-                          <span className="text-sm text-gray-500">/ günlük</span>
+                          <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}₺</span>
+                          <span className="text-sm text-gray-500">/ tek yön</span>
                         </div>
                       </div>
                       <div className="bg-blue-600 text-white p-3 rounded-full group-hover:bg-blue-700 transition-colors duration-300">
@@ -222,7 +198,7 @@ export default function TransferPage() {
           </div>
 
           {/* Sonuç Bulunamadı */}
-          {filteredItems.length === 0 && (
+          {transferData.items.length === 0 && (
             <div className="text-center py-12" role="alert" aria-live="polite">
               <p className="text-gray-500 text-lg">Aradığınız kriterlere uygun transfer hizmeti bulunamadı.</p>
             </div>

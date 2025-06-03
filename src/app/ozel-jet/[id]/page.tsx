@@ -118,17 +118,19 @@ export default function JetDetailPage() {
                 {/* Eski Fiyat */}
                 {jet.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
-                    €{(jet.price * (1 + jet.discount / 100)).toFixed(2)}
+                    {(jet.price * (1 + jet.discount / 100)).toLocaleString('en-US').replace(',', '.')}€
                   </div>
                 )}
 
                 {/* Yeni Fiyat + Açıklama */}
-                <div className="flex justify-center items-end gap-1">
-                  <span className="text-4xl font-bold text-indigo-700 leading-none">
-                    €{jet.price}
-                  </span>
-                  <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
-                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>             
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-3xl font-bold text-indigo-700 leading-none">
+                      {jet.price.toLocaleString('en-US').replace(',', '.')}€
+                    </span>
+                    <span className="text-sm text-gray-500">/uçuş başı</span>
+                  </div>
+                  <span className="text-sm text-gray-500 text-center">başlayan fiyatlarla</span>
                 </div>
               </div>
 

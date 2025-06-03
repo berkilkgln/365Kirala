@@ -152,12 +152,12 @@ export default function PrivateJetPage() {
                         <div className="mt-4">
                           {item.discount && (
                             <div className="text-sm text-gray-400 line-through">
-                              €{(item.price * (1 + item.discount / 100)).toFixed(2)}
+                              {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}€
                             </div>
                           )}
                           <div className="flex items-baseline gap-1">
-                            <span className="text-2xl font-bold text-indigo-600">€{item.price}</span>
-                            <span className="text-sm text-gray-500">/ günlük</span>
+                            <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}€</span>
+                            <span className="text-sm text-gray-500">/ uçuş başı</span>
                           </div>
                         </div>
                       </div>

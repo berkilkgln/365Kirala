@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import transferData from '../../../data/transfer/services.json';
 import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
 import { createUrlSlug } from '../../../lib/utils';
+import Script from 'next/script';
 
 type Transfer = {
   id: number;
@@ -24,25 +25,87 @@ type Transfer = {
 
 export default function TransferDetailPage() {
   const params = useParams();
-  const idWithSlug = params?.id as string;
-  const id = Number(idWithSlug.split('-')[0]);
+  const router = useRouter();
   const [transfer, setTransfer] = useState<Transfer | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (!id) return;
-    const foundTransfer = transferData.items.find((item) => Number(item.id) === id);
-    if (foundTransfer) {
-      const slug = createUrlSlug(foundTransfer.title);
-      setTransfer({ ...foundTransfer, id: Number(foundTransfer.id), slug });
-    } else {
-      setTransfer(null);
+    try {
+      if (!params) {
+        router.push('/transfer');
+        return;
+      }
+
+      const idWithSlug = params.id as string;
+      if (!idWithSlug) {
+        router.push('/transfer');
+        return;
+      }
+
+      const id = parseInt(idWithSlug.split('-')[0], 10);
+      if (isNaN(id)) {
+        router.push('/transfer');
+        return;
+      }
+
+      const foundTransfer = transferData.items.find(item => Number(item.id) === id);
+      if (foundTransfer) {
+        const slug = createUrlSlug(foundTransfer.title);
+        const correctPath = `/transfer/${id}-${slug}`;
+
+        if (params.id !== `${id}-${slug}`) {
+          router.push(correctPath);
+          return;
+        }
+
+        setTransfer({ ...foundTransfer, id: Number(foundTransfer.id), slug });
+      } else {
+        router.push('/transfer');
+      }
+    } catch (error) {
+      console.error('Error loading transfer:', error);
+      router.push('/transfer');
+    } finally {
+      setIsLoading(false);
     }
-  }, [id]);
+  }, [params, router]);
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-600"></div>
+      </div>
+    );
+  }
 
   if (!transfer) return <p className="p-6 text-center text-gray-600">Transfer hizmeti bulunamadı.</p>;
 
+  const transferSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": transfer.title,
+    "description": transfer.description,
+    "provider": {
+      "@type": "Organization",
+      "name": "365Kirala Transfer",
+      "url": "https://365kirala.com"
+    },
+    "areaServed": transfer.location,
+    "offers": {
+      "@type": "Offer",
+      "price": transfer.price,
+      "priceCurrency": "TRY",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <>
+      <Script
+        id="transfer-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(transferSchema) }}
+      />
       <Navbar />
       <div className="bg-white min-h-screen">
         {/* Banner */}
@@ -117,17 +180,17 @@ export default function TransferDetailPage() {
                 {/* Eski Fiyat */}
                 {transfer.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
-                    ₺{(transfer.price * (1 + transfer.discount / 100)).toFixed(2)}
+                    {(transfer.price * (1 + transfer.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
                   </div>
                 )}
 
                 {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
-                    {transfer.price}₺
+                    {transfer.price.toLocaleString('en-US').replace(',', '.')}₺
                   </span>
-                  <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
-                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>
+                  <span className="text-sm text-gray-500 mb-1">&apos;dan başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">/ tek yön</span>
                 </div>
               </div>
 

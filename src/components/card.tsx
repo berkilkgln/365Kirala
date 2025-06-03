@@ -25,6 +25,17 @@ export const ListCard = ({ item }: ListCardProps) => {
     return '₺';
   };
 
+  const getUnitText = (category: string) => {
+    switch (category) {
+      case 'ozel-jet':
+        return '/ uçuş başı';
+      case 'tur':
+        return '/ tur başı';
+      default:
+        return '/ günlük';
+    }
+  };
+
   return (
     <Link
       href={`/${item.category}`}
@@ -71,7 +82,7 @@ export const ListCard = ({ item }: ListCardProps) => {
               <p className="font-extrabold text-2xl text-blue-600">
                 {getCurrencySymbol(item.category)}{item.price}
               </p>
-              <span className="text-sm text-gray-500">/ günlük</span>
+              <span className="text-sm text-gray-500">{getUnitText(item.category)}</span>
             </div>
           </div>
           <div className="bg-blue-600 text-white p-3 rounded-full group-hover:bg-blue-700 transition-colors duration-300">

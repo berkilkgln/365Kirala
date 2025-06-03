@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import bungalovData from '../../../data/bungalov/services.json';
@@ -24,20 +24,58 @@ type Bungalov = {
 
 export default function BungalovDetailPage() {
   const params = useParams();
-  const idWithSlug = params?.id as string;
-  const id = parseInt(idWithSlug?.split('-')[0], 10);
+  const router = useRouter();
   const [bungalov, setBungalov] = useState<Bungalov | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (isNaN(id)) return;
-    const foundBungalov = bungalovData.items.find((item) => Number(item.id) === id);
-    if (foundBungalov) {
-      const slug = createUrlSlug(foundBungalov.title);
-      setBungalov({ ...foundBungalov, id: Number(foundBungalov.id), slug });
-    } else {
-      setBungalov(null);
+    try {
+      if (!params) {
+        router.push('/bungalov');
+        return;
+      }
+
+      const idWithSlug = params.id as string;
+      if (!idWithSlug) {
+        router.push('/bungalov');
+        return;
+      }
+
+      const id = parseInt(idWithSlug.split('-')[0], 10);
+      if (isNaN(id)) {
+        router.push('/bungalov');
+        return;
+      }
+
+      const foundBungalov = bungalovData.items.find(item => Number(item.id) === id);
+      if (foundBungalov) {
+        const slug = createUrlSlug(foundBungalov.title);
+        const correctPath = `/bungalov/${id}-${slug}`;
+
+        if (params.id !== `${id}-${slug}`) {
+          router.push(correctPath);
+          return;
+        }
+
+        setBungalov({ ...foundBungalov, id: Number(foundBungalov.id), slug });
+      } else {
+        router.push('/bungalov');
+      }
+    } catch (error) {
+      console.error('Error loading bungalov:', error);
+      router.push('/bungalov');
+    } finally {
+      setIsLoading(false);
     }
-  }, [id]);
+  }, [params, router]);
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-600"></div>
+      </div>
+    );
+  }
 
   if (!bungalov) return <p className="p-6 text-center text-gray-600">Bungalov bulunamadı.</p>;
 
@@ -117,16 +155,17 @@ export default function BungalovDetailPage() {
                 {/* Eski Fiyat */}
                 {bungalov.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
-                    ₺{(bungalov.price * (1 + bungalov.discount / 100)).toFixed(2)}
+                    {(bungalov.price * (1 + bungalov.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
                   </div>
                 )}
 
                 {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
-                    {bungalov.price}₺
+                    {bungalov.price.toLocaleString('en-US').replace(',', '.')}₺
                   </span>
                   <span className="text-sm text-gray-500 mb-1">&apos;den başlayan fiyatlarla</span>
+                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>
                 </div>
               </div>
 

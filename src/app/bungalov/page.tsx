@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { Navbar } from '../../features/home/navbar';
 import bungalovData from '../../data/bungalov/services.json';
 import Image from 'next/image';
@@ -11,13 +10,6 @@ import Script from 'next/script';
 import Head from 'next/head';
 
 export default function BungalovPage() {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const filteredItems = bungalovData.items.filter((item) =>
-    item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.location.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -136,20 +128,9 @@ export default function BungalovPage() {
 
         {/* İçerik */}
         <div className="max-w-screen-xl mx-auto px-4 py-12">
-          {/* Arama */}
-          <div className="mb-8">
-            <input
-              type="text"
-              placeholder="Bungalov veya lokasyon ara..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full max-w-2xl mx-auto block px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
-          </div>
-
           {/* Bungalov Listesi */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredItems.map((item) => {
+            {bungalovData.items.map((item) => {
               const slug = createUrlSlug(item.title);
               return (
                 <Link
@@ -189,10 +170,13 @@ export default function BungalovPage() {
                     <div className="flex items-center justify-between mt-6">
                       <div>
                         <span className="text-xs text-gray-500">Başlangıç</span>
+                        {item.discount && (
+                          <div className="text-sm text-gray-400 line-through">
+                            {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
+                          </div>
+                        )}
                         <div className="flex items-baseline gap-1">
-                          <p className="font-extrabold text-2xl text-blue-600">
-                            ₺{item.price}
-                          </p>
+                          <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}₺</span>
                           <span className="text-sm text-gray-500">/ günlük</span>
                         </div>
                       </div>
@@ -205,13 +189,6 @@ export default function BungalovPage() {
               );
             })}
           </div>
-
-          {/* Sonuç Bulunamadı */}
-          {filteredItems.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">Aradığınız kriterlere uygun bungalov bulunamadı.</p>
-            </div>
-          )}
         </div>
       </div>
     </>

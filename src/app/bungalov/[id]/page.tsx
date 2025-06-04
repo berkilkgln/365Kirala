@@ -29,45 +29,46 @@ export default function BungalovDetailPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      if (!params) {
-        router.push('/bungalov');
-        return;
-      }
-
-      const idWithSlug = params.id as string;
-      if (!idWithSlug) {
-        router.push('/bungalov');
-        return;
-      }
-
-      const id = parseInt(idWithSlug.split('-')[0], 10);
-      if (isNaN(id)) {
-        router.push('/bungalov');
-        return;
-      }
-
-      const foundBungalov = bungalovData.items.find(item => Number(item.id) === id);
-      if (foundBungalov) {
-        const slug = createUrlSlug(foundBungalov.title);
-        const correctPath = `/bungalov/${id}-${slug}`;
-
-        if (params.id !== `${id}-${slug}`) {
-          router.push(correctPath);
+    const loadBungalov = async () => {
+      try {
+        if (!params?.id) {
+          router.push('/bungalov');
           return;
         }
 
-        setBungalov({ ...foundBungalov, id: Number(foundBungalov.id), slug });
-      } else {
+        const idWithSlug = params.id as string;
+        const id = parseInt(idWithSlug.split('-')[0], 10);
+
+        if (isNaN(id)) {
+          router.push('/bungalov');
+          return;
+        }
+
+        const foundBungalov = bungalovData.items.find(item => Number(item.id) === id);
+        
+        if (foundBungalov) {
+          const slug = createUrlSlug(foundBungalov.title);
+          const correctPath = `/bungalov/${id}-${slug}`;
+
+          if (params.id !== `${id}-${slug}`) {
+            router.replace(correctPath);
+            return;
+          }
+
+          setBungalov({ ...foundBungalov, id: Number(foundBungalov.id), slug });
+        } else {
+          router.push('/bungalov');
+        }
+      } catch (error) {
+        console.error('Error loading bungalov:', error);
         router.push('/bungalov');
+      } finally {
+        setIsLoading(false);
       }
-    } catch (error) {
-      console.error('Error loading bungalov:', error);
-      router.push('/bungalov');
-    } finally {
-      setIsLoading(false);
-    }
-  }, [params, router]);
+    };
+
+    loadBungalov();
+  }, [params?.id, router]);
 
   if (isLoading) {
     return (
@@ -77,12 +78,21 @@ export default function BungalovDetailPage() {
     );
   }
 
-  if (!bungalov) return <p className="p-6 text-center text-gray-600">Bungalov bulunamadı.</p>;
+  if (!bungalov) {
+    return (
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-xl text-gray-600">Bungalov bulunamadı.</p>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
       <Navbar />
-      <div className="bg-white min-h-screen">
+      <main className="bg-white min-h-screen">
         {/* Banner */}
         <div className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
           <div className="absolute inset-0 bg-black/60 z-10" />
@@ -143,7 +153,6 @@ export default function BungalovDetailPage() {
             <div className="sticky top-24 space-y-6">
               {/* Fiyat Kartı */}
               <div className="rounded-3xl bg-gradient-to-b from-white via-white/90 to-white/80 backdrop-blur-lg p-6 shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-100">
-                {/* İndirim Rozeti */}
                 {bungalov.discount && (
                   <div className="flex justify-center mb-3">
                     <span className="bg-red-500 text-white text-xs font-bold px-5 py-2 rounded-full shadow-sm">
@@ -152,14 +161,12 @@ export default function BungalovDetailPage() {
                   </div>
                 )}
 
-                {/* Eski Fiyat */}
                 {bungalov.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
                     {(bungalov.price * (1 + bungalov.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
                   </div>
                 )}
 
-                {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
                     {bungalov.price.toLocaleString('en-US').replace(',', '.')}₺
@@ -180,7 +187,7 @@ export default function BungalovDetailPage() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

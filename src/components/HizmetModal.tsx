@@ -25,6 +25,8 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -61,34 +63,82 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validate()) return;
 
-    const paraBirimiSimge: Record<string, string> = {
-      TRY: '₺',
-      EUR: '€',
-      USD: '$',
-    };
+    setIsSubmitting(true);
 
-    const subject = encodeURIComponent('Yeni Hizmet Kayıt Formu');
-    const body = encodeURIComponent(
-      `İsim: ${formData.isim}\n` +
-      `Soyisim: ${formData.soyisim}\n` +
-      `Hizmet Türü: ${formData.hizmet}\n` +
-      `Fiyat: ${formData.fiyat} ${paraBirimiSimge[formData.paraBirimi] || ''} (${formData.fiyatTipi})\n` +
-      `TC Kimlik / Vergi No: ${formData.kimlikNo}\n` +
-      `Telefon: ${formData.telefon}\n` +
-      `E-posta: ${formData.email}`
-    );
+    try {
+      const response = await fetch('/api/hizmet', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    window.location.href = `mailto:berkilkgln9@gmail.com?subject=${subject}&body=${body}`;
-
-    onClose();
+      if (response.ok) {
+        setIsSuccess(true);
+        // 3 saniye sonra modalı kapat
+        setTimeout(() => {
+          setIsSuccess(false);
+          onClose();
+          // Form verilerini sıfırla
+          setFormData({
+            isim: '',
+            soyisim: '',
+            hizmet: '',
+            fiyat: '',
+            fiyatTipi: 'günlük',
+            paraBirimi: 'TRY',
+            kimlikNo: '',
+            telefon: '',
+            email: '',
+          });
+        }, 3000);
+      } else {
+        throw new Error('Gönderim başarısız');
+      }
+    } catch {
+      setErrors({ submit: 'Form gönderilirken bir hata oluştu. Lütfen tekrar deneyin.' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isOpen) return null;
+
+  if (isSuccess) {
+    return (
+      <div className="fixed inset-0 z-50 bg-black/30 backdrop-blur-sm flex items-center justify-center p-6">
+        <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl w-full max-w-xl relative animate-fade-in">
+          <div className="flex flex-col items-center justify-center text-center">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+              <svg
+                className="w-10 h-10 text-green-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-bold text-green-700 mb-2">
+              Kayıt Formunuz Başarıyla Gönderildi!
+            </h2>
+            <p className="text-gray-600">
+              En kısa sürede size geri dönüş yapacağız.
+              <br />
+              İlginiz için teşekkür ederiz.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="fixed inset-0 z-50 bg-black/30 backdrop-blur-sm flex items-center justify-center p-6">
@@ -277,11 +327,18 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
             {errors.email && <p className="text-red-600 mt-1 text-sm">{errors.email}</p>}
           </div>
 
+          {errors.submit && (
+            <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg">
+              {errors.submit}
+            </div>
+          )}
+
           <button
             type="submit"
-            className="w-full py-3 mt-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition"
+            disabled={isSubmitting}
+            className="w-full py-3 mt-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Gönder
+            {isSubmitting ? 'Gönderiliyor...' : 'Gönder'}
           </button>
         </form>
       </div>

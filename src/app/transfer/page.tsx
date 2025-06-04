@@ -184,7 +184,7 @@ export default function TransferPage() {
                         )}
                         <div className="flex items-baseline gap-1">
                           <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}₺</span>
-                          <span className="text-sm text-gray-500">/ tek yön</span>
+                          <span className="text-sm text-gray-500">/ günlük </span>
                         </div>
                       </div>
                       <div className="bg-blue-600 text-white p-3 rounded-full group-hover:bg-blue-700 transition-colors duration-300">

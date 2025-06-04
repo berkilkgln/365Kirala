@@ -30,45 +30,46 @@ export default function TransferDetailPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      if (!params) {
-        router.push('/transfer');
-        return;
-      }
-
-      const idWithSlug = params.id as string;
-      if (!idWithSlug) {
-        router.push('/transfer');
-        return;
-      }
-
-      const id = parseInt(idWithSlug.split('-')[0], 10);
-      if (isNaN(id)) {
-        router.push('/transfer');
-        return;
-      }
-
-      const foundTransfer = transferData.items.find(item => Number(item.id) === id);
-      if (foundTransfer) {
-        const slug = createUrlSlug(foundTransfer.title);
-        const correctPath = `/transfer/${id}-${slug}`;
-
-        if (params.id !== `${id}-${slug}`) {
-          router.push(correctPath);
+    const loadTransfer = async () => {
+      try {
+        if (!params?.id) {
+          router.push('/transfer');
           return;
         }
 
-        setTransfer({ ...foundTransfer, id: Number(foundTransfer.id), slug });
-      } else {
+        const idWithSlug = params.id as string;
+        const id = parseInt(idWithSlug.split('-')[0], 10);
+
+        if (isNaN(id)) {
+          router.push('/transfer');
+          return;
+        }
+
+        const foundTransfer = transferData.items.find(item => Number(item.id) === id);
+        
+        if (foundTransfer) {
+          const slug = createUrlSlug(foundTransfer.title);
+          const correctPath = `/transfer/${id}-${slug}`;
+
+          if (params.id !== `${id}-${slug}`) {
+            router.replace(correctPath);
+            return;
+          }
+
+          setTransfer({ ...foundTransfer, id: Number(foundTransfer.id), slug });
+        } else {
+          router.push('/transfer');
+        }
+      } catch (error) {
+        console.error('Error loading transfer:', error);
         router.push('/transfer');
+      } finally {
+        setIsLoading(false);
       }
-    } catch (error) {
-      console.error('Error loading transfer:', error);
-      router.push('/transfer');
-    } finally {
-      setIsLoading(false);
-    }
-  }, [params, router]);
+    };
+
+    loadTransfer();
+  }, [params?.id, router]);
 
   if (isLoading) {
     return (
@@ -78,7 +79,16 @@ export default function TransferDetailPage() {
     );
   }
 
-  if (!transfer) return <p className="p-6 text-center text-gray-600">Transfer hizmeti bulunamadı.</p>;
+  if (!transfer) {
+    return (
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-xl text-gray-600">Transfer hizmeti bulunamadı.</p>
+        </div>
+      </>
+    );
+  }
 
   const transferSchema = {
     "@context": "https://schema.org",
@@ -101,13 +111,13 @@ export default function TransferDetailPage() {
 
   return (
     <>
-      <Script
-        id="transfer-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(transferSchema) }}
-      />
       <Navbar />
-      <div className="bg-white min-h-screen">
+      <main className="bg-white min-h-screen">
+        <Script
+          id="transfer-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(transferSchema) }}
+        />
         {/* Banner */}
         <div className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
           <div className="absolute inset-0 bg-black/60 z-10" />
@@ -168,7 +178,6 @@ export default function TransferDetailPage() {
             <div className="sticky top-24 space-y-6">
               {/* Fiyat Kartı */}
               <div className="rounded-3xl bg-gradient-to-b from-white via-white/90 to-white/80 backdrop-blur-lg p-6 shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-100">
-                {/* İndirim Rozeti */}
                 {transfer.discount && (
                   <div className="flex justify-center mb-3">
                     <span className="bg-red-500 text-white text-xs font-bold px-5 py-2 rounded-full shadow-sm">
@@ -177,20 +186,18 @@ export default function TransferDetailPage() {
                   </div>
                 )}
 
-                {/* Eski Fiyat */}
                 {transfer.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
                     {(transfer.price * (1 + transfer.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
                   </div>
                 )}
 
-                {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
                     {transfer.price.toLocaleString('en-US').replace(',', '.')}₺
                   </span>
                   <span className="text-sm text-gray-500 mb-1">&apos;dan başlayan fiyatlarla</span>
-                  <span className="text-sm text-gray-500 mb-1">/ tek yön</span>
+                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>
                 </div>
               </div>
 
@@ -205,7 +212,7 @@ export default function TransferDetailPage() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 type HizmetModalProps = {
   isOpen: boolean;
@@ -29,8 +30,25 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors((prev) => ({ ...prev, [e.target.name]: '' }));
+    const { name, value } = e.target;
+    
+    // Only allow numbers for specific fields
+    if (name === 'telefon') {
+      const numbersOnly = value.replace(/\D/g, '').slice(0, 10);
+      setFormData({ ...formData, [name]: numbersOnly });
+    } 
+    else if (name === 'kimlikNo') {
+      const numbersOnly = value.replace(/\D/g, '').slice(0, 11);
+      setFormData({ ...formData, [name]: numbersOnly });
+    }
+    else if (name === 'fiyat') {
+      const numbersOnly = value.replace(/\D/g, '');
+      setFormData({ ...formData, [name]: numbersOnly });
+    }
+    else {
+      setFormData({ ...formData, [name]: value });
+    }
+    setErrors((prev) => ({ ...prev, [name]: '' }));
   };
 
   const validate = () => {
@@ -40,15 +58,12 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
     if (!formData.soyisim.trim()) newErrors.soyisim = 'Soyisim zorunludur.';
     if (!formData.hizmet.trim()) newErrors.hizmet = 'Hizmet türü zorunludur.';
     if (!formData.fiyat.trim()) newErrors.fiyat = 'Fiyat zorunludur.';
-    else if (isNaN(Number(formData.fiyat))) newErrors.fiyat = 'Fiyat sayısal olmalıdır.';
 
-    if (!formData.kimlikNo.trim()) newErrors.kimlikNo = 'TC Kimlik / Vergi No zorunludur.';
-    else if (formData.kimlikNo.length !== 11)
-      newErrors.kimlikNo = 'TC Kimlik numarası 11 haneli olmalıdır.';
+    if (!formData.kimlikNo.trim()) newErrors.kimlikNo = 'TC Kimlik No zorunludur.';
+    else if (formData.kimlikNo.length !== 11) newErrors.kimlikNo = 'TC Kimlik numarası 11 rakam olmalıdır.';
 
     if (!formData.telefon.trim()) newErrors.telefon = 'Telefon zorunludur.';
-    else if (formData.telefon.length < 10 || formData.telefon.length > 11)
-      newErrors.telefon = 'Telefon numarası 10 veya 11 haneli olmalıdır.';
+    else if (formData.telefon.length !== 10) newErrors.telefon = 'Telefon numarası 10 rakam olmalıdır.';
 
     if (!formData.email.trim()) newErrors.email = 'E-posta zorunludur.';
     else {
@@ -59,7 +74,6 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
     }
 
     setErrors(newErrors);
-
     return Object.keys(newErrors).length === 0;
   };
 
@@ -71,6 +85,29 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
     setIsSubmitting(true);
 
     try {
+      // Send email through EmailJS
+      await emailjs.send(
+        'service_veu98za',
+        'template_axq4ebx',
+        {
+          name: `${formData.isim} ${formData.soyisim}`,
+          email: formData.email,
+          subject: `Yeni Hizmet Kaydı: ${formData.hizmet}`,
+          message: `
+Hizmet Detayları:
+----------------
+İsim: ${formData.isim}
+Soyisim: ${formData.soyisim}
+Hizmet: ${formData.hizmet}
+Fiyat: ${formData.fiyat} ${formData.paraBirimi} (${formData.fiyatTipi})
+TC Kimlik / Vergi No: ${formData.kimlikNo}
+Telefon: ${formData.telefon}
+E-posta: ${formData.email}`,
+        },
+        'URXfFpOPFM5lW6j0d'
+      );
+
+      // Send to API endpoint as before
       const response = await fetch('/api/hizmet', {
         method: 'POST',
         headers: {
@@ -79,29 +116,28 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        setIsSuccess(true);
-        // 3 saniye sonra modalı kapat
-        setTimeout(() => {
-          setIsSuccess(false);
-          onClose();
-          // Form verilerini sıfırla
-          setFormData({
-            isim: '',
-            soyisim: '',
-            hizmet: '',
-            fiyat: '',
-            fiyatTipi: 'günlük',
-            paraBirimi: 'TRY',
-            kimlikNo: '',
-            telefon: '',
-            email: '',
-          });
-        }, 3000);
-      } else {
-        throw new Error('Gönderim başarısız');
+      if (!response.ok) {
+        throw new Error('API gönderimi başarısız');
       }
-    } catch {
+
+      setIsSuccess(true);
+      setTimeout(() => {
+        setIsSuccess(false);
+        onClose();
+        setFormData({
+          isim: '',
+          soyisim: '',
+          hizmet: '',
+          fiyat: '',
+          fiyatTipi: 'günlük',
+          paraBirimi: 'TRY',
+          kimlikNo: '',
+          telefon: '',
+          email: '',
+        });
+      }, 3000);
+    } catch (error) {
+      console.error('Form gönderimi hatası:', error);
       setErrors({ submit: 'Form gönderilirken bir hata oluştu. Lütfen tekrar deneyin.' });
     } finally {
       setIsSubmitting(false);
@@ -166,7 +202,7 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
                 onChange={handleChange}
                 className={`w-full p-3 rounded-lg bg-gray-100 border ${
                   errors.isim ? 'border-red-500' : 'border-gray-300'
-                } placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition`}
+                }`}
               />
               {errors.isim && <p className="text-red-600 mt-1 text-sm">{errors.isim}</p>}
             </div>
@@ -179,166 +215,102 @@ export const HizmetModal = ({ isOpen, onClose }: HizmetModalProps) => {
                 onChange={handleChange}
                 className={`w-full p-3 rounded-lg bg-gray-100 border ${
                   errors.soyisim ? 'border-red-500' : 'border-gray-300'
-                } placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition`}
+                }`}
               />
               {errors.soyisim && <p className="text-red-600 mt-1 text-sm">{errors.soyisim}</p>}
             </div>
           </div>
 
-          <div>
-            <input
-              type="text"
-              name="hizmet"
-              placeholder="Hizmet Türü (Örn: Yat Kiralama)"
-              value={formData.hizmet}
-              onChange={handleChange}
-              className={`w-full p-3 rounded-lg bg-gray-100 border ${
-                errors.hizmet ? 'border-red-500' : 'border-gray-300'
-              } placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition`}
-            />
-            {errors.hizmet && <p className="text-red-600 mt-1 text-sm">{errors.hizmet}</p>}
-          </div>
+          <input
+            type="text"
+            name="hizmet"
+            placeholder="Hizmet Türü (Örn: Yat Kiralama)"
+            value={formData.hizmet}
+            onChange={handleChange}
+            className={`w-full p-3 rounded-lg bg-gray-100 border ${
+              errors.hizmet ? 'border-red-500' : 'border-gray-300'
+            }`}
+          />
+          {errors.hizmet && <p className="text-red-600 mt-1 text-sm">{errors.hizmet}</p>}
 
           <div className="flex gap-4">
-            <div className="w-1/3">
-              <input
-                type="text"
-                name="fiyat"
-                placeholder="Fiyat"
-                value={formData.fiyat}
-                onChange={handleChange}
-                className={`w-full p-3 rounded-lg bg-gray-100 border ${
-                  errors.fiyat ? 'border-red-500' : 'border-gray-300'
-                } placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition`}
-                inputMode="numeric"
-              />
-              {errors.fiyat && <p className="text-red-600 mt-1 text-sm">{errors.fiyat}</p>}
-            </div>
-
-            <div className="relative w-1/3">
-              <select
-                name="paraBirimi"
-                value={formData.paraBirimi}
-                onChange={handleChange}
-                className="
-                  appearance-none w-full p-3 rounded-xl bg-gray-100 border border-gray-300
-                  text-gray-900 cursor-pointer focus:outline-none focus:border-indigo-500
-                  transition shadow-md hover:border-indigo-400
-                "
-              >
-                <option value="TRY">₺ TL</option>
-                <option value="EUR">€ Euro</option>
-                <option value="USD">$ Dolar</option>
-              </select>
-              <div
-                className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-700"
-                style={{ userSelect: 'none' }}
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </div>
-            </div>
-
-            <div className="relative w-1/3">
-              <select
-                name="fiyatTipi"
-                value={formData.fiyatTipi}
-                onChange={handleChange}
-                className="
-                  appearance-none w-full p-3 rounded-xl bg-gray-100 border border-gray-300
-                  text-gray-900 cursor-pointer focus:outline-none focus:border-indigo-500
-                  transition shadow-md hover:border-indigo-400
-                "
-              >
-                <option value="günlük">Günlük</option>
-                <option value="haftalık">Haftalık</option>
-              </select>
-              <div
-                className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-700"
-                style={{ userSelect: 'none' }}
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div>
             <input
               type="text"
-              name="kimlikNo"
-              placeholder="TC Kimlik / Vergi No (11 hane)"
-              maxLength={11}
-              value={formData.kimlikNo}
+              name="fiyat"
+              placeholder="Fiyat"
+              value={formData.fiyat}
               onChange={handleChange}
-              className={`w-full p-3 rounded-lg bg-gray-100 border ${
-                errors.kimlikNo ? 'border-red-500' : 'border-gray-300'
-              } placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition`}
               inputMode="numeric"
+              className={`w-1/3 p-3 rounded-lg bg-gray-100 border ${
+                errors.fiyat ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
-            {errors.kimlikNo && <p className="text-red-600 mt-1 text-sm">{errors.kimlikNo}</p>}
-          </div>
-
-          <div>
-            <input
-              type="tel"
-              name="telefon"
-              placeholder="Telefon (10-11 hane)"
-              maxLength={11}
-              value={formData.telefon}
+            <select
+              name="paraBirimi"
+              value={formData.paraBirimi}
               onChange={handleChange}
-              className={`w-full p-3 rounded-lg bg-gray-100 border ${
-                errors.telefon ? 'border-red-500' : 'border-gray-300'
-              } placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition`}
-              inputMode="tel"
-            />
-            {errors.telefon && <p className="text-red-600 mt-1 text-sm">{errors.telefon}</p>}
-          </div>
-
-          <div>
-            <input
-              type="email"
-              name="email"
-              placeholder="E-posta"
-              value={formData.email}
+              className="w-1/3 p-3 rounded-lg bg-gray-100 border border-gray-300"
+            >
+              <option value="TRY">₺ TL</option>
+              <option value="EUR">€ Euro</option>
+              <option value="USD">$ Dolar</option>
+            </select>
+            <select
+              name="fiyatTipi"
+              value={formData.fiyatTipi}
               onChange={handleChange}
-              className={`w-full p-3 rounded-lg bg-gray-100 border ${
-                errors.email ? 'border-red-500' : 'border-gray-300'
-              } placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition`}
-            />
-            {errors.email && <p className="text-red-600 mt-1 text-sm">{errors.email}</p>}
+              className="w-1/3 p-3 rounded-lg bg-gray-100 border border-gray-300"
+            >
+              <option value="günlük">Günlük</option>
+              <option value="haftalık">Haftalık</option>
+            </select>
           </div>
+          {errors.fiyat && <p className="text-red-600 mt-1 text-sm">{errors.fiyat}</p>}
 
-          {errors.submit && (
-            <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg">
-              {errors.submit}
-            </div>
-          )}
+          <input
+            type="text"
+            name="kimlikNo"
+            placeholder="TC Kimlik / Vergi No"
+            value={formData.kimlikNo}
+            onChange={handleChange}
+            className={`w-full p-3 rounded-lg bg-gray-100 border ${
+              errors.kimlikNo ? 'border-red-500' : 'border-gray-300'
+            }`}
+          />
+          {errors.kimlikNo && <p className="text-red-600 mt-1 text-sm">{errors.kimlikNo}</p>}
+
+          <input
+            type="text"
+            name="telefon"
+            placeholder="Telefon (5XXXXXXXXX)"
+            value={formData.telefon}
+            onChange={handleChange}
+            className={`w-full p-3 rounded-lg bg-gray-100 border ${
+              errors.telefon ? 'border-red-500' : 'border-gray-300'
+            }`}
+          />
+          {errors.telefon && <p className="text-red-600 mt-1 text-sm">{errors.telefon}</p>}
+
+          <input
+            type="email"
+            name="email"
+            placeholder="E-posta"
+            value={formData.email}
+            onChange={handleChange}
+            className={`w-full p-3 rounded-lg bg-gray-100 border ${
+              errors.email ? 'border-red-500' : 'border-gray-300'
+            }`}
+          />
+          {errors.email && <p className="text-red-600 mt-1 text-sm">{errors.email}</p>}
+
+          {errors.submit && <p className="text-red-600 text-center mt-2">{errors.submit}</p>}
 
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3 mt-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-3 px-6 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition"
           >
-            {isSubmitting ? 'Gönderiliyor...' : 'Gönder'}
+            {isSubmitting ? 'Gönderiliyor...' : 'Formu Gönder'}
           </button>
         </form>
       </div>

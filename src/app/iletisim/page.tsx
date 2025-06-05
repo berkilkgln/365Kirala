@@ -2,9 +2,11 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -22,7 +24,6 @@ const ContactPage = () => {
   });
 
   useEffect(() => {
-    // Sayfa yüklendiğinde loading durumunu kaldır
     setIsLoading(false);
   }, []);
 
@@ -38,29 +39,37 @@ const ContactPage = () => {
     setStatus({ type: null, message: '' });
 
     try {
+      // EmailJS configuration with provided credentials
+      const emailjsResponse = await emailjs.sendForm(
+        'service_veu98za', // Service ID
+        'template_axq4ebx', // Template ID
+        formRef.current!,
+        'URXfFpOPFM5lW6j0d' // Public Key
+      );
+
+      if (emailjsResponse.status !== 200) {
+        throw new Error('EmailJS sending failed');
+      }
+
+      // API endpoint'e gönderim
       const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
       });
 
       const data = await response.json();
 
       if (response.ok) {
-        setStatus({
-          type: 'success',
-          message: 'Mesajınız başarıyla gönderildi!'
-        });
+        setStatus({ type: 'success', message: 'Mesajınız başarıyla gönderildi!' });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
         throw new Error(data.message || 'Bir hata oluştu');
       }
-    } catch {
+    } catch (error) {
       setStatus({
         type: 'error',
-        message: 'Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.'
+        message: error instanceof Error ? error.message : 'Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.'
       });
     } finally {
       setLoading(false);
@@ -68,10 +77,8 @@ const ContactPage = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   if (isLoading) {
@@ -96,7 +103,6 @@ const ContactPage = () => {
             <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">E-posta</h3>
             <p className="text-gray-600">info@365kirala.com</p>
           </div>
-
           <div className="bg-white shadow-lg p-6 rounded-xl text-center border border-gray-100 hover:border-indigo-600 transition-colors duration-300">
             <FaMapMarkerAlt className="text-3xl text-indigo-600 mx-auto mb-4" />
             <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Adres</h3>
@@ -109,51 +115,23 @@ const ContactPage = () => {
           {/* İletişim Formu */}
           <div className="bg-white shadow-lg p-6 sm:p-8 rounded-xl border border-gray-100 order-2 lg:order-1">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">Bize Ulaşın</h2>
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Ad Soyad
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 sm:py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 text-gray-900"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  E-posta
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 sm:py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 text-gray-900"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Konu
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 sm:py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 text-gray-900"
-                  required
-                />
-              </div>
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              {['name', 'email', 'subject'].map((field) => (
+                <div key={field}>
+                  <label htmlFor={field} className="block text-sm font-medium text-gray-700 mb-2">
+                    {field === 'name' ? 'Ad Soyad' : field === 'email' ? 'E-posta' : 'Konu'}
+                  </label>
+                  <input
+                    type={field === 'email' ? 'email' : 'text'}
+                    id={field}
+                    name={field}
+                    value={formData[field as keyof typeof formData]}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 sm:py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 text-gray-900"
+                  />
+                </div>
+              ))}
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
@@ -165,8 +143,8 @@ const ContactPage = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full px-4 py-2 sm:py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 text-gray-900"
                   required
+                  className="w-full px-4 py-2 sm:py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 text-gray-900"
                 />
               </div>
 
@@ -178,7 +156,6 @@ const ContactPage = () => {
                 {loading ? 'Gönderiliyor...' : 'Gönder'}
               </button>
 
-              {/* Başarı ve Hata Mesajları */}
               {status.type && (
                 <div
                   ref={messageRef}
@@ -191,23 +168,11 @@ const ContactPage = () => {
                   {status.type === 'success' ? (
                     <>
                       <div className="w-12 sm:w-16 h-12 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mb-3 sm:mb-4">
-                        <svg
-                          className="w-8 h-8 sm:w-10 sm:h-10 text-green-500"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M5 13l4 4L19 7"
-                          />
+                        <svg className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-2">
-                        Mesajınız Başarıyla Gönderildi!
-                      </h3>
+                      <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-2">Mesajınız Başarıyla Gönderildi!</h3>
                       <p className="text-sm sm:text-base text-gray-600 text-center">
                         En kısa zamanda sizinle iletişime geçeceğiz.
                         <br />
@@ -217,23 +182,11 @@ const ContactPage = () => {
                   ) : (
                     <>
                       <div className="w-12 sm:w-16 h-12 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-3 sm:mb-4">
-                        <svg
-                          className="w-8 h-8 sm:w-10 sm:h-10 text-red-500"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 18L18 6M6 6l12 12"
-                          />
+                        <svg className="w-8 h-8 sm:w-10 sm:h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                       </div>
-                      <h3 className="text-lg sm:text-xl font-semibold text-red-700 mb-2">
-                        Bir Hata Oluştu
-                      </h3>
+                      <h3 className="text-lg sm:text-xl font-semibold text-red-700 mb-2">Bir Hata Oluştu</h3>
                       <p className="text-sm sm:text-base text-gray-600 text-center">
                         Mesajınız gönderilemedi.
                         <br />
@@ -249,14 +202,14 @@ const ContactPage = () => {
           {/* Harita */}
           <div className="h-[300px] sm:h-[400px] lg:h-[500px] bg-white shadow-lg rounded-xl overflow-hidden border border-gray-100 order-1 lg:order-2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.2937103796883!2d32.76316141534041!3d39.97041277942495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f86d58c9643%3A0x4210b8d7c3e98b59!2sKe%C3%A7i%C3%B6ren%2C%20Ankara!5e0!3m2!1str!2str!4v1685476123456!5m2!1str!2str"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.2937103796883!2d32.76316141534041!3d39.97041277942495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f3e27c758df%3A0x7e4d56fc5784a476!2sAnkara!5e0!3m2!1str!2str!4v1620567012345!5m2!1str!2str"
               width="100%"
               height="100%"
               style={{ border: 0 }}
-              allowFullScreen
+              allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            />
+            ></iframe>
           </div>
         </div>
       </div>

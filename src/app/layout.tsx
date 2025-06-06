@@ -150,12 +150,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+        
+        {/* Elfsight AI Chatbot Script */}
+        <Script 
+          src="https://static.elfsight.com/platform/platform.js" 
+          strategy="lazyOnload"
+        />
       </head>
       <body className="font-sans overflow-y-auto bg-background text-foreground">
         <Suspense fallback={null}>
           <Analytics />
         </Suspense>
         {children}
+        
+        {/* Elfsight AI Chatbot Widget */}
+        <div 
+          className="elfsight-app-48a575b6-ead7-41b5-b8cd-82e694c275b5" 
+          data-elfsight-app-lazy
+        />
       </body>
     </html>
   );

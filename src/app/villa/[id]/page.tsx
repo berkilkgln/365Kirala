@@ -46,15 +46,14 @@ export default function VillaDetailPage() {
       <Navbar />
       <div className="bg-white min-h-screen">
         {/* Banner */}
-        <div className="relative w-full h-60 md:h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
+        <div className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
           <div className="absolute inset-0 bg-black/60 z-10" />
           <Image src={villa.image} alt={villa.title} fill className="object-cover z-0" priority />
-          
           <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-            <h1 className="text-3xl md:text-5xl font-extrabold mt-12 md:mt-20 drop-shadow-xl animate-fade-in-up">
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 mt-8 drop-shadow-xl animate-fade-in-up">
               Lüks Villa Hizmeti
             </h1>
-            <p className="text-lg md:text-2xl mt-2 md:mt-4 drop-shadow-lg">{villa.location}</p>
+            <p className="text-2xl md:text-3xl drop-shadow-lg">{villa.location}</p>
           </div>
         </div>
 

@@ -39,7 +39,7 @@
       "image": "/images/tur/istanbulbogaz.jpg",
       "location": "İstanbul",
       "title": "Boğaz Turu",
-      "price": 789,
+      "price": 749,
       "booked": 1024,
       "description": "İstanbul Boğazı'nda tekneyle unutulmaz bir şehir manzarası gezisi.",
       "features": ["1 saatlik tur", "Rehberlik hizmeti", "Çay servisi", "Sigorta"]
@@ -73,6 +73,256 @@
       "booked": 389,
       "description": "Antalya'nın doğal güzelliklerinden Düden Şelalesi'ni keşfedin. Doğayla iç içe bir gün.",
       "features": ["Şelale ziyareti", "Rehber", "Giriş bileti", "Ulaşım", "Öğle yemeği"]
-    }
-  ]
+    },  
+    {
+      "id": 8,
+      "image": "/images/tur/masukiye1.jpg",
+      "location": "Sapanca",
+      "title": "Sapanca & Maşukiye Turu",
+      "price": 1.149,
+      "booked": 221,
+      "discount": 10,
+      "description": "Doğa ile iç içe bir gün: Sapanca Gölü, Maşukiye Şelaleleri ve ATV safari keyfi.",
+      "features": ["Göl kenarı yürüyüşü", "ATV safari (isteğe bağlı)", "Rehber", "Öğle yemeği", "Transfer"]
+    },
+    {
+      "id": 9,
+      "image": "/images/tur/safranbolu1.jpg",
+      "location": "Safranbolu",
+      "title": "Safranbolu Tarihi Evler Turu",
+      "price": 1.199,
+      "booked": 164,
+      "description": "UNESCO mirası Safranbolu'da Osmanlı'dan kalma sokakları keşfedin.",
+      "features": ["Tarihi ev ziyareti", "Rehber", "Lokum tadımı", "Müze girişi", "Transfer"]
+    },
+    {
+      "id": 10,
+      "image": "/images/tur/kekova1.jpg",
+      "location": "Demre - Kekova",
+      "title": "Batık Şehir Tekne Turu",
+      "price": 2.799,
+      "booked": 78,
+      "discount": 5,
+      "description": "Kekova'da cam tabanlı teknede batık şehir manzaraları ve yüzme molaları.",
+      "features": ["Tekne turu", "Yüzme molası", "Rehber", "Öğle yemeği", "Cam tabanlı tekne"]
+    },
+    {
+  "id": 11,
+  "image": "/images/tur/kusadasi1.jpg",
+  "location": "Kusadasi",
+  "title": "Kusadasi Kordon Turu",
+  "price": 1.299,
+  "booked": 192,
+  "description": "Kusadasi'nin kordonu boyunca sahil boyunca yürüyüş ve dinlenme molaları.",
+  "features": ["Kordon yürüyüşü", "Rehber", "Öğle yemeği", "Transfer"]
+    },
+    {
+      "id": 12,
+      "image": "/images/tur/yedigoller1.jpg",
+      "location": "Bolu",
+      "title": "Yedigöller Tabiat Turu",
+      "price": 1.099,
+      "booked": 203,
+      "description": "Doğanın tüm renklerini görebileceğiniz Yedigöller’de doğa yürüyüşü ve piknik keyfi.",
+      "features": ["Tabiat parkı ziyareti", "Fotoğraf molaları", "Rehber", "Kahvaltı", "Ulaşım"]
+    },
+    {
+      "id": 13,
+      "image": "/images/tur/gallipoli.jpg",
+      "location": "Çanakkale",
+      "title": "Gelibolu Şehitlik Turu",
+      "price": 1.299,
+      "booked": 147,
+      "description": "Çanakkale Destanı'nın yazıldığı topraklarda tarihi yeniden yaşayın.",
+      "features": ["Rehberli şehitlik ziyareti", "Anzak Koyu", "Öğle yemeği", "Transfer", "Müze girişi"]
+    },
+    {
+      "id": 14,
+      "image": "/images/tur/sileagva.jpg",
+      "location": "Şile - Ağva",
+      "title": "Şile & Ağva Doğa Turu",
+      "price": 1.179,
+      "booked": 188,
+      "discount": 10,
+      "description": "İstanbul’a yakın doğa kaçamağı: Nehirde sandal gezisi ve deniz havası.",
+      "features": ["Sandal gezisi", "Doğa yürüyüşü", "Rehber", "Öğle yemeği", "Transfer"]
+    },
+    {
+      "id": 15, 
+      "image": "/images/tur/abant1.jpg",
+      "location": "Bolu",
+      "title": "Abant Gölü Gezisi",
+      "price": 1.249,
+      "booked": 205,
+      "description": "Abant Gölü'nün huzur veren manzarasında yürüyüş ve piknik molalarıyla dolu bir gün.",
+      "features": ["Göl yürüyüşü", "Fotoğraf molası", "Rehber", "Transfer", "Öğle yemeği"]
+    },
+    {
+      "id": 16,
+      "image": "/images/tur/prensadalar.jpg",
+      "location": "İstanbul",
+      "title": "Prens Adaları Turu",
+      "price": 1.399,
+      "booked": 432,
+      "discount": 5,
+      "description": "Büyükada ve Heybeliada'nın tarihi sokaklarında faytonsuz ada gezisi.",
+      "features": ["Ada vapuru", "Rehber", "Bisiklet kiralama", "Öğle yemeği", "Serbest zaman"]
+    },
+    {
+      "id": 17,
+      "image": "/images/tur/antalyaantik.jpg",
+      "location": "Antalya",
+      "title": "Perge - Aspendos - Side Turu",
+      "price": 1.499,
+      "booked": 212,
+      "description": "Antalya'nın üç önemli antik kentini rehber eşliğinde keşfedin.",
+      "features": ["Antik tiyatrolar", "Müze giriş", "Öğle yemeği", "Rehber", "Transfer"]
+    },
+    {
+      "id": 18,
+      "image": "/images/tur/fethiyeoludeniz.jpg",
+      "location": "Fethiye",
+      "title": "Ölüdeniz Tekne Turu",
+      "price": 1.299,
+      "booked": 321,
+      "discount": 10,
+      "description": "Fethiye koylarında mavi yolculuk: yüzme molaları ve doğal güzellikler.",
+      "features": ["Tekne gezisi", "Yüzme molaları", "Öğle yemeği", "Kaptan rehberliği", "Sigorta"]
+    },
+    {
+      "id": 19,
+      "image": "/images/tur/kackar.jpg",
+      "location": "Rize",
+      "title": "Kaçkar Dağları Yayla Turu",
+      "price": 2.399,
+      "booked": 97,
+      "description": "Karadeniz yaylalarında doğa yürüyüşü, yayla kültürü ve yöresel yemeklerle dolu bir gün.",
+      "features": ["Yayla ziyareti", "Rehber", "Yayla yemeği", "Araç ulaşımı", "Fotoğraf molası"]
+    },
+    {
+      "id": 20,
+      "image": "/images/tur/hasankeyf.jpg",
+      "location": "Batman",
+      "title": "Hasankeyf Kültürel Turu",
+      "price": 1.749,
+      "booked": 76,
+      "description": "Binlerce yıllık geçmişiyle Hasankeyf'te kültür dolu bir gün.",
+      "features": ["Tarihi alanlar", "Rehber", "Müze", "Yerel yemek", "Transfer"]
+    },
+    {
+      "id": 21,
+      "image": "/images/tur/eskisehir.jpg",
+      "location": "Eskişehir",
+      "title": "Eskişehir Şehir Turu",
+      "price": 1.199,
+      "booked": 263,
+      "discount": 8,
+      "description": "Modern ve tarihi Eskişehir: Porsuk Çayı, Odunpazarı, Balmumu Müzesi gezisi.",
+      "features": ["Rehber", "Tekne turu", "Müze giriş", "Öğle yemeği", "Transfer"]
+    },
+    {
+      "id": 22,
+      "image": "/images/tur/mardin.jpg",
+      "location": "Mardin",
+      "title": "Mardin Kültür ve Fotoğraf Turu",
+      "price": 2.199,
+      "booked": 144,
+      "description": "Taş evler, manastırlar ve dar sokaklar arasında Mardin'in mistik havasını yaşayın.",
+      "features": ["Profesyonel rehber", "Fotoğraf molaları", "Tarihi yapılar", "Yemek", "Transfer"]
+    },
+    {
+      "id": 23,
+        "image": "/images/tur/paris.jpg",
+        "location": "Fransa",
+        "title": "Paris Şehir Turu",
+        "price": 17.999,
+        "booked": 534,
+        "discount": 10,
+        "description": "Eyfel Kulesi, Louvre Müzesi ve Seine Nehri turu ile romantik Paris'i keşfedin.",
+        "features": ["Uçak bileti", "4 gece otel", "Kahvaltı", "Rehberlik", "Transfer"]
+      },
+      {
+        "id": 24,
+        "image": "/images/tur/roma.jpg",
+        "location": "İtalya",
+        "title": "Roma & Vatikan Turu",
+        "price": 15.499,
+        "booked": 412,
+        "description": "Tarihi Roma sokaklarında yürüyüş, Vatikan ziyareti ve İtalyan mutfağı deneyimi.",
+        "features": ["Uçak bileti", "3 gece otel", "Rehberlik", "Müze giriş", "Kahvaltı"]
+      },
+      {
+        "id": 25,
+        "image": "/images/tur/prag.jpg",
+        "location": "Çekya",
+        "title": "Prag Masal Şehri Turu",
+        "price": 13.999,
+        "booked": 268,
+        "discount": 5,
+        "description": "Ortaçağ dokusunu koruyan Prag’da tarihi ve kültürel bir keşif.",
+        "features": ["3 gece otel", "Kahvaltı", "Şehir turu", "Rehberlik", "Transfer"]
+      },
+      {
+        "id": 26,
+        "image": "/images/tur/barcelona.jpg",
+        "location": "İspanya",
+        "title": "Barselona & Gaudi Turu",
+        "price": 16.499,
+        "booked": 376,
+        "description": "Sagrada Familia ve Park Güell dahil Barselona’nın mimari harikalarını keşfedin.",
+        "features": ["Uçuş", "4 gece otel", "Rehber", "Kahvaltı", "Şehir içi tur"]
+      },
+      {
+        "id": 27,
+        "image": "/images/tur/budapest.jpg",
+        "location": "Macaristan",
+        "title": "Budapeşte Termal & Kültür Turu",
+        "price": 12.999,
+        "booked": 194,
+        "description": "Tuna Nehri, Zincir Köprü ve termal banyolarla dinlendirici bir gezi.",
+        "features": ["Uçuş", "3 gece otel", "Termal giriş", "Rehber", "Kahvaltı"]
+      },
+      {
+        "id": 28,
+        "image": "/images/tur/dubai.jpg",
+        "location": "Birleşik Arap Emirlikleri",
+        "title": "Dubai Lüks ve Çöl Safari Turu",
+        "price": 18.999,
+        "booked": 589,
+        "discount": 8,
+        "description": "Gökyüzüne uzanan gökdelenler ve adrenalin dolu çöl safarisi.",
+        "features": ["Uçuş", "4 gece otel", "Çöl safari", "Akşam yemeği", "Transfer"]
+      },
+      {
+        "id": 29,
+        "image": "/images/tur/amsterdam.jpg",
+        "location": "Hollanda",
+        "title": "Amsterdam & Kanallar Turu",
+        "price": 14.499,
+        "booked": 334,
+        "description": "Bisikletle şehir turu, kanallarda tekne gezisi ve müze ziyaretleri.",
+        "features": ["3 gece otel", "Kanallar turu", "Bisiklet kiralama", "Müze girişi", "Rehber"]
+      },
+      {
+        "id": 30,
+        "image": "/images/tur/bangkok.jpg",
+        "location": "Tayland",
+        "title": "Bangkok & Tapınaklar Turu",
+        "price": 22.499,
+        "booked": 289,
+        "description": "Uzakdoğu’nun kalbinde tropikal atmosfer ve mistik tapınaklar.",
+        "features": ["Uçuş", "5 gece otel", "Rehberlik", "Tapınak girişleri", "Kahvaltı"]
+      },
+      {
+        "id": 31,
+        "image": "/images/tur/maldivler.jpg",
+        "location": "Maldivler",
+        "title": "Maldivler Tatil & Dalış Turu",
+        "price": 34.999,
+        "booked": 123,
+        "discount": 12,
+        "description": "Beyaz kumsallar, turkuaz deniz ve unutulmaz dalış deneyimi.",
+        "features": ["Uçuş", "Resort konaklama", "Yarım pansiyon", "Dalış ekipmanı", "Transfer"]
+      }
+    ]
 }

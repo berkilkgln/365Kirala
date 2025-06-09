@@ -194,8 +194,73 @@
         "Hidrolik Platform",
         "Jet Ski",
         "Tam Mürettebat",
-        "Ses Sistemi"
+        "Ses Sistemi",
+        "Wi-Fi"
       ]
-    }
-  ]
+    },
+{
+    "id": 16,
+    "image": "/images/yat/yat16.jpg",
+    "location": "Bodrum",
+    "title": "Lüks Mega Yat",
+    "price": 8499,
+    "booked": 12,
+    "description": "Bodrum’un eşsiz koylarında ultra lüks yat deneyimi.",
+    "features": [
+      "Jakuzili güverte",
+      "Özel aşçı",
+      "Jet ski",
+      "Wi-Fi",
+      "Kaptan ve mürettebat"
+    ]
+  },
+  {
+    "id": 17,
+    "image": "/images/yat/yat17.jpg",
+    "location": "Göcek",
+    "title": "Ekonomik Aile Yatı",
+    "price": 2999,
+    "booked": 7,
+    "description": "Göcek koylarında ailece rahatça vakit geçirebileceğiniz ekonomik yat.",
+    "features": [
+      "Geniş oturma alanı",
+      "Çocuk dostu",
+      "Gölgelik",
+      "Bluetooth hoparlör",
+      "Buzdolabı"
+    ]
+  },
+  {
+    "id": 18,
+    "image": "/images/yat/yat18.jpg",
+    "location": "Fethiye",
+    "title": "Romantik Gün Batımı Turu",
+    "price": 1999,
+    "booked": 9,
+    "description": "Fethiye’de gün batımı eşliğinde romantik yelken turu.",
+    "features": [
+      "Yelkenli",
+      "Şampanya ikramı",
+      "Müzik sistemi",
+      "Özel masa düzeni",
+      "Kaptan"
+    ]
+  },
+  {
+    "id": 20,
+    "image": "/images/yat/yat20.jpg",
+    "location": "İstanbul",
+    "title": "Boğaz Turu Lüks Yat",
+    "price": 4499,
+    "booked": 11,
+    "description": "İstanbul Boğazı’nda tarihi manzaralar eşliğinde özel tur.",
+    "features": [
+      "Geniş güverte",
+      "Müzik sistemi",
+      "İkramlar",
+      "Kaptan",
+      "Isıtma sistemi"
+    ]
+  }
+]
 }

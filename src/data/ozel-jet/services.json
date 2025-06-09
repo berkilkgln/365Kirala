@@ -6,8 +6,8 @@
       "id": 1,
       "image": "/images/ozel-jet/jet1.jpg",
       "title": "Cessna Citation CJ4",
-      "departure": "İstanbul",
-      "destination": "Antalya",
+      "departure": "Türkiye",
+      "destination": "Türkiye İçi",
       "price": 8.499,
       "booked": 12,
       "discount": 10,
@@ -25,8 +25,8 @@
       "id": 2,
       "image": "/images/ozel-jet/jet2.jpg",
       "title": "Gulfstream G550",
-      "departure": "İstanbul",
-      "destination": "Londra",
+      "departure": "Türkiye",
+      "destination": "Avrupa",
       "price": 14.999,  
       "booked": 8,
       "description": "14 yolcu kapasiteli, ultra uzun menzilli lüks jet. En üst düzey konfor ve teknoloji.",
@@ -43,8 +43,8 @@
       "id": 3,
       "image": "/images/ozel-jet/jet3.jpg",
       "title": "Embraer Phenom 300",
-      "departure": "İstanbul",
-      "destination": "Paris",
+      "departure": "Türkiye",
+      "destination": "Fransa",
       "price": 9.499,
       "booked": 15,
       "discount": 15,
@@ -61,7 +61,7 @@
     {
       "id": 4,
       "image": "/images/ozel-jet/jet4.jpg",
-      "departure": "Antalya",
+      "departure": "Türkiye",
       "destination": "Mikonos",
       "title": "Antalya - Mikonos VIP Jet",
       "price": 7.499,
@@ -74,6 +74,208 @@
         "VIP Lounge Kullanımı",
         "Özel İkram Menüsü",
         "Canlı Uçuş Takibi"
+      ]
+    },
+    {
+      "id": 5,
+      "image": "/images/ozel-jet/jet5.jpg",
+      "departure": "Türkiye",
+      "destination": "Dubai",
+      "title": "İstanbul - Dubai Lüks Jet",
+      "price": 18.999,
+      "booked": 18,
+      "discount": 10,
+      "description": "Uzun menzilli, tam konforlu jet ile Dubai'ye prestijli bir uçuş.",
+      "features": [
+        "12 Yolcu Kapasitesi",
+        "Yataklı Kabin",
+        "VIP İkram",
+        "Gümrük Önceliği",
+        "Yüksek Güvenlik",
+        "Uçuş Asistanı"
+      ]
+    },
+    {
+      "id": 6,
+      "image": "/images/ozel-jet/jet6.jpg",
+      "departure": "Türkiye",
+      "destination": "Londra",
+      "title": "İstanbul - Londra Özel Jet",
+      "price": 17.999,
+      "booked": 10,
+      "description": "İstanbul'dan Londra’ya konforlu ve hızlı özel jet kiralama.",
+      "features": [
+        "10 Yolcu Kapasitesi",
+        "Geniş İç Mekan",
+        "İngilizce Kabin Ekibi",
+        "Şampanya Servisi",
+        "Yüksek Hızlı Uçuş",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": 7,
+      "image": "/images/ozel-jet/jet7.jpg",
+      "departure": "Türkiye",
+      "destination": "Maldivler",
+      "title": "Maldivler Lüks Jet Kiralama",
+      "price": 29.999,
+      "booked": 6,
+      "description": "Balayı ve lüks tatil için Maldivler’e VIP uçuş deneyimi.",
+      "features": [
+        "13 Yolcu Kapasitesi",
+        "Yataklı Kabin",
+        "Deniz Üzerinden Uçuş",
+        "Özel Kabin Ekibi",
+        "Gourmet Menü",
+        "24 Saat Uçuş Planlama"
+      ]
+    },
+    {
+      "id": 8,
+      "image": "/images/ozel-jet/jet8.jpg",
+      "departure": "Türkiye",
+      "destination": "Berlin",
+      "title": "Ankara - Berlin Jet Kiralama",
+      "price": 12.499,
+      "booked": 9,
+      "discount": 5,
+      "description": "İş gezileri için hızlı ve etkili özel jet hizmeti.",
+      "features": [
+        "6 Yolcu Kapasitesi",
+        "Kabin Ofis Donanımı",
+        "Sessiz Uçuş",
+        "İkram Paketi",
+        "Avrupa Hava Trafiği Önceliği",
+        "Gümrük Asistanı"
+      ]
+    },
+    {
+      "id": 9,
+      "image": "/images/ozel-jet/jet9.jpg",
+      "departure": "Türkiye",
+      "destination": "Roma",
+      "title": "İzmir - Roma Özel Jet",
+      "price": 11.999,
+      "booked": 7,
+      "description": "İzmir çıkışlı Roma uçuşu için şık ve hızlı çözüm. Orta segment lüks jet.",
+      "features": [
+        "7 Yolcu Kapasitesi",
+        "Deri Koltuklar",
+        "İtalyan Şarap Servisi",
+        "Wi-Fi",
+        "Kabin Eğlence Sistemi",
+        "Özel Giriş Terminali"
+      ]
+    },
+    {
+      "id": 10,
+      "image": "/images/ozel-jet/jet10.jpg",
+      "departure": "Türkiye",
+      "destination": "Paris",
+      "title": "Bodrum - Paris VIP Jet",
+      "price": 16.499,
+      "booked": 11,
+      "discount": 12,
+      "description": "Bodrum’dan romantik Paris uçuşları için özel jet. Tatilciler için ideal.",
+      "features": [
+        "8 Yolcu Kapasitesi",
+        "Gourmet Kahvaltı",
+        "Uçuş Hostesi",
+        "Özel Uçuş Rotası",
+        "Duty Free Servisi",
+        "Hızlı Check-in"
+      ]
+    },
+    {
+      "id": 11,
+      "image": "/images/ozel-jet/jet11.jpg",
+      "departure": "Türkiye",
+      "destination": "Kıbrıs",
+      "title": "Antalya - Kıbrıs Özel Jet",
+      "price": 6.999,
+      "booked": 17,
+      "description": "Kısa mesafe, hızlı ve konforlu özel jet hizmeti. Yaz aylarının gözdesi.",
+      "features": [
+        "5 Yolcu Kapasitesi",
+        "Kısa Mesafe Uyumlu",
+        "Soğuk İçecek Servisi",
+        "Hızlı Boarding",
+        "Güneşlikli Kabin",
+        "Ekstra Bagaj Alanı"
+      ]
+    },
+    {
+      "id": 12,
+      "image": "/images/ozel-jet/jet12.jpg",
+      "departure": "Türkiye",
+      "destination": "New York",
+      "title": "İstanbul - New York Ultra Jet",
+      "price": 49.999,
+      "booked": 4,
+      "description": "Kıtalararası lüks uçuş deneyimi. En üst düzey VIP jet hizmeti.",
+      "features": [
+        "16 Yolcu Kapasitesi",
+        "King Size Yatak",
+        "Tam Donanımlı Ofis",
+        "Gourmet Aşçı Eşliğinde Menü",
+        "Uydu TV ve İnternet",
+        "24 Saat Kabin Ekibi"
+      ]
+    },
+    {
+      "id": 13,
+      "image": "/images/ozel-jet/jet13.jpg",
+      "departure": "Türkiye",
+      "destination": "Seyşeller",
+      "title": "Seyşeller Tatil Jeti",
+      "price": 32.999,
+      "booked": 5,
+      "discount": 8,
+      "description": "Balayı ve lüks tatiller için tropik destinasyonlara özel jet kiralama.",
+      "features": [
+        "12 Yolcu Kapasitesi",
+        "Tropik Menü",
+        "Geniş Kabin Pencereleri",
+        "Yataklı Koltuklar",
+        "Romantik Ambiyans Aydınlatması",
+        "Şampanya Karşılama"
+      ]
+    },
+    {
+      "id": 14,
+      "image": "/images/ozel-jet/jet14.jpg",
+      "departure": "Türkiye",
+      "destination": "Bakü",
+      "title": "İstanbul - Bakü Özel Jet",
+      "price": 8.999,
+      "booked": 14,
+      "description": "Yakın coğrafyada konforlu ve hızlı VIP uçuş deneyimi.",
+      "features": [
+        "6 Yolcu Kapasitesi",
+        "Standart VIP Hizmet",
+        "Lokal Tatlar",
+        "Wi-Fi",
+        "Ses Yalıtımlı Kabin",
+        "Express Giriş"
+      ]
+    },
+    {
+      "id": 15,
+      "image": "/images/ozel-jet/jet15.jpg",
+      "departure": "Türkiye",
+      "destination": "Amsterdam",
+      "title": "Ankara - Amsterdam Jet Uçuşu",
+      "price": 13.999,
+      "booked": 6,
+      "description": "İş seyahati ve özel davetler için Avrupa'nın merkezine konforlu ulaşım.",
+      "features": [
+        "9 Yolcu Kapasitesi",
+        "Kahve Barı",
+        "Kabin Konferans Sistemi",
+        "Online Güzergah Takibi",
+        "Avrupa Gümrük Kolaylığı",
+        "Jet Lounge Kullanımı"
       ]
     }
   ]

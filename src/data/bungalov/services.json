@@ -36,13 +36,230 @@
     },
     {
       "id": 4,
-      "image": "/images/bungalov/ayder1.jpg",
+      "image": "/images/bungalov/ayder11.jpg",
       "location": "Ayder Yaylası",
       "title": "Dağ Evi Konseptli Bungalov",
       "price": 1.999,
       "booked": 104,
       "description": "Ayder'in serin yayla havasında doğayla baş başa bir tatil.",
       "features": ["Yayla Manzarası", "Isıtmalı", "Kahvaltı", "Yürüyüş Rotalarına Yakın"]
-    }
+    },
+    {
+      "id": 5,
+      "image": "/images/bungalov/kalkan1.jpg",
+      "location": "Kalkan",
+      "title": "Lüks Orman Manzaralı Bungalov",
+      "price": 4.499,
+      "booked": 77,
+      "discount": 12,
+      "description": "Kalkan'da eşsiz deniz manzarasıyla özel havuzlu ve modern bungalov.",
+      "features": ["Deniz Manzarası", "Özel Havuz", "Klima", "Barbekü Alanı", "Wi-Fi"]
+    },
+    {
+      "id": 6,
+      "image": "/images/bungalov/kas2.jpg",
+      "location": "Kaş",
+      "title": "Taş Ev Bungalov",
+      "price": 3.299,
+      "booked": 66,
+      "description": "Doğal taş mimarisiyle inşa edilmiş, huzurlu bir Akdeniz deneyimi.",
+      "features": ["Taş Mimari", "Teras", "Doğa İçinde", "Kahvaltı", "Klima"]
+    },
+    {
+      "id": 7,
+      "image": "/images/bungalov/agva2.jpg",
+      "location": "Ağva",
+      "title": "Romantik Nehir Kenarı Bungalov",
+      "price": 3.799,
+      "booked": 94,
+      "discount": 10,
+      "description": "Balayı çiftleri için ideal, nehir kenarında romantik ve izole bungalov.",
+      "features": ["Nehir Kenarı", "Jakuzili", "Özel Teras", "Şömine", "Kahvaltı"]
+    },
+    {
+      "id": 8,
+      "image": "/images/bungalov/uzungol1.jpg",
+      "location": "Uzungöl",
+      "title": "Uzungöl Manzaralı Ahşap Bungalov",
+      "price": 2.799,
+      "booked": 121,
+      "description": "Karadeniz’in gözdesi Uzungöl'de doğayla iç içe sessiz bir tatil.",
+      "features": ["Uzungöl Manzarası", "Ahşap Yapı", "Balkon", "Wi-Fi", "Otopark"]
+    },
+    {
+      "id": 9,
+      "image": "/images/bungalov/bozburun1.jpg",
+      "location": "Bozburun",
+      "title": "Doğa İçinde Minimal Bungalov",
+      "price": 3.199,
+      "booked": 58,
+      "description": "Marmaris-Bozburun’da sessizlik, doğa ve konfor bir arada.",
+      "features": ["Minimal Tasarım", "Doğa Manzarası", "Kahvaltı Dahil", "Klima", "Hamak"]
+    },
+    {
+      "id": 10,
+      "image": "/images/bungalov/yedigoller11.jpg",
+      "location": "Yedigöller",
+      "title": "Yedigöller Ahşap Orman Evi",
+      "price": 2.299,
+      "booked": 109,
+      "description": "Yedigöller Milli Parkı’na yürüme mesafesinde doğa ile baş başa konaklama.",
+      "features": ["Milli Park Yakını", "Ahşap Konsept", "Barbekü", "Doğa Yürüyüşü", "Isıtmalı"]
+    },
+    {
+      "id": 11,
+      "image": "/images/bungalov/kazdaglari1.jpg",
+      "location": "Kazdağları",
+      "title": "Kazdağları Doğa Evi",
+      "price": 2.899,
+      "booked": 73,
+      "description": "Oksijen deposu Kazdağları’nda, zeytin ağaçlarının arasında huzurlu konaklama.",
+      "features": ["Doğa İçinde", "Teras", "Kahvaltı", "Şömine", "Yürüyüş Parkuru"]
+    },
+    {
+      "id": 12,
+      "image": "/images/bungalov/antalya11.jpg",
+      "location": "Antalya",
+      "title": "Denize Yakın Tropikal Bungalov",
+      "price": 3.599,
+      "booked": 84,
+      "discount": 8,
+      "description": "Antalya’nın sahiline yürüme mesafesinde, tropik tasarımlı modern bungalov.",
+      "features": ["Denize Yakın", "Klima", "Özel Bahçe", "Barbekü", "Wi-Fi"]
+    },
+    {
+      "id": 13,
+      "image": "/images/bungalov/datca1.jpg",
+      "location": "Datça",
+      "title": "Zeytinlikler Arasında Bungalov",
+      "price": 3.099,
+      "booked": 59,
+      "description": "Datça’nın huzur veren atmosferinde zeytin ağaçları arasında sessiz bir kaçış.",
+      "features": ["Zeytinlik Alan", "Doğa Manzarası", "Mutfak", "Teras", "Otopark"]
+    },
+    {
+      "id": 14,
+      "image": "/images/bungalov/cirali1.jpg",
+      "location": "Çıralı",
+      "title": "Ekolojik Bungalov",
+      "price": 2.999,
+      "booked": 97,
+      "discount": 5,
+      "description": "Çıralı’nın doğal dokusunu bozmadan inşa edilmiş ekolojik tasarımlı bungalov.",
+      "features": ["Ekolojik Yapı", "Bahçe", "Kahvaltı", "Klima", "Bisiklet Kiralama"]
+    },
+    {
+      "id": 15,
+      "image": "/images/bungalov/edirne1.jpg",
+      "location": "Edirne",
+      "title": "Nehrin Sessizliğinde Bungalov",
+      "price": 2.199,
+      "booked": 45,
+      "description": "Tunca Nehri kıyısında, doğayla baş başa kamp ve konfor deneyimi.",
+      "features": ["Nehir Kıyısı", "Isıtmalı", "Barbekü", "Şömine", "Wi-Fi"]
+    },
+    {
+      "id": 16,
+      "image": "/images/bungalov/bolu1.jpg",
+      "location": "Bolu",
+      "title": "Göl Kenarı Lüks Bungalov",
+      "price": 3.699,
+      "booked": 88,
+      "discount": 10,
+      "description": "Bolu’da göl kenarında, doğa ve lüksün buluştuğu bungalov deneyimi.",
+      "features": ["Göl Kenarı", "Jakuzili", "Klima", "Teras", "Kahvaltı"]
+    },
+        {
+          "id": 17,
+          "image": "/images/bungalov/bali11.jpg",
+          "location": "Bali, Endonezya",
+          "title": "Orman İçinde Lüks Bungalov",
+          "price": 5.499,
+          "booked": 198,
+          "discount": 12,
+          "description": "Ubud ormanında, özel havuzlu, doğayla iç içe bungalov.",
+          "features": ["Özel Havuz", "Orman Manzarası", "Spa", "Wi-Fi", "Kahvaltı"]
+        },
+        {
+          "id": 18,
+          "image": "/images/bungalov/maldives1.jpg",
+          "location": "Maldivler",
+          "title": "Su Üstü Tropik Bungalov",
+          "price": 9.999,
+          "booked": 256,
+          "discount": 20,
+          "description": "Hint Okyanusu üzerinde, cam zeminli su üstü lüks bungalov.",
+          "features": ["Cam Zemin", "Su Üstü", "Teras", "Klima", "Deniz Manzarası"]
+        },
+        {
+          "id": 19,
+          "image": "/images/bungalov/phuket1.jpg",
+          "location": "Phuket, Tayland",
+          "title": "Deniz Manzaralı Tropik Bungalov",
+          "price": 4.999,
+          "booked": 143,
+          "description": "Andaman Denizi manzaralı, palmiye ağaçları arasında bungalov.",
+          "features": ["Deniz Manzarası", "Tropik Bahçe", "Klima", "Kahvaltı", "Wi-Fi"]
+        },
+        {
+          "id": 20,
+          "image": "/images/bungalov/hawaii1.jpg",
+          "location": "Maui, Hawaii",
+          "title": "Okyanus Kıyısı Bungalov",
+          "price": 6.999,
+          "booked": 117,
+          "description": "Pasifik kıyısında, palmiyeler altında huzurlu bir konaklama.",
+          "features": ["Okyanus Manzarası", "Teras", "Barbekü", "Klima", "Wi-Fi"]
+        },
+        {
+          "id": 21,
+          "image": "/images/bungalov/zanzinbar1.jpg",
+          "location": "Zanzibar, Tanzanya",
+          "title": "Beyaz Kum Sahil Bungalovu",
+          "price": 4.799,
+          "booked": 92,
+          "description": "Hint Okyanusu kıyısında beyaz kumlar üzerinde özel bungalov.",
+          "features": ["Sahil Erişimi", "Tropik Bahçe", "Klima", "Kahvaltı", "Wi-Fi"]
+        },
+        {
+          "id": 22,
+          "image": "/images/bungalov/seychelles1.jpg",
+          "location": "Seyşeller",
+          "title": "Mercan Adası Bungalov",
+          "price": 7.299,
+          "booked": 101,
+          "description": "Mercan adalarında, doğa ve denizle iç içe lüks konaklama.",
+          "features": ["Özel Plaj", "Deniz Manzarası", "Teras", "Klima", "Spa"]
+        },
+        {
+          "id": 23,
+          "image": "/images/bungalov/costa-rica1.jpg",
+          "location": "Costa Rica",
+          "title": "Yağmur Ormanı İçinde Bungalov",
+          "price": 3.899,
+          "booked": 87,
+          "description": "Costa Rica’nın yağmur ormanlarında doğal ve sessiz konaklama.",
+          "features": ["Yağmur Ormanı", "Doğal Ahşap", "Wi-Fi", "Teras", "Kahvaltı"]
+        },
+        {
+          "id": 24,
+          "image": "/images/bungalov/newzealand1.jpg",
+          "location": "Queenstown, Yeni Zelanda",
+          "title": "Göl Kenarı Dağ Evi Bungalov",
+          "price": 5.299,
+          "booked": 76,
+          "description": "Dağ manzaralı, göl kenarında sakin ve lüks bir bungalov.",
+          "features": ["Dağ Manzarası", "Isıtmalı", "Balkon", "Barbekü", "Wi-Fi"]
+        },
+        {
+          "id": 25,
+          "image": "/images/bungalov/norway1.jpg",
+          "location": "Lofoten, Norveç",
+          "title": "Fiyort Manzaralı Kuzey Bungalov",
+          "price": 6.199,
+          "booked": 64,
+          "description": "Fiyort kıyısında kuzey ışıkları eşliğinde bungalov deneyimi.",
+          "features": ["Fiyort Manzarası", "Kuzey Işıkları", "Isıtma", "Wi-Fi", "Kahvaltı"]
+        }    
   ]
 }

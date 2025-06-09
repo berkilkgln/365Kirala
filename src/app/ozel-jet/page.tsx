@@ -1,7 +1,7 @@
 'use client';
 
 import { SinglePageHeader } from '../../components/single-page-header';
-import jetData from '../../data/ozel-jet/services.json';
+import ozelJetData from '../../data/ozel-jet/services.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Navbar } from '../../features/home/navbar';
@@ -10,17 +10,17 @@ import { createUrlSlug } from '../../lib/utils';
 import Script from 'next/script';
 import Head from 'next/head';
 
-export default function PrivateJetPage() {
+export default function OzelJetPage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Özel jet kiralama fiyatları neye göre belirlenir?",
+        "name": "Özel jet kiralama fiyatları neye göre değişir?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Özel jet kiralama fiyatları; uçuş mesafesi, jet modeli, yolcu kapasitesi ve sezona göre değişiklik gösterir. Ayrıca VIP hizmetler, catering ve özel transfer gibi ek hizmetler de fiyatı etkileyebilir."
+          "text": "Özel jet kiralama fiyatları; uçağın modeli, yolcu kapasitesi, uçuş mesafesi ve süresi, sezon ve destinasyona göre değişiklik gösterir. Özel hizmetler ve ikramlar da fiyatı etkileyebilir."
         }
       },
       {
@@ -28,15 +28,15 @@ export default function PrivateJetPage() {
         "name": "Özel jet kiralamak için ne gerekiyor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Özel jet kiralamak için geçerli pasaport ve rezervasyon ödemesi yeterlidir. Uluslararası uçuşlar için vize gerekebilir. Tüm yolcuların pasaport bilgileri uçuştan önce paylaşılmalıdır."
+          "text": "Özel jet kiralamak için pasaport, vize (gerekli ise) ve rezervasyon ödemesi gereklidir. Tüm yolcuların seyahat belgelerinin eksiksiz olması önemlidir."
         }
       },
       {
         "@type": "Question",
-        "name": "Özel jet ile hangi destinasyonlara uçulabilir?",
+        "name": "Özel jetlerde hangi hizmetler sunuluyor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Özel jetlerimizle Türkiye içi tüm havalimanlarına ve Avrupa'nın başlıca şehirlerine uçuş gerçekleştirebilirsiniz. Talep üzerine özel destinasyonlar için de hizmet sağlanabilir."
+          "text": "Özel jetlerimizde profesyonel uçuş ekibi, lüks ikramlar, özel kabin hizmetleri standart olarak sunulur. VIP transfer, özel menü, toplantı odası gibi ek hizmetler talep edilebilir."
         }
       },
       {
@@ -44,7 +44,7 @@ export default function PrivateJetPage() {
         "name": "Özel jet rezervasyonu nasıl iptal edilir?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Özel jet rezervasyonları uçuş tarihinden 48 saat öncesine kadar ücretsiz iptal edilebilir. Daha kısa sürede yapılan iptallerde, sezona göre değişen iptal koşulları uygulanır."
+          "text": "Özel jet rezervasyonları uçuş tarihinden 48 saat öncesine kadar belirli koşullarla iptal edilebilir. Daha kısa sürede yapılan iptallerde özel şartlar uygulanır."
         }
       }
     ]
@@ -53,10 +53,10 @@ export default function PrivateJetPage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "365Kirala Özel Jet",
+    "name": "365Kirala Özel Jet Kiralama",
     "url": "https://365kirala.com/ozel-jet",
     "logo": "https://365kirala.com/images/logo.png",
-    "description": "Türkiye ve Avrupa'da lüks özel jet kiralama hizmetleri.",
+    "description": "Türkiye ve dünya genelinde özel jet kiralama hizmetleri.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "TR"
@@ -67,7 +67,7 @@ export default function PrivateJetPage() {
         "telephone": "+90-123-456-7890",
         "contactType": "customer service",
         "email": "info@365kirala.com",
-        "areaServed": ["TR", "EU"],
+        "areaServed": "TR",
         "availableLanguage": ["Turkish", "English"]
       }
     ]
@@ -86,19 +86,19 @@ export default function PrivateJetPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
       <Head>
-        <title>Özel Jet Kiralama | VIP Uçuş ve Lüks Seyahat | 365Kirala</title>
+        <title>Özel Jet Kiralama | Lüks Jet ve VIP Uçuşlar | 365Kirala</title>
         <meta
           name="description"
-          content="Türkiye ve Avrupa'da özel jet kiralama hizmetleri. VIP uçuş deneyimi, lüks seyahat ve konforlu yolculuk için özel jet kiralayın."
+          content="Türkiye ve dünya genelinde özel jet kiralama hizmetleri. Profesyonel uçuş ekibi ve VIP hizmetlerle konforlu seyahat deneyimi için 365Kirala."
         />
         <meta
           name="keywords"
-          content="özel jet kiralama, vip uçuş, lüks seyahat, özel uçak, jet charter, business jet, özel havacılık, executive jet"
+          content="özel jet kiralama, lüks jet, vip uçuş, özel uçak, business jet, jet charter, özel havacılık, kiralık jet, executive jet"
         />
-        <meta property="og:title" content="Özel Jet Kiralama | VIP Uçuş ve Lüks Seyahat | 365Kirala" />
+        <meta property="og:title" content="Özel Jet Kiralama | Lüks Jet ve VIP Uçuşlar | 365Kirala" />
         <meta
           property="og:description"
-          content="Türkiye ve Avrupa'da özel jet kiralama hizmetleri. VIP uçuş deneyimi, lüks seyahat ve konforlu yolculuk için özel jet kiralayın."
+          content="Türkiye ve dünya genelinde özel jet kiralama hizmetleri. Profesyonel uçuş ekibi ve VIP hizmetlerle konforlu seyahat deneyimi için 365Kirala."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://365kirala.com/ozel-jet" />
@@ -106,85 +106,88 @@ export default function PrivateJetPage() {
         <link rel="canonical" href="https://365kirala.com/ozel-jet" />
       </Head>
       <Navbar />
-      <div className="container mx-auto px-4 py-8 font-semibold">
+      <div className="max-w-screen-xl mx-auto px-4 py-8 font-semibold">
         <SinglePageHeader
           image="/images/ozel-jet/jetbackground.jpg"
           title="Özel Jet Kiralama"
-          descriptionDesktop="İstanbul, Bodrum, Antalya ve Avrupa'ya özel jet kiralama hizmeti. Konforlu, hızlı ve prestijli seyahat deneyimi için hemen rezervasyon yapın."
-          descriptionMobile="İstanbul, Bodrum, Antalya ve Avrupa'ya özel jet kiralama hizmeti. Konforlu ve prestijli seyahat için hemen rezervasyon yapın."
+          descriptionDesktop="Lüks ve konforlu özel jetlerimizle VIP ulaşım hizmeti. İş seyahatleriniz ve özel yolculuklarınız için profesyonel ekibimizle hizmetinizdeyiz."
+          descriptionMobile="Lüks ve konforlu özel jetlerimizle VIP ulaşım hizmeti."
         />
 
-        <h1 className="text-3xl font-bold mb-6 mt-5 text-center md:text-left">Özel Jet Kiralama</h1>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
-          {jetData.items.map((item) => {
-            const slug = createUrlSlug(item.title);
-            return (
-              <Link
-                key={item.id}
-                href={`/ozel-jet/${item.id}-${slug}`}
-                className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
-              >
-                <div className="relative h-52 md:h-56">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover rounded-t-xl"
-                  />
+        <div className="mt-8">
+          <h1 className="text-3xl font-bold mb-6 text-center md:text-left">Özel Jet Kiralama</h1>
 
-                  {item.discount && (
-                    <div className="absolute top-2 right-2">
-                      <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold px-2 py-1 rounded shadow">
-                        %{item.discount} İndirim
-                      </span>
-                    </div>
-                  )}
-                </div>
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
+            {ozelJetData.items.map((item) => {
+              const slug = createUrlSlug(item.title);
+              
+              return (
+                <Link
+                  key={item.id}
+                  href={`/ozel-jet/${item.id}-${slug}`}
+                  className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
+                >
+                  <div className="relative h-52 md:h-56">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover rounded-t-xl"
+                    />
 
-                <div className="p-4 flex-1 flex flex-col justify-between">
-                  <div className="space-y-3">
-                    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-500">{item.departure} ➝ {item.destination}</p>
+                    {item.discount && (
+                      <div className="absolute top-2 right-2">
+                        <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold px-2 py-1 rounded shadow">
+                          %{item.discount} İndirim
+                        </span>
+                      </div>
+                    )}
+                  </div>
 
-                    <div className="flex justify-between items-center border-t pt-4">
-                      <div>
-                        {/* Fiyat */}
-                        <div className="mt-4">
-                          {item.discount && (
-                            <div className="text-sm text-gray-400 line-through">
-                              {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}€
+                  <div className="p-4 flex-1 flex flex-col justify-between">
+                    <div className="space-y-3">
+                      <h3 className="text-lg md:text-xl font-semibold text-gray-900">{item.title}</h3>
+                      <p className="text-sm text-gray-500">{item.departure} ➝ {item.destination}</p>
+
+                      <div className="flex justify-between items-center border-t pt-4">
+                        <div>
+                          <div className="mt-4">
+                            {item.discount && (
+                              <div className="text-sm text-gray-400 line-through">
+                                {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
+                              </div>
+                            )}
+                            <div className="flex items-baseline gap-1">
+                              <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}₺</span>
+                              <span className="text-sm text-gray-500">/ saatlik</span>
                             </div>
-                          )}
-                          <div className="flex items-baseline gap-1">
-                            <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}€</span>
-                            <span className="text-sm text-gray-500">/ uçuş başı</span>
                           </div>
+                        </div>
+
+                        <div className="flex flex-col items-center text-gray-600 text-xs md:text-sm">
+                          <FaStar className="text-yellow-400 text-lg md:text-xl" />
+                          <span className="mt-1">{item.booked}+ rezervasyon</span>
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-center text-gray-600 text-xs md:text-sm">
-                        <FaStar className="text-yellow-400 text-lg md:text-xl" />
-                        <span className="mt-1">{item.booked}+ rezervasyon</span>
-                      </div>
+                      <ul className="grid grid-cols-1 gap-2 text-sm text-gray-600 list-none mt-3">
+                        {item.features.slice(0, 3).map((f, i) => (
+                          <li key={i} className="flex items-center gap-2">
+                            <span className="w-2 h-2 bg-indigo-500 rounded-full" />
+                            {f}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
 
-                    <ul className="grid grid-cols-1 gap-2 text-sm text-gray-600 list-none mt-3">
-                      {item.features.slice(0, 3).map((f, i) => (
-                        <li key={i} className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-indigo-500 rounded-full" />
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="mt-4 bg-indigo-600 group-hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition">
+                      İncele
+                    </div>
                   </div>
-
-                  <div className="text-center text-indigo-700 border border-indigo-700 rounded-lg py-2 mt-5 group-hover:bg-indigo-700 group-hover:text-white transition-colors">
-                    İncele
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

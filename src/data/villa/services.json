@@ -127,6 +127,213 @@
       "discount": 15,
       "description": "Antalya'nın en prestijli golf sahasına komşu lüks villa. Spor ve lüksün buluşması.",
       "features": ["Golf sahası", "Spor salonu", "5 yatak odası", "Havuz", "Tenis kortu"]
-    }
-  ]
-}
+    },
+    
+      {
+        "id": 11,
+        "image": "/images/villa/villa11.jpg",
+        "location": "Marmaris",
+        "title": "Orman İçinde Lüks Villa",
+        "price": 13.499,
+        "booked": 98,
+        "discount": 5,
+        "description": "Marmaris’in doğayla iç içe atmosferinde, sessizlik ve konfor sunan lüks villa.",
+        "features": ["3 Yatak Odası", "Özel Havuz", "Orman Manzarası", "Jakuzi", "Ahşap Teras", "Klima"]
+      },
+      {
+        "id": 12,
+        "image": "/images/villa/villa12.jpg",
+        "location": "Kemer",
+        "title": "Panoramik Deniz Manzaralı Villa",
+        "price": 17.499,
+        "booked": 211,
+        "discount": 10,
+        "description": "Toroslar’a karşı, eşsiz deniz manzaralı 5 yıldız konforunda villa.",
+        "features": ["5 Yatak Odası", "Panoramik Deniz Manzarası", "Sonsuzluk Havuzu", "Sinema Odası", "Akıllı Ev"]
+      },
+      {
+        "id": 13,
+        "image": "/images/villa/villa13.jpg",
+        "location": "Alanya",
+        "title": "Aile Dostu Geniş Villa",
+        "price": 10.999,
+        "booked": 183,
+        "description": "Kalabalık aileler için tasarlanmış geniş yaşam alanları ve çocuk havuzu ile ideal bir seçenek.",
+        "features": ["6 Yatak Odası", "Çocuk Havuzu", "Oyun Parkı", "Bahçe", "Tam Donanımlı Mutfak"]
+      },
+      {
+        "id": 14,
+        "image": "/images/villa/villa14.jpg",
+        "location": "Belek",
+        "title": "Golf Sahasına Yakın Villa",
+        "price": 15.999,
+        "booked": 157,
+        "description": "Golf tutkunları için sahalara 5 dakika mesafede konforlu bir konaklama seçeneği.",
+        "features": ["Golf Sahasına Yakın", "4 Yatak Odası", "Bahçe", "Teras", "Klima", "Ücretsiz Wi-Fi"]
+      },
+      {
+        "id": 15,
+        "image": "/images/villa/villa15.jpg",
+        "location": "Ayvalık",
+        "title": "Taş Ev Konseptli Villa",
+        "price": 11.499,
+        "booked": 139,
+        "discount": 12,
+        "description": "Ayvalık mimarisini yansıtan taş ev tarzında, otantik ve modernin birleşimi bir villa.",
+        "features": ["Taş Mimarisi", "2 Yatak Odası", "Bahçe", "Veranda", "Şömine", "Köy Kahvaltısı Seçeneği"]
+      },
+      {
+        "id": 16,
+        "image": "/images/villa/villa16.jpg",
+        "location": "Seferihisar",
+        "title": "Eko-Dostu Sahil Villası",
+        "price": 12.999,
+        "booked": 122,
+        "description": "Doğayla uyumlu, güneş panelleriyle çalışan ve sürdürülebilirlik odaklı özel sahil villası.",
+        "features": ["Güneş Enerjisi", "Sahil Erişimi", "3 Yatak Odası", "Organik Bahçe", "Sıfır Atık Sistemi"]
+      },
+      {
+        "id": 17,
+        "image": "/images/villa/villa17.jpg",
+        "location": "Bozcaada",
+        "title": "Adada Romantik Villa",
+        "price": 9.999,
+        "booked": 177,
+        "discount": 18,
+        "description": "Bozcaada’nın sessiz koylarında, balayı çiftleri için romantik atmosferli taş villa.",
+        "features": ["1 Yatak Odası", "Manzaralı Balkon", "Jakuzili Banyo", "Şarap Tadım Odası", "Bahçe"]
+      },
+      {
+        "id": 18,
+        "image": "/images/villa/villa18.jpg",
+        "location": "İzmir",
+        "title": "Modern Şehir Villası",
+        "price": 18.499,
+        "booked": 204,
+        "description": "Şehir merkezine yakın, modern yaşam konforuna sahip lüks villa.",
+        "features": ["5 Yatak Odası", "Açık Plan Mutfak", "Güvenlik Sistemi", "Kapalı Garaj", "Özel Havuz"]
+      },
+      {
+        "id": 19,
+        "image": "/images/villa/villa19.jpg",
+        "location": "Didim",
+        "title": "Denize Sıfır Villa",
+        "price": 15.999,
+        "booked": 231,
+        "discount": 20,
+        "description": "Didim’in altın kumsallarına sıfır konumda, özel plaj erişimli muhteşem villa.",
+        "features": ["Denize Sıfır", "4 Yatak Odası", "Özel İskele", "Havuz", "Şezlong Alanı"]
+      },
+      {
+        "id": 20,
+        "image": "/images/villa/villa20.jpg",
+        "location": "Assos",
+        "title": "Antik Kent Manzaralı Villa",
+        "price": 12.499,
+        "booked": 101,
+        "description": "Assos Antik Kenti’ne bakan tepeye kurulmuş, tarihi atmosferiyle büyüleyen villa.",
+        "features": ["Antik Kent Manzarası", "2 Yatak Odası", "Ahşap Teras", "Doğal Taş Mimari", "Huzurlu Atmosfer"]
+      },
+      
+        {
+          "id": 21,
+          "image": "/images/villa/villa21.jpg",
+          "location": "İbiza, İspanya",
+          "title": "Deniz Manzaralı Ibiza Villası",
+          "price": 24999,
+          "booked": 87,
+          "description": "Ibiza’nın en gözde koylarından birinde, özel havuzlu ve teraslı modern villa.",
+          "features": ["Deniz Manzarası", "3 Yatak Odası", "Özel Havuz", "Teras", "Gece Hayatına Yakın"]
+        },
+        {
+          "id": 22,
+          "image": "/images/villa/villa22.jpg",
+          "location": "Amalfi, İtalya",
+          "title": "Tarihi Amalfi Villası",
+          "price": 31999,
+          "booked": 74,
+          "description": "Amalfi kıyısında, deniz manzaralı, taş mimarili ve şef hizmetli lüks villa.",
+          "features": ["Deniz Manzarası", "4 Yatak Odası", "Taş Mimari", "Özel Şef", "Şarap Mahzeni"]
+        },
+        {
+          "id": 23,
+          "image": "/images/villa/villa23.jpg",
+          "location": "Santorini, Yunanistan",
+          "title": "Beyaz Santorini Villası",
+          "price": 18500,
+          "booked": 65,
+          "description": "Ege Denizi’ne bakan, geleneksel Yunan mimarili, jakuzili tatil villası.",
+          "features": ["Jakuzili Teras", "2 Yatak Odası", "Ege Manzarası", "Yunan Mimarisi", "Sessiz Lokasyon"]
+        },
+        {
+          "id": 24,
+          "image": "/images/villa/villa24.jpg",
+          "location": "Bali, Endonezya",
+          "title": "Tropikal Bali Villası",
+          "price": 12000,
+          "booked": 93,
+          "description": "Orkidelerle çevrili, havuzlu, yoga alanlı ve huzur dolu Bali villası.",
+          "features": ["Tropik Bahçe", "Özel Havuz", "Spa Alanı", "3 Yatak Odası", "Yoga Terası"]
+        },
+        {
+          "id": 25,
+          "image": "/images/villa/villa25.jpg",
+          "location": "Tulum, Meksika",
+          "title": "Palmiyeli Tulum Villası",
+          "price": 15999,
+          "booked": 78,
+          "description": "Plaja yürüme mesafesinde, barbekü alanı ve özel havuzuyla ideal tatil villası.",
+          "features": ["Özel Havuz", "Palmiyeler", "Barbekü Alanı", "3 Yatak Odası", "Plaja Yakın"]
+        },
+        {
+          "id": 26,
+          "image": "/images/villa/villa26.jpg",
+          "location": "Côte d'Azur, Fransa",
+          "title": "Fransız Rivierası Villası",
+          "price": 39999,
+          "booked": 52,
+          "description": "Yat limanına yakın, sinema odası ve geniş bahçesi olan lüks villa.",
+          "features": ["2 Yatak Odası", "Deniz Manzarası", "Geniş Teras", "Özel Havuz", "Barbekü"]
+        },
+        {
+          "id": 27,
+          "image": "/images/villa/villa27.jpg",
+          "location": "Bora Bora",
+          "title": "Cam Zeminli Bungalow",
+          "price": 36999,
+          "booked": 61,
+          "description": "Denizin üstünde, cam tabanlı, eşsiz manzaraya sahip balayı villası.",
+          "features": ["Cam Zemin", "Deniz Üstü", "Balayı İçin Uygun", "Lüks Donanım", "2 Yatak Odası"]
+        },
+        {
+          "id": 28,
+          "image": "/images/villa/villa28.jpg",
+          "location": "Girne, Kıbrıs",
+          "title": "Girne Dağ ve Deniz Manzaralı Villa",
+          "price": 12999,
+          "booked": 88,
+          "description": "Hem dağ hem deniz manzaralı, korunaklı ve huzurlu tatil villası.",
+          "features": ["Dağ Manzarası", "2 Yatak Odası", "Korunaklı Bahçe", "Doğayla İç İçe", "Özel Havuz"]
+        },
+        {
+          "id": 29,
+          "image": "/images/villa/villa29.jpg",
+          "location": "Miami Beach, ABD",
+          "title": "Miami Özel İskeleli Villa",
+          "price": 45000,
+          "booked": 49,
+          "description": "Özel iskeleli, jakuzili ve spor salonlu Miami lüks villası.",
+          "features": ["Özel İskele", "Spor Salonu", "Jakuzi", "Geniş Salon", "4 Yatak Odası"]
+        },
+        {
+          "id": 30,
+          "image": "/images/villa/villa30.jpg",
+          "location": "Cape Town, Güney Afrika",
+          "title": "Manzaralı Cape Town Villası",
+          "price": 27999,
+          "booked": 67,
+          "description": "Lion’s Head manzaralı, modern tasarımlı, açık hava sinemalı villa.",
+          "features": ["Lion’s Head Manzarası", "Modern Mimari", "Açık Hava Sineması", "3 Yatak Odası", "Geniş Teras"]
+          }
+    ]
+  }

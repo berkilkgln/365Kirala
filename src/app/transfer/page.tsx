@@ -1,50 +1,50 @@
 'use client';
 
-import { Navbar } from '../../features/home/navbar';
+import { SinglePageHeader } from '../../components/single-page-header';
 import transferData from '../../data/transfer/services.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Navbar } from '../../features/home/navbar';
+import { FaStar } from 'react-icons/fa';
 import { createUrlSlug } from '../../lib/utils';
-import { FaArrowRight, FaStar } from 'react-icons/fa';
 import Script from 'next/script';
 import Head from 'next/head';
 
 export default function TransferPage() {
-  // SEO için detaylandırılmış FAQ ve Organization schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "VIP transfer hizmeti neleri kapsar?",
+        "name": "Transfer hizmeti fiyatları neye göre değişir?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "VIP transfer hizmeti; lüks araçlarla havalimanı transferi, otel transferi, şehirler arası transfer ve özel etkinlik transferlerini kapsar. Profesyonel şoför, bagaj taşıma ve konforlu yolculuk hizmeti dahildir."
+          "text": "Transfer hizmeti fiyatları; mesafe, araç tipi, yolcu sayısı ve transfer türüne göre değişiklik gösterir. VIP araçlar, özel şoför ve ekstra hizmetler de fiyatı etkileyebilir."
         }
       },
       {
         "@type": "Question",
-        "name": "VIP transfer rezervasyonu nasıl yapılır?",
+        "name": "Transfer hizmeti için ne gerekiyor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Transfer rezervasyonu online olarak websitemizden veya müşteri hizmetlerimizi arayarak yapılabilir. Rezervasyon sırasında tarih, saat, kişi sayısı ve transfer noktaları belirtilmelidir."
+          "text": "Transfer hizmeti için rezervasyon bilgileri (uçuş detayları, adres vb.) ve iletişim bilgileri yeterlidir. Özel transfer hizmetlerinde ek bilgiler talep edilebilir."
         }
       },
       {
         "@type": "Question",
-        "name": "Araç kiralama ücretleri neye göre belirlenir?",
+        "name": "Transfer hizmetinde neler sunuluyor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Transfer ücretleri; mesafe, araç tipi, yolcu sayısı ve transfer saatine göre belirlenir. Gece transferleri ve şehirler arası transferlerde farklı fiyatlandırma uygulanabilir."
+          "text": "Transfer hizmetlerimizde profesyonel şoför, konforlu araçlar, bagaj taşıma ve karşılama hizmetleri standart olarak sunulur. WiFi, içecek servisi, çocuk koltuğu gibi ek hizmetler talep edilebilir."
         }
       },
       {
         "@type": "Question",
-        "name": "Araç kiralama iptal ve değişiklik politikası nedir?",
+        "name": "Transfer rezervasyonu nasıl iptal edilir?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Transfer hizmetlerimizde 24 saat öncesine kadar ücretsiz iptal ve değişiklik yapılabilir. Daha kısa sürede yapılan iptallerde kısmi ücret iadesi uygulanır."
+          "text": "Transfer rezervasyonları transfer saatinden 24 saat öncesine kadar ücretsiz iptal edilebilir. Daha kısa sürede yapılan iptallerde özel şartlar uygulanır."
         }
       }
     ]
@@ -53,10 +53,10 @@ export default function TransferPage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "365Kirala VIP Transfer",
+    "name": "365Kirala Transfer Hizmetleri",
     "url": "https://365kirala.com/transfer",
     "logo": "https://365kirala.com/images/logo.png",
-    "description": "Türkiye genelinde lüks ve konforlu VIP transfer hizmetleri.",
+    "description": "Türkiye genelinde profesyonel transfer ve ulaşım hizmetleri.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "TR"
@@ -64,7 +64,7 @@ export default function TransferPage() {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+90-123-456-7890", // Telefon ekleyin
+        "telephone": "+90-123-456-7890",
         "contactType": "customer service",
         "email": "info@365kirala.com",
         "areaServed": "TR",
@@ -86,19 +86,19 @@ export default function TransferPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
       <Head>
-        <title>VIP Transfer | Lüks Araç Kiralama ve Transfer Hizmetleri | 365Kirala</title>
+        <title>Transfer Hizmetleri | VIP Ulaşım ve Havalimanı Transfer | 365Kirala</title>
         <meta
           name="description"
-          content="Havalimanı transferi, şehirler arası transfer ve özel etkinlik transferleri için lüks VIP transfer hizmetleri. Konforlu ve güvenli yolculuk için 365Kirala."
-        />    
+          content="Türkiye genelinde profesyonel transfer ve ulaşım hizmetleri. Havalimanı transferi, şehir içi ve şehirler arası özel transfer hizmetleri için 365Kirala."
+        />
         <meta
           name="keywords"
-          content="vip transfer, lüks transfer, havalimanı transfer, şehirler arası transfer, özel şoför, araç kiralama, vip araç, lüks araç"
+          content="transfer hizmeti, havalimanı transfer, vip transfer, özel şoför, şehir içi transfer, şehirler arası transfer, lüks transfer, araç kiralama, şoförlü araç"
         />
-        <meta property="og:title" content="VIP Transfer | Lüks Araç Kiralama ve Transfer Hizmetleri | 365Kirala" />
+        <meta property="og:title" content="Transfer Hizmetleri | VIP Ulaşım ve Havalimanı Transfer | 365Kirala" />
         <meta
           property="og:description"
-          content="Havalimanı transferi, şehirler arası transfer ve özel etkinlik transferleri için lüks VIP transfer hizmetleri. Konforlu ve güvenli yolculuk için 365Kirala."
+          content="Türkiye genelinde profesyonel transfer ve ulaşım hizmetleri. Havalimanı transferi, şehir içi ve şehirler arası özel transfer hizmetleri için 365Kirala."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://365kirala.com/transfer" />
@@ -106,105 +106,90 @@ export default function TransferPage() {
         <link rel="canonical" href="https://365kirala.com/transfer" />
       </Head>
       <Navbar />
-      <main className="bg-white min-h-screen" role="main">
-        {/* Banner */}
-        <section
-          aria-label="Transfer Hizmetleri Banner"
-          className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800"
-        >
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          <Image
-            src="/images/transfer/transferbackground.jpg"
-            alt="Transfer Hizmetleri"
-            fill
-            className="object-cover z-0"
-            priority
-          />
-          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 mt-8 drop-shadow-xl animate-fade-in-up">
-              Transfer Hizmetleri
-            </h1>
-            <p className="text-xl md:text-2xl drop-shadow-lg max-w-3xl">
-              Güvenli ve konforlu transfer hizmetlerimizle seyahatlerinizi keyifli hale getirin
-            </p>
-          </div>
-        </section>
+      <div className="max-w-screen-xl mx-auto px-4 py-8 font-semibold">
+        <SinglePageHeader
+          image="/images/transfer/transferbackground.jpg"
+          title="VIP Transfer"
+          descriptionDesktop="Lüks araçlarımız ve profesyonel sürücülerimizle havalimanı transferi, şehir içi ve şehirler arası özel transfer hizmetleri. Konforlu ve güvenli yolculuk için 7/24 hizmetinizdeyiz."
+          descriptionMobile="Lüks araçlarla havalimanı transferi ve şehir içi özel transfer hizmetleri."
+        />
 
-        {/* İçerik */}
-        <section aria-label="Transfer hizmeti listeleme" className="max-w-screen-xl mx-auto px-4 py-12">
-          {/* Transfer Listesi */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="mt-8">
+          <h1 className="text-3xl font-bold mb-6 text-center md:text-left">VIP Transfer</h1>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
             {transferData.items.map((item) => {
               const slug = createUrlSlug(item.title);
+              
               return (
                 <Link
                   key={item.id}
                   href={`/transfer/${item.id}-${slug}`}
-                  className="group flex flex-col rounded-3xl border border-gray-300 bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-default"
-                  aria-label={`${item.title} transfer hizmeti detay sayfasına git`}
-                  tabIndex={0}
+                  className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
                 >
-                  {/* Görsel Alanı */}
-                  <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-3xl">
+                  <div className="relative h-52 md:h-56">
                     <Image
                       src={item.image}
-                      alt={`${item.title} - ${item.location}`}
+                      alt={item.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      draggable={false}
-                      priority={false}
+                      className="object-cover rounded-t-xl"
                     />
+
                     {item.discount && (
-                      <div className="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold drop-shadow-lg select-none">
-                        %{item.discount} İndirim
+                      <div className="absolute top-2 right-2">
+                        <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold px-2 py-1 rounded shadow">
+                          %{item.discount} İndirim
+                        </span>
                       </div>
                     )}
                   </div>
 
-                  {/* İçerik Alanı */}
-                  <div className="flex flex-col flex-1 p-5 justify-between">
-                    <div>
-                      <div className="flex items-center gap-2 text-sm text-gray-600 mb-2 select-none" aria-label="Rezervasyon sayısı">
-                        <FaStar className="text-yellow-400" aria-hidden="true" />
-                        <span>{item.booked} Rezervasyon</span>
-                      </div>
-                      <h3 className="font-semibold text-xl mb-2 line-clamp-2 text-gray-800">{item.title}</h3>
-                      {item.location && (
-                        <p className="text-gray-500 text-sm line-clamp-1">{item.location}</p>
-                      )}
-                    </div>
+                  <div className="p-4 flex-1 flex flex-col justify-between">
+                    <div className="space-y-3">
+                      <h3 className="text-lg md:text-xl font-semibold text-gray-900">{item.title}</h3>
+                      <p className="text-sm text-gray-500">{item.location}</p>
 
-                    <div className="flex items-center justify-between mt-6">
-                      <div>
-                        <span className="text-xs text-gray-500">Başlangıç</span>
-                        {item.discount && (
-                          <div className="text-sm text-gray-400 line-through">
-                            {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
+                      <div className="flex justify-between items-center border-t pt-4">
+                        <div>
+                          <div className="mt-4">
+                            {item.discount && (
+                              <div className="text-sm text-gray-400 line-through">
+                                {(item.price * (1 + item.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
+                              </div>
+                            )}
+                            <div className="flex items-baseline gap-1">
+                              <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}₺</span>
+                              <span className="text-sm text-gray-500">/ tek yön</span>
+                            </div>
                           </div>
-                        )}
-                        <div className="flex items-baseline gap-1">
-                          <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}₺</span>
-                          <span className="text-sm text-gray-500">/ günlük </span>
+                        </div>
+
+                        <div className="flex flex-col items-center text-gray-600 text-xs md:text-sm">
+                          <FaStar className="text-yellow-400 text-lg md:text-xl" />
+                          <span className="mt-1">{item.booked}+ transfer</span>
                         </div>
                       </div>
-                      <div className="bg-blue-600 text-white p-3 rounded-full group-hover:bg-blue-700 transition-colors duration-300">
-                        <FaArrowRight size={18} aria-hidden="true" />
-                      </div>
+
+                      <ul className="grid grid-cols-1 gap-2 text-sm text-gray-600 list-none mt-3">
+                        {item.features.slice(0, 3).map((f, i) => (
+                          <li key={i} className="flex items-center gap-2">
+                            <span className="w-2 h-2 bg-indigo-500 rounded-full" />
+                            {f}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="mt-4 bg-indigo-600 group-hover:bg-indigo-700 text-white text-sm md:text-base font-semibold py-2.5 rounded-xl text-center transition">
+                      İncele
                     </div>
                   </div>
                 </Link>
               );
             })}
           </div>
-
-          {/* Sonuç Bulunamadı */}
-          {transferData.items.length === 0 && (
-            <div className="text-center py-12" role="alert" aria-live="polite">
-              <p className="text-gray-500 text-lg">Aradığınız kriterlere uygun transfer hizmeti bulunamadı.</p>
-            </div>
-          )}
-        </section>
-      </main>
+        </div>
+      </div>
     </>
   );
 }

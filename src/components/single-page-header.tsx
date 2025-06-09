@@ -15,7 +15,7 @@ export const SinglePageHeader = ({
   descriptionMobile,
 }: SinglePageHeaderProps) => {
   return (
-    <div className="relative w-full h-64 md:h-96">
+    <div className="relative w-[100vw] md:w-full h-64 md:h-96 -mx-4 md:mx-0 -ml-5 md:ml-0">
       <Image
         src={image}
         alt={title}

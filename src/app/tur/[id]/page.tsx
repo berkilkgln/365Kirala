@@ -67,7 +67,7 @@ export default function TourDetailPage() {
     } finally {
       setIsLoading(false);
     }
-  }, [params?.id, router]);
+  }, [params, router]);
 
   if (isLoading) {
     return (

@@ -31,23 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription,
       type: 'article',
       url: canonicalUrl,
-      images: [
-        {
-          url: post.image,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-      publishedTime: post.date,
-      authors: [post.author],
       siteName: '365Kirala Blog',
     },
     twitter: {
-      card: 'summary_large_image',
+      card: 'summary',
       title: post.title,
       description: post.metaDescription,
-      images: [post.image],
     },
     alternates: {
       canonical: canonicalUrl,

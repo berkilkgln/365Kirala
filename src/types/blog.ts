@@ -89,7 +89,7 @@ export const blogPosts: BlogPost[] = [
       - Yerel restoranlarda yöresel lezzetleri deneyin
 
       ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Mart 2025
     `,
     keywords: [
       'kapadokya balon turu 2025',
@@ -157,19 +157,19 @@ export const blogPosts: BlogPost[] = [
       ## Konaklama Seçenekleri
 
       ### Lüks Oteller
-       Burj Al Arab
+       #### Burj Al Arab
          - 7 yıldızlı lüks otel
          - Özel plaj
          - Helikopter pisti
          - Dünya standartlarında restoranlar
 
-       Atlantis The Palm
+       #### Atlantis The Palm
          - Su altı odalar
          - Aquaventure Waterpark
          - Dolphin Bay
          - Özel plaj
 
-       Armani Hotel Dubai
+       #### Armani Hotel Dubai
          - Burj Khalifa'da konum
          - Armani tasarımı
          - Özel spa
@@ -206,7 +206,6 @@ export const blogPosts: BlogPost[] = [
       ### Vize Bilgileri
       - Türk vatandaşları için vize gerekli
       - Online vize başvurusu
-      - 30 günlük turist vizesi
       - Pasaport geçerlilik süresi en az 6 ay
 
       ### Ulaşım
@@ -218,16 +217,16 @@ export const blogPosts: BlogPost[] = [
 
       ## Sıkça Sorulan Sorular
 
-     - Dubai'de en iyi sezon ne zaman?
+     #### Dubai'de en iyi sezon ne zaman?
       Ekim-Nisan arası ideal sezondur, hava sıcaklığı 25-30 derece arasındadır.
 
-      - Vize ne kadar sürede çıkıyor?
+      #### Vize ne kadar sürede çıkıyor?
       Online başvurularda genellikle 3-5 iş günü içinde sonuçlanır.
 
-      - Kıyafet konusunda dikkat edilmesi gerekenler neler?
+      #### Kıyafet konusunda dikkat edilmesi gerekenler neler?
       Plaj ve havuz dışında omuz ve dizlerin kapalı olması önerilir.
 
-      - Dubai'de para birimi nedir?
+      #### Dubai'de para birimi nedir?
       Birleşik Arap Emirlikleri Dirhemi (AED) kullanılmaktadır.
 
       ### Bütçe Planlaması
@@ -292,28 +291,28 @@ export const blogPosts: BlogPost[] = [
 
       ## En Popüler Rotalar
 
-       Göcek - Fethiye Koyları
+       #### Göcek - Fethiye Koyları
          - 12 Adalar
          - Bedri Rahmi Koyu
          - Yassıca Adalar
          - Tersane Adası
          - Kızılada
 
-       Bodrum - Yunan Adaları
+       #### Bodrum - Yunan Adaları
          - Kos Adası
          - İstanköy
          - Karaada
          - Çatalada
          - Orak Adası
 
-       Antalya - Kaş - Kekova
+       #### Antalya - Kaş - Kekova
          - Kekova Adası
          - Batık Şehir
          - Üçağız Koyu
          - Simena Kalesi
          - Kaputaş Plajı
 
-       Marmaris - Datça
+       #### Marmaris - Datça
          - Knidos Antik Kenti
          - Palamutbükü
          - Hayıtbükü
@@ -322,25 +321,25 @@ export const blogPosts: BlogPost[] = [
 
       ### Yat Seçenekleri
 
-       Motor Yatlar
+       #### Motor Yatlar
         - 20-30 metre arası
         - 6-12 kişilik kapasite
         - Lüks kabinler
         - Geniş güverteler
 
-       Yelkenli Yatlar
+       #### Yelkenli Yatlar
         - 15-25 metre arası
         - 4-8 kişilik kapasite
         - Klasik tasarım
         - Rüzgar deneyimi
 
-       Guletler
+       #### Guletler
         - 25-35 metre arası
         - 8-16 kişilik kapasite
         - Geleneksel tasarım
         - Geniş güverte alanı
 
-       Mega Yatlar
+       #### Mega Yatlar
         - 35 metre üzeri
         - 12+ kişilik kapasite
         - Ultra lüks donanım
@@ -348,7 +347,13 @@ export const blogPosts: BlogPost[] = [
 
       ## Rezervasyon ve Fiyatlandırma
 
-      Yat kiralama fiyatları, seçtiğiniz yatın boyutu, sezonu ve kiralama süresine göre değişiklik gösterir. Size özel fiyat teklifi için müşteri temsilcilerimizle iletişime geçebilirsiniz.
+      Yat kiralama fiyatları; tercih edilen yat tipi, rota, sezon, kişi sayısı ve ek hizmetlere göre değişkenlik göstermektedir. Türkiye'de yat kiralamak isteyenler için ortalama fiyatlar aşağıdaki gibidir:
+
+      #### Ortalama Yat Kiralama Fiyatları (2025)
+    - Günlük Motor Yat Kiralama: 1.500 € – 6.000 €
+    - Gulet Kiralama (Haftalık): 8.000 € – 25.000 €
+    - Lüks Yatlar (Ultra Lüks – Haftalık): 30.000 € – 150.000 €+
+    - Katamaran Kiralama (Günlük): 2.000 € – 7.000 €
 
       ### Yat Kiralama İçin En İyi Sezonlar
 
@@ -368,20 +373,38 @@ export const blogPosts: BlogPost[] = [
 
       ## Sıkça Sorulan Sorular
 
-      - Yat kiralama için ehliyet gerekli mi?
+      #### Yat kiralama için ehliyet gerekli mi?
       Hayır, profesyonel kaptan ve mürettebat hizmetimiz mevcuttur.
 
-      - Maksimum kaç kişi konaklayabilir?
+      #### Maksimum kaç kişi konaklayabilir?
       Yatın büyüklüğüne göre 4-16 kişi arası değişmektedir.
 
-      - Yemek hizmeti nasıl?
+      #### Yemek hizmeti nasıl?
       Özel şef hizmeti mevcuttur, menü tercihlerinize göre düzenlenir.
 
-      - Su sporları ekipmanları dahil mi?
+      #### Su sporları ekipmanları dahil mi?
       Evet, temel su sporları ekipmanları yatta mevcuttur.
 
-      - Hava durumu uygun değilse ne olur?
+      #### Hava durumu uygun değilse ne olur?
       Alternatif tarih veya iade seçenekleri sunulmaktadır.
+      
+      #### Yat kiralama fiyatına neler dahil?
+      Genellikle mürettebat hizmeti, yakıt (belirli bir saat sınırına kadar), liman vergileri ve temel yiyecek-içecekler fiyata dahil olur. Detaylar yat türüne göre değişir.
+
+      #### Hangi şehirlerde yat kiralayabilirim?
+      İstanbul, Bodrum, Göcek, Marmaris, Fethiye, Kaş ve Antalya başta olmak üzere Türkiye'nin birçok kıyı noktasında yat kiralama mümkündür.
+
+      #### Yurtdışında da yat kiralama hizmeti veriyor musunuz?
+      Evet. Yunan Adaları, Hırvatistan, İtalya, Fransa gibi destinasyonlar için de özel yat kiralama çözümleri sunuyoruz.
+
+      #### Yat kiralama fiyatına neler dahil?
+      Genellikle mürettebat hizmeti, yakıt (belirli bir saat sınırına kadar), liman vergileri ve temel yiyecek-içecekler fiyata dahil olur. Detaylar yat türüne göre değişir.
+      
+      #### Hangi şehirlerde yat kiralayabilirim?
+      İstanbul, Bodrum, Göcek, Marmaris, Fethiye, Kaş ve Antalya başta olmak üzere Türkiye'nin birçok kıyı noktasında yat kiralama mümkündür.
+
+      #### Yurtdışında da yat kiralama hizmeti veriyor musunuz?
+      Evet. Yunan Adaları, Hırvatistan, İtalya, Fransa gibi destinasyonlar için de özel yat kiralama çözümleri sunuyoruz.
     `,
     keywords: [
       'yat kiralama',
@@ -436,25 +459,24 @@ export const blogPosts: BlogPost[] = [
 
       ## En İyi Bungalov Oteller
 
-       Taş Konak Bungalov Suites
+       #### Taş Konak Bungalov Suites
          - Peribacaları manzaralı özel havuz
          - Şömineli lüks süitler
          - A la carte restoran
          - Spa merkezi
 
-       Peribacası View Resort
+       #### Peribacası View Resort
          - Panoramik vadi manzarası
          - Özel teraslı bungalovlar
          - Açık büfe kahvaltı
          - Kapadokya manzaralı restoran
 
-       Kapadokya Luxury Bungalows
+       #### Kapadokya Luxury Bungalows
          - Jakuzili süitler
          - Özel bahçeli bungalovlar
          - Türk hamamı
-         - Şarap mahzeni
 
-       Valley Cave Hotel & Bungalows
+       #### Valley Cave Hotel & Bungalows
          - Mağara konseptli bungalovlar
          - Doğal havuz
          - Organik restoran
@@ -464,7 +486,6 @@ export const blogPosts: BlogPost[] = [
 
       - Balon turu (gün doğumu)
       - ATV safari
-      - Şarap tadımı
       - At binme
       - Vadi yürüyüşleri
       - Türk hamamı deneyimi
@@ -473,10 +494,24 @@ export const blogPosts: BlogPost[] = [
 
       ## Rezervasyon ve Fiyatlandırma
 
-      Bungalov otel fiyatları sezona ve oda tipine göre değişiklik gösterir. Erken rezervasyon avantajlarından yararlanmak için hemen bizimle iletişime geçin.
+      #### Ortalama Bungalov Kiralama Fiyatları (2025)
+      - Günlük Bungalov Fiyatları: 1.500 TL – 5.000 TL
+      - Haftalık Bungalov Fiyatları: 10.000 TL – 30.000 TL
+      - Jakuzili & Özel Havuzlu Bungalovlar: 3.500 TL – 8.000 TL / gece
+      - Balayı Bungalovları: 4.000 TL – 7.500 TL / gece
+     Fiyatlar sezonluk olarak değişebilir. Yaz sezonu ve resmi tatillerde artış gösterebilir.
+      
+      #### Erken Rezervasyonun Avantajları
+      -Yaz aylarında ve bayram tatillerinde bungalovlara olan talep çok yüksek olmaktadır. Özellikle Bolu, Sapanca, Fethiye, Kaş, Rize, Marmaris gibi popüler bölgelerde bungalovlar haftalar öncesinden dolabilmektedir.
+      - Erken rezervasyon ile hem daha uygun fiyatlarla yerinizi ayırtabilir hem de en beğendiğiniz bungalovu seçme şansı elde edersiniz.
 
+      #### Rezervasyon Süreci Nasıl İşliyor?
+      - Tatil yapmak istediğiniz bölge ve tarihleri belirleyin
+      - Size en uygun bungalov seçeneklerini paylaşalım
+      - Ön ödeme ile rezervasyonunuzu güvence altına alın
+      - Konaklama günü geldiğinde doğanın keyfini çıkarın 
+      
       ### Kapadokya Bungalov İçin En İyi Sezon
-
       - İlkbahar (Nisan-Mayıs): Ilıman hava ve çiçek açan doğa
       - Sonbahar (Eylül-Ekim): Renkli manzaralar ve ideal sıcaklık
       - Yaz (Haziran-Ağustos): Sıcak hava ve canlı atmosfer
@@ -491,17 +526,29 @@ export const blogPosts: BlogPost[] = [
 
       ## Sıkça Sorulan Sorular
 
-      - Bungalov oteller çocuklar için uygun mu?
+      #### Bungalov oteller çocuklar için uygun mu?
       Evet, çoğu bungalov otel aile dostu hizmetler sunmaktadır.
 
-      - En iyi manzaralı bungalov hangisi?
+      #### En iyi manzaralı bungalov hangisi?
       Peribacası View Resort ve Taş Konak Bungalov Suites en iyi manzaraya sahiptir.
 
-      - Balon turu için otelden transfer var mı?
+      #### Balon turu için otelden transfer var mı?
       Evet, tüm oteller balon turu için transfer hizmeti sunmaktadır.
 
-      - Bungalovlarda internet erişimi var mı?
+      #### Bungalovlarda internet erişimi var mı?
       Evet, tüm bungalovlarda ücretsiz Wi-Fi hizmeti mevcuttur.
+
+      #### Fiyata neler dahil?
+      - Konaklama, temel mutfak eşyaları, nevresim takımları ve bazı bungalovlarda kahvaltı dahildir. Özel havuz, şömine, jakuzi gibi ek özellikler fiyata yansıtılır.
+
+      #### Minimum konaklama süresi nedir?
+      - Genellikle hafta içi 1 gece, hafta sonu ise minimum 2 gece konaklama şartı bulunmaktadır.
+
+      #### Evcil hayvan kabul ediliyor mu?
+      - Bazı bungalovlar evcil hayvan dostudur. Rezervasyon öncesi mutlaka belirtilmelidir.
+
+      #### İptal politikası nedir?
+      - Erken iptallerde %100 iade yapılırken, son dakikada yapılan iptallerde kesintili iade uygulanabilir. Her bungalov için farklı kurallar geçerli olabilir.
     `,
     keywords: [
       'bungalov otel',
@@ -557,26 +604,26 @@ export const blogPosts: BlogPost[] = [
 
       ## Jet Modelleri ve Özellikleri
 
-       Light Jets (4-6 yolcu)
+       #### Light Jets (4-6 yolcu)
          - Bombardier Learjet 45
          - Cessna Citation CJ3
          - Embraer Phenom 300
          - 2-3 saat uçuş menzili
          - Ekonomik seçenek
 
-       Midsize Jets (6-8 yolcu)
+       #### Midsize Jets (6-8 yolcu)
          - Cessna Citation XLS
          - Hawker 800XP
          - 4-5 saat uçuş menzili
          - Orta mesafe uçuşlar
 
-       Super Midsize Jets (8-10 yolcu)
+       #### Super Midsize Jets (8-10 yolcu)
          - Gulfstream G280
          - Bombardier Challenger 300
          - 5-6 saat uçuş menzili
          - Uzun mesafe konforu
 
-       Heavy Jets (10-16 yolcu)
+       #### Heavy Jets (10-16 yolcu)
          - Gulfstream G650
          - Bombardier Global 6000
          - 7+ saat uçuş menzili
@@ -593,9 +640,25 @@ export const blogPosts: BlogPost[] = [
       - İstanbul - Moskova (2.5 saat)
 
       ## Rezervasyon Süreci ve Fiyatlandırma
+      Özel jet kiralama; lüks, konfor ve zaman tasarrufunu bir arada sunan, kişiye özel bir ulaşım deneyimidir. Fiyatlandırma; uçuş mesafesi, jet tipi, yolcu sayısı, kalkış-varış noktaları ve ek hizmetlere göre belirlenir. Aşağıda özel jet kiralama süreci ve ortalama fiyatlar hakkında detaylı bilgi bulabilirsiniz:
 
-      Özel jet kiralama fiyatları, uçuş mesafesi, jet modeli ve yolcu sayısına göre belirlenir. Size özel fiyat teklifi için hemen bizimle iletişime geçin.
+      #### Ortalama Özel Jet Kiralama Fiyatları (2025)
+      - İstanbul → Bodrum (tek yön): 7.000 € – 12.000 €
+      - İstanbul → Paris (tek yön): 18.000 € – 30.000 €
+      - İstanbul → Dubai (tek yön): 30.000 € – 45.000 €
+      - Saatlik Jet Kiralama Ücreti: 4.000 € – 10.000 € (uçak tipine göre değişir)
+      Fiyatlar uçuş tarihine, kişi sayısına ve tercih edilen jet modeline göre değişiklik gösterebilir. Uçuş öncesi net fiyat teklifi sunulmaktadır.
 
+      #### Özel Jet Kiralama Rezervasyon Süreci
+      - Uçuş Bilgilerinizi Paylaşın
+      - Kalkış ve varış noktaları, tarih, saat, yolcu sayısı ve özel taleplerinizi iletin.
+      - Jet Seçeneklerini ve Fiyat Teklifini Alın
+      - İhtiyacınıza uygun jet modelleri ve net fiyat teklifleri tarafınıza iletilir.
+      - Rezervasyonu Tamamlayın
+      - Onay verdiğinizde, uçuş sözleşmesi hazırlanır ve ön ödeme ile rezervasyon tamamlanır.
+      - Uçuş Günü Ayrıcalığı Yaşayın
+      - Havalimanında VIP karşılama, hızlı geçiş ve özel lounge hizmetiyle uçuşun tadını çıkarın.
+      
       ### Fiyatlandırma Kriterleri
 
       - Uçuş mesafesi
@@ -617,21 +680,33 @@ export const blogPosts: BlogPost[] = [
 
       ## Sıkça Sorulan Sorular
 
-      - Özel jet kiralama için ne kadar süre önceden rezervasyon yapmalıyım?
+      #### Özel jet kiralama için ne kadar süre önceden rezervasyon yapmalıyım?
       En az 24-48 saat önceden rezervasyon yapmanızı öneririz.
 
-      - Kaç kişiye kadar yolcu alabilir?
-      Jet modeline göre 4-16 kişi arası değişmektedir.
+      #### Kaç kişiye kadar yolcu alabilir?
+      - Jet modeline göre 4-16 kişi arası değişmektedir.
 
-      - Pets ile seyahat edebilir miyim?
+      #### Pets ile seyahat edebilir miyim?
       Evet, özel jetlerde pets ile seyahat mümkündür.
 
-      - Özel yemek servisi
-      Evet, tercihlerinize göre özel menü hazırlanabilir.
+      #### Özel yemek servisi mevcut mu?
+      - Evet, tercihlerinize göre özel menü hazırlanabilir.
 
-      - Uçuş iptali durumunda ne olur?
+      #### Uçuş iptali durumunda ne olur?
       İptal politikaları jet modeline ve rezervasyon zamanına göre değişir.
 
+      #### Özel jet kiralama ücretine neler dahil?
+      - Pilot ve mürettebat ücretleri, yakıt, havaalanı vergileri, ikram hizmetleri ve yolcu sigortaları genellikle fiyata dahildir.
+
+      #### Kaç kişi özel jetle seyahat edebilir?
+      - Jet modeline bağlı olarak 4 ila 16 kişi arasında değişmektedir.
+
+      #### İptal durumunda ücret iadesi var mı?
+      - Uçuş tarihine kalan süreye göre değişiklik göstermekle birlikte, bazı durumlarda kesintili iade veya tarih değişikliği mümkündür.
+
+      #### Yurtdışı uçuşlarında vize gerekli mi?
+      - Evet. Yolcuların varış ülkesine göre geçerli vizelere sahip olmaları gerekmektedir.
+      
       ### Güvenlik ve Sertifikasyonlar
 
       - EASA onaylı operasyonlar
@@ -668,7 +743,6 @@ export const blogPosts: BlogPost[] = [
     category: 'Yurt İçi Turlar',
     excerpt: 'Kapadokya\'nın büyüleyici manzarasını sıcak hava balonu ile gökyüzünden seyredin. Peribacalarının arasından süzülen balonlarla, gökyüzünde huzur dolu bir yolculuğa çıkın.',
     content: `
-      Kapadokya'nın büyüleyici manzarasını sıcak hava balonu ile gökyüzünden seyretmeye hazır mısınız? Peribacalarının arasından süzülen balonlarla, gökyüzünde huzur dolu bir yolculuğa çıkın. Bu rehberimizde, Kapadokya balon turu deneyimini en iyi şekilde yaşamanız için ihtiyacınız olan her bilgiyi bulabilirsiniz.
 
       ## Balon Turu Nedir?
 
@@ -740,25 +814,48 @@ export const blogPosts: BlogPost[] = [
       - Tripod kullanın
 
       ## Sık Sorulan Sorular
+      Kapadokya balon turu fiyatları ne kadar?
+      Kapadokya balon turu fiyatları sezona, tur süresine ve hizmet kalitesine göre değişiklik gösterir. 2025 yılı itibarıyla kişi başı ortalama fiyatlar 3.000 TL – 6.000 TL arasındadır. Lüks balon turları veya özel uçuşlar daha yüksek fiyatlı olabilir.
 
-      - Çocuklar için uygun mu?
-      5 yaşından büyük çocuklar için uygundur. Daha küçük yaş gruplarının katılımına izin verilmez.
+      #### Balon turu ne zaman yapılır?
+      - Kapadokya’da balon turları genellikle gün doğumunda, sabah erken saatlerde yapılır. Hava koşullarına bağlı olarak her gün düzenlenebilir ancak en uygun dönem Nisan – Ekim ayları arasıdır.
 
-      - Ne giymeliyim?
-      Sabah erken saatlerde serin olabileceği için mevsime uygun kalınlıkta, rahat ayakkabılar ve sıcak tutan giysiler önerilir.
+      #### Balon turu ne kadar sürer?
+      - Balon turunun uçuş süresi genellikle 45 dakika ile 1 saat 15 dakika arasındadır. Hazırlıklar ve ulaşım dahil toplam deneyim süresi yaklaşık 2,5 – 3 saat sürer.
 
-      - Uçuş yüksekliği nedir?
-      Balonlar 500 ila 1.500 metreye kadar çıkabilir. Güvenlik ve hava koşullarına göre değişir.
+      #### Balon turuna kimler katılabilir?
+      - Genel olarak 6 yaş üzeri çocuklar, sağlıklı bireyler ve hamile olmayan herkes katılabilir. Kalp, tansiyon, bel veya diz rahatsızlığı olanlar için önerilmez.
 
-      - İptal durumunda ne olur?
-      Hava koşullarına bağlı iptallerde ücret iadesi yapılır veya başka bir güne ertelenir.
+      #### Kapadokya’da balon turu iptal edilir mi?
+      - Evet. Kuvvetli rüzgar veya olumsuz hava koşullarında Sivil Havacılık Genel Müdürlüğü tarafından iptal edilebilir. Bu durumda ücret iadesi veya bir sonraki güne erteleme yapılır.
 
-      - Transfer dahil mi?
-      Evet, otel transferi fiyata dahildir.
+      #### Kapadokya balon turuna nasıl hazırlanmalıyım?
+      - Rahat ayakkabılar, mevsime uygun kıyafetler ve fotoğraf makinesi önerilir. Sabah saatleri serin olabilir, bu nedenle ince bir mont veya ceket almanız faydalı olacaktır.
 
-      ## Balon Turu Sonrası Aktiviteler
+      #### Kapadokya balon turunda hangi bölgeler görülür?
+      - Uçuş rotasına bağlı olarak Göreme, Uçhisar, Avanos, Paşabağ, Zelve ve Aşk Vadisi gibi Kapadokya’nın eşsiz doğal oluşumları yukarıdan izlenebilir. Her uçuş farklı bir güzergah sunabilir.
 
-      ### Kültürel Geziler
+      #### Kapadokya balon turu için önceden rezervasyon gerekli mi?
+      - Evet. Özellikle yoğun sezonda (Nisan – Ekim) turlar çok hızlı dolmaktadır. Erken rezervasyon, hem yer garantisi hem de daha uygun fiyat avantajı sağlar.
+      
+      #### Kapadokya balon turu çocuklar için uygun mu?
+      - 5 yaşından büyük çocuklar için uygundur. Daha küçük yaş gruplarının katılımına izin verilmez.
+
+      #### Kapadokya balon turu için ne giymeliyim?
+      - Sabah erken saatlerde serin olabileceği için mevsime uygun kalınlıkta, rahat ayakkabılar ve sıcak tutan giysiler önerilir.
+
+      #### Kapadokya balon turu uçuş yüksekliği nedir?
+      - Balonlar 500 ila 1.500 metreye kadar çıkabilir. Güvenlik ve hava koşullarına göre değişir.
+
+      #### Kapadokya balon turu iptal durumunda ne olur?
+      - Hava koşullarına bağlı iptallerde ücret iadesi yapılır veya başka bir güne ertelenir.
+
+      #### Kapadokya balon turu transfer dahil mi?
+      - Evet, otel transferi fiyata dahildir.
+
+      ## Kapadokya balon turu sonrası aktiviteler
+
+      ### Kapadokya balon turu kültürel geziler
       - Göreme Açık Hava Müzesi
       - Ürgüp şarap tadımı
       - Avanos çömlek atölyeleri
@@ -878,42 +975,56 @@ export const blogPosts: BlogPost[] = [
     - Az turist bulunur, sakinlik isteyenler için uygundur.
     - Ziyaret süresince yağmura karşı önlem almak gerekir.
     
-    ## Pratik Bilgiler
+    ## Efes Antik Kenti Turu İçin Pratik Bilgiler
     
-    ### Ulaşım
+    ### Efes Antik Kenti turu ulaşım
     - İzmir'den otobüs veya trenle 1-1.5 saatte Selçuk'a ulaşabilirsiniz.
     - Selçuk merkezinden minibüs veya taksi ile 10 dakikada antik kente varabilirsiniz.
     - Otopark alanı özel araçla gelenler için mevcuttur.
     
-    ### Giriş Ücretleri
+    ### Efes Antik Kenti turu giriş ücretleri
     - Yetişkin: 200 TL
     - Öğrenci: 100 TL
     - Müze Kart: Ücretsiz
     - Rehberli tur ücreti: 300-500 TL
     
-    ### Ziyaret Saatleri
+    ### Efes Antik Kenti turu ziyaret saatleri
     - Yaz dönemi: 08:00 – 19:00
     - Kış dönemi: 08:00 – 17:00
     - Her gün açık, resmi tatillerde de ziyaret edilebilir.
     
-    ## Sıkça Sorulan Sorular
+    ## Efes Antik Kenti turu sıkça sorulan sorular
+    #### Efes Antik Kenti giriş ücreti ne kadar?
+    - 2025 yılı itibarıyla Efes Antik Kenti giriş ücreti 450 TL’dir. Müze Kart sahibi yerli ziyaretçiler yılda iki kez ücretsiz giriş yapabilir. Yabancı ziyaretçiler için Müze Kart geçerli değildir.
+
+    #### Efes Antik Kenti turu ne kadar sürer?
+    - Efes turu genellikle 2 ila 3 saat arasında sürer. Rehberli turlarda bu süre, anlatım detaylarına göre uzayabilir. Tüm yapıları görmek isteyen ziyaretçiler için yarım gün ayırmak ideal olur.
+
+    #### Efes Antik Kenti hangi şehirde?
+    - Efes Antik Kenti, Türkiye’nin İzmir ilinin Selçuk ilçesi sınırları içerisinde yer almaktadır. İzmir şehir merkezine yaklaşık 75 km mesafededir.
+
+    #### Efes Antik Kenti’ne nasıl gidilir?
+    - İzmir, Kuşadası veya Selçuk'tan özel araç, tur otobüsü ya da tren ile kolayca ulaşım sağlanabilir. En yakın tren istasyonu Selçuk’tadır. Kuşadası’ndan da günlük turlar mevcuttur.
+
+    #### Efes ziyareti için ne kadar süre ayırmalıyım?
+    - Ortalama 3-4 saat yeterli olsa da, fotoğraf çekmek ve detaylı gezmek isterseniz 6-7 saati gözden çıkarmalısınız.
     
-    - Efes ziyareti için ne kadar süre ayırmalıyım?
-    Ortalama 3-4 saat yeterli olsa da, fotoğraf çekmek ve detaylı gezmek isterseniz 6-7 saati gözden çıkarmalısınız.
+    #### Efes Antik Kenti rehberli tur almak zorunlu mu?  
+    - Değil ancak Efes'in tarihi katmanlarını ve hikâyelerini öğrenmek için şiddetle önerilir.
     
-    - Rehberli tur almak zorunlu mu?  
-    Değil ancak Efes'in tarihi katmanlarını ve hikâyelerini öğrenmek için şiddetle önerilir.
+    #### Efes Antik Kenti çocuklarla gezilebilir mi?  
+    - Evet. Ancak puset kullanımında zemin yapısı nedeniyle zorluk yaşanabilir.
     
-    - Çocuklarla gezilebilir mi?  
-    Evet. Ancak puset kullanımında zemin yapısı nedeniyle zorluk yaşanabilir.
+    #### Efes Antik Kenti engelli erişimi var mı?
+    - Kısıtlı erişim mevcuttur, bazı bölümler rampa veya düz zemin sunmaz.
     
-    -Engelli erişimi var mı?
-    Kısıtlı erişim mevcuttur, bazı bölümler rampa veya düz zemin sunmaz.
-    
-    - Fotoğraf çekimi serbest mi?
-    Evet, amatör çekimler serbesttir. Profesyonel ekipmanla çekim için izin gerekebilir.
-    
-    ## Gezi İçin İpuçları ve Öneriler
+    #### Efes Antik Kenti fotoğraf çekimi serbest mi?
+    - Evet, amatör çekimler serbesttir. Profesyonel ekipmanla çekim için izin gerekebilir.
+
+    #### Efes Antik Kenti hangi günler açık?
+    - Efes Antik Kenti haftanın 7 günü ziyarete açıktır. Yaz sezonunda 08.00 – 19.30, kış sezonunda ise 08.30 – 17.00 saatleri arasında hizmet verir.
+
+    ## Efes Antik Kenti turu için ipuçları ve öneriler
     
     - Güne erken başlayın, öğlen sıcağından kaçının.
     - Güneş kremi, şapka ve bol su getirin.
@@ -949,7 +1060,6 @@ export const blogPosts: BlogPost[] = [
         category: "Yurt İçi Turlar",
         excerpt: "Antalya'nın üç önemli antik kentini tek bir turda keşfedin. Perge'nin tarihi sokaklarında yürüyün, Aspendos Tiyatrosu'nda tarihe tanıklık edin, Side'de gün batımını izleyin.",
         content: `
-      Antalya'nın tarih dolu topraklarında eşsiz bir kültürel yolculuğa çıkmaya hazır mısınız? Perge, Aspendos ve Side, Roma ve Hellenistik dönemlerin mimari ve sosyal hayatını bugüne taşıyan üç benzersiz antik kenttir. Bu özel günlük tur, tarih meraklıları ve fotoğraf tutkunları için kaçırılmayacak bir fırsat sunar.
       
       ## Perge Antik Kenti
       
@@ -1060,7 +1170,6 @@ export const blogPosts: BlogPost[] = [
         category: "Yurt İçi Turlar",
         excerpt: "Caretta carettalarla tanınan İztuzu Plajı ve tarihi Kaya Mezarları ile Dalyan turu, hem doğa hem kültür tutkunlarını cezbediyor.",
         content: `
-      Muğla'nın Ortaca ilçesine bağlı Dalyan, doğanın ve tarihin iç içe geçtiği eşsiz bir rotadır. Labirent gibi uzanan su kanalları, Kaunos Antik Kenti'nin kaya mezarları, sağlık vadeden çamur banyoları ve caretta carettaların yuvası olan İztuzu Plajı ile Dalyan turu, hem dinlendirici hem öğretici bir deneyim sunar.
       
       ## Turda Neler Var?
       
@@ -1131,7 +1240,7 @@ export const blogPosts: BlogPost[] = [
       - Yedek kıyafet  
       - Telefon/kamera için su geçirmez koruma
       
-      ## Ziyaret İçin En Uygun Mevsim
+      ## Dalyan & İztuzu Plajı turu için en uygun mevsim
       
       - İlkbahar (Nisan - Haziran): Havanın en ılıman ve doğanın en canlı olduğu dönem.
       - Yaz (Temmuz - Eylül): Deniz keyfi için ideal fakat sıcaklık yüksektir, önlem alınmalıdır.
@@ -1160,7 +1269,6 @@ export const blogPosts: BlogPost[] = [
         category: "Yurt İçi Turlar",
         excerpt: "Saklıkent Kanyonu'nda serin sularla doğa yürüyüşü, ardından Tlos Antik Kenti'nde tarihi keşif. Muğla'nın eşsiz doğal güzellikleri ve antik kalıntılarıyla unutulmaz bir günlük tur deneyimi.",
         content: `
-      Muğla'nın Fethiye ilçesinde yer alan **Saklıkent Kanyonu ve Tlos Antik Kenti turu**, doğa ile tarihin harmanlandığı nadir deneyimlerden biridir. Hem fiziksel aktivite hem de kültürel bir keşif sunan bu günübirlik tur, yaz sıcaklarından kaçmak ve aynı zamanda tarih dolu bir yolculuğa çıkmak isteyenler için birebirdir.
       
       ## Saklıkent Kanyonu: Türkiye'nin En Uzun Kanyonu
       
@@ -1246,7 +1354,7 @@ export const blogPosts: BlogPost[] = [
       - Özel araç için ücretsiz otopark
       - Otel önünden transfer imkanı mevcut
       
-      ### Giriş Ücretleri (2025)
+      ### Saklıkent & Tlos turu giriş ücretleri (2025)
       - Saklıkent: 50 TL
       - Tlos: 30 TL
       - Müze Kart: Geçerlidir
@@ -1256,24 +1364,41 @@ export const blogPosts: BlogPost[] = [
       - Kış: 08:00 – 17:00
       - Her gün açık
       
-      ## Sıkça Sorulan Sorular
+      ## Saklıkent & Tlos turu için sıkça sorulan sorular
       
-      Kanyon yürüyüşü zor mu? 
-      Su içinden geçişler var ama genellikle ahşap platformlar ve rehber eşliğinde güvenli şekilde yürünüyor.
+      #### Saklıkent Kanyonu giriş ücreti ne kadar?
+      - 2025 yılı itibarıyla Saklıkent Kanyonu giriş ücreti 150 TL civarındadır. Öğrencilere ve gruplara indirim uygulanabilir. Rehberli turlarda giriş ücretleri genellikle tur fiyatına dahildir.
+
+      #### Saklıkent Kanyonu’nda yürüyüş zor mu?
+      - Kanyon içerisinde yer yer suyun içinden geçilen yürüyüş parkurları vardır. Zemin kaygan ve soğuk olabilir. Bu nedenle deniz ayakkabısı veya kaymaz tabanlı spor ayakkabı önerilir. Fiziksel zorluk orta düzeydedir.
+
+      #### Tlos Antik Kenti nerede ve nasıl gidilir?
+      - Tlos Antik Kenti, Muğla’nın Fethiye ilçesine bağlı Yaka Köyü yakınlarında yer alır. Saklıkent Kanyonu’na yaklaşık 15 km mesafededir. Çoğu günlük tur programı bu iki destinasyonu birlikte sunar.
+
+      #### Tlos Antik Kenti giriş ücreti ne kadar?
+      - 2025 yılı itibarıyla Tlos Antik Kenti giriş ücreti 150 TL civarındadır. Müze Kart geçerlidir. Rehberli turlarda bu ücret genellikle tur bedeline dahildir.
+
+      #### Saklıkent & Tlos turunda neler görülür?
+      - Saklıkent Kanyonu: Devasa kanyon duvarları, buz gibi akan su, yürüyüş parkuru, fotoğraf noktaları
+      - Tlos Antik Kenti: Antik tiyatro, kaya mezarları, hamam kalıntıları, akropolis ve manzaralı yürüyüş rotaları
+
+      #### Saklıkent & Tlos turu kaç saat sürer?
+      - Saklıkent & Tlos turları genellikle yarım gün ya da tam gün olarak düzenlenir. Ulaşım süresine bağlı olarak ortalama 6 – 8 saat sürer.
+
+      #### Saklıkent & Tlos turu için yanıma ne almalıyım?
+      - Su geçirmez ayakkabı veya deniz ayakkabısı
+      - Havlu ve yedek kıyafet
+      - Güneş kremi ve şapka
+      - Kamera veya telefon
+      - Nakit para (bazı yerlerde kart geçmeyebilir)
       
-      Çocuklar için uygun mu?  
-      Evet, ancak 6 yaş altı çocuklar için dikkatli olunmalı. Çocuklara özel ayakkabılar tavsiye edilir.
-      
-      Ne giymeliyim?  
-      Suya dayanıklı kıyafetler, şort, yedek tişört ve su geçirmez ayakkabılar önerilir. Güneş kremi ve şapka da unutulmamalı.
-      
-      Su sporları yapabilir miyim?  
-      Evet, rafting ve dere geçişleri gibi aktiviteler bazı turlarda ekstra hizmet olarak sunuluyor.
-      
-      Fotoğraf çekimi serbest mi?  
-      Evet. Profesyonel çekimler için tesislerden izin almak gerekebilir.
-      
-      ## İpuçları ve Tavsiyeler
+      #### Saklıkent & Tlos turu çocuklar için uygun mu?
+      - Evet, ancak kanyon içi yürüyüş çocuklar için zorlayıcı olabilir. 5 yaş ve üzeri çocuklar ebeveyn gözetiminde katılabilir. Tlos ise tarihi yapıları seven çocuklar için eğitici ve keyiflidir.
+
+      #### Saklıkent & Tlos turuna ne zaman gidilmeli?
+      - En uygun dönem Mayıs – Ekim ayları arasıdır. Yaz aylarında serin sular eşliğinde yürüyüş keyfi yaşanır. Sabah saatleri kalabalıktan kaçınmak için idealdir.
+
+      ## Saklıkent & Tlos turu için ipuçları ve tavsiyeler
       
       - Yanınızda mutlaka su bulundurun
       - Güne erken başlayın, kalabalıktan kaçının
@@ -1281,7 +1406,7 @@ export const blogPosts: BlogPost[] = [
       - Yerel gözlemeler veya alabalık gibi yemekleri deneyin
       - Tlos'taki kaya mezarlarında fotoğraf molası verin
       
-      Saklıkent & Tlos turu, adrenalin ve kültür dolu bir gün yaşamak isteyenler için ideal bir kaçış rotasıdır.
+      - Saklıkent & Tlos turu, adrenalin ve kültür dolu bir gün yaşamak isteyenler için ideal bir kaçış rotasıdır.
         `,
         keywords: [
           'saklıkent kanyonu',
@@ -1309,7 +1434,6 @@ export const blogPosts: BlogPost[] = [
     category: 'Yurt İçi Turlar',
     excerpt: 'Ölüdeniz\'in turkuaz suları ve Kelebekler Vadisi\'nin büyüleyici doğası. Muğla\'nın en popüler turistik noktalarında unutulmaz bir günlük tur deneyimi.',
     content: `
-      Ölüdeniz ve Kelebekler Vadisi turu, Muğla'nın en değerli doğal güzelliklerini keşfetmenizi sağlayan eşsiz bir deneyim sunuyor. Turkuaz sularıyla ünlü Ölüdeniz ve endemik kelebek türleriyle dolu Kelebekler Vadisi, doğa severler için unutulmaz anılar biriktirmenizi sağlayacak.
 
       ## Ölüdeniz: Turkuaz Cennet
 
@@ -1384,20 +1508,20 @@ export const blogPosts: BlogPost[] = [
 
       ## En İyi Ziyaret Zamanı
 
-      ### Mevsimsel Öneriler
-      - İlkbahar (Nisan-Mayıs)
+      ### Ölüdeniz & Kelebekler Vadisi için mevsimsel öneriler
+      #### İlkbahar (Nisan-Mayıs)
         * Ilıman hava
         * Az turist
         * Kelebek gözlemi için ideal
         * Doğal güzellikler
 
-      - Yaz (Haziran-Ağustos)
+      #### Yaz (Haziran-Ağustos)
         * Sıcak hava
         * Turkuaz sular
         * Yoğun turist
         * Su sporları için ideal
 
-      - Sonbahar (Eylül-Ekim)
+      #### Sonbahar (Eylül-Ekim)
         * Rahat sıcaklık
         * Renkli manzaralar
         * Sakin atmosfer
@@ -1411,39 +1535,59 @@ export const blogPosts: BlogPost[] = [
       - Taksi: 24 saat hizmet
       - Tur transferi: Otelden alım
 
-      ### Giriş Ücretleri
+      ### 2025 Ölüdeniz & Kelebekler Vadisi giriş ücretleri
       - Ölüdeniz: Ücretsiz
       - Kelebekler Vadisi: 40 TL
       - Müze Kart: Geçerli
       - Rehberli tur: 200-300 TL
 
-      ### Ziyaret Saatleri
+      ### Ölüdeniz & Kelebekler Vadisi ziyaret saatleri
       - Yaz: 08:00-19:00
       - Kış: 08:00-17:00
       - Haftanın her günü açık
       - Resmi tatillerde de açık
 
-      ## Sıkça Sorulan Sorular
+      ## Ölüdeniz & Kelebekler Vadisi turu için sıkça sorulan sorular
 
-      Kelebekler Vadisi yürüyüşü zor mu?
-      Orta zorlukta, rahat ayakkabı ve su önerilir.
+      #### Ölüdeniz'e giriş ücretli mi?
+      - Evet. Ölüdeniz’deki Kumburnu Plajı’na giriş 2025 yılı itibarıyla araçsız giriş 50 TL, araçla giriş ise 150 TL civarındadır. Diğer halk plajlarına giriş ücretsizdir.
 
-      Çocuklar için uygun mu?
-      Evet, ancak Kelebekler Vadisi'nde dikkatli olunmalı.
+      #### Kelebekler Vadisi’ne nasıl gidilir?
+      - Kelebekler Vadisi’ne karayolu ile doğrudan ulaşım yoktur. Ölüdeniz sahilinden kalkan teknelerle veya özel botlarla ulaşım sağlanır. Tekne turlarıyla günlük ulaşım oldukça yaygındır.
 
-      Yanımda ne getirmeliyim?
-      Mayo, havlu, şapka, güneş kremi ve su önerilir.
+      #### Ölüdeniz & Kelebekler Vadisi tekne turu ücreti ne kadar?
+      - Ölüdeniz çıkışlı 6-7 koyu kapsayan tam günlük tekne turları 2025 yılında kişi başı ortalama 500 TL – 800 TL arasındadır. Kelebekler Vadisi’ni içeren özel rotalar ve lüks tekneler daha pahalı olabilir.
 
-      Fotoğraf çekimi serbest mi?
-      Evet, profesyonel çekimler için izin gerekebilir.
+      #### Kelebekler Vadisi neden bu kadar ünlü?
+      - Vadi, endemik kelebek türlerine ev sahipliği yapması, sarp kayalıklar arasındaki muazzam doğal manzarası ve sakin plajıyla doğal bir cennet olarak anılır. Özellikle fotoğraf tutkunları ve doğa severler için eşsiz bir yerdir.
 
-      Engelli erişimi var mı?
-      Ölüdeniz'de var, Kelebekler Vadisi'nde sınırlı.
+      #### Kelebekler Vadisi'nde kamp yapılabilir mi?
+      - Evet. Kelebekler Vadisi’nde kamp alanı, bungalovlar ve restoran gibi temel hizmetler sunulmaktadır. Ancak sınırlı kapasite nedeniyle önceden rezervasyon yapılması önerilir.
 
-      Su sporları için ekipman gerekli mi?
-      Hayır, kiralama imkanı mevcut.
+      #### Kelebekler Vadisi yürüyüşü zor mu?
+      - Orta zorlukta, rahat ayakkabı ve su önerilir.
 
-      ### Öneriler ve İpuçları
+      #### Kelebekler Vadisi turu çocuklar için uygun mu?
+      - Evet, ancak Kelebekler Vadisi'nde dikkatli olunmalı.
+
+      #### Kelebekler Vadisi turu için yanıma ne getirmeliyim?
+      - Mayo, havlu, güneş kremi,
+      - Kaymaz terlik veya deniz ayakkabısı,  
+      - Su ve atıştırmalık,
+      - Yedek kıyafet,
+      - Fotoğraf makinesi,
+      - Nakit para (bazı alanlarda kart geçmeyebilir)
+
+      #### Kelebekler Vadisi turu fotoğraf çekimi serbest mi?
+      - Evet, profesyonel çekimler için izin gerekebilir.
+
+      #### Kelebekler Vadisi turu engelli erişimi var mı?
+      - Ölüdeniz'de var, Kelebekler Vadisi'nde sınırlı.
+
+      #### Kelebekler Vadisi turu su sporları için ekipman gerekli mi?
+      - Hayır, kiralama imkanı mevcut.
+
+      ### Kelebekler Vadisi turu için ipuçları ve tavsiyeler
 
       - Erken saatte ziyaret edin
       - Güneş kremi kullanın
@@ -1480,7 +1624,6 @@ export const blogPosts: BlogPost[] = [
     category: 'Günlük Turlar',
     excerpt: 'Sedir Adası ve Kleopatra Plajı\'nın eşsiz kumlarını keşfedin. Antik kalıntılar, turkuaz sular ve dünyada sadece burada bulunan özel kum yapısıyla unutulmaz bir günlük tur deneyimi.',
     content: `
-      Sedir Adası ve Kleopatra Plajı turu, Muğla'nın Marmaris ilçesinde yer alan eşsiz bir deneyim sunuyor. Antik dönemden günümüze ulaşan tarihi kalıntılar ve dünyada sadece burada bulunan özel kum yapısıyla ünlü Kleopatra Plajı, ziyaretçilerine unutulmaz anılar biriktirmenizi sağlayacak.
 
       ## Sedir Adası: Tarihi Cennet
 
@@ -1556,19 +1699,19 @@ export const blogPosts: BlogPost[] = [
       ## En İyi Ziyaret Zamanı
 
       ### Mevsimsel Öneriler
-      - İlkbahar (Nisan-Mayıs)
+      ####  İlkbahar (Nisan-Mayıs)
         * Ilıman hava
         * Az turist
         * Tarihi keşif için ideal
         * Doğal güzellikler
 
-      - Yaz (Haziran-Ağustos)
+      #### Yaz (Haziran-Ağustos)
         * Sıcak hava
         * Turkuaz sular
         * Yoğun turist
         * Yüzme için ideal
 
-      - Sonbahar (Eylül-Ekim)
+      #### Sonbahar (Eylül-Ekim)
         * Rahat sıcaklık
         * Renkli manzaralar
         * Sakin atmosfer
@@ -1596,23 +1739,42 @@ export const blogPosts: BlogPost[] = [
 
       ## Sıkça Sorulan Sorular
 
-      Kleopatra kumlarının özelliği nedir?
-      Mercan kaynaklı, yuvarlak taneli ve özel mineral yapısına sahip, dünyada sadece burada bulunan bir kum türü.
+      #### Sedir Adası giriş ücreti ne kadar?
+      - 2025 yılı itibarıyla Sedir Adası (Kleopatra Plajı) giriş ücreti 200 TL’dir. Müze Kart sahipleri ücretsiz giriş yapabilir. Giriş ücreti bazı tekne turu paketlerine dahil olabilir.
 
-      Tekneyle mi gidiliyor?
-      Evet, Marmaris'ten tekne ile 45 dakikalık bir yolculukla ulaşılıyor.
+      #### Kleopatra Plajı neden bu kadar ünlü?
+      - Kleopatra Plajı, ince altın sarısı koral kumlarıyla ünlüdür ve efsaneye göre bu kumlar Mısır Kraliçesi Kleopatra için özel olarak getirilmiştir. Kumların başka yerde bulunmaması ve denizin berraklığı plajı benzersiz kılar.
 
-      Çocuklar için uygun mu?
-      Evet, aile dostu bir rota, çocuklar da güvenle katılabilir.
+      #### Sedir Adası’na nasıl gidilir?
+      - Sedir Adası’na ulaşım, genellikle Akyaka veya Çamlı İskelesi'nden kalkan tekne turları ile sağlanır. Çamlı Köyü, adaya en yakın ve en çok tercih edilen çıkış noktasıdır.
 
-      Yanımda ne getirmeliyim?
-      Mayo, havlu, şapka, güneş kremi ve su önerilir.
+      #### Tekne turu fiyatları ne kadar?
+      - Akyaka veya Çamlı’dan düzenlenen Sedir Adası tekne turları 2025 yılı itibarıyla kişi başı ortalama 600 TL – 900 TL arasında değişmektedir. Tur kapsamı ve teknedeki konfora göre fiyatlar farklılık gösterir.
 
-      Fotoğraf çekimi serbest mi?
-      Evet, profesyonel çekimler için izin gerekebilir.
+      #### Tur ne kadar sürüyor?
+      - Sedir Adası & Kleopatra Plajı turları genellikle yarım gün ile tam gün arasında sürer. Adaya varış, yüzme molası, tarihi gezi ve dönüş toplamda 5 – 7 saat sürebilir.
 
-      Engelli erişimi var mı?
-      Sınırlı erişim mevcut, tekerlekli sandalye için uygun değil.
+      #### Plajda yüzmek serbest mi?
+      - Evet, plajda yüzmek serbesttir. Ancak kuma uzanmak veya kumla oynamak yasaktır, çünkü kumlar koruma altındadır. Ziyaretçiler sadece belirlenmiş alanlarda denize girebilir.
+
+      #### Adada başka ne görülebilir?
+      - Kleopatra Plajı dışında Sedir Adası’nda:
+        - Antik tiyatro kalıntıları
+        - Agora (çarşı alanı)
+        - Tarihi duvarlar
+        - gibi Kedrai Antik Kenti’ne ait yapılar da görülebilir.
+
+      #### Çocuklar için uygun mu?
+      - Evet. Deniz sığ ve berrak olduğundan çocuklar için uygundur. Ancak kumlarla oynanmaması gerektiği çocuklara önceden anlatılmalıdır. Tekne yolculuğu sırasında çocuklara göz kulak olunması önerilir.
+
+      #### Ne zaman gitmeliyim?
+      - En ideal dönem Haziran – Eylül aylarıdır. Yaz aylarında su sıcaklığı idealdir, hava ise keyifli bir geziye uygundur. Sabah saatleri, kalabalık öncesi daha sakin bir deneyim sunar.
+
+      #### Sedir Adası & Kleopatra Plajı turu için yanıma ne almalıyım?
+      - Mayo, havlu, güneş kremi
+      - Şapka ve gözlük
+      - Su ve atıştırmalık
+      - Nakit para (bazı tesislerde kart geçmeyeb
 
       ### Öneriler ve İpuçları
 
@@ -1646,7 +1808,6 @@ export const blogPosts: BlogPost[] = [
     category: 'Yurt İçi Turlar',
     excerpt: 'Gelibolu Yarımadası\'nda Çanakkale Savaşı\'nın izlerini takip edin. Şehitlikler, anıtlar ve tarihi mekanlarda duygusal bir yolculuğa çıkın.',
     content: `
-      Gelibolu Yarımadası Tarih Turu, Türk tarihinin en önemli savunma savaşlarından biri olan Çanakkale Savaşı'nın izlerini takip etmenizi sağlayan eşsiz bir deneyim sunuyor. Şehitlikler, anıtlar ve tarihi mekanlarda duygusal bir yolculuğa çıkacak, kahramanlık destanının her detayını rehber eşliğinde öğreneceksiniz.
 
       ## Tarihi Önem
 
@@ -1664,7 +1825,7 @@ export const blogPosts: BlogPost[] = [
       - Osmanlı'nın direnişi
       - Mustafa Kemal'in yükselişi
 
-      ## Tur Programı
+      ##  Gelibolu Yarımadası Tarih Turu Programı
 
       ### Sabah Programı
       - İstanbul'dan hareket
@@ -1687,7 +1848,7 @@ export const blogPosts: BlogPost[] = [
       - Dönüş yolculuğu
       - İstanbul'a varış
 
-      ## Ziyaret Edilecek Yerler
+      ## Gelibolu Yarımadası Tarih Turu Ziyaret Edilecek Yerler
 
       ### Şehitlikler
       - 57. Alay Şehitliği
@@ -1757,25 +1918,55 @@ export const blogPosts: BlogPost[] = [
 
       ## Sıkça Sorulan Sorular
 
-      Tur ne kadar sürüyor?
-      Sabah erken saatte başlayıp akşam geç saatte biten tam günlük bir tur.
+     #### Gelibolu Yarımadası Tarih Turu nedir?
+Gelibolu Yarımadası Tarih Turu, Çanakkale Savaşları’nın yaşandığı tarihi alanları kapsayan, rehber eşliğinde yapılan kültürel ve anı turudur. Tura, şehitlikler, anıtlar, siper alanları, müzeler ve savaşın izlerini taşıyan noktalar dahildir.
 
-      Rehber eşliğinde mi?
-      Evet, profesyonel tarih rehberleri eşliğinde gerçekleştirilir.
+      #### Gelibolu Yarımadası Tarih Turu kaç saat sürer?
+      - Tam günlük turlar genellikle 6 – 8 saat sürer. Bazı tur programları yarım günlük olarak da düzenlenebilir. Rehberli ve özel araçla yapılan turlar, ziyaret süresini optimize eder.
 
-      Çocuklar için uygun mu?
-      12 yaş ve üzeri için önerilir, küçük yaştaki çocuklar için duygusal etkilenme göz önünde bulundurulmalı.
+      #### Gelibolu Yarımadası’nda hangi yerler gezilir?
+      - Tura dahil başlıca noktalar:
 
-      Yemek dahil mi?
-      Tur paketine dahil değildir, ancak yemek molası verilir.
+        - 57. Alay Şehitliği,
+        - Conkbayırı,
+        - Anzak Koyu,
+        - Şehitler Abidesi,
+        - Alçıtepe Müzesi,
+        - Seddülbahir ve Arıburnu siperleri,
+        - Kilitbahir Kalesi,
+        - Namazgâh Tabyası.
 
-      Yanıma ne almalıyım?
-      Rahat kıyafetler, güneş koruyucu, şapka ve su önerilir.
+      #### Gelibolu Yarımadası Tarih Turu fiyatları ne kadar?
+      - 2025 yılı itibarıyla kişi başı ortalama 800 TL – 1.200 TL arasında değişmektedir. Fiyat, turun içeriğine (ulaşım, yemek, rehber, müze girişleri) ve kalkış noktasına göre farklılık gösterebilir.
 
-      Fotoğraf çekimi serbest mi?
-      Evet, ancak şehitliklerde saygılı olunmalı.
+      #### Gelibolu Yarımadası Tarih Turu nereden başlar?
+      - Turlar genellikle Çanakkale merkez veya Eceabat üzerinden başlatılır. İstanbul çıkışlı günübirlik turlar da mevcuttur. Bazı firmalar otelden alma hizmeti sunar.
 
-      ### Öneriler ve İpuçları
+      #### Gelibolu Yarımadası Tarih Turu için Müze Kart gerekli mi?
+      - Bazı müze ve ören yeri girişlerinde Müze Kart geçerlidir. Ancak şehitlik ve anıt ziyaretlerinde ücret alınmaz. Müze Kartınız varsa bazı ek alanlara ücretsiz girebilirsiniz.
+
+      #### Gelibolu Yarımadası Tarih Turu çocuklar ve yaşlılar için uygun mu?
+      - Evet, ancak yürüyüşlü bir tur olduğundan rahat ayakkabı ve fiziksel dayanıklılık tavsiye edilir. Araçla ulaşım sağlandığı için uygun dinlenme molaları verilir.
+
+      #### Gelibolu Yarımadası Tarih Turu ne zaman gitmek en iyisidir?
+      - En uygun dönemler:
+
+      - Mart – Haziran (bahar aylarında çiçeklerle dolu alanlar)
+      - Eylül – Kasım (hava serin, ziyaretçi sayısı daha az)
+      - 18 Mart Çanakkale Zaferi ve 25 Nisan ANZAC Günü gibi özel tarihlerde ziyaretçiler için anma törenleri yapılır ancak oldukça kalabalık olabilir.
+
+      #### Gelibolu Yarımadası Tarih Turu turlarda yemek veriliyor mu?
+      - Çoğu tam günlük turda öğle yemeği fiyata dahildir. Bazı turlar ekstra ücretle yemekli seçenek sunar. Menü genellikle yöresel ev yemekleri veya açık büfe şeklindedir.
+
+      #### Gelibolu Yarımadası Tarih Turu yanıma ne almalıyım?
+      - Rahat ayakkabı ve giysi
+      - Güneş kremi ve şapka (yaz için)
+      - Su şişesi
+      - Kimlik veya pasaport
+      - Kamera veya telefon
+      - Müze Kart (varsa)
+
+      ### Gelibolu Yarımadası Tarih Turu için öneriler ve ipuçları
 
       - Erken saatte ziyaret edin
       - Rahat ayakkabı giyin
@@ -1812,13 +2003,9 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Maldivler tatil rehberi: Fiyatlar, su üstü evleri, su sporları ve sık sorulan sorular. Maldivler'in en lüks resort otelleri ve özel deneyimler.",
     content: `
-      # Maldivler Lüks Tatil Rehberi 2025
-
-      Maldivler, turkuaz suları, beyaz kum plajları ve lüks su üstü evleriyle dünyanın en popüler tatil destinasyonlarından biridir. Bu rehberde Maldivler'de yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
       ## 2025 Maldivler Tatil Fiyatları
 
-      ### Konaklama Fiyatları (Gecelik)
+      ### 2025 Maldivler Tatil Fiyatları Konaklama Fiyatları (Gecelik)
       | Otel Kategorisi | Fiyat Aralığı | Özellikler | Dahil Hizmetler |
       | Lüks Su Üstü Evler | 2.500$ - 5.000$ | Özel Havuz, Şef | Tam Pansiyon, Spa |
       | Premium Resort | 1.500$ - 3.000$ | Plaj Erişimi | Yarım Pansiyon |
@@ -1826,24 +2013,54 @@ export const blogPosts: BlogPost[] = [
       | Su Üstü Villa | 1.200$ - 2.500$ | Cam Zemin | Özel Şef |
 
       ## Sık Sorulan Sorular
+      #### Maldivler'e gitmek için vize gerekiyor mu?
+      - Hayır. Türk vatandaşları için Maldivler’e girişte 30 güne kadar vizesiz kalış hakkı tanınır. Sadece pasaportunuzun en az 6 ay geçerli olması yeterlidir.
 
-      ### Maldivler'e Ne Zaman Gidilmeli?
-      - En İyi Sezon: Aralık - Nisan (30-32°C)
-      - Yağışlı Sezon: Mayıs - Kasım
-      - Festival Dönemleri: Aralık - Ocak
+      #### Maldivler’e en uygun seyahat dönemi nedir?
+      - Maldivler’e gitmek için en ideal dönem Kasım – Nisan arasıdır. Bu dönemde hava genellikle güneşli, yağışsız ve deniz durgundur. Özellikle Aralık ve Ocak ayları yoğun talep görür.
 
-      ### Vize Gerekli mi?
-      - Türk vatandaşları için vize gerekli değil
-      - 30 güne kadar kalış süresi
-      - Pasaport geçerlilik süresi: 6 ay
-      - Dönüş bileti gerekli
+      #### 2025 Maldivler Tatil Fiyatları nedirx?
+      - 2025 yılı itibarıyla 4 gecelik ortalama bir Maldivler tatili:
+      - Uçak bileti: 15.000 – 30.000 TL 
+      - Otel (kişi başı): 20.000 – 80.000 TL
+      Toplam: 35.000 TL’den başlayıp lüks segmentte 150.000 TL+ seviyeye kadar çıkabilir.
+      
+      #### Maldivler’de hangi adalar tercih edilmeli?
+      - Popüler ve Instagram’da en çok tercih edilen adalar:
+      - Maafushi (ekonomik)
+      - Meeru Island (orta segment)
+      - Baros Maldives, Vakkaru, Soneva Jani (lüks)
+      - Her adanın kendine özel olanakları, plajları ve mercan resifleri vardır.
+      
+      #### Maldivler balayı için uygun mu?
+      - Kesinlikle evet. Maldivler, overwater bungalow (deniz üstü villa), özel plajlar, çiftlere özel spa ve romantik akşam yemekleriyle balayı çiftleri için dünyanın en çok tercih edilen destinasyonlarından biridir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Business sınıf opsiyonel
-      - Bagaj hakkı: 30 kg
-      - İade ve değişiklik ücreti: 500$
+      #### Maldivler tatilinde neler yapılır?
+      - Dalış ve şnorkelle yüzme
+      - Gün batımı turları
+      - Lüks su üstü villalarda konaklama
+      - Spa & masaj deneyimleri
+      - Balıkçılık ve jet ski
+      - Yerel adalarda kültürel geziler
+      
+      #### Maldivlere Ulaşım nasıl sağlanır?
+      - İstanbul’dan Maldivler’e direkt uçuşlarla Male Uluslararası Havalimanı’na ulaşılır. Ardından ada otelinize sürat teknesi veya deniz uçağı ile geçilir. Transfer hizmeti genellikle otel tarafından ayarlanır.
 
+      #### Maldivler’de ne yenir?
+      - Maldivler mutfağı Hindistan ve Sri Lanka etkisindedir.
+
+     #### Maldivler'de Popüler lezzetler:
+    - Deniz ürünleri
+    - Köri soslu balık yemekleri
+    - Hindistancevizli tatlılar
+    - Lüks otellerde dünya mutfaklarından seçenekler sunulur.
+    #### Maldivler tatili çocukla yapılır mı?
+    - Evet. Aile dostu resortlar, çocuk kulüpleri ve su kaydırakları bulunan villalar mevcuttur. Ancak bazı “adults only” (yalnızca yetişkinlere özel) otellerde çocuk kabul edilmez.
+
+    #### Maldivler pahalı mı?
+    - Maldivler, lüks segmentte oldukça pahalı olabilir. Ancak Maafushi gibi yerel adalarda konaklayarak daha uygun fiyatlarla tatil yapmak mümkündür.
+    - Her bütçeye göre Maldivler tatili planlamak mümkündür.
+     
       ## Su Sporları ve Aktiviteler
 
       ### Popüler Aktiviteler
@@ -1879,32 +2096,31 @@ export const blogPosts: BlogPost[] = [
 
       ## Maldivler'de Seyahat İpuçları
 
-      ### Para Birimi
+      ### Maldivler Para Birimi
       - Resmi para birimi: MVR (Rufiyaa)
       - 1$ ≈ 15.45 MVR
       - Kredi kartı yaygın kullanım
       - USD kabul edilir
 
-      ### İletişim
+      ### Maldivler İletişim
       - Uluslararası arama kodu: +960
       - Wi-Fi ücretsiz
       - SIM kart: 20-30$
       - WhatsApp ve sosyal medya erişimi
 
-      ### Sağlık
+      ### Maldivler Sağlık
       - Seyahat sigortası önerilir
       - İlaçlarınızı yanınızda getirin
       - Güneş koruması önemli
       - Su tüketimine dikkat edin
 
-      ### Güvenlik
+      ### Maldivler Güvenlik
       - Güvenli bir ülke
       - Değerli eşyalarınıza dikkat edin
       - Acil numara: 119
       - Polis merkezleri 24 saat açık
 
-      ---
-      *Son güncelleme: Mart 2024*
+     
     `,
     keywords: [
       'maldivler tatil 2025',
@@ -1922,16 +2138,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 17,
-    title: "Barselona Turu 2025: Gaudi'nin Şehrinde Sanat ve Kültür",
+    title: "Barcelona Turu 2025: Gaudi'nin Şehrinde Sanat ve Kültür",
     slug: "barselona-turu-2025-gaudi-sanat-kultur",
     category: "Yurt Dışı Turlar",
-    excerpt: "2025 Barselona turu rehberi: Sagrada Familia, Park Güell ve şehrin en önemli turistik yerleri. Katalan mutfağı, alışveriş ve gece hayatı hakkında detaylı bilgiler.",
+    excerpt: "2025 Barcelona turu rehberi: Sagrada Familia, Park Güell ve şehrin en önemli turistik yerleri. Katalan mutfağı, alışveriş ve gece hayatı hakkında detaylı bilgiler.",
     content: `
-      # Barselona Turu Rehberi 2025
 
-      Barselona, Antoni Gaudi'nin eserleri, Katalan kültürü ve Akdeniz'in eşsiz atmosferiyle dünyanın en çekici şehirlerinden biridir. Bu rehberde Barselona'da yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
-      ## 2025 Barselona Tur Fiyatları
+      ## 2025 Barcelona Tur Fiyatları
 
       ### Tur Paketleri
       | Paket Tipi | Fiyat | Süre | Dahil Hizmetler |
@@ -1941,118 +2154,108 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Barselona'ya Ne Zaman Gidilmeli?
-      - En İyi Sezon: Nisan - Haziran, Eylül - Ekim
-      - Yaz Ayları: Sıcak ve kalabalık
-      - Festival Dönemleri: Haziran - Eylül
+      #### Barcelona’ya vize gerekiyor mu?
+      - Evet. Barselona, İspanya’nın bir şehri olduğu için Schengen vizesi gereklidir. Türkiye Cumhuriyeti vatandaşlarının geçerli bir Schengen vizesi ile giriş yapması zorunludur.
 
-      ### Vize Gerekli mi?
-      - Schengen vizesi gerekli
-      - Başvuru süresi: 15 gün
-      - Vize ücreti: 80€
-      - Sigorta zorunlu
+      #### Barcelona turu kaç gün sürmeli?
+      - Barselona’yı keşfetmek için en az 3-4 gün idealdir. Gaudí eserleri, sahil, müzeler ve alışveriş için 4 günlük bir gezi planı yeterlidir. Yakın çevre gezileri için 5-6 gün önerilir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
-
-      ## Gezilecek Yerler
-
-      ### Gaudi Eserleri
-      - Sagrada Familia
-        - Dünyanın en ünlü katedrallerinden
-        - 1882'den beri inşaat halinde
-        - Özel rehberli tur
+      #### Barcelona'da gezilecek yerler nerelerdir?
+      - La Sagrada Familia
       - Park Güell
-        - UNESCO Dünya Mirası
-        - Mozaik eserler
-        - Panoramik şehir manzarası
-      - Casa Batlló
-        - Modernist mimari
-        - Özel sesli rehber
-        - Gece turu seçeneği
+      - La Rambla
+      - Gothic Quarter (Barri Gòtic)
+      - Camp Nou Stadyumu
+      - Casa Batlló & Casa Milà (La Pedrera)
+      - Montjuïc Tepesi ve Teleferik
+      - Port Vell ve Barceloneta Plajı
 
-      ### Müzeler ve Kültür
+      #### 2025 Barcelona tur fiyatları nedir?
+      - 2025 yılı itibarıyla ortalama 4 günlük bir Barcelona turu kişi başı:
+
+      - Uçak bileti: 7.000 – 12.000 TL
+      - Otel (3-4 yıldız): 8.000 – 20.000 TL
+      - Tüm harcamalar dahil ortalama bütçe: 25.000 – 45.000 TL
+
+      #### Barcelona’da ulaşım nasıl sağlanır?
+      - Barcelona’da toplu taşıma çok gelişmiştir.
+      - Metro, otobüs ve tramvaylar yaygın
+      - T-10 kartı ile 10 binişlik uygun fiyatlı ulaşım
+      - Yürüyüş ve elektrikli scooter da oldukça popülerdir
+
+      #### Barcelona turu ne zaman yapılır?
+      - Barcelona için en iyi dönemler:
+      - Nisan – Haziran ve Eylül – Ekim ayları
+      - Yaz ayları (Temmuz – Ağustos) sıcak ve turistik açıdan yoğun geçer
+      - İlkbahar ve sonbahar hava güzel ve şehir daha sakindir
+
+      #### Barcelona güvenli mi?
+      - Genel olarak evet. Ancak turistik bölgelerde yankesicilik yaygındır. Özellikle La Rambla ve metroda dikkatli olmak gerekir. Pasaport ve cüzdan taşımada özenli olunmalıdır.
+
+      #### Barcelona’da ne yenir?
+      - Paella (deniz ürünlü pilav)
+      - Tapas (çeşitli meze tabakları)
+      - Churros (çikolatalı kızarmış tatlı)
+      - Crema Catalana (İspanyol crème brûlée)
+      - Sangria (meyveli şarap kokteyli)
+
+      #### Barcelona’da hangi müzelere gidilmeli?
       - Picasso Müzesi
-      - MNAC (Ulusal Sanat Müzesi)
-      - MACBA (Modern Sanat Müzesi)
-      - Camp Nou (FC Barcelona Stadyumu)
+      - MNAC (Katalonya Ulusal Sanat Müzesi)
+      - CosmoCaixa (Bilim Müzesi)
+      - FC Barcelona Müzesi – Camp Nou
+      - Gaudí Evi Müzesi
 
-      ## Katalan Mutfağı
+      #### Barcelona’dan günübirlik nerelere gidilir?
+      - Montserrat Manastırı
+      - Sitges Sahili
+      - Girona
+      - Tarragona
+      - Bu noktalar trenle 1-2 saatte ulaşılabilir ve günübirlik keşifler için uygundur.
 
-      ### Mutlaka Denenmesi Gerekenler
-      - Paella
-      - Tapas
-      - Crema Catalana
-      - Jamón Ibérico
-      - Sangria
+      ## 2025 Barcelona Alışveriş Rehberi
 
-      ### En İyi Restoranlar
-      | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
-      | El Xampanyet | Katalan | Tapas, Şampanya | 20-30€ |
-      | Tickets | Modern | Ferran Adria | 100-150€ |
-      | La Boqueria | Çeşitli | Taze Deniz Ürünleri | 30-50€ |
-
-      ## Alışveriş Rehberi
-
-      ### Popüler Alışveriş Bölgeleri
+      ### Barcelona Popüler Alışveriş Bölgeleri
       - La Rambla
       - Passeig de Gràcia
       - El Born
       - El Raval
 
-      ### Vergi İadesi
+      ### Barcelona Vergi İadesi
       - Minimum alışveriş: 90.15€
       - İade oranı: %21
       - İşlem süresi: 3-6 ay
       - Havaalanında iade noktaları
 
-      ## Ulaşım
+      ##  Barcelona Ulaşım
 
-      ### Toplu Taşıma
+      ###  Barcelona Toplu Taşıma
       - Metro: En ekonomik seçenek
       - Otobüs: 24 saat hizmet
       - Taksi: 24 saat hizmet
       - Bisiklet: Şehir içi ulaşım
 
-      ### Havaalanı Transferi
+      ### Barcelona Havaalanı Transferi
       - Aerobús: 5.90€
       - Taksi: 30-40€
       - Özel transfer: 50-60€
       - Metro: 4.50€
 
-      ## Gece Hayatı
-
-      ### Popüler Bölgeler
-      - El Raval
-      - El Born
-      - Barceloneta
-      - Gracia
-
-      ### En İyi Barlar
-      - Paradiso
-      - Dry Martini
-      - Boadas
-      - El Xampanyet
-
-      ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Mart 2025
     `,
     keywords: [
-      'barselona turu 2025',
+      'barcelona turu 2025',
       'gaudi eserleri',
       'sagrada familia',
       'park güell',
       'katalan mutfağı',
       'yurt dışı tur',
       'schengen vizesi',
-      'barselona gezilecek yerler',
-      'barselona alışveriş',
-      'barselona gece hayatı'
+      'barcelona gezilecek yerler',
+      'barcelona alışveriş',
+      'barcelona gece hayatı'
     ],
-    metaDescription: '2025 Barselona turu rehberi, Gaudi eserleri, Katalan mutfağı, alışveriş ve gece hayatı. Sagrada Familia, Park Güell ve şehrin en önemli turistik yerleri hakkında detaylı bilgi.'
+    metaDescription: '2025 Barcelona turu rehberi, Gaudi eserleri, Katalan mutfağı, alışveriş ve gece hayatı. Sagrada Familia, Park Güell ve şehrin en önemli turistik yerleri hakkında detaylı bilgi.'
   },
   {
     id: 18,
@@ -2061,10 +2264,7 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Paris turu rehberi: Eyfel Kulesi, Louvre Müzesi ve şehrin en önemli turistik yerleri. Fransız mutfağı, alışveriş ve romantik deneyimler hakkında detaylı bilgiler.",
     content: `
-      # Paris Turu Rehberi 2025
-
-      Paris, sanatın, modanın ve aşkın başkenti olarak dünyanın en çekici şehirlerinden biridir. Bu rehberde Paris'te yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
+  
       ## 2025 Paris Tur Fiyatları
 
       ### Tur Paketleri
@@ -2075,99 +2275,104 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Paris'e Ne Zaman Gidilmeli?
-      - En İyi Sezon: Nisan - Haziran, Eylül - Ekim
-      - Yaz Ayları: Kalabalık ve sıcak
-      - Festival Dönemleri: Haziran - Temmuz
+      #### Paris'e gitmek için vize gerekiyor mu?
+      - Evet. Paris, Fransa’da yer aldığı için Schengen vizesi gereklidir. Türkiye Cumhuriyeti vatandaşları, geçerli bir pasaportla birlikte Schengen vizesi alarak Paris’e giriş yapabilir.
 
-      ### Vize Gerekli mi?
-      - Schengen vizesi gerekli
-      - Başvuru süresi: 15 gün
-      - Vize ücreti: 80€
-      - Sigorta zorunlu
+      #### Paris turu kaç gün olmalı?
+      - Paris’i gezmek için ideal süre 4-5 gün olarak önerilir. Bu süre, başlıca turistik yerleri görmek, müzeleri gezmek ve şehir atmosferini hissetmek için yeterlidir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
-
-      ## Gezilecek Yerler
-
-      ### Müzeler ve Sanat
+      #### Paris'te mutlaka görülmesi gereken yerler nerelerdir?
+      - Eiffel Kulesi
       - Louvre Müzesi
-        - Mona Lisa
-        - Venüs Heykeli
-        - Özel rehberli tur
-      - Orsay Müzesi
-        - İzlenimci sanat
-        - Van Gogh eserleri
-        - Özel sergiler
-      - Pompidou Merkezi
-        - Modern sanat
-        - Çağdaş eserler
-        - Mimari tasarım
-
-      ### Tarihi Yapılar
-      - Eyfel Kulesi
       - Notre Dame Katedrali
-      - Arc de Triomphe
-      - Sacré-Cœur Bazilikası
+      - Sacre Coeur Bazilikası
+      - Champs-Élysées ve Zafer Takı
+      - Versailles Sarayı (günübirlik)
+      - Seine Nehri tekne turu
+      - Disneyland Paris (özellikle çocuklu aileler için)
 
-      ## Fransız Mutfağı
+      #### 2025 itibarıyla Paris turu ortalama kişi başı:
 
-      ### Mutlaka Denenmesi Gerekenler
-      - Croissant
-      - Macaron
-      - Escargot
-      - Foie Gras
-      - Şarap
+      - Uçak bileti: 9.000 – 15.000 TL
+      - 4 gece konaklama: 10.000 – 25.000 TL
+      - Günlük harcamalar: 1.500 – 2.500 TL
+      - Toplamda 4-5 günlük bir tatil için ortalama bütçe: 35.000 – 60.000 TL
 
-      ### En İyi Restoranlar
+      #### Paris’e ne zaman gidilmeli?
+      En uygun dönemler:
+      - Nisan – Haziran (ilkbahar)
+      - Eylül – Ekim (sonbahar)
+      - Bu dönemlerde hava ılımandır ve şehir kalabalığı yaz aylarına göre daha azdır. Aralık ayında ise Paris, Noel pazarları ve ışıklarla oldukça romantik bir atmosfere bürünür.
+
+      #### Paris'te ulaşım nasıl sağlanır?
+      - Paris’te ulaşım ağı oldukça gelişmiştir:
+      - Metro, otobüs ve tramvay yaygın ve güvenlidir
+      - Navigo kartı veya 10’lu metro bileti (carnet) ile ekonomik ulaşım sağlanabilir
+      - Şehir yürüyerek gezmeye uygundur, birçok turistik yer birbirine yakındır
+
+      #### Paris güvenli mi?
+      - Genel olarak evet. Ancak turistik bölgelerde yankesicilere karşı dikkatli olunmalıdır. Özellikle metro, kalabalık caddeler ve kule çevresinde çantanızı önünüzde taşımanız önerilir.
+
+      #### Paris'te ne yenir?
+      - Paris mutfağı dünyaca ünlüdür. Mutlaka denemeniz gerekenler:
+
+      - Croissant ve baget ekmeği
+      - Escargot (salyangoz)
+      - Soğan çorbası (Soupe à l’oignon)
+      - Macaron ve Crème brûlée
+      - Fransız peynirleri ve şarapları
+      - Uygun fiyatlı yemekler için "bistro" veya "brasserie" tipi yerel restoranlar tercih edilebilir.
+
+      #### Paris Disneyland turları nasıl oluyor?
+      - Disneyland Paris, şehir merkezine 45 dakika uzaklıktadır
+      - Günübirlik veya 1 gece konaklamalı paketler sunulur
+      - Biletler kişi başı 100-150€ arasında değişir
+      - Aileler ve çocuklar için özel turlar düzenlenir
+      - Özellikle yaz ve tatil dönemlerinde önceden rezervasyon yapmak önerilir.
+
+      #### Paris’ten hangi yerlere günübirlik gidilir?
+      - Versailles Sarayı
+      - Loire Vadisi
+      - Giverny (Monet Bahçeleri)
+      - Brüksel (trenle 1,5 saat)
+      - Bu turlar hem kültürel hem görsel anlamda zengin bir deneyim sunar.
+
+      ### Paris En İyi Restoranlar
       | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
       | Le Jules Verne | Fransız | Eyfel Kulesi'nde | 200-300€ |
       | L'Ami Louis | Geleneksel | Tarihi mekan | 100-150€ |
       | Le Comptoir | Modern | Michelin yıldızlı | 150-200€ |
 
-      ## Alışveriş Rehberi
+      ##  Paris Alışveriş Rehberi
 
-      ### Popüler Alışveriş Bölgeleri
+      ### Paris Popüler Alışveriş Bölgeleri
       - Champs-Élysées
       - Galeries Lafayette
       - Le Marais
       - Saint-Germain-des-Prés
 
-      ### Vergi İadesi
+      ### Paris Vergi İadesi
       - Minimum alışveriş: 175€
       - İade oranı: %12
       - İşlem süresi: 3-6 ay
       - Havaalanında iade noktaları
 
-      ## Ulaşım
-
-      ### Toplu Taşıma
-      - Metro: En ekonomik seçenek
-      - Otobüs: 24 saat hizmet
-      - Taksi: 24 saat hizmet
-      - Bisiklet: Vélib sistemi
-
-      ### Havaalanı Transferi
+      ### Paris Havaalanı Transferi
       - RER: 10.30€
       - Taksi: 50-60€
       - Özel transfer: 70-80€
       - Metro: 10.30€
 
-      ## Romantik Deneyimler
+      ## Paris Romantik Deneyimler
 
-      ### Özel Aktiviteler
+      ### Paris Özel Aktiviteler
       - Seine Nehri tekne turu
       - Eyfel Kulesi'nde akşam yemeği
       - Montmartre'da sanat turu
       - Şarap tadımı
       - Pastane workshop'ları
 
-      ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Mart 2025
     `,
     keywords: [
       'paris turu 2025',
@@ -2190,9 +2395,6 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Roma turu rehberi: Kolezyum, Vatikan ve şehrin en önemli tarihi yerleri. İtalyan mutfağı, alışveriş ve kültür turu hakkında detaylı bilgiler.",
     content: `
-      # Roma Turu Rehberi 2025
-
-      Roma, antik dünyanın en güçlü imparatorluğunun başkenti olarak tarihi ve kültürel zenginliğiyle dünyanın en etkileyici şehirlerinden biridir. Bu rehberde Roma'da yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
 
       ## 2025 Roma Tur Fiyatları
 
@@ -2204,55 +2406,66 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Roma'ya Ne Zaman Gidilmeli?
-      - En İyi Sezon: Nisan - Haziran, Eylül - Ekim
-      - Yaz Ayları: Sıcak ve kalabalık
-      - Festival Dönemleri: Haziran - Eylül
+      #### Roma’ya gitmek için vize gerekiyor mu?
+      - Evet. Roma, İtalya’nın başkenti olduğu için Schengen vizesi gereklidir. Türkiye Cumhuriyeti vatandaşlarının geçerli bir Schengen vizesi ile seyahat etmesi gerekir.
 
-      ### Vize Gerekli mi?
-      - Schengen vizesi gerekli
-      - Başvuru süresi: 15 gün
-      - Vize ücreti: 80€
-      - Sigorta zorunlu
+      #### Roma turu kaç gün sürmeli?
+      - Roma’yı tam anlamıyla keşfetmek için 3 ila 5 gün idealdir. 3 günde en önemli yerleri görebilir, 5 günlük bir planla çevre bölgeleri de keşfedebilirsiniz.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
-
-      ## Gezilecek Yerler
-
-      ### Antik Roma
-      - Kolezyum
-        - Gladyatör arenası
-        - Özel rehberli tur
-        - Gece turu seçeneği
-      - Forum Romanum
-        - Antik meydan
-        - Tarihi kalıntılar
-        - Arkeolojik alan
+      #### Roma’da gezilecek yerler nerelerdir?
+      - Kolezyum (Colosseum)
+      - Roma Forumu ve Palatino Tepesi
+      - Vatikan (San Pietro Bazilikası & Sistina Şapeli)
+      - Trevi Çeşmesi (Fontana di Trevi)
+      - İspanyol Merdivenleri
       - Pantheon
-        - Antik tapınak
-        - Mimari harika
-        - Ücretsiz giriş
+      - Navona Meydanı & Campo de’ Fiori
 
-      ### Vatikan
-      - Aziz Petrus Bazilikası
-      - Vatikan Müzeleri
-      - Sistine Şapeli
-      - Vatikan Bahçeleri
+      #### 2025 Roma tur fiyatları nedir?
+      - 2025 yılı itibarıyla ortalama 4 günlük bir Roma turu maliyeti kişi başı:
+      - Uçak bileti: 8.000 – 12.000 TL
+      - Otel (3-4 yıldız): 10.000 – 20.000 TL
+      - Günlük harcamalar: 1.500 – 2.000 TL
+      - Toplam ortalama bütçe: 30.000 – 45.000 TL
 
-      ## İtalyan Mutfağı
+      #### Roma’ya ne zaman gidilir?
+      - Roma’yı ziyaret etmek için en ideal dönemler:
+      - Nisan – Haziran (ilkbahar)
+      - Eylül – Ekim (sonbahar)
+      - Bu dönemlerde hava ılımandır ve turist kalabalığı daha azdır. Yaz aylarında sıcaklık ve yoğunluk oldukça artar.
 
-      ### Mutlaka Denenmesi Gerekenler
-      - Pizza Romana
-      - Pasta Carbonara
-      - Tiramisu
-      - Gelato
-      - İtalyan şarapları
+      #### Roma’da ulaşım nasıl sağlanır?
+      - Roma’da metro, otobüs ve tramvay ağı mevcuttur
+      - Roma Pass veya ATAC biletleri ile ulaşım kolay ve ekonomiktir
+      - Şehir merkezi yürüyerek gezmeye çok uygundur
 
-      ### En İyi Restoranlar
+      #### Roma güvenli mi?
+      - Genel olarak evet. Ancak turistik bölgelerde cepçilik yaygındır. Özellikle metro, Termini istasyonu ve kalabalık meydanlarda dikkatli olunmalıdır.
+
+      #### Roma’da ne yenir?
+      - Roma mutfağı çok zengindir. Öne çıkan lezzetler:
+
+      - Cacio e Pepe (peynirli karabiberli makarna)
+      - Carbonara
+      - Margherita Pizza
+      - Tiramisu ve Gelato (dondurma)
+      - Espresso
+
+      #### Vatikan turu nasıl yapılır?
+      - Vatikan, Roma’nın içinde ayrı bir devlettir.
+
+      - San Pietro Bazilikası, Vatikan Müzeleri ve Sistina Şapeli gezilir
+      - Girişler için önceden online rezervasyon yapılması önerilir
+
+      #### Roma’dan günübirlik nereye gidilir?
+      - Tivoli (Villa d'Este ve Villa Adriana)
+      - Orvieto
+
+      - Napoli ve Pompei
+      - Floransa (hızlı trenle 1.5 saat)
+      - Bu bölgeler Roma’dan kolay ulaşılabilir ve kültürel zenginlik sunar.
+
+      ### 2025 Roma En İyi Restoranlar
       | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
       | La Pergola | İtalyan | 3 Michelin yıldızı | 200-300€ |
       | Roscioli | Geleneksel | Tarihi mekan | 50-80€ |
@@ -2260,33 +2473,33 @@ export const blogPosts: BlogPost[] = [
 
       ## Alışveriş Rehberi
 
-      ### Popüler Alışveriş Bölgeleri
+      ### Roma Popüler Alışveriş Bölgeleri
       - Via del Corso
       - Via Condotti
       - Campo de' Fiori
       - Trastevere
 
-      ### Vergi İadesi
+      ### Roma Vergi İadesi
       - Minimum alışveriş: 154.94€
       - İade oranı: %22
       - İşlem süresi: 3-6 ay
       - Havaalanında iade noktaları
 
-      ## Ulaşım
+      ## Roma Ulaşım
 
-      ### Toplu Taşıma
+      ### Roma'da Toplu Taşıma
       - Metro: En ekonomik seçenek
       - Otobüs: 24 saat hizmet
       - Taksi: 24 saat hizmet
       - Tramvay: Şehir merkezi
 
-      ### Havaalanı Transferi
+      ### Roma Havaalanı Transferi
       - Leonardo Express: 14€
       - Taksi: 48€
       - Özel transfer: 60-70€
       - Metro: 8€
 
-      ## Kültür ve Sanat
+      ## Roma'da Kültür ve Sanat
 
       ### Müzeler
       - Borghese Galerisi
@@ -2301,8 +2514,8 @@ export const blogPosts: BlogPost[] = [
       - Vatikan özel turu
       - Roma gece turu
 
-      ---
-      *Son güncelleme: Mart 2024*
+      
+      Son güncelleme: Mart 2025
     `,
     keywords: [
       'roma turu 2025',
@@ -2325,10 +2538,7 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Amsterdam turu rehberi: Van Gogh Müzesi, kanal turları ve şehrin en önemli turistik yerleri. Hollanda mutfağı, bisiklet kültürü ve müzeler hakkında detaylı bilgiler.",
     content: `
-      # Amsterdam Turu Rehberi 2025
-
-      Amsterdam, kanalları, müzeleri ve özgür ruhuyla dünyanın en çekici şehirlerinden biridir. Bu rehberde Amsterdam'da yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
+     
       ## 2025 Amsterdam Tur Fiyatları
 
       ### Tur Paketleri
@@ -2339,113 +2549,126 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Amsterdam'a Ne Zaman Gidilmeli?
-      - En İyi Sezon: Nisan - Mayıs (Lale Zamanı)
-      - Yaz Ayları: Popüler ve kalabalık
-      - Festival Dönemleri: Nisan - Eylül
+      #### Amsterdam’a gitmek için vize gerekiyor mu?
+      - Evet. Amsterdam, Hollanda’da yer aldığı için Schengen vizesi gereklidir. Türkiye Cumhuriyeti vatandaşlarının geçerli bir pasaport ile birlikte Schengen vizesi alması zorunludur.
 
-      ### Vize Gerekli mi?
-      - Schengen vizesi gerekli
-      - Başvuru süresi: 15 gün
-      - Vize ücreti: 80€
-      - Sigorta zorunlu
+      #### Amsterdam turu kaç gün olmalı?
+      - Amsterdam’ı keşfetmek için 3 ila 5 gün idealdir. 3 günlük gezilerde şehir merkezi ve ana müzeler, 4-5 günlük gezilerde çevre kasabalar da gezilebilir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
+      #### Amsterdam’da gezilecek yerler nerelerdir?
+      Dam Meydanı
+      Anne Frank Evi
+      Van Gogh Müzesi
+      Rijksmuseum (Ulusal Müze)
+      Vondelpark
+      Kanal Turları
+      Red Light District
+      Çiçek Pazarı (Bloemenmarkt)
+      Heineken Experience
+      
+      #### 2025 Amsterdam tur fiyatları nedir?
+      - 2025 yılı itibarıyla Amsterdam turu için kişi başı ortalama maliyet:
 
-      ## Gezilecek Yerler
+      - Uçak bileti: 8.000 – 13.000 TL
+      - Otel (3-4 yıldız): 12.000 – 25.000 TL (4 gece)
+      - Günlük harcama: 1.500 – 2.500 TL
+      Toplam tahmini bütçe: 35.000 – 55.000 TL
 
-      ### Müzeler
+      #### Amsterdam’a ne zaman gidilir?
+      - Nisan – Mayıs (lale sezonu) en popüler dönemdir
+      - Eylül – Ekim arası ise daha sakin, havanın serin ama gezmeye uygun olduğu dönemdir
+      - Yaz ayları (Haziran – Ağustos) kalabalık ve otel fiyatları yüksek olabilir
+
+      #### Amsterdam’da ulaşım nasıl sağlanır?
+      - Şehirde tramvay, metro, otobüs ve feribot ağı gelişmiştir
+      - I amsterdam Card veya GVB günlük biletleri ile toplu taşıma sınırsız kullanılabilir
+      - Bisiklet kiralama da oldukça yaygındır, yerel halkın tercihidir
+      
+      #### Amsterdam güvenli bir şehir mi?
+      - Evet, Amsterdam Avrupa’nın en güvenli şehirlerinden biridir. Ancak bisiklet yollarında dikkatli olunmalı ve turistik bölgelerde yankesicilere karşı tedbirli davranılmalıdır.
+
+      #### Amsterdam’da ne yenir?
+      - Amsterdam’da tadılması gereken lezzetler:
+
+      - Haring (çiğ ringa balığı)
+      - Poffertjes (mini pancake)
+      - Stroopwafel (şurup dolgulu gofret)
+      - Patates kızartması (farklı soslarla)
+      - Hollanda peyniri çeşitleri (Gouda, Edam)
+
+      #### Amsterdam’dan günübirlik nereye gidilir?
+      - Zaanse Schans (yeldeğirmenleri ve peynir fabrikaları)
+      - Volendam & Marken (balıkçı kasabaları)
+      - Keukenhof Bahçeleri (Nisan-Mayıs lale sezonu)
+      - Rotterdam ve Lahey
+      - Bu noktalar tren veya otobüsle 30-60 dakika mesafededir.
+
+      #### Amsterdam turunda hangi müzeler mutlaka gezilmeli?
       - Van Gogh Müzesi
-        - Dünyanın en büyük Van Gogh koleksiyonu
-        - Özel sergiler
-        - Sesli rehber
       - Rijksmuseum
-        - Hollanda Altın Çağı
-        - Rembrandt eserleri
-        - Mimari tasarım
       - Anne Frank Evi
-        - Tarihi müze
-        - Rehberli tur
-        - Online rezervasyon gerekli
+      - Moco Museum (modern sanat)
+      - Heineken Experience
+      - Bu müzelere giriş için önceden bilet almak önerilir.
 
-      ### Kanal Turu
-      - Klasik tekne turu
-      - Özel tekne kiralama
-      - Akşam yemeği teknesi
-      - Hop-on hop-off tekne
-
-      ## Hollanda Mutfağı
-
-      ### Mutlaka Denenmesi Gerekenler
-      - Stroopwafel
-      - Poffertjes
-      - Kibbeling
-      - Hollanda peyniri
-      - Bitterballen
-
-      ### En İyi Restoranlar
+      ### 2025 Amsterdam En İyi Restoranlar
       | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
       | Restaurant de Kas | Modern | Çiftlikten sofraya | 80-120€ |
       | Moeders | Geleneksel | Aile tarzı | 40-60€ |
       | The Seafood Bar | Deniz ürünleri | Taze balık | 50-80€ |
 
-      ## Bisiklet Kültürü
+      ##  Amsterdam Bisiklet Kültürü
 
-      ### Bisiklet Turları
+      ### Amsterdam Bisiklet Turları
       - Şehir merkezi turu
       - Kırsal alan turu
       - Müze turu
       - Yemek turu
 
-      ### Bisiklet Kiralama
+      ### Amsterdam Bisiklet Kiralama
       - Günlük: 10-15€
       - Haftalık: 50-70€
       - Elektrikli: 25-30€
       - Rehberli tur: 30-40€
 
-      ## Alışveriş Rehberi
+      ## Amsterdam Alışveriş Rehberi
 
-      ### Popüler Alışveriş Bölgeleri
+      ### Amsterdam Popüler Alışveriş Bölgeleri
       - Kalverstraat
       - Nine Streets
       - Albert Cuyp Market
       - Jordaan
 
-      ### Vergi İadesi
+      ### Amsterdam Vergi İadesi
       - Minimum alışveriş: 50€
       - İade oranı: %21
       - İşlem süresi: 3-6 ay
       - Havaalanında iade noktaları
 
-      ## Ulaşım
+      ## Amsterdam Ulaşım
 
-      ### Toplu Taşıma
+      ### Amsterdam Toplu Taşıma
       - Tram: En yaygın seçenek
       - Metro: Şehir dışı bağlantılar
       - Otobüs: 24 saat hizmet
       - Feribot: Ücretsiz
 
-      ### Havaalanı Transferi
+      ### Amsterdam Havaalanı Transferi
       - Tren: 4.50€
       - Taksi: 45-55€
       - Özel transfer: 60-70€
       - Otobüs: 6.50€
 
-      ## Özel Deneyimler
+      ## Amsterdam Özel Deneyimler
 
-      ### Aktiviteler
+      ### Amsterdam Aktiviteler
       - Lale bahçesi ziyareti
       - Peynir tadımı
       - Şarap tadımı
       - Kanal evi turu
       - Bisiklet workshop'u
 
-      ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Mart 2025
     `,
     keywords: [
       'amsterdam turu 2025',
@@ -2468,10 +2691,7 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Londra turu rehberi: Buckingham Sarayı, British Museum ve şehrin en önemli turistik yerleri. İngiliz mutfağı, alışveriş ve kültür turu hakkında detaylı bilgiler.",
     content: `
-      # Londra Turu Rehberi 2025
-
-      Londra, kraliyet ailesi, dünya çapında müzeleri ve modern yaşam tarzıyla dünyanın en çekici şehirlerinden biridir. Bu rehberde Londra'da yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
+      
       ## 2025 Londra Tur Fiyatları
 
       ### Tur Paketleri
@@ -2482,100 +2702,110 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Londra'ya Ne Zaman Gidilmeli?
-      - En İyi Sezon: Mayıs - Eylül
-      - Yaz Ayları: Festival ve etkinlikler
-      - Noel Dönemi: Özel atmosfer
+      #### Londra’ya gitmek için vize gerekiyor mu?
+      - Evet. Türkiye vatandaşları için İngiltere vizesi gereklidir. Vize başvurusu, seyahat amacına göre turistik, iş veya aile ziyareti gibi kategorilere ayrılır.
 
-      ### Vize Gerekli mi?
-      - İngiltere vizesi gerekli
-      - Başvuru süresi: 15 gün
-      - Vize ücreti: 100€
-      - Sigorta zorunlu
+      #### Londra turu kaç gün sürmeli?
+      - Londra’yı rahatça gezmek için 4-6 gün önerilir. Bu sürede şehirdeki önemli tarihi ve turistik yerler ziyaret edilebilir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
-
-      ## Gezilecek Yerler
-
-      ### Kraliyet Yerleri
+      #### Londra’da mutlaka görülmesi gereken yerler nerelerdir?
+      - Tower of London (Londra Kalesi)
       - Buckingham Sarayı
-        - Nöbet değişimi töreni
-        - Devlet odaları turu
-        - Kraliyet bahçeleri
+      - Big Ben ve Parlamento Binası
+      - British Museum
+      - London Eye
       - Westminster Abbey
-        - Kraliyet düğünleri
-        - Tarihi mezar taşları
-        - Gotik mimari
-      - Tower of London
-        - Kraliyet mücevherleri
-        - Beyaz Kule
-        - Ravens
+      - Covent Garden ve Piccadilly Circus
+      - Hyde Park
+      - Camden Market
 
-      ### Müzeler
+      #### 2025 Londra tur fiyatları nedir?
+      - 2025 yılında ortalama 5 günlük Londra turu maliyeti:
+
+      - Uçak bileti: 7.000 – 12.000 TL
+      - Otel (3-4 yıldız): 12.000 – 25.000 TL
+      - Günlük harcamalar: 1.500 – 2.500 TL
+      - Toplam tahmini bütçe: 35.000 – 50.000 TL
+
+      #### Londra’ya ne zaman gidilmeli?
+      - Mayıs – Eylül arası yaz sezonu en popüler ve hava genellikle iyidir.
+      - İlkbahar (Nisan) ve sonbahar (Eylül-Ekim) ayları da ziyaret için uygundur.
+      - Kış ayları soğuk ve yağışlı olabilir, ancak Noel döneminde şehir ışıl ışıl olur.
+
+      #### Londra’da ulaşım nasıl sağlanır?
+      - Londra’da Tube (metro), otobüs, tramvay ve tren ağları gelişmiştir.
+      - Oyster Card veya Contactless Card kullanarak ulaşım uygun ve pratiktir.
+      - Şehir yürüyerek ve bisikletle keşfedilmeye uygundur.
+
+      #### Londra güvenli mi?
+      - Genel olarak Londra güvenlidir. Ancak turistik bölgelerde yankesicilik ve dolandırıcılık olaylarına karşı dikkatli olmak gerekir.
+
+      #### Londra’da ne yenir?
+      - Fish and Chips (balık ve patates kızartması)
+      - Afternoon Tea (İkindi Çayı)
+      - Sunday Roast (Pazar kızartması)
+      - İngiliz kahvaltısı
+      - Uluslararası mutfaklar da oldukça yaygındır.
+
+      #### Londra’da alışveriş için en iyi yerler nerelerdir?
+      - Oxford Street
+      - Regent Street
+      - Covent Garden
+      - Camden Market
+      - Harrods ve Selfridges gibi büyük mağazalar
+
+      #### Londra’dan günübirlik hangi yerlere gidilebilir?
+      - Windsor Kalesi
+      - Stonehenge
+      - Oxford
+      - Bath
+      - Cambridge
+
+      ### Londra Müzeler
       - British Museum
       - National Gallery
       - Natural History Museum
       - Victoria & Albert Museum
 
-      ## İngiliz Mutfağı
-
-      ### Mutlaka Denenmesi Gerekenler
-      - Fish & Chips
-      - Sunday Roast
-      - Afternoon Tea
-      - Full English Breakfast
-      - Puding
-
-      ### En İyi Restoranlar
+      ### Londra En İyi Restoranlar
       | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
       | The Ritz | İngiliz | Afternoon Tea | 100-150£ |
       | Dishoom | Hint | Modern | 30-50£ |
       | Sketch | Fransız | Sanat galerisi | 80-120£ |
 
-      ## Alışveriş Rehberi
-
-      ### Popüler Alışveriş Bölgeleri
+      ### Londra Popüler Alışveriş Bölgeleri
       - Oxford Street
       - Regent Street
       - Covent Garden
       - Harrods
       - Selfridges
 
-      ### Vergi İadesi
+      ### Londra Vergi İadesi
       - Minimum alışveriş: 30£
       - İade oranı: %20
       - İşlem süresi: 3-6 ay
       - Havaalanında iade noktaları
 
-      ## Ulaşım
-
-      ### Toplu Taşıma
+      ### Londra Toplu Taşıma
       - Metro (Tube): En yaygın seçenek
       - Otobüs: 24 saat hizmet
       - Taksi: Siyah taksiler
       - Bisiklet: Santander Cycles
 
-      ### Havaalanı Transferi
+      ### Londra Havaalanı Transferi
       - Heathrow Express: 25£
       - Taksi: 45-65£
       - Özel transfer: 70-90£
       - Metro: 6£
 
-      ## Özel Deneyimler
-
-      ### Aktiviteler
+      ### Londra Aktiviteler
       - West End müzikali
       - Thames nehir turu
       - Harry Potter stüdyo turu
       - Şarap tadımı
       - Yemek turu
 
-      ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Nisan 2025
     `,
     keywords: [
       'londra turu 2025',
@@ -2598,10 +2828,7 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Prag turu rehberi: Prag Kalesi, Charles Köprüsü ve şehrin en önemli turistik yerleri. Çek mutfağı, bira kültürü ve tarihi mekanlar hakkında detaylı bilgiler.",
     content: `
-      # Prag Turu Rehberi 2025
-
-      Prag, Orta Çağ'dan kalma mimarisi, büyülü atmosferi ve zengin kültürüyle Avrupa'nın en etkileyici şehirlerinden biridir. Bu rehberde Prag'da yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
+      
       ## 2025 Prag Tur Fiyatları
 
       ### Tur Paketleri
@@ -2612,113 +2839,111 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Prag'a Ne Zaman Gidilmeli?
-      - En İyi Sezon: Nisan - Ekim
-      - Yaz Ayları: Festival dönemi
-      - Noel Dönemi: Özel pazarlar
+      #### Prag’a gitmek için vize gerekiyor mu?
+      - Evet. Prag, Çekya’nın başkenti olduğu için Schengen vizesi gereklidir. Türkiye vatandaşlarının geçerli bir Schengen vizesi alması gerekir.
 
-      ### Vize Gerekli mi?
-      - Schengen vizesi gerekli
-      - Başvuru süresi: 15 gün
-      - Vize ücreti: 80€
-      - Sigorta zorunlu
+      #### Prag turu kaç gün sürmeli?
+      - Prag’ı detaylı gezmek için 3-4 gün idealdir. Bu sürede başlıca tarihi ve kültürel mekanları rahatlıkla ziyaret edebilirsiniz.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
+      #### Prag’da gezilecek yerler nerelerdir?
+      - Eski Şehir Meydanı (Old Town Square)
+      - Charles Köprüsü (Karlův most)
+      - Prag Kalesi (Pražský hrad)
+      - Astronomik Saat (Orloj)
+      - Aziz Vitus Katedrali
+      - Wenceslas Meydanı
+      - Yahudi Mahallesi (Josefov)
 
-      ## Gezilecek Yerler
+      #### 2025 Prag tur fiyatları nedir?
+      - 2025 itibarıyla ortalama 4 günlük Prag turu maliyeti:
 
-      ### Tarihi Yapılar
-      - Prag Kalesi
-        - St. Vitus Katedrali
-        - Altın Yol
-        - Kraliyet sarayı
-      - Charles Köprüsü
-        - Barok heykeller
-        - Güneş doğuşu manzarası
-        - Sokak sanatçıları
-      - Eski Şehir Meydanı
-        - Astronomik Saat
-        - Tyn Kilisesi
-        - Belediye Binası
+      - Uçak bileti: 6.000 – 10.000 TL
+      - Otel (3-4 yıldız): 8.000 – 16.000 TL
+      - Günlük harcamalar: 1.000 – 1.500 TL
+      - Toplam tahmini bütçe: 20.000 – 30.000 TL
 
-      ### Müzeler
+      #### Prag’a ne zaman gidilmeli?
+      - Nisan – Haziran ve Eylül – Ekim arası en uygun dönemlerdir.
+      - Kış aylarında özellikle Aralık ayında Noel pazarları çok popülerdir ancak hava soğuktur.
+      - Yaz ayları kalabalık olabilir.
+
+      #### Prag’da ulaşım nasıl sağlanır?
+      - Prag’da metro, tramvay ve otobüsler sık kullanılır.
+      - Prag Card veya toplu taşıma biletleri ile kolay ulaşım sağlanır.
+      - Şehir merkezi yürüyerek de gezilebilir.
+
+      #### Prag güvenli mi?
+      - Prag genel olarak güvenli bir şehirdir. Ancak turistik bölgelerde cepçilik ve dolandırıcılık vakalarına karşı dikkatli olunmalıdır.
+
+      #### Prag’da ne yenir?
+      - Gulaş çorbası (Goulash)
+      - Trdelník (tatlı hamur rulosu)
+      - Svíčková (marineli et yemeği)
+      - Çek birası oldukça ünlüdür ve mutlaka tadılmalıdır.
+
+      #### Prag’dan günübirlik nereye gidilir?
+      - Kutná Hora (Tarihi kasaba ve kemik kilisesi)
+      - Karlovy Vary (Termal kaplıca kasabası)
+      - Cesky Krumlov (Ortaçağ kasabası)
+      - Bu yerler Prag’dan günübirlik turlar için popüler seçeneklerdir.
+
+      #### Prag turunda hangi müzeler gezilmeli?
+      - Ulusal Müze (Národní muzeum)
       - Kafka Müzesi
-      - Ulusal Müze
-      - Mucha Müzesi
-      - Yahudi Müzesi
+      - Çek Ulusal Galerisi
+      - Modern Sanat Müzesi
 
-      ## Çek Mutfağı
-
-      ### Mutlaka Denenmesi Gerekenler
+      ### Prag Mutlaka Denenmesi Gerekenler
       - Gulaş
       - Svíčková
       - Trdelník
       - Çek birası
       - Knedlíky
 
-      ### En İyi Restoranlar
+      ### Prag En İyi Restoranlar
       | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
       | La Degustation | Çek | Michelin yıldızlı | 100-150€ |
       | U Modré Kachničky | Geleneksel | Tarihi mekan | 40-60€ |
       | Lokál | Modern | Yerel lezzetler | 20-30€ |
 
-      ## Bira Kültürü
+      ## Prag Alışveriş Rehberi
 
-      ### Bira Turları
-      - Pilsner Urquell fabrika turu
-      - Bira tadımı
-      - Bira müzesi
-      - Bira bahçeleri
-
-      ### Popüler Bira Evleri
-      - U Fleků
-      - U Zlatého Tygra
-      - U Medvídků
-      - Pivovarský Dům
-
-      ## Alışveriş Rehberi
-
-      ### Popüler Alışveriş Bölgeleri
+      ### Prag Popüler Alışveriş Bölgeleri
       - Na Příkopě
       - Pařížská
       - Wenceslas Meydanı
       - Havelská Pazarı
 
-      ### Vergi İadesi
+      ### Prag Vergi İadesi
       - Minimum alışveriş: 2000 CZK
       - İade oranı: %21
       - İşlem süresi: 3-6 ay
       - Havaalanında iade noktaları
 
-      ## Ulaşım
+      ## Prag Ulaşım
 
-      ### Toplu Taşıma
+      ### Prag Toplu Taşıma
       - Metro: En ekonomik seçenek
       - Tramvay: Şehir merkezi
       - Otobüs: 24 saat hizmet
       - Taksi: 24 saat hizmet
 
-      ### Havaalanı Transferi
+      ### Prag Havaalanı Transferi
       - AE Bus: 100 CZK
       - Taksi: 500-700 CZK
       - Özel transfer: 800-1000 CZK
       - Metro: 32 CZK
 
-      ## Özel Deneyimler
+      ## Prag Özel Deneyimler
 
-      ### Aktiviteler
+      ### Prag Aktiviteler
       - Vltava nehir turu
       - Klasik müzik konseri
       - Kukla tiyatrosu
       - Şarap tadımı
       - Çek mutfağı workshop'u
 
-      ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Nisan 2025
     `,
     keywords: [
       'prag turu 2025',
@@ -2741,10 +2966,7 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Viyana turu rehberi: Schönbrunn Sarayı, Viyana Opera Binası ve şehrin en önemli turistik yerleri. Avusturya mutfağı, klasik müzik ve kültür turu hakkında detaylı bilgiler.",
     content: `
-      # Viyana Turu Rehberi 2025
-
-      Viyana, klasik müziğin, imparatorluk saraylarının ve sanatın başkenti olarak Avrupa'nın en zarif şehirlerinden biridir. Bu rehberde Viyana'da yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
+      
       ## 2025 Viyana Tur Fiyatları
 
       ### Tur Paketleri
@@ -2755,113 +2977,128 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Viyana'ya Ne Zaman Gidilmeli?
-      - En İyi Sezon: Nisan - Ekim
-      - Yaz Ayları: Festival dönemi
-      - Noel Dönemi: Özel pazarlar
+      #### Viyana’ya gitmek için vize gerekiyor mu?
+      - Evet. Viyana, Avusturya’nın başkenti olduğu için Schengen vizesi gerekmektedir. Türkiye vatandaşlarının geçerli Schengen vizesi alması zorunludur.
 
-      ### Vize Gerekli mi?
-      - Schengen vizesi gerekli
-      - Başvuru süresi: 15 gün
-      - Vize ücreti: 80€
-      - Sigorta zorunlu
+      #### Viyana turu kaç gün sürmeli?
+      - Viyana’yı detaylı keşfetmek için 3-4 gün önerilir. Bu sürede tarihi saraylar, müzeler ve şehir merkezindeki önemli noktalar gezilebilir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
-
-      ## Gezilecek Yerler
-
-      ### Saraylar
+      #### Viyana’da gezilecek başlıca yerler nerelerdir?
       - Schönbrunn Sarayı
-        - İmparatorluk odaları
-        - Bahçeler ve labirent
-        - Palm House
-      - Hofburg Sarayı
-        - İmparatorluk hazineleri
-        - Sisi Müzesi
-        - Gümüş Koleksiyonu
       - Belvedere Sarayı
-        - Klimt eserleri
-        - Barok mimari
-        - Bahçeler
+      - Stephansdom (Aziz Stefan Katedrali)
+      - Hofburg İmparatorluk Sarayı
+      - Prater Parkı ve Dönme Dolap
+      - Albertina Müzesi
+      - Vienna State Opera
 
-      ### Müzeler
-      - Kunsthistorisches Museum
+      #### 2025 Viyana tur fiyatları nedir?
+      - 2025 yılı için ortalama 4 günlük Viyana turu maliyeti:
+
+      - Uçak bileti: 6.000 – 10.000 TL
+      - Otel (3-4 yıldız): 8.000 – 16.000 TL
+      - Günlük harcamalar: 1.200 – 2.000 TL
+      - Toplam tahmini bütçe: 20.000 – 32.000 TL
+
+      #### Viyana’ya ne zaman gidilmeli?
+      - Nisan – Haziran ve Eylül – Ekim ayları ideal ziyaret dönemleridir.
+      - Yaz ayları (Temmuz-Ağustos) kalabalık olabilir.
+      - Kışın Noel pazarları çok popülerdir ancak hava soğuk ve karlı olabilir.
+
+      #### Viyana’da ulaşım nasıl sağlanır?
+      - Viyana’da metro, tramvay ve otobüsler şehir içi ulaşımı kolaylaştırır.
+      - Vienna Card ile toplu taşıma sınırsız kullanılabilir ve birçok müzede indirim sağlanır.
+      - Şehir merkezi yürüyerek keşfedilmeye uygundur.
+
+      #### Viyana güvenli midir?
+      - Genel olarak Viyana oldukça güvenlidir. Turistik bölgelerde temel önlemler alınmalıdır.
+
+      #### Viyana’da ne yenir?
+      - Wiener Schnitzel (Viyana usulü şinitzel)
+      - Apfelstrudel (Elmalı turta)
+      - Sachertorte (Çikolatalı pasta)
+      - Tafelspitz (Haşlanmış et yemeği)
+      - Kahve kültürü çok gelişmiştir, mutlaka bir kafede kahve deneyin.
+
+      #### Viyana’dan günübirlik nereye gidilebilir?
+      - Wachau Vadisi (Şarap bağları ve doğal güzellikler)
+      - Bratislava (Slovakya’nın başkenti, yaklaşık 1 saat uzaklıkta)
+      - Salzburg (Mozart’ın memleketi)
+      - Melk Manastırı
+
+      #### Viyana’da mutlaka gezilmesi gereken müzeler hangileridir?
+      - Kunsthistorisches Museum (Sanat Tarihi Müzesi)
+      - Belvedere Müzesi
       - Albertina
-      - Leopold Museum
-      - MUMOK
+      - MUMOK (Modern Sanat Müzesi)
 
-      ## Avusturya Mutfağı
+      ## Viyana Mutfağı
 
-      ### Mutlaka Denenmesi Gerekenler
+      ### Viyana Mutlaka Denenmesi Gerekenler
       - Wiener Schnitzel
       - Sacher Torte
       - Apfelstrudel
       - Tafelspitz
       - Viyana Kahvesi
 
-      ### En İyi Restoranlar
+      ### Viyana En İyi Restoranlar
       | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
       | Steirereck | Avusturya | 2 Michelin yıldızı | 150-200€ |
       | Figlmüller | Geleneksel | Schnitzel | 30-50€ |
       | Café Central | Viyana | Tarihi kafe | 20-30€ |
 
-      ## Klasik Müzik
+      ## Viyana Klasik Müzik
 
-      ### Konser Mekanları
+      ### Viyana Konser Mekanları
       - Viyana Opera Binası
       - Musikverein
       - Konzerthaus
       - Staatsoper
 
-      ### Özel Deneyimler
+      ### Viyana Özel Deneyimler
       - Opera turu
       - Klasik müzik konseri
       - Mozart konseri
       - Strauss konseri
 
-      ## Alışveriş Rehberi
+      ## Viyana Alışveriş Rehberi
 
-      ### Popüler Alışveriş Bölgeleri
+      ### Viyana Popüler Alışveriş Bölgeleri
       - Kärntner Straße
       - Graben
       - Mariahilfer Straße
       - Naschmarkt
 
-      ### Vergi İadesi
+      ### Viyana Vergi İadesi
       - Minimum alışveriş: 75€
       - İade oranı: %20
       - İşlem süresi: 3-6 ay
       - Havaalanında iade noktaları
 
-      ## Ulaşım
+      ## Viyana Ulaşım
 
-      ### Toplu Taşıma
+      ### Viyana Toplu Taşıma
       - Metro: En ekonomik seçenek
       - Tramvay: Şehir merkezi
       - Otobüs: 24 saat hizmet
       - Taksi: 24 saat hizmet
 
-      ### Havaalanı Transferi
+      ### Viyana Havaalanı Transferi
       - CAT: 12€
       - Taksi: 35-45€
       - Özel transfer: 50-60€
       - Metro: 4.20€
 
-      ## Özel Deneyimler
+      ## Viyana Özel Deneyimler
 
-      ### Aktiviteler
+      ### Viyana Aktiviteler
       - Fiaker turu
       - Şarap tadımı
       - Çikolata workshop'u
       - Viyana vals dersi
       - Kafe kültürü turu
 
-      ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Nisan 2025
     `,
     keywords: [
       'viyana turu 2025',
@@ -2884,10 +3121,6 @@ export const blogPosts: BlogPost[] = [
     category: "Yurt Dışı Turlar",
     excerpt: "2025 Bangkok turu rehberi: Tapınaklar, yüzen pazarlar ve Tay mutfağı. Tropikal atmosferde unutulmaz bir Uzakdoğu deneyimi için detaylı bilgiler.",
     content: `
-      # Bangkok Turu Rehberi 2025
-
-      Bangkok, Uzakdoğu'nun kalbinde yer alan, tapınakları, yüzen pazarları ve zengin kültürüyle büyüleyici bir şehirdir. Bu rehberde Bangkok'ta yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
       ## 2025 Bangkok Tur Fiyatları
 
       ### Tur Paketleri
@@ -2898,95 +3131,104 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Bangkok'a Ne Zaman Gidilmeli?
-      - En İyi Sezon: Kasım - Şubat
-      - Yağışlı Sezon: Mayıs - Ekim
-      - Festival Dönemi: Nisan (Songkran)
+      #### Bangkok’a gitmek için vize gerekiyor mu?
+      - Türkiye vatandaşları için 30 güne kadar turistik amaçlı Bangkok (Tayland) seyahatlerinde vize muafiyeti vardır. 30 günden uzun kalışlarda Tayland vizesi alınması gerekir.
 
-      ### Vize Gerekli mi?
-      - 30 güne kadar vize gerekmez
-      - Pasaport geçerlilik süresi: 6 ay
-      - Sigorta önerilir
-      - Giriş ücreti: Yok
+      #### Bangkok turu kaç gün sürmeli?
+      - Bangkok’u keşfetmek için genellikle 3-5 gün önerilir. Bu süre şehirdeki tapınaklar, pazarlar ve kültürel noktalar için idealdir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€
+      #### Bangkok’ta gezilecek başlıca yerler nerelerdir?
+      - Büyük Saray (Grand Palace)
+      - Wat Pho (Yatan Buda Tapınağı)
+      - Wat Arun (Şafak Tapınağı)
+      - Chatuchak Haftasonu Pazarı
+      - Khao San Road
+      - Chao Phraya Nehri Turu
+      - Jim Thompson Evi
 
-      ## Gezilecek Yerler
+      #### 2025 Bangkok tur fiyatları nedir?
+      - 2025 yılı için ortalama 4 günlük Bangkok turu maliyeti:
 
-      ### Tapınaklar
-      - Wat Phra Kaew
-        - Zümrüt Buda
-        - Kraliyet sarayı
-        - Tarihi duvar resimleri
-      - Wat Arun
-        - Şafak tapınağı
-        - Çin porseleni süslemeler
-        - Tepeden manzara
-      - Wat Pho
-        - Yatan Buda
-        - Geleneksel masaj okulu
-        - Tarihi bahçeler
+      - Uçak bileti: 8.000 – 14.000 TL
+      - Otel (3-4 yıldız): 5.000 – 12.000 TL
+      - Günlük harcamalar: 500 – 1.000 TL
+      - Toplam tahmini bütçe: 18.000 – 30.000 TL
 
-      ### Pazarlar ve Alışveriş
-      - Chatuchak Pazarı
-      - Yüzen Pazar
-      - MBK Center
-      - Siam Paragon
+      #### Bangkok’a ne zaman gidilmeli?
+      - Kasım – Şubat arası kuru sezon, hava serin ve nem azdır. En uygun dönemdir.
+      - Mart – Mayıs sıcaklıklar çok yüksek olabilir.
+      - Haziran – Ekim yağışlı sezondur.
 
-      ## Tay Mutfağı
+      #### Bangkok’ta ulaşım nasıl sağlanır?
+      - BTS Skytrain ve MRT Metro şehir içi ulaşım için hızlı ve uygundur.
+      - Tuk-tuklar ve taksiler kısa mesafelerde popülerdir.
+      - Tekne turları da nehir ulaşımında tercih edilir.
 
-      ### Mutlaka Denenmesi Gerekenler
+      #### Bangkok’ta ne yenir?
+      - Pad Thai (Tayland usulü kızarmış noodle)
+      - Tom Yum Çorbası
+      - Som Tam (Acı papaya salatası)
+      - Mango Sticky Rice (Mango ve yapışkan pirinç tatlısı)
+      - Sokak yemekleri oldukça popülerdir.
+
+      #### Bangkok’tan günübirlik nereye gidilir?
+      - Ayutthaya (Tarihi başkent ve tapınaklar)
+      - Damnoen Saduak Yüzen Pazarı
+      - Kanchanaburi (Ölümsüzlük Tren Köprüsü ve doğal güzellikler)
+
+      #### Bangkok’ta alışveriş için en iyi yerler nerelerdir?
+      - Siam Paragon ve CentralWorld gibi büyük alışveriş merkezleri
+      - Chatuchak Haftasonu Pazarı
+      - Asiatique The Riverfront
+
+      ## Bangkok Mutfağı
+
       - Pad Thai
       - Tom Yum
       - Som Tam
       - Mango Sticky Rice
       - Tay Kahvesi
 
-      ### En İyi Restoranlar
+      ### Bangkok En İyi Restoranlar
       | Restoran | Mutfak | Özellikler | Fiyat Aralığı |
       | Nahm | Tay | Michelin yıldızlı | 100-150€ |
       | Jay Fai | Sokak | Yumurta omleti | 20-30€ |
       | Sühring | Alman | 2 Michelin yıldızı | 150-200€ |
 
-      ## Kültürel Deneyimler
+      ## Bangkok Kültürel Deneyimler
 
-      ### Geleneksel Aktiviteler
+      ### Bangkok Geleneksel Aktiviteler
       - Thai masajı
       - Meditasyon dersi
       - Yemek kursu
       - Budist ayinleri
       - Muay Thai dersi
 
-      ## Ulaşım
+      ## Bangkok Ulaşım
 
-      ### Şehir İçi Ulaşım
+      ### Bangkok Şehir İçi Ulaşım
       - BTS (Hafif Raylı Sistem)
       - MRT (Metro)
       - Tuk-tuk
       - Taksi
       - Motosiklet taksi
 
-      ### Havaalanı Transferi
+      ### Bangkok Havaalanı Transferi
       - Airport Rail Link: 45 THB
       - Taksi: 400-600 THB
       - Özel transfer: 800-1000 THB
       - Otobüs: 60 THB
 
-      ## Özel Deneyimler
+      ## Bangkok Özel Deneyimler
 
-      ### Aktiviteler
+      ### Bangkok Aktiviteler
       - Mekong nehir turu
       - Ayutthaya turu
       - Çin mahallesi turu
       - Gece pazarı turu
       - Spa ve masaj deneyimi
 
-      ---
-      *Son güncelleme: Mart 2024*
+      Son güncelleme: Nisan 2025
     `,
     keywords: [
       'bangkok turu 2025',
@@ -3009,8 +3251,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Yurt Dışı Turlar',
     excerpt: 'Budapeşte\'nin tarihi sokaklarında kültür turu. Termal banyolar, tarihi binalar ve şehrin eşsiz atmosferi.',
     content: `
-      Budapeşte, Tuna Nehri'nin iki yakasında kurulu, termal banyoları, tarihi binaları ve zengin kültürüyle Avrupa'nın en etkileyici şehirlerinden biridir. Bu rehberde Budapeşte'de yapılacaklar, görülecek yerler ve özel deneyimler hakkında detaylı bilgiler bulabilirsiniz.
-
+      
       ## 2025 Budapeşte Tur Fiyatları
 
       ### Tur Paketleri
@@ -3021,31 +3262,60 @@ export const blogPosts: BlogPost[] = [
 
       ## Sık Sorulan Sorular
 
-      ### Budapeşte'ye Ne Zaman Gidilmeli?
-      - En İyi Sezon: Mayıs - Ekim
-      - Yağışlı Sezon: Mart - Nisan
-      - Festival Dönemi: Haziran (Budapest Spring Festival)
+      #### Budapeşte’ye gitmek için vize gerekiyor mu?
+      - Evet. Macaristan, Schengen bölgesinde olduğu için Türkiye vatandaşlarının Schengen vizesi alması gerekir.
 
-      ### Vize Gerekli mi?
-      - 90 güne kadar vize gerekmez
-      - Pasaport geçerlilik süresi: 6 ay  
-      - Sigorta önerilir
-      - Giriş ücreti: Yok
+      #### Budapeşte turu kaç gün sürmeli?
+      - Budapeşte’yi rahatça gezmek için 3-4 gün idealdir. Bu sürede şehrin tarihi ve turistik noktaları keşfedilebilir.
 
-      ### Uçak Bileti Dahil mi?
-      - Evet, tur fiyatına dahil
-      - Ekonomi sınıfı
-      - Bagaj hakkı: 23 kg
-      - İade ve değişiklik ücreti: 200€ 
+      #### Budapeşte’de gezilecek başlıca yerler nerelerdir?
+      - Buda Kalesi (Budai Vár)
+      - Parlamento Binası
+      - Zincirli Köprü (Széchenyi Lánchíd)
+      - Termal Hamamlar (Széchenyi, Gellért)
+      - Andrassy Caddesi
+      - Kahramanlar Meydanı (Hősök tere)
+      - Margit Adası
 
-      ## Gezilecek Yerler
+      #### 2025 Budapeşte tur fiyatları nedir?
+      - 2025 yılı itibarıyla ortalama 4 günlük Budapeşte turu maliyeti:
 
-      ### Termal Banyolar
-      - Gellért Fürdő
-        - Termal su kaynakları
-        - Tepeden manzara 
-      ---
-      *Son güncelleme: Mart 2024*
+      - Uçak bileti: 5.000 – 9.000 TL
+      - Otel (3-4 yıldız): 7.000 – 15.000 TL
+      - Günlük harcamalar: 800 – 1.500 TL
+      - Toplam tahmini bütçe: 17.000 – 28.000 TL
+
+      #### Budapeşte’ye ne zaman gidilmeli?
+      - Nisan – Haziran ve Eylül – Ekim ayları en uygun dönemlerdir.
+      - Yaz ayları sıcak ve kalabalık olabilir.
+      - Kış aylarında şehir özellikle Noel döneminde çok güzeldir.
+
+      #### Budapeşte’de ulaşım nasıl sağlanır?
+      - Metro, tramvay ve otobüsler şehir içi ulaşımda yaygın kullanılır.
+      - Budapest Card ile toplu taşıma ücretsiz ve birçok turistik noktada indirim alınabilir.
+      - Şehir yürüyerek de rahatça gezilebilir.
+
+      #### Budapeşte güvenli midir?
+      - Budapeşte genellikle güvenlidir. Turistik alanlarda hırsızlık riskine karşı dikkatli olmak faydalıdır.
+
+      #### Budapeşte’de ne yenir?
+      - Gulaş Çorbası (Gulyás)
+      - Langos (kızarmış hamur)
+      - Paprika ile yapılan yemekler
+      - Macar şarapları ve termal hamam sonrası kahve keyfi
+
+      #### Budapeşte’den günübirlik hangi yerlere gidilir?
+      - Szentendre (Sanatçı kasabası)
+      - Visegrád (Tarihi kale ve doğal güzellikler)
+      - Esztergom (Büyük Bazilika)
+
+      #### Budapeşte’de hangi müzeler gezilmeli?
+      - Macar Ulusal Müzesi
+      - Tarih Müzesi
+      - Modern Sanat Müzesi
+      - Terör Müzesi
+
+      Son güncelleme: Nisan 2025
     `,
     keywords: [
       'budapeşte turu 2025',

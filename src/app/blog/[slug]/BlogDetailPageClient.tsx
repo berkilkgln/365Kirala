@@ -211,21 +211,26 @@ export default function BlogDetailPageClient({ post }: Props) {
       <Navbar />
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Başlık Bölümü */}
-        <div className="relative bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-800 py-32">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0)_100%)]"></div>
-          <div className="max-w-4xl mx-auto px-4 text-center text-white relative">
-            <span className="inline-block px-6 py-2 mb-8 text-sm font-semibold bg-white/10 rounded-full backdrop-blur-sm hover:bg-white/20 transition-all duration-300 shadow-sm border border-white/20 hover:scale-105">
+        <div className="flex justify-center pt-14 pb-10">
+          <div className="relative w-full max-w-2xl mx-auto rounded-2xl shadow-xl px-6 md:px-10 py-10 text-center text-white bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-800">
+            {/* Category Chip */}
+            <span className="inline-block px-5 py-1.5 mb-5 text-xs font-semibold bg-white/20 text-white rounded-full border border-white/20">
               {post.category}
             </span>
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg animate-fade-in">
+            <h1 className="text-3xl md:text-5xl font-extrabold mb-3 leading-tight tracking-tight">
               {post.title}
             </h1>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto tracking-wide leading-relaxed">
+            {/* Decorative Line */}
+            <div className="flex justify-center mb-4">
+              <div className="w-16 h-0.5 bg-white/40 rounded-full"></div>
+            </div>
+            <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-4 font-light">
               {post.excerpt}
             </p>
-            <div className="mt-8 flex items-center justify-center gap-4 text-sm text-white/80">
-              <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* Reading Time Chip */}
+            <div className="mt-2 flex items-center justify-center gap-2 text-xs">
+              <span className="inline-flex items-center gap-1 px-4 py-1 bg-white/10 text-white rounded-full border border-white/10 font-medium">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 {readingTime} dakika okuma

@@ -1,6 +1,5 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import Logo from '../../public/images/logo.png';
 import Script from 'next/script';
 import { Analytics } from './components/Analytics';
 import { Suspense } from 'react';
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     images: [
       {
-        url: Logo.src,
+        url: '/images/logo.png',
         width: 1200,
         height: 630,
         alt: '365Kirala Logo',

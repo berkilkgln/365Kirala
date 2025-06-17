@@ -7,8 +7,8 @@ export default function Head() {
         <meta charSet="utf-8" />
   
         <link rel="canonical" href="https://365kirala.com" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/images/logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
         <link rel="manifest" href="/site.webmanifest" />
   
         <meta name="theme-color" content="#0D0D0D" />
@@ -18,7 +18,7 @@ export default function Head() {
         <meta property="og:url" content="https://365kirala.com" />
         <meta property="og:title" content="365Kirala - Lüks kiralama platformu" />
         <meta property="og:description" content="365Kirala ile lüks araç, yat, villa ve özel jet kiralayın. Güvenli ve hızlı rezervasyon." />
-        <meta property="og:image" content="https://365kirala.com/og-image.jpg" />
+        <meta property="og:image" content="https://365kirala.com/images/logo.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
   

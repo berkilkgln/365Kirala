@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,10 +8,13 @@ import villaData from '../../../data/villa/services.json';  // Villa verisi bura
 import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
 import { createUrlSlug } from '../../../lib/utils';
+import useEmblaCarousel from 'embla-carousel-react';
+import Script from 'next/script';
 
 type Villa = {
   id: number;
   image: string;
+  images?: string[];
   location: string;
   title: string;
   price: number;
@@ -27,33 +30,137 @@ export default function VillaDetailPage() {
   const idWithSlug = params?.id as string;
   const id = Number(idWithSlug.split('-')[0]);
   const [villa, setVilla] = useState<Villa | null>(null);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: true,
+    align: 'center',
+    containScroll: 'trimSnaps'
+  });
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   useEffect(() => {
     if (!id) return;
     const foundVilla = villaData.items.find((item) => item.id === id);
-    if (foundVilla) {
+    if (foundVilla && foundVilla.image) {
       const slug = createUrlSlug(foundVilla.title);
-      setVilla({ ...foundVilla, slug });
+      const villaData: Villa = {
+        id: foundVilla.id,
+        image: foundVilla.image,
+        title: foundVilla.title,
+        location: foundVilla.location,
+        price: foundVilla.price,
+        booked: foundVilla.booked,
+        discount: foundVilla.discount,
+        description: foundVilla.description,
+        features: foundVilla.features,
+        slug
+      };
+      setVilla(villaData);
     } else {
       setVilla(null);
     }
   }, [id]);
 
-  if (!villa) return <p className="p-6 text-center text-gray-600">Villa bulunamadı.</p>;
+  if (!villa) {
+    return (
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center pt-20">
+          <div className="text-center">
+            <h1 className="text-2xl font-bold text-gray-900 mb-4">Villa bulunamadı</h1>
+            <p className="text-gray-600">Aradığınız villa mevcut değil.</p>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  const sliderImages = [villa.image];
 
   return (
     <>
+      <Script
+        id="villa-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: villa.title,
+            description: villa.description,
+            image: villa.image,
+            offers: {
+              '@type': 'Offer',
+              price: villa.price,
+              priceCurrency: 'TRY',
+              availability: 'https://schema.org/InStock',
+              priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              reviewCount: '150',
+            },
+            brand: {
+              '@type': 'Brand',
+              name: '365Kirala',
+            },
+            additionalProperty: [
+              {
+                '@type': 'PropertyValue',
+                name: 'Lokasyon',
+                value: villa.location,
+              },
+            ],
+          }),
+        }}
+      />
       <Navbar />
       <div className="bg-white min-h-screen">
-        {/* Banner */}
-        <div className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          <Image src={villa.image} alt={villa.title} fill className="object-cover z-0" priority />
-          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 mt-8 drop-shadow-xl animate-fade-in-up">
-              Lüks Villa Hizmeti
-            </h1>
-            <p className="text-2xl md:text-3xl drop-shadow-lg">{villa.location}</p>
+        {/* Görsel Slider */}
+        <div className="relative w-full h-[400px] md:h-[600px] z-0">
+          <div className="absolute inset-0">
+            <div ref={emblaRef} className="h-full w-full overflow-hidden">
+              <div className="flex h-full">
+                {sliderImages.map((img, idx) => (
+                  <div key={idx} className="flex-[0_0_100%] min-w-0 h-full relative">
+                    <Image
+                      src={img}
+                      alt={`${villa.title} - Görsel ${idx + 1}`}
+                      fill
+                      className="object-cover"
+                      priority={idx === 0}
+                      sizes="100vw"
+                      quality={100}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Slider Butonları */}
+          <div className="absolute inset-0 z-10 flex items-center justify-between px-4">
+            <button
+              onClick={scrollPrev}
+              className="bg-black/40 hover:bg-black/60 text-white rounded-full p-3 transition-all duration-300 hover:scale-110"
+              aria-label="Previous slide"
+            >
+              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button
+              onClick={scrollNext}
+              className="bg-black/40 hover:bg-black/60 text-white rounded-full p-3 transition-all duration-300 hover:scale-110"
+              aria-label="Next slide"
+            >
+              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
           </div>
         </div>
 
@@ -74,7 +181,7 @@ export default function VillaDetailPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{villa.title}</h2>
               <p className="text-base md:text-lg text-gray-700 mb-6 md:mb-10 leading-relaxed">{villa.description}</p>
 
-              <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Hizmet Özellikleri</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Villa Özellikleri</h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {villa.features.map((feature, index) => (
                   <li key={index} className="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border">
@@ -125,6 +232,10 @@ export default function VillaDetailPage() {
                   Villa kiralama rezervasyonları <strong>7/24</strong> alınmaktadır. <br />
                   <strong>Ücretsiz iptal</strong> hakkı mevcuttur.
                 </p>
+              </div>
+
+              <div className="text-sm text-gray-600 text-center">
+                {villa.booked} kişi bu villayı daha önce tercih etti
               </div>
             </div>
           </div>

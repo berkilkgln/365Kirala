@@ -4,263 +4,2338 @@
   "items": [
     {
       "id": 1,
-      "image": "/images/yat/yat1.jpg",
-      "location": "İstanbul",
-      "title": "Lüks Yat Kiralama - İstanbul Boğazı",
-      "price": 2.499,
+      "image":"/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /2.jpg",   
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /3.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /4.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /5.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /6.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /7.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /8.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /9.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /10.jpg",
+        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /11.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Rodman 41 Kiralık Motoryat (2021) - Göcek",
+      "price": 1099,
       "booked": 156,
       "discount": 15,
-      "description": "İstanbul Boğazı'nda unutulmaz bir lüks yat kiralama deneyimi yaşayın. Boğaz'ın büyüleyici manzarasında profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın.",
-      "features": ["Profesyonel mürettebat", "Özel şef hizmeti", "Su sporları ekipmanları", "Wi-Fi", "Klima"]
+      "description": "Göcek'in turkuaz sularında unutulmaz bir lüks yat kiralama deneyimi yaşayın. Profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın.",
+      "specifications": {
+        "boatType": "Motoryat",
+        "brand": "Rodman",
+        "model": "41",
+        "buildYear": 2001,
+        "refurbishedYear": 2021,
+        "cruiseCapacity": 6,
+        "cabinCount": 2,
+        "overnightCapacity": 4,
+        "toiletCount": 2,
+        "showerCount": 2,
+        "waterTankCapacity": 600,
+        "boatLength": "14 m (46 ft)",
+        "wasteTankCapacity": 1,
+        "flag": "Türkiye",
+        "fuelCapacity": 1000,
+        "dailyCruiseTime": "1 saat",
+        "fuelType": "Dizel",
+        "maxSpeed": 30,
+        "engineType": "İçten takma"
+      },
+      "comfort": [
+        "Elektrikli wc",
+        "Jeneratör",
+        "12V / 220v invertör",
+        "Buz kutusu",
+        "Derin dondurucu",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Flybridge",
+        "Yüzme platformu",
+        "Güverte duşu",
+        "Isıtma",
+        "Kokpit masası",
+        "Tik kokpit"
+      ],
+      "navigation": [
+        "Otomatik pilot",
+        "GPS",
+        "Radar",
+        "Hız göstergesi",
+        "Derinlik ölçer",
+        "Seyir haritası"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "Bar",
+        "USB girişli mp3 çalar",
+        "TV",
+        "Masa oyunları"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "Sinyal bayrakları",
+        "İlk yardım malzemeleri"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Mürettebat",
+        "Transitlog",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "14:00",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "17:00"
+        }
+      }
     },
     {
       "id": 2,
-      "image": "/images/yat/yat2.jpg",
-      "location": "Bodrum",
-      "title": "Günlük Yat Turu - Bodrum",
-      "price": 2.799,
+      "image": "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /1.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /2.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /3.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /4.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /5.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /6.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /7.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /8.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /9.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /10.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /11.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /12.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /13.jpg",
+        "/images/yat/göcek tekne/Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek /14.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Bavaria 45 Cruiser Kiralık Yelkenli (2020) - Göcek",
+      "price": 1.069,
       "booked": 89,
-      "description": "Bodrum'un gizli koylarını keşfetmek için mükemmel bir fırsat! Günlük yat turlarımızla, bölgenin en güzel mavi bayraklı plajlarını ve sakin koylarını keşfedin.",
-      "features": ["Günlük tur", "Öğle yemeği dahil", "Şnorkel ekipmanları", "Duş imkanı", "Güneşlenme alanı"]
+      "description": "Göcek'in turkuaz sularında unutulmaz bir yelkenli deneyimi yaşayın. Profesyonel mürettebat eşliğinde, rüzgarın gücüyle mavi suların keyfini çıkarın.",
+      "specifications": {
+        "boatType": "Yelkenli",
+        "brand": "Bavaria",
+        "model": "45 cruiser",
+        "buildYear": 2013,
+        "refurbishedYear": 2020,
+        "cabinCount": 3,
+        "overnightCapacity": 6,
+        "toiletCount": 3,
+        "showerCount": 3,
+        "waterTankCapacity": 399,
+        "boatLength": "14 m (46 ft)",
+        "wasteTankCapacity": 160,
+        "flag": "Türkiye",
+        "fuelConsumption": "10 l/sa",
+        "fuelCapacity": 220,
+        "draft": 0,
+        "beam": 0,
+        "dailyCruiseTime": "2 saat",
+        "rudderCount": 1,
+        "boatMaterial": "Fiberglas",
+        "salonWidth": 7,
+        "salonHeight": 2,
+        "fuelType": "Dizel",
+        "maxSpeed": 2,
+        "engineType": "İçten takma",
+        "enginePower": "1 X 75 HP (56 kW)",
+        "mainSail": "Tam çıta yelken",
+        "genoa": "Klasik cenova"
+      },
+      "comfort": [
+        "Evcil hayvan kabul edilir",
+        "Gölgelik",
+        "Elektrikli wc",
+        "Güneş paneli",
+        "Derin dondurucu",
+        "Buzdolabı",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Set üstü ocak",
+        "Güneşlenme güvertesi",
+        "Sprayhood",
+        "Baş güneşlenme terası",
+        "Tik kaplama güverte",
+        "Yüzme merdiveni",
+        "Güverte duşu",
+        "Isıtma",
+        "Kokpit masası",
+        "Kokpit minderi",
+        "Lazy bag"
+      ],
+      "navigation": [
+        "Otomatik pilot",
+        "GPS",
+        "Rüzgar hız ölçer",
+        "VHF radyo",
+        "Hız göstergesi",
+        "Baş pervane",
+        "Rüzgar yön göstergesi",
+        "Derinlik ölçer",
+        "Seyir haritası",
+        "Seyir ışıkları",
+        "Pusula"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "Güvenlik halatı",
+        "Cankurtaran salı",
+        "Sinyal bayrakları",
+        "Acil pozisyon gösterme radyo sinyali (epirb)",
+        "İlk yardım malzemeleri",
+        "Cep feneri",
+        "Yangın söndürücü",
+        "Tehlike işaret fişekleri"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Evcil hayvan kabul edilir",
+        "Servis botu",
+        "Nevresim takımı",
+        "Çeşitli sarf malzemeleri",
+        "Turizm vergisi",
+        "Başlangıç paketi",
+        "Can yeleği"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "14:00",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "17:00"
+        }
+      }
     },
     {
       "id": 3,
-      "image": "/images/yat/yat3.jpg",
-      "location": "Antalya",
-      "title": "Özel Yat Deneyimi - Antalya",
-      "price": 3.199,
+      "image": "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /2.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /3.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /4.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /5.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /6.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /7.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /8.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /9.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /10.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /11.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /12.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /13.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /14.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /15.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /16.jpg",
+        "/images/yat/göcek tekne/Fairline 55 Squadron Kiralık Motoryat (2022) /17.jpg" 
+      ],
+      "location": "Göcek",
+      "title": "Fairline 55 Squadron Kiralık Motoryat (2022) - Göcek",
+      "price": 1.699,
       "booked": 112,
       "discount": 10,
-      "description": "Antalya'nın turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir.",
-      "features": ["Özel etkinlik organizasyonu", "Açık büfe", "Bar hizmeti", "Müzik sistemi", "Jakuzi"]
+      "description": "Göcek'in turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir.",
+      "specifications": {
+        "boatType": "Motoryat",
+        "brand": "Fairline",
+        "model": "55 squadron",
+        "buildYear": 1999,
+        "refurbishedYear": 2022,
+        "cruiseCapacity": 6,
+        "cabinCount": 3,
+        "overnightCapacity": 6,
+        "toiletCount": 2,
+        "showerCount": 2,
+        "boatLength": "17 m (56 ft)",
+        "dailyCruiseTime": "1 saat",
+        "dailyAirConditioningHours": 4
+      },
+      "comfort": [
+        "Klima",
+        "Gölgelik",
+        "Elektrikli wc",
+        "12V / 220v invertör",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Fırın",
+        "Yüzme merdiveni",
+        "Güverte duşu"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "İç mekan hoparlör"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Mürettebat",
+        "Transitlog",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "14:00",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "18:00"
+        }
+      }
     },
     {
       "id": 4,
-      "image": "/images/yat/yat4.jpg",
-      "location": "Fethiye",
-      "title": "Mavi Tur Yatı - Fethiye'nin Muhteşem Koylarında Yat Kiralama",
-      "price": 1.299,
-      "booked": 245,
-      "description": "Fethiye'nin mavi bayraklı koylarında eşsiz bir mavi tur deneyimi için yat kiralama hizmeti sunuyoruz. Su sporları, öğle yemeği ve duş imkanlarıyla dolu bu turda, güneşin ve denizin tadını çıkarın. Fethiye'nin doğal güzellikleri ile çevrili bu yat turu, mavi yolculuk yapmak isteyen herkes için ideal bir seçenek. Fethiye yat kiralama ile denizle iç içe bir tatil hayal edin.",
-      "features": ["Mavi tur rotası", "Öğle yemeği", "Su sporları", "Duş imkanı", "Güneşlenme alanı"]
-    },
-    {
-      "id": 5,
-      "image": "/images/yat/yat5.jpg",
-      "location": "Marmaris",
-      "title": "Lüks Motor Yat - Marmaris'te Hız ve Konfor",
-      "price": 1.899,
-      "booked": 178,
-      "discount": 20,
-      "description": "Marmaris'te hızlı, konforlu ve lüks bir motor yat kiralama deneyimi sunuyoruz. Profesyonel kaptan ve mürettebatımız eşliğinde, Marmaris'in muazzam sahillerinde dolaşın. Yatımızda bulunan Wi-Fi, klima ve bar hizmeti ile rahatça keyifli bir seyahat deneyimi yaşayacaksınız. Marmaris'te bir lüks yat kiralama hizmeti ile denizdeki hız ve lüksü keşfedin.",
-      "features": ["Hızlı motor yat", "Profesyonel kaptan", "Wi-Fi", "Klima"]
+      "image": "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/1.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/2.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/3.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/4.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/5.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/6.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/7.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/8.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/9.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/10.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/11.jpg",
+        "/images/yat/göcek tekne/Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek |/12.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Fairline Squadron 59 Kiralık Motoryat (2021) - Göcek",
+      "price": 1.699,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir.",
+      "specifications": {
+        "boatType": "Motoryat",
+        "brand": "Fairline",
+        "model": "Squadron 59",
+        "buildYear": 2001,
+        "refurbishedYear": 2021,
+        "cabinCount": 3,
+        "overnightCapacity": 6,
+        "toiletCount": 2,
+        "showerCount": 2,
+        "boatLength": "18 m (59 ft)",
+        "flag": "Türkiye",
+        "dailyAirConditioningHours": 4,
+        "dailyCruiseTime": "1 saat",
+        "fuelType": "Dizel",
+        "enginePower": "2 X 720 HP (1074 kW)"
+      },
+      "navigation": [
+        "GPS",
+        "Uydu telefonu"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "TV"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Cep feneri"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Transitlog",
+        "Son temizlik",
+        "Kablosuz internet"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "15:00",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "18:00"
+        }
+      }
     },
     {
       "id": 6,
-      "image": "/images/yat/yat6.jpg",
-      "location": "Çeşme",
-      "title": "Gün Batımı Turu - Romantik Bir Çeşme Turu",
-      "price": 999,
-      "booked": 312,
-      "description": "Çeşme'de romantik bir gün batımı turu için lüks yat kiralama fırsatı! Akşam saatlerinde başlayan turumuzda, şampanya, canlı müzik ve akşam yemeği ile unutulmaz bir deneyim yaşayın. Çeşme'nin büyüleyici kıyılarında gün batımı manzarasında özel anlar geçirin. Çeşme yat kiralama ile eşsiz manzaralar eşliğinde denizin keyfini çıkarın.",
-      "features": ["Gün batımı turu", "Wi-Fi", "Canlı müzik", "Akşam yemeği", "Fotoğraf çekimi"]
+      "image": "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /1.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /2.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /3.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /4.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /5.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /6.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /7.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /8.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /9.jpg",
+        "/images/yat/göcek tekne/Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) /10.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Jeanneau Sun Odyssey 40.3 Kiralık Yelkenli (2023) - Göcek",
+      "price": 599,
+      "booked": 112,
+      "discount": 10,
+      "description": "Göcek'in turkuaz sularında unutulmaz bir yelkenli deneyimi yaşayın. Profesyonel mürettebat eşliğinde, rüzgarın gücüyle mavi suların keyfini çıkarın.",
+      "specifications": {
+        "boatType": "Yelkenli",
+        "brand": "Jeanneau",
+        "model": "Sun odyssey 40.3",
+        "buildYear": 2005,
+        "refurbishedYear": 2023,
+        "cabinCount": 3,
+        "overnightCapacity": 8,
+        "toiletCount": 2,
+        "showerCount": 2,
+        "salonHeight": 2,
+        "waterTankCapacity": 340,
+        "boatLength": "12 m (39 ft)",
+        "wasteTankCapacity": 1,
+        "flag": "ABD",
+        "fuelConsumption": "10 l/sa",
+        "fuelCapacity": 140,
+        "draft": 2.5,
+        "beam": 4,
+        "dailyAirConditioningHours": "Sınırsız",
+        "rudderCount": 2,
+        "boatMaterial": "Karbonfiber",
+        "fuelType": "Dizel",
+        "maxSpeed": 6,
+        "engineType": "İçten takma",
+        "enginePower": "1 X 70 HP (52 kW)",
+        "mainSail": "Tam çıta yelken",
+        "genoa": "Klasik cenova"
+      },
+      "comfort": [
+        "Evcil hayvan kabul edilir",
+        "Gölgelik",
+        "12V / 220v invertör",
+        "Güneş paneli",
+        "Buzdolabı",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Fırın",
+        "Set üstü ocak",
+        "Barbekü",
+        "Elektrik prizi",
+        "Kahve makinesi",
+        "Güneşlenme güvertesi",
+        "Sprayhood",
+        "Yüzme merdiveni",
+        "Güverte duşu",
+        "Isıtma",
+        "Kabin vantilatörleri",
+        "USB / aux girişi bağlantısı",
+        "Kokpit masası",
+        "Kokpit minderi",
+        "Lazy jack",
+        "Lazy bag"
+      ],
+      "navigation": [
+        "Otomatik pilot",
+        "GPS",
+        "Rüzgar hız ölçer",
+        "VHF radyo",
+        "Hız göstergesi",
+        "Rüzgar yön göstergesi",
+        "Derinlik ölçer",
+        "Seyir haritası",
+        "Seyir ışıkları",
+        "Pusula"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "İç mekan hoparlör",
+        "USB girişli mp3 çalar",
+        "TV",
+        "Masa oyunları"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "Güvenlik halatı",
+        "Cankurtaran salı",
+        "Sinyal bayrakları",
+        "Acil pozisyon gösterme radyo sinyali (epirb)",
+        "İlk yardım malzemeleri",
+        "Cep feneri",
+        "Yangın söndürücü",
+        "Tehlike işaret fişekleri"
+      ],
+      "includedInPrice": [
+        "Kablosuz internet",
+        "Servis botu motoru",
+        "Nevresim takımı",
+        "Havlu",
+        "Nevresim takımı & havlular",
+        "Plaj havlusu",
+        "Araç otoparkı",
+        "Çeşitli sarf malzemeleri",
+        "Hizmet bedeli",
+        "Jeneratör",
+        "Emniyet ağı",
+        "Can yeleği",
+        "Barbekü",
+        "Balıkçılık ekipmanları",
+        "Şnorkel maske seti",
+        "Dalış ekipmanları",
+        "Şnorkel ekipmanları",
+        "Kürek sörfü"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "14:00",
+          "checkOut": "10:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "18:00"
+        }
+      }
     },
     {
       "id": 7,
-      "image": "/images/yat/yat7.jpg",
-      "location": "Kaş",
-      "title": "Dalış Turu Yatı - Kaş'ta Efsanevi Dalış Deneyimi",
-      "price": 1.699,
-      "booked": 134,
-      "discount": 15,
-      "description": "Kaş'ın berrak sularında profesyonel dalış turu ile unutulmaz bir deneyim yaşayın. Dalış ekipmanları ve profesyonel eğitmenler eşliğinde denizin altındaki zengin dünyayı keşfedin. Ayrıca, öğle yemeği ve duş imkanları da sağlanmaktadır. Kaş yat kiralama hizmetimizle, mavi suların derinliklerine inmeye hazır olun.",
-      "features": ["Dalış ekipmanları", "Profesyonel eğitmen", "Öğle yemeği", "Duş", "Wi-Fi"]
+      "image": "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/1.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/2.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/3.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/4.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/5.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/6.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/7.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/8.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/9.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/10.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/11.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/12.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/13.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/14.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/15.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/16.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/17.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/18.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/19.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/20.jpg",
+        "/images/yat/göcek tekne/Mazu 58 Kiralık Motoryat (2023) - Göcek/21.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Mazu 58 Kiralık Motoryat (2023) - Göcek",
+      "price": 1.949,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında lüks bir yat kiralama deneyimi sunuyoruz. İster özel bir kutlama, ister romantik bir gün için idealdir.",
+      "specifications": {
+        "boatType": "Motoryat",
+        "brand": "Mazu",
+        "model": "58",
+        "buildYear": 2013,
+        "refurbishedYear": 2023,
+        "cruiseCapacity": 6,
+        "cabinCount": 3,
+        "overnightCapacity": 6,
+        "toiletCount": 3,
+        "showerCount": 3,
+        "waterTankCapacity": 750,
+        "boatLength": "20 m (66 ft)",
+        "wasteTankCapacity": 1,
+        "fuelCapacity": 2000,
+        "beam": 4.8,
+        "dailyAirConditioningHours": 4,
+        "dailyCruiseTime": "1 saat",
+        "boatMaterial": "Karbonfiber",
+        "fuelType": "Dizel",
+        "engineType": "İçten takma",
+        "enginePower": "2 X 900 HP (1342 kW)"
+      },
+      "comfort": [
+        "Evcil hayvan kabul edilir",
+        "Klima",
+        "Su yapıcı",
+        "Gölgelik",
+        "Su arıtma sistemi",
+        "Elektrikli wc",
+        "Jeneratör",
+        "12V / 220v invertör",
+        "Buz yapıcı",
+        "Buz makinesi",
+        "Buz kutusu",
+        "Derin dondurucu",
+        "Buzdolabı",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Mikrodalga fırın",
+        "Set üstü ocak",
+        "Barbekü",
+        "Elektrik prizi",
+        "Bulaşık makinesi",
+        "Kahve makinesi",
+        "Saç kurutma makinesi",
+        "Flybridge",
+        "Güneşlenme güvertesi",
+        "Hidrolik platform",
+        "Baş güneşlenme terası",
+        "Tik kaplama güverte",
+        "Kıç güneşlenme terası",
+        "Yüzme platformu",
+        "Yüzme merdiveni",
+        "Güverte duşu",
+        "Isıtma",
+        "Kabin vantilatörleri",
+        "USB / aux girişi bağlantısı",
+        "Kokpit minderi"
+      ],
+      "navigation": [
+        "GPS",
+        "Radar",
+        "Rüzgar hız ölçer",
+        "VHF radyo",
+        "Hız göstergesi",
+        "Rüzgar yön göstergesi",
+        "Derinlik ölçer",
+        "Seyir haritası",
+        "Pusula"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "İç mekan hoparlör",
+        "TV"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Mürettebat",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "15:00",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "17:00"
+        }
+      }
     },
     {
       "id": 8,
-      "image": "/images/yat/yat8.jpg",
+      "image": "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /1.jpg  ",
+      "images": [
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /1.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /2.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /3.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /4.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /5.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /6.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /7.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /9.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /10.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /11.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /12.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /13.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /14.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /15.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /16.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /17.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /18.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2013) - Göcek /19.jpg"
+      ],
       "location": "Göcek",
-      "title": "Haftalık Yat Kiralama - Göcek'te 7 Günlük Mavi Yolculuk",
-      "price": 1.999,
-      "booked": 45,
-      "description": "Göcek'te haftalık yat kiralama ile 7 gün boyunca lüks bir deniz tatili yapın. 12 kişiye kadar konaklama imkanı sunan yatlarımızda, tam mürettebat ve özel şef ile her anınız kusursuz olacak. Su sporları, Wi-Fi ve konforlu yaşam alanlarıyla denizin tadını çıkarın. Göcek'in en güzel koylarını keşfederken, Göcek yat kiralama ile lüks bir tatilin kapılarını aralayın.",
-      "features": ["Özel şef hizmeti", "Tam mürettebat", "Akşam yemeği", "Su sporları", "Wi-Fi"]
+      "title": "Özel Yapım Kiralık Gulet (2013) - Göcek",
+      "price": 989,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında geleneksel gulet deneyimi yaşayın. Ahşap yapısı ve geniş güvertesiyle unutulmaz bir mavi yolculuk deneyimi sunuyoruz.",
+      "specifications": {
+        "boatType": "Gulet",
+        "brand": "Özel yapım",
+        "buildYear": 2013,
+        "cabinCount": 3,
+        "overnightCapacity": 6,
+        "toiletCount": 3,
+        "showerCount": 3,
+        "waterTankCapacity": 1000,
+        "boatLength": "16 m (52 ft)",
+        "wasteTankCapacity": 1,
+        "beam": 5,
+        "dailyCruiseTime": "1 saat",
+        "rudderCount": 1,
+        "boatMaterial": "Ahşap"
+      },
+      "comfort": [
+        "Gölgelik",
+        "12V / 220v invertör",
+        "Güneş paneli",
+        "Buzdolabı",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Set üstü ocak",
+        "Elektrik prizi",
+        "Güneşlenme güvertesi",
+        "Yüzme merdiveni",
+        "Güverte duşu",
+        "Tik kokpit"
+      ],
+      "navigation": [
+        "GPS",
+        "VHF radyo",
+        "Hız göstergesi",
+        "Seyir haritası",
+        "Seyir ışıkları"
+      ],
+      "entertainment": [
+        "USB girişli mp3 çalar",
+        "Masa oyunları",
+        "Ev sineması"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Carburant",
+        "Mürettebat",
+        "Transitlog",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "15:00",
+          "checkOut": "09:00"
+        }
+      }
     },
     {
       "id": 9,
-      "image": "/images/yat/yat9.jpg",
-      "location": "Datça",
-      "title": "Tekne Turu - Datça'da Doğayla İç İçe Bir Tatil",
-      "price": 799,
-      "booked": 289,
-      "description": "Datça'nın doğal koylarında mükemmel bir tekne turu yapın. Öğle yemeği, şnorkel ve duş imkanlarıyla doğayla iç içe bir deneyim sunuyoruz. Sadece Datça yat kiralama ile değil, aynı zamanda tekne turu deneyimiyle de doğanın kalbinde huzurlu bir gün geçirebilirsiniz. Datça'nın bakir koylarını keşfedin, mavi suların keyfini çıkarın.",
-      "features": ["Tekne turu", "Öğle yemeği", "Şnorkel", "Duş", "Güneşlenme alanı"]
-    },
-    {
-      "id": 10,
-      "image": "/images/yat/yat10.jpg",
-      "location": "Kalkan",
-      "title": "Özel Etkinlik Yatı - Kalkan'da Lüks Etkinlikler İçin Kiralama",
-      "price": 2.999,
-      "booked": 67,
-      "discount": 25,
-      "description": "Kalkan'da özel etkinlikler için yat kiralama ile düğün, nişan, doğum günü gibi özel anlarınızı denizde kutlayın. Açık büfe, bar, müzik sistemi ve jakuzi gibi olanaklarla eşsiz bir etkinlik deneyimi yaşayın. Kalkan'ın büyüleyici denizinde özel anlarınızı daha da özel kılın. Kalkan yat kiralama ile unutulmaz etkinlikler düzenleyin.",
-      "features": ["Özel etkinlik organizasyonu", "Açık büfe", "Wi-Fi", "Müzik sistemi", "Jakuzi"]
-    },
-    {
-      "id": 11,
-      "image": "/images/yat/yat11.jpg",
-      "location": "Bodrum",
-      "title": "Lüks Motoryat Kiralama",
-      "price": 4.999,
-      "booked": 12,
-      "discount": 10,
-      "description": "Bodrum'un muhteşem koylarında unutulmaz bir deneyim için özel tasarlanmış lüks motoryat.",
-      "features": [
-        "Profesyonel Mürettebat",
-        "Tam Donanımlı Mutfak",
-        "Klima",
-        "WiFi",
-        "Su Sporları Ekipmanları"
+      "image": "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2016) - Göcek /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2016) - Göcek /1.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2016) - Göcek /2.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2016) - Göcek /3.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2016) - Göcek /4.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2016) - Göcek /5.jpg"
       ],
-      "length": "24 metre",
-      "capacity": "12 kişi"
+      "location": "Göcek",
+      "title": "Özel Yapım Kiralık Gulet (2016) - Göcek",
+      "price": 1.069,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında yenilenmiş gulet deneyimi yaşayın. 2016 yılında yenilenen bu özel yapım gulet ile lüks ve konforu bir arada sunuyoruz.",
+      "specifications": {
+        "boatType": "Gulet",
+        "brand": "Özel yapım",
+        "buildYear": 1990,
+        "refurbishedYear": 2016,
+        "cruiseCapacity": 6,
+        "cabinCount": 3,
+        "overnightCapacity": 6,
+        "toiletCount": 2,
+        "showerCount": 2,
+        "waterTankCapacity": 2000,
+        "boatLength": "18 m (59 ft)",
+        "wasteTankCapacity": 1,
+        "flag": "Türkiye",
+        "fuelConsumption": "10 l/sa",
+        "fuelCapacity": 250,
+        "draft": 270,
+        "dailyAirConditioningHours": 4,
+        "dailyCruiseTime": "2 saat",
+        "rudderCount": 1,
+        "boatMaterial": "Ahşap",
+        "fuelType": "Dizel",
+        "maxSpeed": 5,
+        "engineType": "İçten takma",
+        "enginePower": "1 X 280 HP (209 kW)"
+      },
+      "comfort": [
+        "Klima",
+        "Gölgelik",
+        "Elektrikli wc",
+        "Jeneratör",
+        "12V / 220v invertör",
+        "Güneş paneli",
+        "Buz kutusu",
+        "Derin dondurucu",
+        "Buzdolabı",
+        "Mutfak ekipmanları",
+        "Fırın",
+        "Mikrodalga fırın",
+        "Set üstü ocak",
+        "Elektrik prizi",
+        "Kahve makinesi",
+        "Güneşlenme güvertesi",
+        "Baş güneşlenme terası",
+        "Tik kaplama güverte",
+        "Kıç güneşlenme terası",
+        "Yüzme platformu",
+        "Yüzme merdiveni",
+        "Güverte duşu",
+        "Isıtma",
+        "Kabin vantilatörleri",
+        "USB / aux girişi bağlantısı"
+      ],
+      "navigation": [
+        "GPS",
+        "Radar",
+        "Rüzgar hız ölçer",
+        "VHF radyo",
+        "Hız göstergesi",
+        "Rüzgar yön göstergesi",
+        "Derinlik ölçer",
+        "Seyir haritası",
+        "Seyir ışıkları",
+        "Pusula"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "TV",
+        "CD çalar",
+        "Masa oyunları"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "Güvenlik halatı",
+        "Cankurtaran salı",
+        "Acil pozisyon gösterme radyo sinyali (epirb)",
+        "İlk yardım malzemeleri",
+        "Cep feneri",
+        "Yangın söndürücü",
+        "Tehlike işaret fişekleri"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Mürettebat",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "14:00",
+          "checkOut": "10:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "17:00"
+        }
+      }
+    },{
+      "id": 10,
+      "image": "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /1.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /2.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /3.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /4.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /5.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /6.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /7.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /8.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /9.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /10.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /11.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /12.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /13.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göcek /14.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Özel Yapım Kiralık Gulet (2020) - Göcek",
+      "price": 989,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında 2020 yılında yenilenen özel yapım gulet deneyimi yaşayın. Kompakt boyutuyla samimi bir atmosfer sunan bu gulet ile unutulmaz anılar biriktirin.",
+      "specifications": {
+        "boatType": "Gulet",
+        "brand": "Özel yapım",
+        "buildYear": 2005,
+        "refurbishedYear": 2020,
+        "cruiseCapacity": 10,
+        "cabinCount": 2,
+        "overnightCapacity": 4,
+        "toiletCount": 1,
+        "showerCount": 1,
+        "boatLength": "14,3 m (47 ft)",
+        "flag": "Türkiye",
+        "dailyCruiseTime": "1 saat"
+      },
+      "comfort": [
+        "Gölgelik",
+        "Güneş paneli",
+        "Buzdolabı",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Set üstü ocak",
+        "Güneşlenme güvertesi",
+        "Yüzme merdiveni",
+        "Güverte duşu"
+      ],
+      "navigation": [
+        "GPS",
+        "VHF radyo",
+        "Hız göstergesi",
+        "Seyir haritası",
+        "Pusula"
+      ],
+      "entertainment": [
+        "TV"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Mürettebat",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "12:00",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "18:00"
+        }
+      }
+    },{
+      "id": 11,
+      "image": "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/1.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/2.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/3.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/4.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/5.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/6.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/7.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2020) - Göceki/8.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Özel Yapım Kiralık Gulet (2020) - Göcek | #12522",
+      "price": 1.019,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında 1971 yapımı, 2020'de yenilenen klasik gulet deneyimi yaşayın. #12522 numaralı bu özel yapım gulet ile geleneksel mavi yolculuk ruhunu keşfedin.",
+      "specifications": {
+        "boatType": "Gulet",
+        "brand": "Özel yapım",
+        "buildYear": 1971,
+        "refurbishedYear": 2020,
+        "cruiseCapacity": 6,
+        "cabinCount": 3,
+        "overnightCapacity": 6,
+        "toiletCount": 3,
+        "showerCount": 3,
+        "boatLength": "16,5 m (54 ft)",
+        "dailyAirConditioningHours": 4,
+        "dailyCruiseTime": "4 saat"
+      },
+      "comfort": [
+        "Jeneratör",
+        "Buzdolabı",
+        "Mutfak ekipmanları",
+        "Kahve makinesi",
+        "Saç kurutma makinesi",
+        "Güneşlenme güvertesi",
+        "Yüzme merdiveni"
+      ],
+      "navigation": [
+        "GPS",
+        "VHF radyo",
+        "Pusula"
+      ],
+      "entertainment": [
+        "TV"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Mürettebat",
+        "Transitlog",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "14:00",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "18:00"
+        }
+      }
     },
     {
       "id": 12,
-      "image": "/images/yat/yat12.jpg",
-      "location": "Göcek",
-      "title": "Premium Yelkenli Yat",
-      "price": 3.499,
-      "booked": 8,
-      "description": "Göcek koylarında rüzgarla dans eden premium yelkenli yat deneyimi.",
-      "features": [
-        "Deneyimli Kaptan",
-        "Güneşlenme Alanı",
-        "Duş",
-        "Snorkel Ekipmanı",
-        "Balık Tutma Ekipmanı"
+      "image": "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /1.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /2.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /3.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /4.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /5.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /6.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /7.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /8.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Gulet (2022) - Göcek /9.jpg"
       ],
-      "length": "18 metre",
-      "capacity": "8 kişi"
+      "location": "Göcek",
+      "title": "Özel Yapım Kiralık Gulet (2022) - Göcek",
+      "price": 809,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında 2022 yapımı yeni nesil gulet deneyimi yaşayın. Kompakt boyutu ve modern donanımıyla günlük turlar için ideal olan bu özel yapım gulet ile keyifli bir deniz macerası yaşayın.",
+      "specifications": {
+        "boatType": "Gulet",
+        "brand": "Özel yapım",
+        "buildYear": 2022,
+        "cruiseCapacity": 8,
+        "cabinCount": 2,
+        "waterTankCapacity": 600,
+        "boatLength": "12 m (39 ft)",
+        "wasteTankCapacity": 1,
+        "flag": "Türkiye",
+        "fuelCapacity": 150,
+        "draft": 1.6,
+        "beam": 4.5,
+        "dailyAirConditioningHours": 8,
+        "dailyCruiseTime": "8 saat",
+        "rudderCount": 1,
+        "boatMaterial": "Ahşap",
+        "fuelType": "Dizel",
+        "engineType": "İçten takma",
+        "enginePower": "1 X 165 HP (123 kW)"
+      },
+      "comfort": [
+        "12V / 220v invertör",
+        "Güneş paneli",
+        "Buzdolabı",
+        "Set üstü ocak",
+        "Barbekü",
+        "Elektrik prizi",
+        "Baş güneşlenme terası",
+        "Kıç güneşlenme terası",
+        "Yüzme merdiveni",
+        "Güverte duşu"
+      ],
+      "navigation": [
+        "Seyir ışıkları",
+        "Pusula"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt"
+      ],
+      "checkInOut": {
+        "daily": {
+          "checkIn": "09:00",
+          "checkOut": "18:00"
+        }
+      }
     },
     {
       "id": 13,
-      "image": "/images/yat/yat13.jpg",
-      "title": "Azimut 55 Fly",
-      "location": "Bodrum",
-      "price": 2.499,
-      "booked": 18,
-      "discount": 10,
-      "description": "17 metre uzunluğunda, 3 kabin, 6 kişilik lüks yat. Flybridge'de jakuzi ve güneşlenme alanı.",
-      "features": [
-        "3 Lüks Kabin",
-        "Flybridge Jakuzi",
-        "Tam Donanımlı Mutfak",
-        "Deniz Oyuncakları",
-        "Profesyonel Mürettebat",
-        "Wi-Fi"
-      ]
+      "image": "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /1.jpg",
+      "images": [
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /1.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /2.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /3.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /4.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /5.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /6.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /7.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /8.jpg",
+        "/images/yat/göcek tekne/Özel Yapım Kiralık Motoryat (2023) - Göcek /9.jpg"
+      ],
+      "location": "Göcek",
+      "title": "Özel Yapım Kiralık Motoryat (2023) - Göcek",
+      "price": 889,
+      "booked": 89,
+      "description": "Göcek'in turkuaz sularında 2023 yapımı modern motoryat deneyimi yaşayın. Evcil hayvan dostu bu özel yapım motoryat ile ailenizle birlikte unutulmaz bir deniz tatili geçirin.",
+      "specifications": {
+        "boatType": "Motoryat",
+        "brand": "Özel yapım",
+        "buildYear": 2023,
+        "cruiseCapacity": 6,
+        "cabinCount": 2,
+        "overnightCapacity": 4,
+        "boatLength": "14 m (46 ft)",
+        "wasteTankCapacity": 1,
+        "beam": 4.5,
+        "dailyCruiseTime": "1 saat"
+      },
+      "comfort": [
+        "Evcil hayvan kabul edilir",
+        "Gölgelik",
+        "Jeneratör",
+        "12V / 220v invertör",
+        "Güneş paneli",
+        "Buz makinesi",
+        "Buz kutusu",
+        "Buzdolabı",
+        "Mutfak ekipmanları",
+        "Set üstü ocak",
+        "Elektrik prizi",
+        "Bulaşık makinesi",
+        "Kahve makinesi",
+        "Saç kurutma makinesi",
+        "Flybridge",
+        "Güneşlenme güvertesi",
+        "Hidrolik platform",
+        "Baş güneşlenme terası",
+        "Tik kaplama güverte",
+        "Yüzme platformu",
+        "Yüzme merdiveni",
+        "Güverte duşu",
+        "USB / aux girişi bağlantısı",
+        "Kokpit minderi"
+      ],
+      "navigation": [
+        "Hız göstergesi",
+        "Seyir haritası",
+        "Pusula"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "Masa oyunları"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
+        "Kaptan",
+        "Yakıt",
+        "Mürettebat",
+        "Son temizlik"
+      ],
+      "checkInOut": {
+        "overnight": {
+          "checkIn": "14:30",
+          "checkOut": "09:00"
+        },
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "17:00"
+        }
+      }
     },
     {
       "id": 14,
-      "image": "/images/yat/yat14.jpg",
-      "title": "Sunseeker 75 Yacht",
-      "location": "Göcek",
-      "price": 3.799,
-      "booked": 12,
-      "description": "23 metre uzunluğunda, 4 kabin, 8 kişilik süper yat. Master süit ve VIP kabinler.",
-      "features": [
-        "4 Lüks Kabin",
-        "Master Süit",
-        "Beach Club",
-        "Su Sporları Ekipmanları",
-        "Profesyonel Şef",
-        "Stabilizatör"
-      ]
-    },
-    {
-      "id": 15,
-      "image": "/images/yat/yat15.jpg",
-      "title": "Princess 88 Motor Yacht",
-      "location": "Fethiye",
-      "price": 4.499,
-      "booked": 15,
-      "discount": 15,
-      "description": "27 metre uzunluğunda, 5 kabin, 10 kişilik mega yat. Geniş salon ve güverte alanları.",
-      "features": [
-        "5 Lüks Kabin",
-        "Panoramik Salon",
-        "Hidrolik Platform",
-        "Jet Ski",
-        "Tam Mürettebat",
-        "Ses Sistemi",
-        "Wi-Fi"
-      ]
-    },
-    {
-      "id": 16,
-      "image": "/images/yat/yat16.jpg",
-      "location": "Bodrum",
-      "title": "Lüks Mega Yat",
-      "price": 8.499,
-      "booked": 12,
-      "description": "Bodrum'un eşsiz koylarında ultra lüks yat deneyimi.",
-      "features": [
-        "Jakuzili güverte",
-        "Özel aşçı",
-        "Jet ski",
-        "Wi-Fi",
-        "Kaptan ve mürettebat"
-      ]
-    },
-    {
-      "id": 17,
-      "image": "/images/yat/yat17.jpg",
-      "location": "Göcek",
-      "title": "Ekonomik Aile Yatı",
-      "price": 2.999,
-      "booked": 7,
-      "description": "Göcek koylarında ailece rahatça vakit geçirebileceğiniz ekonomik yat.",
-      "features": [
-        "Geniş oturma alanı",
-        "Çocuk dostu",
-        "Gölgelik",
-        "Bluetooth hoparlör",
-        "Buzdolabı"
-      ]
-    },
-    {
-      "id": 18,
-      "image": "/images/yat/yat18.jpg",
-      "location": "Fethiye",
-      "title": "Romantik Gün Batımı Turu",
-      "price": 1.999,
-      "booked": 9,
-      "description": "Fethiye'de gün batımı eşliğinde romantik yelken turu.",
-      "features": [
-        "Yelkenli",
-        "Şampanya ikramı",
-        "Müzik sistemi",
-        "Özel masa düzeni",
-        "Kaptan"
-      ]
-    },
-    {
-      "id": 20,
-      "image": "/images/yat/yat20.jpg",
-      "location": "İstanbul",
-      "title": "Boğaz Turu Lüks Yat",
-      "price": 4.499,
-      "booked": 11,
-      "description": "İstanbul Boğazı'nda tarihi manzaralar eşliğinde özel tur.",
-      "features": [
-        "Geniş güverte",
-        "Müzik sistemi",
-        "İkramlar",
+      "image": "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /1.jpg",
+      "images": [
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /1.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /2.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /3.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /4.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /5.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /6.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /7.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /8.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /9.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /10.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /11.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /12.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /13.jpg",
+        "/images/yat/antalya tekne/Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya /14.jpg"
+      ],
+      "location": "Antalya",
+      "title": "Ferretti Yachts 550 Kiralık Motoryat (2010) - Antalya",
+      "price": 2.099,
+      "booked": 89,
+      "description": "Antalya'nın turkuaz sularında lüks Ferretti Yachts 550 deneyimi yaşayın. 2010 yapımı bu prestijli motoryat ile 10 kişilik gruplarınızla unutulmaz bir deniz tatili geçirin.",
+      "specifications": {
+        "boatType": "Motoryat",
+        "brand": "Ferretti yachts",
+        "model": "550",
+        "buildYear": 2010,
+        "cruiseCapacity": 10,
+        "cabinCount": 3,
+        "toiletCount": 3,
+        "showerCount": 3,
+        "boatLength": "19 m (62 ft)",
+        "dailyCruiseTime": "1 saat"
+      },
+      "comfort": [
+        "Klima",
+        "Jeneratör",
+        "Buzdolabı",
+        "Sıcak su",
+        "Mutfak ekipmanları",
+        "Set üstü ocak",
+        "Elektrik prizi",
+        "Güneşlenme güvertesi",
+        "Yüzme merdiveni",
+        "Güverte duşu",
+        "Kokpit masası"
+      ],
+      "navigation": [
+        "Hız göstergesi",
+        "Seyir haritası"
+      ],
+      "entertainment": [
+        "Dış mekan hoparlör",
+        "TV"
+      ],
+      "safety": [
+        "Can yelekleri",
+        "Cankurtaran simidi",
+        "İlk yardım malzemeleri",
+        "Yangın söndürücü"
+      ],
+      "includedInPrice": [
         "Kaptan",
-        "Isıtma sistemi"
-      ]
+        "Yakıt",
+        "Mürettebat",
+        "Son temizlik"
+      ],
+      "optional": [
+        "Klima"
+      ],
+      "checkInOut": {
+        "daily": {
+          "checkIn": "10:00",
+          "checkOut": "17:00"
+        }
+      }
+    },
+{
+    "id": 15,
+    "image": "/images/yat/antalya tekne/Özel Yapım Kiralık Gulet (2000) - Antalya/1.jpg",
+    "images": [
+      "/images/yat/antalya tekne/Özel Yapım Kiralık Gulet (2000) - Antalya /1.jpg",
+      "/images/yat/antalya tekne/Özel Yapım Kiralık Gulet (2000) - Antalya /2.jpg",
+      "/images/yat/antalya tekne/Özel Yapım Kiralık Gulet (2000) - Antalya /3.jpg",
+      "/images/yat/antalya tekne/Özel Yapım Kiralık Gulet (2000) - Antalya /4.jpg",
+      "/images/yat/antalya tekne/Özel Yapım Kiralık Gulet (2000) - Antalya /5.jpg"
+    ],
+    "location": "Antalya",
+    "title": "Özel Yapım Kiralık Gulet (2000) - Antalya",
+    "price": 749,
+    "booked": 89,
+    "description": "Antalya'nın turkuaz sularında 2000 yapımı geleneksel gulet deneyimi yaşayın. 10 kişilik gruplarınızla günlük turlar veya 2 kişilik konaklama ile romantik bir mavi yolculuk deneyimi sunuyoruz.",
+    "specifications": {
+      "boatType": "Gulet",
+      "brand": "Özel yapım",
+      "buildYear": 2000,
+      "cruiseCapacity": 10,
+      "cabinCount": 1,
+      "overnightCapacity": 2,
+      "toiletCount": 1,
+      "showerCount": 1,
+      "boatLength": "14 m (46 ft)",
+      "dailyCruiseTime": "2 saat"
+    },
+    "comfort": [
+      "Su yapıcı",
+      "Gölgelik",
+      "Jeneratör",
+      "12V / 220v invertör",
+      "Buz yapıcı",
+      "Derin dondurucu",
+      "Buzdolabı",
+      "Sıcak su",
+      "Mutfak ekipmanları",
+      "Fırın",
+      "Elektrik prizi",
+      "Kahve makinesi",
+      "Baş güneşlenme terası",
+      "Yüzme merdiveni",
+      "Güverte duşu",
+      "USB / aux girişi bağlantısı"
+    ],
+    "navigation": [
+      "Otomatik pilot",
+      "GPS",
+      "Radar",
+      "Rüzgar hız ölçer",
+      "VHF radyo",
+      "Hız göstergesi",
+      "Derinlik ölçer",
+      "Pusula"
+    ],
+    "entertainment": [
+      "Bar",
+      "TV"
+    ],
+    "safety": [
+      "Can yelekleri",
+      "Cankurtaran simidi",
+      "Cankurtaran salı",
+      "İlk yardım malzemeleri",
+      "Yangın söndürücü",
+      "Tehlike işaret fişekleri"
+    ],
+    "includedInPrice": [
+      "Kaptan",
+      "Yakıt",
+      "Mürettebat",
+      "Son temizlik"
+    ],
+    "mandatory": [
+      "Menü 1"
+    ],
+    "checkInOut": {
+      "overnight": {
+        "checkIn": "14:00",
+        "checkOut": "09:00"
+      },
+      "daily": {
+        "checkIn": "10:00",
+        "checkOut": "17:00"
+      }
     }
-  ]
+  },
+  {
+  "id": 16,
+  "image": "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /1.jpg",
+  "images": [
+    "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /1.jpg",
+    "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /2.jpg",
+    "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /3.jpg",
+    "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /4.jpg",
+    "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /5.jpg",
+    "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /6.jpg",
+    "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (1995) - Antalya /7.jpg"
+  ],
+  "location": "Antalya",
+  "title": "Özel Yapım Kiralık Motoryat (1995) - Antalya",
+  "price": 1.019,
+  "booked": 89,
+  "description": "Antalya'nın turkuaz sularında 1995 yapımı ahşap motoryat deneyimi yaşayın. 10 kişilik gruplarınızla 6 saatlik günlük turlarımızda menü ve alkolsüz içecekler dahil olarak keyifli bir deniz macerası sunuyoruz.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "Özel yapım",
+    "buildYear": 1995,
+    "cruiseCapacity": 10,
+    "cabinCount": 2,
+    "toiletCount": 1,
+    "showerCount": 1,
+    "boatLength": "16 m (52 ft)",
+    "flag": "Türkiye",
+    "dailyCruiseTime": "6 saat",
+    "boatMaterial": "Ahşap",
+    "fuelType": "Dizel"
+  },
+  "comfort": [
+    "Evcil hayvan kabul edilir",
+    "Elektrikli wc",
+    "12V / 220v invertör",
+    "Mutfak ekipmanları",
+    "Flybridge",
+    "Güneşlenme güvertesi",
+    "Yüzme platformu"
+  ],
+  "navigation": [
+    "Radar",
+    "VHF radyo",
+    "Rüzgar yön göstergesi",
+    "Seyir haritası"
+  ],
+  "entertainment": [
+    "Dış mekan hoparlör",
+    "İç mekan hoparlör",
+    "Bar",
+    "USB girişli mp3 çalar",
+    "TV",
+    "Masa oyunları",
+    "Ev sineması"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "Cankurtaran simidi",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Mürettebat",
+    "Menü (Tavuk, Balık, Spagetti, Salata, Patates kızartması, Meyve)",
+    "Alkolsüz içecekler"
+  ],
+  "menu": [
+    "Tavuk",
+    "Balık",
+    "Spagetti",
+    "Salata",
+    "Patates kızartması",
+    "Meyve"
+  ],
+  "softDrinks": [
+    "Kola",
+    "Fanta",
+    "Sprite",
+    "Su"
+  ],
+  "checkInOut": {
+    "daily": {
+      "checkIn": "09:00",
+      "checkOut": "15:00"
+    }
+  }
+},  
+{
+"id": 17,
+"image": "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/1.jpg",
+"images": [
+  "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/1.jpg",
+  "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/2.jpg",
+  "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/3.jpg",
+  "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/4.jpg",
+  "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/5.jpg",
+  "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/6.jpg",
+  "/images/yat/antalya tekne/Özel Yapım Kiralık Motoryat (2023) - Antalya/7.jpg"
+],
+"location": "Antalya",
+"title": "Özel Yapım Kiralık Motoryat (2023) - Antalya",
+"price": 1.599,
+"booked": 89,
+"description": "Antalya'nın turkuaz sularında 1994 yapımı, 2023'te yenilenen motoryat ile 6 kişilik gruplarınızla konforlu ve modern bir günlük tur deneyimi yaşayın. Profesyonel mürettebat ve kapsamlı donanım ile unutulmaz bir deniz macerası sizi bekliyor.",
+"specifications": {
+  "boatType": "Motoryat",
+  "brand": "Özel yapım",
+  "buildYear": 1994,
+  "refurbishedYear": 2023,
+  "cruiseCapacity": 6,
+  "cabinCount": 3,
+  "toiletCount": 2,
+  "showerCount": 2,
+  "boatLength": "16 m (52 ft)",
+  "dailyCruiseTime": "2 saat"
+},
+"comfort": [
+  "Gölgelik",
+  "12V / 220v invertör",
+  "Mutfak ekipmanları",
+  "USB / aux girişi bağlantısı"
+],
+"navigation": [
+  "Otomatik pilot",
+  "GPS",
+  "VHF radyo"
+],
+"entertainment": [
+  "Dış mekan hoparlör",
+  "USB girişli mp3 çalar"
+],
+"safety": [
+  "Can yelekleri",
+  "İlk yardım malzemeleri",
+  "Yangın söndürücü"
+],
+"includedInPrice": [
+  "Kaptan",
+  "Yakıt",
+  "Mürettebat",
+  "Transitlog",
+  "Son temizlik"
+],
+"checkInOut": {
+  "daily": {
+    "checkIn": "10:00",
+    "checkOut": "15:00"
+  }
 }
+},
+{
+"id": 19,
+"image": "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/1.jpg",
+"images": [
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/1.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/2.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/3.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/4.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/5.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/6.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/7.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/8.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/9.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/10.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/11.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/12.jpg"
+
+],
+"location": "Bodrum",
+"title": "Azimut 55 Kiralık Motoryat (2006) - Bodrum",
+"price": 2.399,
+"booked": 89,
+"description": "Bodrum'un turkuaz sularında 2006 yapımı lüks Azimut 55 motoryat deneyimi yaşayın. 8 kişilik günlük turlar veya 6 kişilik konaklama ile 2x1500 HP güçlü motorlarıyla unutulmaz bir deniz macerası sunuyoruz.",
+"specifications": {
+  "boatType": "Motoryat",
+  "brand": "Azimut",
+  "model": "55",
+  "buildYear": 2006,
+  "cruiseCapacity": 8,
+  "cabinCount": 3,
+  "overnightCapacity": 6,
+  "toiletCount": 2,
+  "showerCount": 2,
+  "waterTankCapacity": 150,
+  "boatLength": "18 m (59 ft)",
+  "flag": "Türkiye",
+  "beam": 4.75,
+  "dailyAirConditioningHours": 4,
+  "dailyCruiseTime": "2 saat",
+  "enginePower": "2 X 1500 HP (2237 kW)"
+},
+"comfort": [
+  "Buzdolabı",
+  "Sıcak su",
+  "Mutfak ekipmanları",
+  "Set üstü ocak",
+  "Güneşlenme güvertesi",
+  "Yüzme merdiveni",
+  "Güverte duşu"
+],
+"navigation": [
+  "Hız göstergesi",
+  "Seyir haritası",
+  "Pusula"
+],
+"entertainment": [
+  "Dış mekan hoparlör"
+],
+"safety": [
+  "Can yelekleri",
+  "Cankurtaran simidi",
+  "İlk yardım malzemeleri",
+  "Yangın söndürücü"
+],
+"includedInPrice": [
+  "Kaptan",
+  "Mürettebat",
+  "Son temizlik"
+],
+"mandatory": [
+  "Yakıt"
+],
+"checkInOut": {
+  "overnight": {
+    "checkIn": "15:00",
+    "checkOut": "09:00"
+  },
+  "daily": {
+    "checkIn": "10:30",
+    "checkOut": "17:30"
+  }
+}
+},
+{
+"id": 20,
+"image": "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/1.jpg",
+"images": [
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/1.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/2.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/3.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/4.jpg",
+  "/images/yat/bodrum tekne/Azimut 55 Kiralık Motoryat (2006) - Bodrum/5.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/6.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/7.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/8.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/9.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/10.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/11.jpg",
+  "/images/yat/bodrum tekne/Azimut 70 Kiralık Motoryat (2024) - Bodrum/12.jpg"
+],
+"location": "Bodrum",
+"title": "Azimut 70 Kiralık Motoryat (2024) - Bodrum",
+"price": 4.199,
+"booked": 89,
+"description": "Bodrum'un turkuaz sularında lüks Azimut 70 motoryat deneyimi yaşayın. 4 kabin, 8 kişilik konaklama kapasitesi ve 2x1360 HP güçlü motorlarıyla unutulmaz bir deniz macerası sunuyoruz.",
+"specifications": {
+  "boatType": "Motoryat",
+  "brand": "Azimut",
+  "model": "70",
+  "buildYear": 2014,
+  "refurbishedYear": 2024,
+  "cruiseCapacity": 8,
+  "cabinCount": 4,
+  "overnightCapacity": 8,
+  "toiletCount": 4,
+  "showerCount": 4,
+  "waterTankCapacity": 1000,
+  "boatLength": "21,3 m (70 ft)",
+  "wasteTankCapacity": 1,
+  "flag": "Marshall adaları",
+  "fuelCapacity": 4000,
+  "draft": 0,
+  "dailyAirConditioningHours": "Sınırsız",
+  "dailyCruiseTime": "1 saat",
+  "rudderCount": 2,
+  "boatMaterial": "Fiberglas",
+  "fuelType": "Dizel",
+  "enginePower": "2 X 1360 HP (2028 kW)"
+},
+"comfort": [
+  "Klima",
+  "Su yapıcı",
+  "Gölgelik",
+  "Su arıtma sistemi",
+  "Elektrikli wc",
+  "Jeneratör",
+  "12V / 220v invertör",
+  "Güneş paneli",
+  "Buz yapıcı",
+  "Buz makinesi",
+  "Buz kutusu",
+  "Derin dondurucu",
+  "Buzdolabı",
+  "Sıcak su",
+  "Mutfak ekipmanları",
+  "Fırın",
+  "Mikrodalga fırın",
+  "Set üstü ocak",
+  "Barbekü",
+  "Elektrik prizi",
+  "Bulaşık makinesi",
+  "Kahve makinesi",
+  "Saç kurutma makinesi",
+  "Flybridge",
+  "Güneşlenme güvertesi",
+  "Hidrolik platform",
+  "Sprayhood",
+  "Baş güneşlenme terası",
+  "Tik kaplama güverte",
+  "Kıç güneşlenme terası",
+  "Jakuzi",
+  "Yüzme platformu",
+  "Yüzme merdiveni",
+  "Güverte duşu",
+  "Isıtma",
+  "Kabin vantilatörleri",
+  "USB / aux girişi bağlantısı",
+  "Kokpit masası",
+  "Kokpit minderi",
+  "Tik kokpit",
+  "Lazy jack",
+  "Lazy bag",
+  "Kasa"
+],
+"navigation": [
+  "Otomatik pilot",
+  "GPS",
+  "Radar",
+  "Rüzgar hız ölçer",
+  "VHF radyo",
+  "Hız göstergesi",
+  "Baş pervane",
+  "Rüzgar yön göstergesi",
+  "Derinlik ölçer",
+  "Seyir haritası",
+  "Seyir ışıkları",
+  "Uydu telefonu",
+  "Pusula"
+],
+"entertainment": [
+  "Dış mekan hoparlör",
+  "İç mekan hoparlör",
+  "Bar",
+  "USB girişli mp3 çalar",
+  "TV",
+  "CD çalar",
+  "Masa oyunları",
+  "DVD oynatıcı"
+],
+"safety": [
+  "Can yelekleri",
+  "Cankurtaran simidi",
+  "Güvenlik halatı",
+  "Cankurtaran salı",
+  "Sinyal bayrakları",
+  "Acil pozisyon gösterme radyo sinyali (epirb)",
+  "İlk yardım malzemeleri",
+  "Cep feneri",
+  "Yangın söndürücü",
+  "Tehlike işaret fişekleri"
+],
+"includedInPrice": [
+  "Kaptan",
+  "Mürettebat",
+  "Transitlog",
+  "Son temizlik"
+],
+"checkInOut": {
+  "overnight": {
+    "checkIn": "11:00",
+    "checkOut": "07:00"
+  },
+  "daily": {
+    "checkIn": "10:00",
+    "checkOut": "17:00"
+  }
+}
+},
+{
+  "id": 21,
+  "image": "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/1.jpg",
+  "images": [
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/1.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/2.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/3.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/4.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/5.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/6.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/7.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/8.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/9.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/10.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/11.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/12.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/13.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Gulet (2023) - Bodrum/14.jpg"
+  ],
+  "location": "Bodrum",
+  "title": "Özel Yapım Kiralık Gulet (2023) - Bodrum",
+  "price": 1.669,
+  "booked": 89,
+  "description": "Bodrum'un turkuaz sularında 2023 yapımı özel yapım gulet deneyimi yaşayın. 8 kişilik günlük turlar veya 4 kişilik konaklama ile geleneksel mavi yolculuk ruhunu keşfedin.",
+  "specifications": {
+    "boatType": "Gulet",
+    "brand": "Özel yapım",
+    "buildYear": 2023,
+    "cruiseCapacity": 8,
+    "cabinCount": 2,
+    "overnightCapacity": 4,
+    "toiletCount": 2,
+    "showerCount": 2,
+    "boatLength": "12 m (39 ft)",
+    "dailyCruiseTime": "1 saat"
+  },
+  "comfort": [
+    "Derin dondurucu",
+    "Buzdolabı",
+    "Mutfak ekipmanları",
+    "Güneşlenme güvertesi",
+    "Yüzme merdiveni",
+    "Güverte duşu"
+  ],
+  "navigation": [
+    "GPS",
+    "VHF radyo",
+    "Pusula"
+  ],
+  "entertainment": [
+    "Dış mekan hoparlör"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Mürettebat",
+    "Transitlog",
+    "Son temizlik"
+  ],
+  "checkInOut": {
+    "overnight": {
+      "checkIn": "14:00",
+      "checkOut": "09:00"
+    },
+    "daily": {
+      "checkIn": "10:00",
+      "checkOut": "17:00"
+    }
+  }
+},
+{
+  "id": 22,
+  "image": "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/1.jpg",
+  "images": [
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/1.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/2.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/3.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/4.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/5.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/6.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/7.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/8.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/9.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/10.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/11.jpg",
+    "/images/yat/bodrum tekne/Özel Yapım Kiralık Motoryat (2017) - Bodrum/12.jpg"
+  ],
+  "location": "Bodrum",
+  "title": "Özel Yapım Kiralık Motoryat (2017) - Bodrum",
+  "price": 1.699,
+  "booked": 89,
+  "description": "Bodrum'un turkuaz sularında 2017 yapımı özel yapım motoryat deneyimi yaşayın. 8 kişilik günlük turlar ile modern konfor ve keyifli bir deniz macerası sunuyoruz.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "Özel yapım",
+    "buildYear": 2017,
+    "cruiseCapacity": 8,
+    "toiletCount": 1,
+    "showerCount": 1,
+    "boatLength": "14 m (46 ft)",
+    "dailyCruiseTime": "2 saat"
+  },
+  "comfort": [
+    "Gölgelik",
+    "12V / 220v invertör",
+    "Mutfak ekipmanları",
+    "Fırın",
+    "USB / aux girişi bağlantısı"
+  ],
+  "entertainment": [
+    "USB girişli mp3 çalar"
+  ],
+  "includedInPrice": [
+    "Yakıt"
+  ],
+  "checkInOut": {
+    "daily": {
+      "checkIn": "10:00",
+      "checkOut": "16:00"
+    }
+  }
+},
+{
+  "id": 23,
+  "image": "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /1.jpg",
+  "images": [
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /1.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /2.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /3.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /4.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /5.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /6.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /7.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /8.jpg",
+    "/images/yat/bodrum tekne/Princess 55 Kiralık Motoryat (2021) - Bodrum /9.jpg"
+  ],
+  "location": "Bodrum",
+  "title": "Princess 55 Kiralık Motoryat (2021) - Bodrum",
+  "price": 1.299,
+  "booked": 89,
+  "description": "Bodrum'un turkuaz sularında 1992 yapımı, 2021'de yenilenen lüks Princess 55 motoryat deneyimi yaşayın. 10 kişilik günlük turlar veya 6 kişilik konaklama ile unutulmaz bir deniz macerası sunuyoruz.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "Princess",
+    "model": "55",
+    "buildYear": 1992,
+    "refurbishedYear": 2021,
+    "cruiseCapacity": 10,
+    "cabinCount": 3,
+    "overnightCapacity": 6,
+    "toiletCount": 1,
+    "showerCount": 1,
+    "boatLength": "16,8 m (55 ft)",
+    "dailyCruiseTime": "1 saat"
+  },
+  "comfort": [
+    "Elektrikli wc",
+    "Jeneratör",
+    "Buzdolabı",
+    "Sıcak su",
+    "Mutfak ekipmanları",
+    "Güneşlenme güvertesi",
+    "Yüzme merdiveni",
+    "USB / aux girişi bağlantısı"
+  ],
+  "navigation": [
+    "GPS",
+    "VHF radyo",
+    "Pusula"
+  ],
+  "entertainment": [
+    "TV"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Transitlog",
+    "Son temizlik"
+  ],
+  "checkInOut": {
+    "overnight": {
+      "checkIn": "20:00",
+      "checkOut": "08:00"
+    },
+    "daily": {
+      "checkIn": "09:00",
+      "checkOut": "17:00"
+    }
+  }
+},
+{
+  "id": 24,
+  "image": "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /1.jpg",
+  "images": [
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /1.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /2.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /3.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /4.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /5.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /6.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /7.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /8.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /9.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /10.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /11.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /12.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /13.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /14.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /15.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /16.jpg",
+    "/images/yat/bodrum tekne/San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum /17.jpg"
+  ],
+  "location": "Bodrum",
+  "title": "San Lorenzo 72 Kiralık Motoryat (2009) - Bodrum",
+  "price": 3.999,
+  "booked": 89,
+  "description": "Bodrum'un turkuaz sularında lüks San Lorenzo 72 motoryat deneyimi yaşayın. 2009 yapımı bu prestijli motoryat ile 7 kişilik konaklama kapasitesi ve 4 kabin ile unutulmaz bir deniz macerası sunuyoruz.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "San lorenzo",
+    "model": "72",
+    "buildYear": 2009,
+    "cruiseCapacity": 7,
+    "cabinCount": 4,
+    "overnightCapacity": 7,
+    "toiletCount": 4,
+    "showerCount": 4,
+    "waterTankCapacity": 1500,
+    "boatLength": "22,8 m (75 ft)",
+    "wasteTankCapacity": 1,
+    "flag": "Türkiye",
+    "fuelCapacity": 50000,
+    "draft": 1.00,
+    "beam": 5.68,
+    "dailyCruiseTime": "1 saat",
+    "fuelType": "Dizel",
+    "engineType": "İçten takma",
+    "enginePower": "1 X 188 HP (140 kW)"
+  },
+  "comfort": [
+    "Klima",
+    "Elektrikli wc",
+    "Jeneratör",
+    "12V / 220v invertör",
+    "Sıcak su",
+    "Mutfak ekipmanları",
+    "Fırın",
+    "Set üstü ocak",
+    "Saç kurutma makinesi",
+    "Güneşlenme güvertesi",
+    "Baş güneşlenme terası",
+    "Tik kaplama güverte",
+    "Yüzme platformu",
+    "Yüzme merdiveni",
+    "Güverte duşu",
+    "USB / aux girişi bağlantısı",
+    "Kokpit minderi",
+    "Tik kokpit"
+  ],
+  "navigation": [
+    "Otomatik pilot",
+    "GPS",
+    "Radar",
+    "VHF radyo",
+    "Rüzgar yön göstergesi",
+    "Pusula"
+  ],
+  "entertainment": [
+    "Dış mekan hoparlör",
+    "İç mekan hoparlör",
+    "USB girişli mp3 çalar",
+    "TV",
+    "CD çalar"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "Cankurtaran simidi",
+    "Güvenlik halatı",
+    "Acil pozisyon gösterme radyo sinyali (epirb)",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Mürettebat",
+    "Transitlog",
+    "Son temizlik"
+  ],
+  "mandatory": [
+    "Yakıt"
+  ],
+  "optional": [
+    "Klima"
+  ],
+  "checkInOut": {
+    "overnight": {
+      "checkIn": "16:00",
+      "checkOut": "10:00"
+    },
+    "daily": {
+      "checkIn": "10:00",
+      "checkOut": "17:00"
+    }
+  }
+},
+{
+  "id": 25,
+  "image": "/images/yat/istanbul tekne/Domp 860 Kiralık Yelkenli/1.jpg",
+  "images": [
+    "/images/yat/istanbul tekne/Domp 860 Kiralık Yelkenli/1.jpg",
+    "/images/yat/istanbul tekne/Domp 860 Kiralık Yelkenli/2.jpg"
+  ],
+  "location": "İstanbul",
+  "title": "Domp 860 Kiralık Yelkenli",
+  "price": 789,
+  "booked": 89,
+  "description": "Günlük yelken turu ve adalara yüzme turu için bizi tercih edebilirsiniz. Konaklama 2 kişi olabilir. Yelken eğitimi verilir.",
+  "specifications": {
+    "boatType": "Yelkenli",
+    "brand": "Domp",
+    "model": "860",
+    "buildYear": 2002,
+    "refurbishedYear": 2023,
+    "cruiseCapacity": 4,
+    "cabinCount": 1,
+    "overnightCapacity": 2,
+    "toiletCount": 1,
+    "showerCount": 1,
+    "salonHeight": 1,
+    "waterTankCapacity": 70,
+    "boatLength": "9 m (30 ft)",
+    "wasteTankCapacity": 1,
+    "flag": "Türkiye",
+    "fuelConsumption": "2.5 l/sa",
+    "fuelCapacity": 50,
+    "draft": 1.40,
+    "beam": 2.65,
+    "dailyCruiseTime": "2 saat",
+    "rudderCount": 1,
+    "boatMaterial": "Çelik",
+    "salonWidth": 2,
+    "fuelType": "Dizel",
+    "maxSpeed": 8,
+    "engineType": "İçten takma",
+    "enginePower": "1 X 18 HP (13 kW)",
+    "mainSail": "Tam çıta yelken",
+    "genoa": "Klasik cenova"
+  },
+  "comfort": [
+    "Evcil hayvan kabul edilir",
+    "Gölgelik",
+    "Elektrikli wc",
+    "Güneş paneli",
+    "Buz makinesi",
+    "Mutfak ekipmanları",
+    "Yüzme merdiveni",
+    "USB / aux girişi bağlantısı"
+  ],
+  "navigation": [
+    "GPS",
+    "Rüzgar hız ölçer",
+    "VHF radyo",
+    "Derinlik ölçer",
+    "Seyir haritası",
+    "Seyir ışıkları",
+    "Pusula",
+    "Yarış yelkeni"
+  ],
+  "entertainment": [
+    "Dış mekan hoparlör",
+    "İç mekan hoparlör",
+    "USB girişli mp3 çalar"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "Cankurtaran simidi",
+    "Güvenlik halatı",
+    "Sinyal bayrakları",
+    "İlk yardım malzemeleri",
+    "Cep feneri",
+    "Yangın söndürücü",
+    "Tehlike işaret fişekleri"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Son temizlik"
+  ],
+  "checkInOut": {
+    "overnight": {
+      "checkIn": "10:00",
+      "checkOut": "18:00"
+    },
+    "daily": {
+      "checkIn": "12:00",
+      "checkOut": "18:00"
+    }
+  }
+},
+{
+  "id": 26,
+  "image": "/images/yat/istanbul tekne/özel yapım kiralık motoryat/1.jpg",
+  "images": [
+    "/images/yat/istanbul tekne/özel yapım kiralık motoryat/1.jpg",
+    "/images/yat/istanbul tekne/özel yapım kiralık motoryat/2.jpg",
+    "/images/yat/istanbul tekne/özel yapım kiralık motoryat/3.jpg"
+  ],
+  "location": "İstanbul",
+  "title": "Özel Yapım Kiralık Motoryat",
+  "price": 499,
+  "booked": 89,
+  "description": "İstanbul'un eşsiz manzarasını keşfetmek için ideal bir fırsat! Günlük yat turlarımızla, Boğaz'ın en güzel noktalarını ve adaları keşfedin.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "Özel yapım",
+    "buildYear": 1980,
+    "refurbishedYear": 2021,
+    "cruiseCapacity": 5,
+    "toiletCount": 1,
+    "boatLength": "7,5 m (25 ft)",
+    "dailyCruiseTime": "1 saat"
+  },
+  "navigation": [
+    "VHF radyo"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Son temizlik"
+  ],
+  "checkInOut": {
+    "daily": {
+      "checkIn": "17:30",
+      "checkOut": "23:30"
+    }
+  }
+},
+{
+  "id": 27,
+  "image": "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Ayvansaray/1.jpg",
+  "images": [
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Ayvansaray/1.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Ayvansaray/2.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Ayvansaray/3.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Ayvansaray/4.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Ayvansaray/5.jpg"
+  ],
+  "location": "İstanbul",
+  "title": "Özel Yapım Kiralık Motoryat (2019) - Ayvansaray",
+  "price": 1.269,
+  "booked": 89,
+  "description": "İstanbul'un tarihi Ayvansaray bölgesinden başlayan eşsiz yat deneyimi! 15 kişilik gruplarınızla Boğaz'ın en güzel noktalarını keşfedin.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "Özel yapım",
+    "buildYear": 2019,
+    "cruiseCapacity": 15,
+    "toiletCount": 1,
+    "showerCount": 1,
+    "boatLength": "17 m (56 ft)",
+    "dailyCruiseTime": "3 saat"
+  },
+  "comfort": [
+    "Buzdolabı",
+    "Mutfak ekipmanları",
+    "Güneşlenme güvertesi"
+  ],
+  "navigation": [
+    "GPS",
+    "VHF radyo",
+    "Pusula"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Son temizlik"
+  ],
+  "checkInOut": {
+    "daily": {
+      "checkIn": "12:00",
+      "checkOut": "19:00"
+    }
+  }
+},
+{
+  "id": 28,
+  "image": "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /1.jpg",
+  "images": [
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /1.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /2.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /3.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /4.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /5.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /6.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /7.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /8.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /9.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /10.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /11.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /12.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /13.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /14.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2019) - Bebek /15.jpg"
+  ],
+  "location": "İstanbul",
+  "title": "Özel Yapım Kiralık Motoryat (2019) - Bebek",
+  "price": 1.699,
+  "booked": 89,
+  "description": "İstanbul'un prestijli Bebek bölgesinden başlayan lüks yat deneyimi! 15 kişilik günlük turlar veya 6 kişilik konaklama ile Boğaz'ın en güzel noktalarını keşfedin.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "Özel yapım",
+    "buildYear": 1988,
+    "refurbishedYear": 2019,
+    "cruiseCapacity": 15,
+    "cabinCount": 3,
+    "overnightCapacity": 6,
+    "toiletCount": 2,
+    "showerCount": 2,
+    "salonHeight": 2,
+    "waterTankCapacity": 2000,
+    "boatLength": "20 m (66 ft)",
+    "wasteTankCapacity": 1,
+    "flag": "Türkiye",
+    "fuelCapacity": 2000,
+    "dailyAirConditioningHours": 4
+  },
+  "comfort": [
+    "Klima",
+    "Buzdolabı",
+    "Mutfak ekipmanları",
+    "Güneşlenme güvertesi"
+  ],
+  "navigation": [
+    "GPS",
+    "VHF radyo",
+    "Pusula"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Son temizlik"
+  ],
+  "checkInOut": {
+    "overnight": {
+      "checkIn": "10:00",
+      "checkOut": "18:00"
+    },
+    "daily": {
+      "checkIn": "12:00",
+      "checkOut": "18:00"
+    }
+  }
+},
+{
+  "id": 29,
+  "image": "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2024) - Bebek/1.jpg",
+  "images": [
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2024) - Bebek/1.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2024) - Bebek/2.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2024) - Bebek/3.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2024) - Bebek/4.jpg",
+    "/images/yat/istanbul tekne/Özel Yapım Kiralık Motoryat (2024) - Bebek/5.jpg"
+  ],
+  "location": "İstanbul",
+  "title": "Özel Yapım Kiralık Motoryat (2024) - Bebek",
+  "price": 609,
+  "booked": 89,
+  "description": "İstanbul'un prestijli Bebek bölgesinden başlayan modern yat deneyimi! Günlük yat turlarımızla, Boğaz'ın en güzel noktalarını keşfedin.",
+  "specifications": {
+    "boatType": "Motoryat",
+    "brand": "Özel yapım",
+    "buildYear": 2024,
+    "cruiseCapacity": 8,
+    "toiletCount": 1,
+    "showerCount": 1,
+    "boatLength": "12 m (39 ft)",
+    "dailyCruiseTime": "2 saat"
+  },
+  "comfort": [
+    "Buzdolabı",
+    "Mutfak ekipmanları",
+    "Güneşlenme güvertesi"
+  ],
+  "navigation": [
+    "GPS",
+    "VHF radyo",
+    "Pusula"
+  ],
+  "safety": [
+    "Can yelekleri",
+    "İlk yardım malzemeleri",
+    "Yangın söndürücü"
+  ],
+  "includedInPrice": [
+    "Kaptan",
+    "Yakıt",
+    "Son temizlik"
+  ],
+  "checkInOut": {
+    "daily": {
+      "checkIn": "12:00",
+      "checkOut": "18:00"
+    }
+  }
+}
+  ]
+}  

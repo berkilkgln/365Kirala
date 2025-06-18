@@ -36,11 +36,17 @@ declare global {
 }
 
 const GA_MEASUREMENT_ID = 'G-0XBT5869ZT';
+const GA_ADS_ID = 'AW-692798014';
 
 // Google Analytics olay gönderme fonksiyonu
 const pageview = (url: string): void => {
   if (typeof window.gtag !== 'undefined') {
     window.gtag('config', GA_MEASUREMENT_ID, {
+      page_path: url,
+      page_title: document.title,
+      page_location: window.location.href,
+    });
+    window.gtag('config', GA_ADS_ID, {
       page_path: url,
       page_title: document.title,
       page_location: window.location.href,
@@ -91,6 +97,7 @@ export function Analytics(): React.ReactElement {
             allow_google_signals: true,
             allow_ad_personalization_signals: true
           });
+          gtag('config', '${GA_ADS_ID}');
         `}
       </Script>
     </>

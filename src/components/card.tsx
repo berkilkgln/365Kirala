@@ -20,7 +20,7 @@ export type ListCardProps = {
 export const ListCard = ({ item }: ListCardProps) => {
   const getCurrencySymbol = (category: string) => {
     if (category === 'yat' || category === 'ozel-jet') {
-      return '€';
+      return '$';
     }
     return '₺';
   };
@@ -50,6 +50,8 @@ export const ListCard = ({ item }: ListCardProps) => {
           src={item.image}
           alt={item.title}
           fill
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           draggable={false}
         />

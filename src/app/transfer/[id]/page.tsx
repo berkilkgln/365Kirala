@@ -8,10 +8,12 @@ import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
 import transferData from '../../../data/transfer/services.json';
 import Script from 'next/script';
+import { createUrlSlug } from '../../../lib/utils';
 
 type Transfer = {
   id: number;
   image: string;
+  images?: string[];
   title: string;
   location: string;
   price: number;
@@ -19,19 +21,28 @@ type Transfer = {
   discount?: number;
   description: string;
   features: string[];
+  slug?: string;
 };
 
 export default function TransferDetailPage() {
   const params = useParams();
   const idWithSlug = params?.id as string;
-  const id = parseInt(idWithSlug?.split('-')[0], 10);
+  const id = Number(idWithSlug.split('-')[0]);
   const [transfer, setTransfer] = useState<Transfer | null>(null);
 
   useEffect(() => {
-    if (isNaN(id)) return;
-    const found = transferData.items.find(item => Number(item.id) === id);
-    if (found) setTransfer(found);
-    else setTransfer(null);
+    if (!id) return;
+    const foundTransfer = transferData.items.find((item) => item.id === id);
+    if (foundTransfer) {
+      const slug = createUrlSlug(foundTransfer.title);
+      const transferData = {
+        ...foundTransfer,
+        slug
+      };
+      setTransfer(transferData);
+    } else {
+      setTransfer(null);
+    }
   }, [id]);
 
   if (!transfer) {
@@ -88,16 +99,17 @@ export default function TransferDetailPage() {
       />
       <Navbar />
       <div className="bg-white min-h-screen">
-        {/* Banner */}
-        <div className="relative w-full h-60 md:h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          <Image src={transfer.image} alt={transfer.title} fill className="object-cover z-0" priority />
-          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-            <h1 className="text-3xl md:text-5xl font-extrabold mt-12 md:mt-20 drop-shadow-xl animate-fade-in-up">
-              VIP Transfer Hizmeti
-            </h1>
-            <p className="text-lg md:text-2xl mt-2 md:mt-4 drop-shadow-lg">{transfer.location}</p>
-          </div>
+        {/* Görsel */}
+        <div className="relative w-full h-[400px] md:h-[600px] z-0">
+          <Image
+            src={transfer.image}
+            alt={transfer.title}
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+            quality={100}
+          />
         </div>
 
         {/* İçerik */}
@@ -119,11 +131,7 @@ export default function TransferDetailPage() {
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {transfer.features.map((feature, index) => (
                   <li key={index} className="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border">
-                    <div className="w-5 h-5 text-indigo-600">
-                      <svg className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
+                    <span className="text-indigo-600 font-bold">✓</span>
                     <span className="text-sm md:text-base text-gray-700">{feature}</span>
                   </li>
                 ))}
@@ -140,20 +148,17 @@ export default function TransferDetailPage() {
                   </div>
                 )}
 
-                {/* Eski Fiyat */}
                 {transfer.discount && (
                   <div className="text-center text-gray-400 text-base line-through mb-1">
                     {(transfer.price * (1 + transfer.discount / 100)).toLocaleString('en-US').replace(',', '.')}₺
                   </div>
                 )}
 
-                {/* Yeni Fiyat + Açıklama */}
                 <div className="flex justify-center items-end gap-1">
                   <span className="text-4xl font-bold text-indigo-700 leading-none">
                     {transfer.price.toLocaleString('en-US').replace(',', '.')}₺
                   </span>
-                  <span className="text-sm text-gray-500 mb-1">&apos;dan başlayan fiyatlarla</span>
-                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>
+                  <span className="text-sm text-gray-500 mb-1">/ transfer</span>
                 </div>
               </div>
 
@@ -163,10 +168,6 @@ export default function TransferDetailPage() {
                   Transfer rezervasyonları <strong>7/24</strong> alınmaktadır. <br />
                   <strong>Ücretsiz iptal</strong> hakkı mevcuttur.
                 </p>
-              </div>
-
-              <div className="text-sm text-gray-600 text-center">
-                {transfer.booked} kişi bu transferi daha önce tercih etti
               </div>
             </div>
           </div>

@@ -83,7 +83,7 @@
       "title": "Uzungöl Manzaralı Ahşap Bungalov",
       "price": 2.799,
       "booked": 121,
-      "description": "Karadeniz’in gözdesi Uzungöl'de doğayla iç içe sessiz bir tatil.",
+      "description": "Karadeniz'in gözdesi Uzungöl'de doğayla iç içe sessiz bir tatil.",
       "features": ["Uzungöl Manzarası", "Ahşap Yapı", "Balkon", "Wi-Fi", "Otopark"]
     },
     {
@@ -93,7 +93,7 @@
       "title": "Doğa İçinde Minimal Bungalov",
       "price": 3.199,
       "booked": 58,
-      "description": "Marmaris-Bozburun’da sessizlik, doğa ve konfor bir arada.",
+      "description": "Marmaris-Bozburun'da sessizlik, doğa ve konfor bir arada.",
       "features": ["Minimal Tasarım", "Doğa Manzarası", "Kahvaltı Dahil", "Klima", "Hamak"]
     },
     {
@@ -103,7 +103,7 @@
       "title": "Yedigöller Ahşap Orman Evi",
       "price": 2.299,
       "booked": 109,
-      "description": "Yedigöller Milli Parkı’na yürüme mesafesinde doğa ile baş başa konaklama.",
+      "description": "Yedigöller Milli Parkı'na yürüme mesafesinde doğa ile baş başa konaklama.",
       "features": ["Milli Park Yakını", "Ahşap Konsept", "Barbekü", "Doğa Yürüyüşü", "Isıtmalı"]
     },
     {
@@ -113,7 +113,7 @@
       "title": "Kazdağları Doğa Evi",
       "price": 2.899,
       "booked": 73,
-      "description": "Oksijen deposu Kazdağları’nda, zeytin ağaçlarının arasında huzurlu konaklama.",
+      "description": "Oksijen deposu Kazdağları'nda, zeytin ağaçlarının arasında huzurlu konaklama.",
       "features": ["Doğa İçinde", "Teras", "Kahvaltı", "Şömine", "Yürüyüş Parkuru"]
     },
     {
@@ -124,7 +124,7 @@
       "price": 3.599,
       "booked": 84,
       "discount": 8,
-      "description": "Antalya’nın sahiline yürüme mesafesinde, tropik tasarımlı modern bungalov.",
+      "description": "Antalya'nın sahiline yürüme mesafesinde, tropik tasarımlı modern bungalov.",
       "features": ["Denize Yakın", "Klima", "Özel Bahçe", "Barbekü", "Wi-Fi"]
     },
     {
@@ -134,7 +134,7 @@
       "title": "Zeytinlikler Arasında Bungalov",
       "price": 3.099,
       "booked": 59,
-      "description": "Datça’nın huzur veren atmosferinde zeytin ağaçları arasında sessiz bir kaçış.",
+      "description": "Datça'nın huzur veren atmosferinde zeytin ağaçları arasında sessiz bir kaçış.",
       "features": ["Zeytinlik Alan", "Doğa Manzarası", "Mutfak", "Teras", "Otopark"]
     },
     {
@@ -145,7 +145,7 @@
       "price": 2.999,
       "booked": 97,
       "discount": 5,
-      "description": "Çıralı’nın doğal dokusunu bozmadan inşa edilmiş ekolojik tasarımlı bungalov.",
+      "description": "Çıralı'nın doğal dokusunu bozmadan inşa edilmiş ekolojik tasarımlı bungalov.",
       "features": ["Ekolojik Yapı", "Bahçe", "Kahvaltı", "Klima", "Bisiklet Kiralama"]
     },
     {
@@ -166,7 +166,7 @@
       "price": 3.699,
       "booked": 88,
       "discount": 10,
-      "description": "Bolu’da göl kenarında, doğa ve lüksün buluştuğu bungalov deneyimi.",
+      "description": "Bolu'da göl kenarında, doğa ve lüksün buluştuğu bungalov deneyimi.",
       "features": ["Göl Kenarı", "Jakuzili", "Klima", "Teras", "Kahvaltı"]
     },
         {
@@ -238,7 +238,7 @@
           "title": "Yağmur Ormanı İçinde Bungalov",
           "price": 3.899,
           "booked": 87,
-          "description": "Costa Rica’nın yağmur ormanlarında doğal ve sessiz konaklama.",
+          "description": "Costa Rica'nın yağmur ormanlarında doğal ve sessiz konaklama.",
           "features": ["Yağmur Ormanı", "Doğal Ahşap", "Wi-Fi", "Teras", "Kahvaltı"]
         },
         {

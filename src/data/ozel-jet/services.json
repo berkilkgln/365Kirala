@@ -5,6 +5,11 @@
     {
       "id": 1,
       "image": "/images/ozel-jet/jet1.jpg",
+      "images": [
+        "/images/ozel-jet/jet1.jpg",
+        "/images/ozel-jet/jet2.jpg",
+        "/images/ozel-jet/jet3.jpg"
+      ],
       "title": "Cessna Citation CJ4",
       "departure": "Türkiye",
       "destination": "Türkiye İçi",

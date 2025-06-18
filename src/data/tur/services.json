@@ -5,7 +5,6 @@
     {
       "id": 1,
       "image": "/images/tur/kapadokya.jpg",
-      "location": "Kapadokya",
       "title": "Kapadokya Balon Turu",
       "price": 4.999,
       "booked": 156,
@@ -123,7 +122,7 @@
       "title": "Yedigöller Tabiat Turu",
       "price": 1.099,
       "booked": 203,
-      "description": "Doğanın tüm renklerini görebileceğiniz Yedigöller’de doğa yürüyüşü ve piknik keyfi.",
+      "description": "Doğanın tüm renklerini görebileceğiniz Yedigöller'de doğa yürüyüşü ve piknik keyfi.",
       "features": ["Tabiat parkı ziyareti", "Fotoğraf molaları", "Rehber", "Kahvaltı", "Ulaşım"]
     },
     {
@@ -144,7 +143,7 @@
       "price": 1.179,
       "booked": 188,
       "discount": 10,
-      "description": "İstanbul’a yakın doğa kaçamağı: Nehirde sandal gezisi ve deniz havası.",
+      "description": "İstanbul'a yakın doğa kaçamağı: Nehirde sandal gezisi ve deniz havası.",
       "features": ["Sandal gezisi", "Doğa yürüyüşü", "Rehber", "Öğle yemeği", "Transfer"]
     },
     {
@@ -259,7 +258,7 @@
         "price": 13.999,
         "booked": 268,
         "discount": 5,
-        "description": "Ortaçağ dokusunu koruyan Prag’da tarihi ve kültürel bir keşif.",
+        "description": "Ortaçağ dokusunu koruyan Prag'da tarihi ve kültürel bir keşif.",
         "features": ["3 gece otel", "Kahvaltı", "Şehir turu", "Rehberlik", "Transfer"]
       },
       {
@@ -269,7 +268,7 @@
         "title": "Barselona & Gaudi Turu",
         "price": 16.499,
         "booked": 376,
-        "description": "Sagrada Familia ve Park Güell dahil Barselona’nın mimari harikalarını keşfedin.",
+        "description": "Sagrada Familia ve Park Güell dahil Barselona'nın mimari harikalarını keşfedin.",
         "features": ["Uçuş", "4 gece otel", "Rehber", "Kahvaltı", "Şehir içi tur"]
       },
       {
@@ -310,7 +309,7 @@
         "title": "Bangkok & Tapınaklar Turu",
         "price": 22.499,
         "booked": 289,
-        "description": "Uzakdoğu’nun kalbinde tropikal atmosfer ve mistik tapınaklar.",
+        "description": "Uzakdoğu'nun kalbinde tropikal atmosfer ve mistik tapınaklar.",
         "features": ["Uçuş", "5 gece otel", "Rehberlik", "Tapınak girişleri", "Kahvaltı"]
       },
       {

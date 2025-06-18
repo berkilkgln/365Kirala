@@ -84,8 +84,10 @@ export const metadata: Metadata = {
       noimageindex: false,
     },
   },
+
+
   verification: {
-    google: 'your-google-verification-code',
+    google: 'LjeEhPbGMZOMys0Ri_ucJrqmFZ5zK4tFndZueNAta5E',
     yandex: 'yandex-verification-code',
     yahoo: 'yahoo-verification-code',
   },

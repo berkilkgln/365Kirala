@@ -40,6 +40,7 @@ export const Index = () => {
       category: 'yat',
       categoryKey: 'yat',
       location: item.location || '',
+      features: [],
     })),
     ...(villaData?.items || []).map((item) => ({
       ...item,

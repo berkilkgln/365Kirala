@@ -108,7 +108,7 @@ export default function GunlukTurPage() {
       <Navbar />
       <div className="container mx-auto px-4 py-8 font-semibold">
         <SinglePageHeader
-          image="/images/tur/turbackground.jpg"
+          images={["/images/tur/turbackground.jpg"]}
           title="Günlük Turlar"
           descriptionDesktop="Türkiye'nin eşsiz destinasyonlarında; İstanbul, Kapadokya, Pamukkale, Efes gibi tarihi ve doğal güzelliklerde günlük turlar. Profesyonel rehberler eşliğinde, konforlu ulaşım ve özel aktivitelerle unutulmaz deneyimler yaşayın."
           descriptionMobile="Türkiye'nin en güzel destinasyonlarında profesyonel rehberler eşliğinde günlük turlar."

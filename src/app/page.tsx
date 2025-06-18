@@ -1,4 +1,4 @@
-import { Index } from '../features';
+import { Index } from "@/features/index";
 
 export default function Home() {
   return <Index />;

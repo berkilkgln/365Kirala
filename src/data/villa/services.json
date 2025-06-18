@@ -137,7 +137,7 @@
         "price": 13.499,
         "booked": 98,
         "discount": 5,
-        "description": "Marmaris’in doğayla iç içe atmosferinde, sessizlik ve konfor sunan lüks villa.",
+        "description": "Marmaris'in doğayla iç içe atmosferinde, sessizlik ve konfor sunan lüks villa.",
         "features": ["3 Yatak Odası", "Özel Havuz", "Orman Manzarası", "Jakuzi", "Ahşap Teras", "Klima"]
       },
       {
@@ -148,7 +148,7 @@
         "price": 17.499,
         "booked": 211,
         "discount": 10,
-        "description": "Toroslar’a karşı, eşsiz deniz manzaralı 5 yıldız konforunda villa.",
+        "description": "Toroslar'a karşı, eşsiz deniz manzaralı 5 yıldız konforunda villa.",
         "features": ["5 Yatak Odası", "Panoramik Deniz Manzarası", "Sonsuzluk Havuzu", "Sinema Odası", "Akıllı Ev"]
       },
       {
@@ -200,7 +200,7 @@
         "price": 9.999,
         "booked": 177,
         "discount": 18,
-        "description": "Bozcaada’nın sessiz koylarında, balayı çiftleri için romantik atmosferli taş villa.",
+        "description": "Bozcaada'nın sessiz koylarında, balayı çiftleri için romantik atmosferli taş villa.",
         "features": ["1 Yatak Odası", "Manzaralı Balkon", "Jakuzili Banyo", "Şarap Tadım Odası", "Bahçe"]
       },
       {
@@ -221,7 +221,7 @@
         "price": 15.999,
         "booked": 231,
         "discount": 20,
-        "description": "Didim’in altın kumsallarına sıfır konumda, özel plaj erişimli muhteşem villa.",
+        "description": "Didim'in altın kumsallarına sıfır konumda, özel plaj erişimli muhteşem villa.",
         "features": ["Denize Sıfır", "4 Yatak Odası", "Özel İskele", "Havuz", "Şezlong Alanı"]
       },
       {
@@ -231,7 +231,7 @@
         "title": "Antik Kent Manzaralı Villa",
         "price": 12.499,
         "booked": 101,
-        "description": "Assos Antik Kenti’ne bakan tepeye kurulmuş, tarihi atmosferiyle büyüleyen villa.",
+        "description": "Assos Antik Kenti'ne bakan tepeye kurulmuş, tarihi atmosferiyle büyüleyen villa.",
         "features": ["Antik Kent Manzarası", "2 Yatak Odası", "Ahşap Teras", "Doğal Taş Mimari", "Huzurlu Atmosfer"]
       },
       
@@ -242,7 +242,7 @@
           "title": "Deniz Manzaralı Ibiza Villası",
           "price": 24999,
           "booked": 87,
-          "description": "Ibiza’nın en gözde koylarından birinde, özel havuzlu ve teraslı modern villa.",
+          "description": "Ibiza'nın en gözde koylarından birinde, özel havuzlu ve teraslı modern villa.",
           "features": ["Deniz Manzarası", "3 Yatak Odası", "Özel Havuz", "Teras", "Gece Hayatına Yakın"]
         },
         {
@@ -262,7 +262,7 @@
           "title": "Beyaz Santorini Villası",
           "price": 18500,
           "booked": 65,
-          "description": "Ege Denizi’ne bakan, geleneksel Yunan mimarili, jakuzili tatil villası.",
+          "description": "Ege Denizi'ne bakan, geleneksel Yunan mimarili, jakuzili tatil villası.",
           "features": ["Jakuzili Teras", "2 Yatak Odası", "Ege Manzarası", "Yunan Mimarisi", "Sessiz Lokasyon"]
         },
         {
@@ -332,8 +332,8 @@
           "title": "Manzaralı Cape Town Villası",
           "price": 27999,
           "booked": 67,
-          "description": "Lion’s Head manzaralı, modern tasarımlı, açık hava sinemalı villa.",
-          "features": ["Lion’s Head Manzarası", "Modern Mimari", "Açık Hava Sineması", "3 Yatak Odası", "Geniş Teras"]
+          "description": "Lion's Head manzaralı, modern tasarımlı, açık hava sinemalı villa.",
+          "features": ["Lion's Head Manzarası", "Modern Mimari", "Açık Hava Sineması", "3 Yatak Odası", "Geniş Teras"]
           }
     ]
   }

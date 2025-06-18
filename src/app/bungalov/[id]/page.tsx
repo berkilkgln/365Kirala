@@ -8,12 +8,15 @@ import bungalovData from '../../../data/bungalov/services.json';
 import { Navbar } from '../../../features/home/navbar';
 import ReservationBox from '../../../components/ReservationBox';
 import { createUrlSlug } from '../../../lib/utils';
+import useEmblaCarousel from 'embla-carousel-react';
+import { useCallback } from 'react';
 
 type Bungalov = {
   id: number;
   image: string;
-  location: string;
+  images?: string[];
   title: string;
+  location: string;
   price: number;
   booked: number;
   discount?: number;
@@ -21,6 +24,59 @@ type Bungalov = {
   features: string[];
   slug?: string;
 };
+
+function BungalovSlider({ images, title }: { images: string[], title: string }) {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  return (
+    <div className="relative w-full h-[500px] overflow-hidden">
+      <div className="absolute inset-0">
+        <div ref={emblaRef} className="h-full w-full overflow-hidden">
+          <div className="flex h-full">
+            {images.map((img, idx) => (
+              <div key={idx} className="flex-[0_0_100%] min-w-0 h-full relative">
+                <Image
+                  src={img}
+                  alt={`${title} - Görsel ${idx + 1}`}
+                  fill
+                  className="object-cover"
+                  priority={idx === 0}
+                  sizes="100vw"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Slider Butonları */}
+      <div className="absolute inset-0 z-10 flex items-center justify-between px-4">
+        <button
+          onClick={scrollPrev}
+          className="bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 transition-all duration-300 hover:scale-110"
+          aria-label="Previous slide"
+        >
+          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button
+          onClick={scrollNext}
+          className="bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 transition-all duration-300 hover:scale-110"
+          aria-label="Next slide"
+        >
+          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default function BungalovDetailPage() {
   const params = useParams();
@@ -89,21 +145,14 @@ export default function BungalovDetailPage() {
     );
   }
 
+  const sliderImages = bungalov.images || [bungalov.image];
+
   return (
     <>
       <Navbar />
       <main className="bg-white min-h-screen">
         {/* Banner */}
-        <div className="relative w-full h-72 overflow-hidden bg-gradient-to-r from-indigo-900 to-blue-800">
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          <Image src={bungalov.image} alt={bungalov.title} fill className="object-cover z-0" priority />
-          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 mt-8 drop-shadow-xl animate-fade-in-up">
-              Bungalov Konaklama
-            </h1>
-            <p className="text-2xl md:text-3xl drop-shadow-lg">{bungalov.location}</p>
-          </div>
-        </div>
+        <BungalovSlider images={sliderImages} title={bungalov.title} />
 
         {/* İçerik */}
         <div className="max-w-screen-xl mx-auto px-6 py-16">

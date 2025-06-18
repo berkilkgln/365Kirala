@@ -99,6 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr" className={inter.className}>
       <head>
+        <meta name="google-site-verification" content="LjeEhPbGMZOMys0Ri_ucJrqmFZ5zK4tFndZueNAta5E" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="mobile-web-app-capable" content="yes" />

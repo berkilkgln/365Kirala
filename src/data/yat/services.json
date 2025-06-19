@@ -19,7 +19,7 @@
       ],
       "location": "Göcek",
       "title": "Rodman 41 Kiralık Motoryat (2021) - Göcek",
-      "price": 1099,
+      "price": 1699,
       "booked": 156,
       "discount": 15,
       "description": "Göcek'in turkuaz sularında unutulmaz bir lüks yat kiralama deneyimi yaşayın. Profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın.",
@@ -301,95 +301,6 @@
       "checkInOut": {
         "overnight": {
           "checkIn": "14:00",
-          "checkOut": "09:00"
-        },
-        "daily": {
-          "checkIn": "10:00",
-          "checkOut": "18:00"
-        }
-      }
-    },
-    {
-      "id": 4,
-      "image": "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /1.jpg",
-      "images": [
-        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /1.jpg",
-        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /2.jpg",
-        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /3.jpg",
-        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /4.jpg",
-        "/images/yat/göcek tekne/Rodman 41 Kiralık Motoryat (2021) - Göcek /5.jpg"
-      ],
-      "location": "Göcek",
-      "title": "Rodman 41 Kiralık Motoryat (2021) - Göcek",
-      "price": 1099,
-      "booked": 156,
-      "discount": 15,
-      "description": "Göcek'in turkuaz sularında unutulmaz bir lüks yat kiralama deneyimi yaşayın. Profesyonel mürettebat eşliğinde, özel şef hizmetiyle mavi suların keyfini çıkarın.",
-      "specifications": {
-        "boatType": "Motoryat",
-        "brand": "Rodman",
-        "model": "41",
-        "buildYear": 2001,
-        "refurbishedYear": 2021,
-        "cruiseCapacity": 6,
-        "cabinCount": 2,
-        "overnightCapacity": 4,
-        "toiletCount": 2,
-        "showerCount": 2,
-        "waterTankCapacity": 600,
-        "boatLength": "14 m (46 ft)",
-        "wasteTankCapacity": 1,
-        "flag": "Türkiye",
-        "fuelCapacity": 1000,
-        "dailyCruiseTime": "1 saat",
-        "fuelType": "Dizel",
-        "maxSpeed": 30,
-        "engineType": "İçten takma"
-      },
-      "comfort": [
-        "Elektrikli wc",
-        "Jeneratör",
-        "12V / 220v invertör",
-        "Buz kutusu",
-        "Derin dondurucu",
-        "Sıcak su",
-        "Mutfak ekipmanları",
-        "Flybridge",
-        "Yüzme platformu",
-        "Güverte duşu",
-        "Isıtma",
-        "Kokpit masası",
-        "Tik kokpit"
-      ],
-      "navigation": [
-        "Otomatik pilot",
-        "GPS",
-        "Radar",
-        "Hız göstergesi",
-        "Derinlik ölçer",
-        "Seyir haritası"
-      ],
-      "entertainment": [
-        "Dış mekan hoparlör",
-        "Bar",
-        "TV"
-      ],
-      "safety": [
-        "Can yelekleri",
-        "Cankurtaran simidi",
-        "İlk yardım malzemeleri",
-        "Cep feneri"
-      ],
-      "includedInPrice": [
-        "Kaptan",
-        "Yakıt",
-        "Transitlog",
-        "Son temizlik",
-        "Kablosuz internet"
-      ],
-      "checkInOut": {
-        "overnight": {
-          "checkIn": "15:00",
           "checkOut": "09:00"
         },
         "daily": {

@@ -14,7 +14,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 type Yacht = {
   id: number;
   image: string;
-  images: string[];
+  images?: string[];
   location: string;
   title: string;
   price: number;
@@ -25,22 +25,6 @@ type Yacht = {
   length?: string;
   capacity?: string;
   slug?: string;
-  specifications?: Record<string, string | number | undefined>;
-  comfort?: string[];
-  navigation?: string[];
-  entertainment?: string[];
-  safety?: string[];
-  includedInPrice?: string[];
-  checkInOut?: {
-    overnight?: {
-      checkIn: string;
-      checkOut: string;
-    };
-    daily?: {
-      checkIn: string;
-      checkOut: string;
-    };
-  };
 };
 
 export default function YachtDetailPage() {
@@ -77,15 +61,10 @@ export default function YachtDetailPage() {
         booked: foundYacht.booked,
         discount: foundYacht.discount,
         description: foundYacht.description,
-        features: [],
-        slug,
-        specifications: foundYacht.specifications,
-        comfort: foundYacht.comfort,
-        navigation: foundYacht.navigation,
-        entertainment: foundYacht.entertainment,
-        safety: foundYacht.safety,
-        includedInPrice: foundYacht.includedInPrice,
-        checkInOut: foundYacht.checkInOut
+        features: foundYacht.comfort || [],
+        length: foundYacht.specifications?.boatLength,
+        capacity: foundYacht.specifications?.cruiseCapacity?.toString(),
+        slug
       };
       setYacht(yacht);
     } else {
@@ -135,9 +114,9 @@ export default function YachtDetailPage() {
         }}
       />
       <Navbar />
-      <div className="bg-white min-h-screen">
-        {/* Görsel Slider */}
-        <div className="relative w-full h-[400px] md:h-[600px] z-0">
+      <div className="bg-gradient-to-br from-gray-50 to-white min-h-screen">
+        {/* Enhanced Banner */}
+        <div className="relative w-full h-[400px] md:h-[600px] overflow-hidden">
           <div className="absolute inset-0">
             <div ref={emblaRef} className="h-full w-full overflow-hidden">
               <div className="flex h-full">
@@ -149,14 +128,18 @@ export default function YachtDetailPage() {
                       fill
                       className="object-cover"
                       priority={idx === 0}
+                      loading={idx === 0 ? undefined : "lazy"}
                       sizes="100vw"
-                      quality={100}
+                      quality={85}
                     />
                   </div>
                 ))}
               </div>
             </div>
           </div>
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
           {/* Slider Butonları */}
           <div className="absolute inset-0 z-10 flex items-center justify-between px-4">
@@ -175,190 +158,150 @@ export default function YachtDetailPage() {
               <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
             </button>
           </div>
+
+          {/* Banner Content */}
+          <div className="absolute inset-0 flex items-end">
+            <div className="w-full bg-gradient-to-t from-black/80 to-transparent p-8">
+              <div className="max-w-screen-xl mx-auto">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+                  {yacht.title}
+                </h1>
+                <div className="flex items-center gap-6 text-white">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                    <span className="text-sm md:text-base">Aktif Kiralama</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span className="text-sm md:text-base">Premium Yat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* İçerik */}
         <div className="max-w-screen-xl mx-auto px-4 md:px-6 py-8 md:py-16">
-          <nav className="text-sm text-gray-500 mb-4 md:mb-6 flex items-center space-x-2">
-            <Link href="/" className="hover:text-indigo-600">Anasayfa</Link>
-            <span>/</span>
-            <Link href="/yat" className="hover:text-indigo-600">Yatlar</Link>
-            <span>/</span>
+          {/* Enhanced Breadcrumb */}
+          <nav className="text-sm text-gray-500 mb-8 flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 w-fit">
+            <Link href="/" className="hover:text-indigo-600 transition-colors">Anasayfa</Link>
+            <span className="text-gray-300">/</span>
+            <Link href="/yat" className="hover:text-indigo-600 transition-colors">Yatlar</Link>
+            <span className="text-gray-300">/</span>
             <span className="font-semibold text-gray-800">{yacht.title}</span>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
-            <div className="lg:col-span-2">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{yacht.title}</h2>
-              {/* <p className="text-base md:text-lg text-gray-700 mb-6 md:mb-10 leading-relaxed">{yacht.description}</p> */}
-
-              {/* Teknik Özellikler */}
-              {yacht.specifications && (
-                <div className="mb-10">
-                  <div className="flex items-center mb-3">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 mr-2">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M9 17v-2a4 4 0 0 1 8 0v2M5 21v-2a4 4 0 0 1 8 0v2M17 21v-2a4 4 0 0 0-8 0v2"/></svg>
-                    </span>
-                    <h3 className="text-xl font-semibold text-indigo-700 border-l-4 border-indigo-400 pl-3">Teknik Özellikler</h3>
+            <div className="lg:col-span-2 space-y-8">
+              {/* Yat Bilgileri - Enhanced */}
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100 shadow-sm">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 rounded-2xl p-4 border">
-                    {Object.entries(yacht.specifications).map(([key, value]) => (
-                      <div key={key} className="flex justify-between text-gray-700 text-sm py-1 border-b last:border-b-0">
-                        <span className="font-medium capitalize">{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</span>
-                        <span>{value}</span>
-                      </div>
-                    ))}
+                  <h2 className="text-2xl font-bold text-gray-900">Yat Bilgileri</h2>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-white rounded-xl p-4 shadow-sm border">
+                    <div className="text-sm text-gray-500 mb-1">Lokasyon</div>
+                    <div className="font-bold text-gray-900">{yacht.location}</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 shadow-sm border">
+                    <div className="text-sm text-gray-500 mb-1">Rezervasyon</div>
+                    <div className="font-bold text-blue-600">{yacht.booked}+ kişi tercih etti</div>
                   </div>
                 </div>
-              )}
+              </div>
 
-              {/* Konfor Özellikleri */}
-              {yacht.comfort && (
-                <div className="mb-10">
-                  <div className="flex items-center mb-4">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-green-100 to-green-200 text-green-600 mr-3 shadow-sm">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/></svg>
-                    </span>
-                    <h3 className="text-xl font-bold text-green-700 border-l-4 border-green-400 pl-3">Konfor Özellikleri</h3>
+              {/* Açıklama - Enhanced */}
+              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 rounded-2xl p-4 border">
-                    {yacht.comfort?.map((item: string, i: number) => (
-                      <div key={i} className="flex justify-between text-gray-700 text-sm py-1 border-b last:border-b-0">
-                        <span className="font-medium">{item}</span>
-                        <span className="text-green-600">✓</span>
-                      </div>
-                    ))}
-                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900">Yat Detayları</h2>
                 </div>
-              )}
+                <p className="text-gray-700 leading-relaxed text-lg">{yacht.description}</p>
+              </div>
 
-              {/* Navigasyon Özellikleri */}
-              {yacht.navigation && (
-                <div className="mb-10">
-                  <div className="flex items-center mb-4">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 text-blue-600 mr-3 shadow-sm">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg>
-                    </span>
-                    <h3 className="text-xl font-bold text-blue-700 border-l-4 border-blue-400 pl-3">Navigasyon Ekipmanları</h3>
+              {/* Yat Özellikleri - Enhanced */}
+              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                    </svg>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 rounded-2xl p-4 border">
-                    {yacht.navigation?.map((item: string, i: number) => (
-                      <div key={i} className="flex justify-between text-gray-700 text-sm py-1 border-b last:border-b-0">
-                        <span className="font-medium">{item}</span>
-                        <span className="text-blue-600">✓</span>
-                      </div>
-                    ))}
-                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900">Yat Özellikleri</h2>
                 </div>
-              )}
-
-              {/* Eğlence Özellikleri */}
-              {yacht.entertainment && (
-                <div className="mb-10">
-                  <div className="flex items-center mb-4">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-pink-100 to-pink-200 text-pink-600 mr-3 shadow-sm">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
-                    </span>
-                    <h3 className="text-xl font-bold text-pink-700 border-l-4 border-pink-400 pl-3">Eğlence & Eğlence</h3>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 rounded-2xl p-4 border">
-                    {yacht.entertainment?.map((item: string, i: number) => (
-                      <div key={i} className="flex justify-between text-gray-700 text-sm py-1 border-b last:border-b-0">
-                        <span className="font-medium">{item}</span>
-                        <span className="text-pink-600">✓</span>
-                      </div>
-                    ))}
-                  </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {yacht.features?.map((feature, index) => (
+                    <div key={index} className="flex items-center gap-3 p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-100">
+                      <div className="w-3 h-3 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full"></div>
+                      <span className="text-gray-700 font-medium">{feature}</span>
+                    </div>
+                  ))}
                 </div>
-              )}
-
-              {/* Güvenlik Özellikleri */}
-              {yacht.safety && (
-                <div className="mb-10">
-                  <div className="flex items-center mb-4">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-100 to-yellow-200 text-yellow-600 mr-3 shadow-sm">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2l9 21H3L12 2z"/></svg>
-                    </span>
-                    <h3 className="text-xl font-bold text-yellow-700 border-l-4 border-yellow-400 pl-3">Güvenlik Ekipmanları</h3>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 rounded-2xl p-4 border">
-                    {yacht.safety?.map((item: string, i: number) => (
-                      <div key={i} className="flex justify-between text-gray-700 text-sm py-1 border-b last:border-b-0">
-                        <span className="font-medium">{item}</span>
-                        <span className="text-yellow-600">✓</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Fiyata Dahil */}
-              {yacht.includedInPrice && (
-                <div className="mb-10">
-                  <div className="flex items-center mb-4">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-purple-100 to-purple-200 text-purple-600 mr-3 shadow-sm">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-                    </span>
-                    <h3 className="text-xl font-bold text-purple-700 border-l-4 border-purple-400 pl-3">Fiyata Dahil Hizmetler</h3>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 rounded-2xl p-4 border">
-                    {yacht.includedInPrice?.map((item: string, i: number) => (
-                      <div key={i} className="flex justify-between text-gray-700 text-sm py-1 border-b last:border-b-0">
-                        <span className="font-medium">{item}</span>
-                        <span className="text-purple-600">✓</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Check-in/Check-out */}
-              {yacht.checkInOut && (
-                <div className="mb-10">
-                  <div className="flex items-center mb-3">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 text-gray-600 mr-2">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                    </span>
-                    <h3 className="text-xl font-semibold text-gray-700 border-l-4 border-gray-400 pl-3">Check-in / Check-out</h3>
-                  </div>
-                  <div className="flex flex-col gap-2 text-gray-700 text-sm bg-gray-50 rounded-2xl p-4 border">
-                    <div><strong>Gece konaklamalı:</strong> Giriş: {yacht.checkInOut.overnight?.checkIn} - Çıkış: {yacht.checkInOut.overnight?.checkOut}</div>
-                    <div><strong>Günlük:</strong> Giriş: {yacht.checkInOut.daily?.checkIn} - Çıkış: {yacht.checkInOut.daily?.checkOut}</div>
-                  </div>
-                </div>
-              )}
+              </div>
             </div>
 
             <div className="sticky top-24 space-y-6">
-              <div className="rounded-3xl bg-gradient-to-b from-white via-white/90 to-white/80 backdrop-blur-lg p-6 shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-100">
+              {/* Fiyat Kartı - Enhanced */}
+              <div className="rounded-3xl bg-gradient-to-br from-white via-white/95 to-white/90 backdrop-blur-lg p-8 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100">
                 {yacht.discount && (
-                  <div className="flex justify-center mb-3">
-                    <span className="bg-red-500 text-white text-xs font-bold px-5 py-2 rounded-full shadow-sm">
+                  <div className="flex justify-center mb-4">
+                    <span className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg">
                       %{yacht.discount} İNDİRİM
                     </span>
                   </div>
                 )}
 
                 {yacht.discount && (
-                  <div className="text-center text-gray-400 text-base line-through mb-1">
+                  <div className="text-center text-gray-400 text-lg line-through mb-2">
                     {(yacht.price * (1 + yacht.discount / 100)).toLocaleString('en-US').replace(',', '.')}$
                   </div>
                 )}
 
-                <div className="flex justify-center items-end gap-1">
-                  <span className="text-4xl font-bold text-indigo-700 leading-none">
+                <div className="flex justify-center items-end gap-2 mb-4">
+                  <span className="text-5xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent leading-none">
                     {yacht.price.toLocaleString('en-US').replace(',', '.')}$
                   </span>
-                  <span className="text-sm text-gray-500 mb-1">/ günlük</span>
+                  <span className="text-lg text-gray-500 mb-2">/ günlük</span>
+                </div>
+
+                {/* Additional Info */}
+                <div className="text-center space-y-2">
+                  <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                    </svg>
+                    <span>Anında Onay</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                    </svg>
+                    <span>Ücretsiz İptal</span>
+                  </div>
                 </div>
               </div>
 
-              <div className="rounded-3xl bg-gradient-to-b from-white via-white/90 to-white/80 backdrop-blur-lg p-6 shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-100">
+              {/* Rezervasyon Kutusu - Enhanced */}
+              <div className="rounded-3xl bg-gradient-to-br from-white via-white/95 to-white/90 backdrop-blur-lg p-8 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100">
                 <ReservationBox selectedItem={{ title: yacht.title }} />
-                <p className="text-center text-xs text-gray-500 mt-4 leading-snug">
-                  Yat kiralama rezervasyonları <strong>7/24</strong> alınmaktadır. <br />
-                  <strong>Ücretsiz iptal</strong> hakkı mevcuttur.
-                </p>
+                <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+                  <p className="text-center text-sm text-gray-700 leading-relaxed">
+                    <span className="font-bold text-blue-600">7/24</span> yat kiralama rezervasyonları <br />
+                    <span className="font-bold text-green-600">Ücretsiz iptal</span> hakkı mevcuttur
+                  </p>
+                </div>
               </div>
             </div>
           </div>

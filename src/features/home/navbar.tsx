@@ -42,7 +42,8 @@ export const Navbar = () => {
                   alt="Rental Logo"
                   fill
                   className="object-contain"
-                  priority
+                  loading="lazy"
+                  quality={85}
                 />
               </Link>
             </div>
@@ -57,7 +58,8 @@ export const Navbar = () => {
                   alt="Rental Logo"
                   fill
                   className="object-contain"
-                  priority
+                  loading="lazy"
+                  quality={85}
                 />
               </Link>
             </div>

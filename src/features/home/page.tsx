@@ -54,10 +54,30 @@ const categories = [
   },
 ];
 
+const SwiperWrapper = ({ category }: { category: typeof categories[0] }) => (
+  <Swiper
+    modules={[Navigation]}
+    spaceBetween={24}
+    slidesPerView={1}
+    navigation
+    breakpoints={{
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1280: { slidesPerView: 4 },
+    }}
+    className="w-full"
+  >
+    {category.items.map((item) => (
+      <SwiperSlide key={item.id}>
+        <ListCard item={{ ...item, category: category.category }} />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+);
 
 export const HomePage = () => {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <div className="container mx-auto px-4 py-12 space-y-16">
         {categories.map((category) => (
           <section key={category.title} className="space-y-6">
@@ -65,24 +85,7 @@ export const HomePage = () => {
               <h2 className="text-3xl font-bold text-gray-900">{category.title}</h2>
               <p className="text-gray-600">{category.description}</p>
             </div>
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={24}
-              slidesPerView={1}
-              navigation
-              breakpoints={{
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-                1280: { slidesPerView: 4 },
-              }}
-              className="w-full"
-            >
-              {category.items.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <ListCard item={{ ...item, category: category.category }} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <SwiperWrapper category={category} />
           </section>
         ))}
       </div>

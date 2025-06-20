@@ -7,8 +7,6 @@ export default function Head() {
         <meta charSet="utf-8" />
   
         <link rel="canonical" href="https://365kirala.com" />
-        <link rel="icon" href="/images/logo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
         <link rel="manifest" href="/site.webmanifest" />
   
         <meta name="theme-color" content="#0D0D0D" />
@@ -31,7 +29,7 @@ export default function Head() {
               '@type': 'Organization',
               name: '365Kirala',
               url: 'https://365kirala.com',
-              logo: 'https://365kirala.com/logo.png',
+              logo: 'https://365kirala.com/images/logo.png',
               sameAs: [
                 'https://instagram.com/365kirala',
               ],

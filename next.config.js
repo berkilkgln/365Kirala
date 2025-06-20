@@ -58,6 +58,28 @@ const nextConfig = {
           {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ]
+      },
+      {
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ]
+      },
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
           }
         ]
       }
@@ -89,6 +111,29 @@ const nextConfig = {
     optimizeCss: true,
     scrollRestoration: true,
     gzipSize: true,
+    optimizePackageImports: ['swiper', 'lucide-react', 'react-icons'],
+  },
+
+  // Webpack optimizations
+  webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+          },
+          swiper: {
+            test: /[\\/]node_modules[\\/]swiper[\\/]/,
+            name: 'swiper',
+            chunks: 'all',
+          },
+        },
+      };
+    }
+    return config;
   },
 };
 

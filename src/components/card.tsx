@@ -50,10 +50,11 @@ export const ListCard = ({ item }: ListCardProps) => {
           src={item.image}
           alt={item.title}
           fill
-          priority
+          loading="lazy"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           draggable={false}
+          quality={85}
         />
         {item.discount && (
           <div className="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold drop-shadow-lg select-none">

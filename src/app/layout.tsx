@@ -14,7 +14,7 @@ const inter = Inter({
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#ffffff',
+  themeColor: '#0D0D0D',
   colorScheme: 'light',
   minimumScale: 1,
   maximumScale: 5,
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     description: "Yat, villa, özel jet, transfer ve tur hizmetlerinde Türkiye'nin lider lüks kiralama platformu.",
     site: '@365kirala',
     creator: '@365kirala',
-    images: ['https://365kirala.com/twitter-card.jpg'],
+    images: ['https://365kirala.com/images/logo.png'],
   },
   robots: {
     index: true,
@@ -84,12 +84,9 @@ export const metadata: Metadata = {
       noimageindex: false,
     },
   },
-
-
+  manifest: '/site.webmanifest',
   verification: {
     google: 'LjeEhPbGMZOMys0Ri_ucJrqmFZ5zK4tFndZueNAta5E',
-    yandex: 'yandex-verification-code',
-    yahoo: 'yahoo-verification-code',
   },
   category: 'travel',
   classification: 'Business',
@@ -106,18 +103,56 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="365Kirala" />
         <meta name="apple-mobile-web-app-title" content="365Kirala" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#0D0D0D" />
+        <meta name="theme-color" content="#0D0D0D" />
+        
+        {/* Favicon Links */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Essential SEO Meta Tags */}
+        <meta name="author" content="365Kirala" />
+        <meta name="language" content="tr" />
+        <meta name="geo.region" content="TR" />
+        <meta name="geo.placename" content="İstanbul" />
+        <meta name="geo.position" content="41.0082;28.9784" />
+        <meta name="ICBM" content="41.0082, 28.9784" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="1 days" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        
+        {/* Social Media Meta Tags */}
+        <meta property="og:site_name" content="365Kirala" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@365kirala" />
+        <meta name="twitter:creator" content="@365kirala" />
+        <meta name="twitter:image:alt" content="365Kirala - Lüks Kiralama Platformu" />
+        
+        {/* Preconnect for performance */}
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://static.elfsight.com" />
         
-        {/* Google Ads Tracking Code */}
+        {/* Google Ads Tracking Code - Lazy loaded */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-692798014"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-ads" strategy="afterInteractive">
+        <Script id="google-ads" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -126,19 +161,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
         
-        {/* Schema.org JSON-LD */}
+        {/* Schema.org JSON-LD - Lazy loaded */}
         <Script
           id="schema-org"
           type="application/ld+json"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: '365Kirala',
               url: 'https://365kirala.com',
-              logo: 'https://365kirala.com/logo.png',
-              description: "Yat, villa, özel jet, transfer ve tur hizmetlerinde Türkiye'nin lider lüks kiralama platformu.",
+              logo: 'https://365kirala.com/images/logo.png',
+              description: "Türkiye'nin en kapsamlı lüks kiralama platformu. Yat, villa, özel jet, transfer ve tur hizmetleri.",
               address: {
                 '@type': 'PostalAddress',
                 addressCountry: 'TR',
@@ -163,11 +198,49 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 reviewCount: '1250'
               },
               priceRange: '₺₺₺',
+              hasOfferCatalog: {
+                '@type': 'OfferCatalog',
+                name: 'Lüks Kiralama Hizmetleri',
+                itemListElement: [
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Yat Kiralama',
+                      description: 'Lüks yat kiralama hizmetleri'
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Villa Kiralama',
+                      description: 'Lüks villa kiralama hizmetleri'
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Özel Jet Kiralama',
+                      description: 'Özel jet kiralama hizmetleri'
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Transfer Hizmetleri',
+                      description: 'Lüks transfer hizmetleri'
+                    }
+                  }
+                ]
+              }
             }),
           }}
         />
         
-        {/* Elfsight AI Chatbot Script */}
+        {/* Elfsight AI Chatbot Script - Lazy loaded */}
         <Script 
           src="https://static.elfsight.com/platform/platform.js" 
           strategy="lazyOnload"

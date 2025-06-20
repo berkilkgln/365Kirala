@@ -63,8 +63,9 @@ function YatCard({ item }: { item: YatItem }) {
                     alt={`${item.title} - Görsel ${idx + 1}`}
                     fill
                     className="object-cover rounded-t-xl"
-                    priority={idx === 0}
+                    loading={idx === 0 ? undefined : "lazy"}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={85}
                   />
                 </div>
               ))}
@@ -246,6 +247,11 @@ export default function YatPage() {
             title="Yat Kiralama"
             descriptionDesktop="Türkiye'nin en güzel koylarında lüks yat kiralama hizmetleri. Profesyonel mürettebat, özel şef ve unutulmaz deneyimler için 365Kirala."
             descriptionMobile="Türkiye'nin en güzel koylarında lüks yat kiralama hizmetleri."
+            customBadges={[
+              { icon: "anchor", text: "Profesyonel Mürettebat", color: "bg-blue-400" },
+              { icon: "star", text: "Lüks Hizmet", color: "bg-yellow-400" },
+              { icon: "check", text: "Anında Onay", color: "bg-green-400" }
+            ]}
           />
         </div>
 

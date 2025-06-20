@@ -5,6 +5,7 @@ import ozelJetData from '../../data/ozel-jet/services.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Navbar } from '../../features/home/navbar';
+import { FaStar } from 'react-icons/fa';
 import { createUrlSlug } from '../../lib/utils';
 import Script from 'next/script';
 import Head from 'next/head';
@@ -32,14 +33,16 @@ function OzelJetCard({ item }: { item: OzelJetItem }) {
       className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
     >
       <div className="relative h-52 md:h-56">
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          className="object-cover rounded-t-xl"
-          priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        <div className="absolute inset-0">
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover rounded-t-xl"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
 
         {item.discount && (
           <div className="absolute top-2 right-2 z-20">
@@ -55,7 +58,9 @@ function OzelJetCard({ item }: { item: OzelJetItem }) {
           <h3 className="text-lg md:text-xl font-semibold text-gray-900">{item.title}</h3>
           <div className="flex items-center gap-2 text-sm text-gray-500">
             <span>{item.departure}</span>
-            <span>→</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
             <span>{item.destination}</span>
           </div>
 
@@ -68,14 +73,14 @@ function OzelJetCard({ item }: { item: OzelJetItem }) {
                   </div>
                 )}
                 <div className="flex items-baseline gap-1">
-                  <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')}$</span>
+                  <span className="text-2xl font-bold text-indigo-600">{item.price.toLocaleString('en-US').replace(',', '.')} $</span>
                   <span className="text-sm text-gray-500">/ uçuş</span>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col items-center text-gray-600 text-xs md:text-sm">
-              <span className="text-yellow-400 text-lg md:text-xl">★</span>
+              <FaStar className="text-yellow-400 text-lg md:text-xl" />
               <span className="mt-1">{item.booked}+ uçuş</span>
             </div>
           </div>
@@ -201,6 +206,11 @@ export default function OzelJetPage() {
             title="Özel Jet Kiralama"
             descriptionDesktop="Türkiye'nin tüm havalimanlarından dünyanın her noktasına özel jet kiralama hizmetleri. VIP transfer, özel catering ve gümrük işlemleri ile konforlu uçuş deneyimi."
             descriptionMobile="Türkiye'nin tüm havalimanlarından dünyanın her noktasına özel jet kiralama hizmetleri."
+            customBadges={[
+              { icon: "jet", text: "VIP Transfer", color: "bg-yellow-400" },
+              { icon: "star", text: "Lüks Hizmet", color: "bg-purple-400" },
+              { icon: "check", text: "Anında Onay", color: "bg-blue-400" }
+            ]}
           />
         </div>
 

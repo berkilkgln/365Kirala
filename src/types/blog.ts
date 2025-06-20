@@ -2854,7 +2854,7 @@ Gelibolu Yarımadası Tarih Turu, Çanakkale Savaşları’nın yaşandığı ta
       - Wenceslas Meydanı
       - Yahudi Mahallesi (Josefov)
 
-      #### 2025 Prag tur fiyatları nedir?
+      #### Prag turu ne kadar tutar?
       - 2025 itibarıyla ortalama 4 günlük Prag turu maliyeti:
 
       - Uçak bileti: 6.000 – 10.000 TL
@@ -2992,7 +2992,7 @@ Gelibolu Yarımadası Tarih Turu, Çanakkale Savaşları’nın yaşandığı ta
       - Albertina Müzesi
       - Vienna State Opera
 
-      #### 2025 Viyana tur fiyatları nedir?
+      #### Viyana turu ne kadar tutar?
       - 2025 yılı için ortalama 4 günlük Viyana turu maliyeti:
 
       - Uçak bileti: 6.000 – 10.000 TL

@@ -65,41 +65,43 @@ export function Analytics(): React.ReactElement {
 
   return (
     <>
+      {/* Google Analytics 4 */}
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
         strategy="afterInteractive"
-        onLoad={(): void => {
-          console.log('Google Analytics script loaded successfully');
-        }}
-        onError={(e: Error): void => {
-          console.error('Google Analytics script failed to load', e);
-        }}
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}', {
-            page_path: window.location.pathname,
-            cookie_flags: 'SameSite=None;Secure',
-            anonymize_ip: true,
-            send_page_view: true,
-            cookie_domain: '365kirala.com',
-            cookie_expires: 365 * 24 * 60 * 60,
-            custom_map: {
-              dimension1: 'user_type',
-              dimension2: 'client_id'
-            },
-            debug_mode: ${process.env.NODE_ENV === 'development'},
-            transport_url: 'https://www.google-analytics.com',
-            transport_type: 'beacon',
-            allow_google_signals: true,
-            allow_ad_personalization_signals: true
+          gtag('config', 'G-XXXXXXXXXX', {
+            page_title: document.title,
+            page_location: window.location.href,
           });
-          gtag('config', '${GA_ADS_ID}');
         `}
       </Script>
+
+      {/* Google Tag Manager */}
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-XXXXXXX');
+        `}
+      </Script>
+
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        />
+      </noscript>
     </>
   );
 } 

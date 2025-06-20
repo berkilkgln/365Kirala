@@ -63,8 +63,9 @@ function VillaCard({ item }: { item: VillaItem }) {
                     alt={`${item.title} - Görsel ${idx + 1}`}
                     fill
                     className="object-cover rounded-t-xl"
-                    priority={idx === 0}
+                    loading={idx === 0 ? undefined : "lazy"}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={85}
                   />
                 </div>
               ))}
@@ -246,6 +247,11 @@ export default function VillaPage() {
             title="Villa Kiralama"
             descriptionDesktop="Türkiye'nin en güzel lokasyonlarında lüks villa kiralama hizmetleri. Özel havuzlu, deniz manzaralı villalar için 365Kirala."
             descriptionMobile="Türkiye'nin en güzel lokasyonlarında lüks villa kiralama hizmetleri."
+            customBadges={[
+              { icon: "pool", text: "7/24 Hizmet", color: "bg-blue-400" },
+              { icon: "star", text: "Lüks Hizmet", color: "bg-purple-400" },
+              { icon: "view", text: "Anında Onay", color: "bg-green-400" }
+            ]}
           />
         </div>
 

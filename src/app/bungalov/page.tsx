@@ -63,8 +63,9 @@ function BungalovCard({ item }: { item: BungalovItem }) {
                     alt={`${item.title} - Görsel ${idx + 1}`}
                     fill
                     className="object-cover rounded-t-xl"
-                    priority={idx === 0}
+                    loading={idx === 0 ? undefined : "lazy"}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={85}
                   />
                 </div>
               ))}
@@ -246,6 +247,11 @@ export default function BungalovPage() {
             title="Bungalov Kiralama"
             descriptionDesktop="Türkiye'nin eşsiz doğa lokasyonlarında; Sapanca, Abant, Bolu, Kapadokya gibi destinasyonlarda bungalov kiralayın. Günlük ve haftalık seçeneklerle, doğayla iç içe, konforlu bir tatil deneyimi yaşayın."
             descriptionMobile="Türkiye'nin en güzel doğa lokasyonlarında bungalov kiralayarak huzurlu bir tatil yapın."
+            customBadges={[
+              { icon: "tree", text: "7/24 Hizmet", color: "bg-green-400" },
+              { icon: "home", text: "Premiun Konaklama", color: "bg-blue-400" },
+              { icon: "peace", text: "Anında Onay", color: "bg-purple-400" }
+            ]}
           />
         </div>
 

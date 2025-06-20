@@ -4,6 +4,12 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://365kirala.com/sitemap.xml
+Sitemap: https://365kirala.com/sitemap-jet.xml
+Sitemap: https://365kirala.com/sitemap-villa.xml
+Sitemap: https://365kirala.com/sitemap-yat.xml
+Sitemap: https://365kirala.com/sitemap-transfer.xml
+Sitemap: https://365kirala.com/sitemap-bungalov.xml
+Sitemap: https://365kirala.com/sitemap-tur.xml
 
 # Disallow specific paths
 Disallow: /api/
@@ -14,6 +20,23 @@ Disallow: /admin/
 Disallow: /login
 Disallow: /register
 Disallow: /dashboard/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow important directories
+Allow: /images/
+Allow: /public/
+Allow: /static/
 
 # Crawl delay
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
 Crawl-delay: 1 

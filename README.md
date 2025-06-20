@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-dd
-## Getting Started
+# 365Kirala - Lüks Kiralama Platformu
 
-First, run the development server:
+Bu proje [Next.js](https://nextjs.org) ile geliştirilmiş bir lüks kiralama platformudur.
+
+## Başlangıç
+
+Geliştirme sunucusunu başlatmak için:
 
 ```bash
 npm run dev
-# or
+# veya
 yarn dev
-# or
+# veya
 pnpm dev
-# or
+# veya
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açarak sonucu görebilirsiniz.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sayfayı düzenlemek için `app/page.tsx` dosyasını değiştirebilirsiniz. Dosya düzenlendikçe sayfa otomatik olarak güncellenir.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Bu proje [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) kullanarak fontları otomatik olarak optimize eder ve yükler.
 
-## Learn More
+## Özellikler
 
-To learn more about Next.js, take a look at the following resources:
+- Yat kiralama
+- Villa kiralama
+- Özel jet kiralama
+- Transfer hizmetleri
+- Günlük turlar
+- Bungalov kiralama
+- Responsive tasarım
+- SEO optimizasyonu
+- PWA desteği
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Teknolojiler
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Swiper
+- EmailJS
 
-## Deploy on Vercel
+## Daha Fazla Bilgi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Next.js hakkında daha fazla bilgi için aşağıdaki kaynaklara göz atın:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Dokümantasyonu](https://nextjs.org/docs) - Next.js özellikleri ve API'si hakkında bilgi edinin.
+- [Next.js Öğrenin](https://nextjs.org/learn) - interaktif Next.js eğitimi.
+
+## Dağıtım
+
+Bu proje Vercel, Netlify veya diğer platformlarda dağıtılabilir.
+
+Dağıtım hakkında daha fazla bilgi için [Next.js dağıtım dokümantasyonuna](https://nextjs.org/docs/app/building-your-application/deploying) göz atın.

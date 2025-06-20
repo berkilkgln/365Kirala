@@ -26,11 +26,13 @@ export default function BlogPageClient() {
       <Navbar />
       <main className="min-h-screen bg-gray-50">
         {/* HERO */}
-        <section className="relative bg-gradient-to-br from-blue-700 to-blue-900 text-white pt-32 pb-20 text-center">
-          <div className="absolute inset-0 bg-black/30" />
-          <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10" />
-          <div className="relative z-10 max-w-4xl mx-auto px-6">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Blog</h1>
+        <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 pt-32 pb-20">
+          <div className="absolute inset-0 bg-black/20" />
+          
+          <div className="relative container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">
+              Blog
+            </h1>
             <p className="text-lg md:text-xl text-white/90">
               Tur önerileri, seyahat rehberleri ve ilham verici içerikler
             </p>
@@ -113,11 +115,13 @@ export default function BlogPageClient() {
             </div>
           )}
 
-          {/* BÜLTEN */}
-          <div className="mt-24 bg-blue-700 text-white p-10 md:p-16 rounded-3xl relative overflow-hidden text-center">
-            <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10" />
-            <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Seyahat İpuçları ve Kampanyalar</h3>
+          {/* Newsletter Section */}
+          <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+            
+            <div className="relative">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                Seyahat İpuçları
+              </h3>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto">
                 Blog yazılarımız ve fırsatlardan haberdar olmak için e-posta bültenimize abone olun.
               </p>

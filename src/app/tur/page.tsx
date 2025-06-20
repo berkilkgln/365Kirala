@@ -5,6 +5,7 @@ import turData from '../../data/tur/services.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Navbar } from '../../features/home/navbar';
+import { FaStar } from 'react-icons/fa';
 import { createUrlSlug } from '../../lib/utils';
 import Script from 'next/script';
 import Head from 'next/head';
@@ -31,14 +32,16 @@ function TurCard({ item }: { item: TurItem }) {
       className="group rounded-xl shadow-lg overflow-hidden flex flex-col bg-white transition-transform duration-300 hover:scale-[1.02] cursor-default"
     >
       <div className="relative h-52 md:h-56">
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          className="object-cover rounded-t-xl"
-          priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        <div className="absolute inset-0">
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover rounded-t-xl"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
 
         {item.discount && (
           <div className="absolute top-2 right-2 z-20">
@@ -52,7 +55,7 @@ function TurCard({ item }: { item: TurItem }) {
       <div className="p-4 flex-1 flex flex-col justify-between">
         <div className="space-y-3">
           <h3 className="text-lg md:text-xl font-semibold text-gray-900">{item.title}</h3>
-          <p className="text-sm text-gray-500">{item.location}</p>
+          {item.location && <p className="text-sm text-gray-500">{item.location}</p>}
 
           <div className="flex justify-between items-center border-t pt-4">
             <div>
@@ -70,7 +73,7 @@ function TurCard({ item }: { item: TurItem }) {
             </div>
 
             <div className="flex flex-col items-center text-gray-600 text-xs md:text-sm">
-              <span className="text-yellow-400 text-lg md:text-xl">★</span>
+              <FaStar className="text-yellow-400 text-lg md:text-xl" />
               <span className="mt-1">{item.booked}+ katılım</span>
             </div>
           </div>
@@ -196,6 +199,11 @@ export default function TurPage() {
             title="Tur Hizmetleri"
             descriptionDesktop="Türkiye'nin en güzel destinasyonlarında tur hizmetleri. Profesyonel rehberler, konforlu ulaşım ve unutulmaz deneyimler için 365Kirala."
             descriptionMobile="Türkiye'nin en güzel destinasyonlarında tur hizmetleri."
+            customBadges={[
+              { icon: "guide", text: "Profesyonel Rehber", color: "bg-blue-400" },
+              { icon: "transport", text: "Konforlu Ulaşım", color: "bg-green-400" },
+              { icon: "experience", text: "7/24 Hizmet", color: "bg-yellow-400" }
+            ]}
           />
         </div>
 

@@ -112,6 +112,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
+        {/* Google Ads Tracking Code */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-692798014"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-692798014');
+          `}
+        </Script>
+        
         {/* Schema.org JSON-LD */}
         <Script
           id="schema-org"

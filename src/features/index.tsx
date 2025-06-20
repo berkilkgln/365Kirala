@@ -13,6 +13,7 @@ import { HomePage } from './home/page';
 import tekneBg from '../app/images/teknem.jpg';
 import { useRouter } from 'next/navigation';
 import Footer from './home/footer';
+import { createUrlSlug } from '../lib/utils';
 
 type ServiceItem = {
   id: number | string;
@@ -37,6 +38,7 @@ export const Index = () => {
   const allItems: ServiceItem[] = [
     ...(yachtData?.items || []).map((item) => ({
       ...item,
+      id: `yat-${item.id}`,
       category: 'yat',
       categoryKey: 'yat',
       location: item.location || '',
@@ -44,30 +46,35 @@ export const Index = () => {
     })),
     ...(villaData?.items || []).map((item) => ({
       ...item,
+      id: `villa-${item.id}`,
       category: 'villa kiralama',
       categoryKey: 'villa',
       location: item.location || '',
     })),
     ...(transferData?.items || []).map((item) => ({
       ...item,
+      id: `transfer-${item.id}`,
       category: 'transfer',
       categoryKey: 'transfer',
       location: item.location || '',
     })),
     ...(toursData?.items || []).map((item) => ({
       ...item,
+      id: `tur-${item.id}`,
       category: 'tur',
       categoryKey: 'tur',
       location: item.location || '',
     })),
     ...(jetData?.items || []).map((item) => ({
       ...item,
+      id: `ozel-jet-${item.id}`,
       category: 'özel-jet',
       categoryKey: 'ozel-jet',
       location: `${item.departure} - ${item.destination}`,
     })),
     ...(bungalovData?.items || []).map((item) => ({
       ...item,
+      id: `bungalov-${item.id}`,
       category: 'bungalov',
       categoryKey: 'bungalov',
       location: item.location || '',
@@ -86,7 +93,9 @@ export const Index = () => {
   const handleSelect = (item: ServiceItem) => {
     setQuery('');
     setShowDropdown(false);
-    router.push(`/${item.categoryKey}`);
+    const slug = createUrlSlug(item.title);
+    const originalId = typeof item.id === 'string' ? item.id.split('-')[1] : item.id;
+    router.push(`/${item.categoryKey}/${originalId}-${slug}`);
   };
 
   useEffect(() => {
